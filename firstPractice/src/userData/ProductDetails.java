@@ -73,5 +73,19 @@ public class ProductDetails {
 		System.out.println("Price : " +price4);
 		System.out.println("Quantity : "+qty4);
 		System.out.println("Catagory : "+catagory4);
+		
+		// Sixth Product
+		int pid5 = 116;
+		String pName5 = "Acer";
+		int price5 = 170000;
+		int qty5 = 8;
+		String catagory5 = "kljvnxvfef5655abc";
+						
+		System.out.println("\nSixth Product :");
+		System.out.println("Product id : "+pid5);
+		System.out.println("Product Name : "+pName5);
+		System.out.println("Price : " +price5);
+		System.out.println("Quantity : "+qty5);
+		System.out.println("Catagory : "+catagory5);
 	}
 }
