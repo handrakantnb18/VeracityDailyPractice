@@ -3,38 +3,37 @@ package relationalOperators;
 public class Demo2 {
 
 	public static void main(String[] args) {
-		
+
 		int num1 = 10, num2 = 2;
-		
-		
-		System.out.println(num1 < num2  && num1 == num2); // 
-		// false false // false  false  = false
-		
-		System.out.println(num1 > num2  && num1 < num2); // false
-		// true false  // true false = false
-		
-		System.out.println(num1 < num2  && num1 > num2); // false
-		// false  true  // false  true  = false
-		
-		System.out.println(num1 > num2  && num1 != num2); // false
-		// true  true  // true  true = true
-		
+
+		System.out.println(num1 < num2 && num1 == num2); //
+		// false false // false false = false
+
+		System.out.println(num1 > num2 && num1 < num2); // false
+		// true false // true false = false
+
+		System.out.println(num1 < num2 && num1 > num2); // false
+		// false true // false true = false
+
+		System.out.println(num1 > num2 && num1 != num2); // false
+		// true true // true true = true
+
 		System.out.println("\n");
 		// int num3 = 100, num4 = 100; // true, false, false, false
-		
-		int num3 = 100, num4 = 10;  // false, true, true, true
-		
-		System.out.println(num3 < num4 || num3 == num4);  // false
-		// false  false  // false  false  = false
-		
-		System.out.println(num3 > num4  || num3 < num4);  // true
-		//  true  false  // true  false = true
-		
-		System.out.println(num3 < num4  || num3 > num4);  // true
-		// false  true  // false  true  = true
-		
-		System.out.println(num3 > num4  || num3 != num4);  // true
-		// true  true  // true  true = true
-		
+
+		int num3 = 100, num4 = 10; // false, true, true, true
+
+		System.out.println(num3 < num4 || num3 == num4); // false
+		// false false // false false = false
+
+		System.out.println(num3 > num4 || num3 < num4); // true
+		// true false // true false = true
+
+		System.out.println(num3 < num4 || num3 > num4); // true
+		// false true // false true = true
+
+		System.out.println(num3 > num4 || num3 != num4); // true
+		// true true // true true = true
+
 	}
 }
