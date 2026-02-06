@@ -6,6 +6,8 @@ public class Demo {
 
 		
 		// checking the condition of the assignment operator 
+		// cheking two things at a time
+		
 		int a = 100;
 
 		// a = a + 20; // initialize + assignments operators
