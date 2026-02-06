@@ -9,14 +9,17 @@ public class Demo {
 		System.out.println(a++); // compiler is print value first  .increment will happen in memory
 		
 		System.out.println(a++); // store in memory
+		System.out.println(a);
 		
 		System.out.println(++a); // pre-decrement
 		
 		System.out.println(++a); // pre - decrement
 		
 		System.out.println(a--); // post - decrement
+		System.out.println(a);
 		
 		System.out.println(--a); // pre - decrement
+		System.out.println(a);
 
 //		a++;
 //		
