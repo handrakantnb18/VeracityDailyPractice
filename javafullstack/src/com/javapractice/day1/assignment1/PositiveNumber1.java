@@ -14,8 +14,20 @@ public class PositiveNumber1 {
 		
 		int num1 = 30;
 		
-		if (num > 0 || num < 0) {
-			System.out.println();
+		if (num1 > 0 || num1 < 0) {
+			System.out.println("\nTrue, Number is positive");
+		}
+		else 
+		{
+			System.out.println("\nFalse, Number is negative");
+		}
+		
+		
+		// 2) Negative number
+		
+		int num4 = -10;
+		if (true) {
+			System.out.println("\nNegative number");
 		}
 	}
 
