@@ -15,5 +15,13 @@ public class FindVotingElig {
 		
 		System.out.println("\n"+b);
 		
+		int x = 60;
+		
+		String y = (x >= 65)? "You are greater than 65 age" : "You are smaller than 65 age";
+		
+		System.out.println("\n"+y);
+		
+		
+		
 	}
 }
