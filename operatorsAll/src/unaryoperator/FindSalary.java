@@ -4,6 +4,8 @@ public class FindSalary {
 	
 	public static void main(String[] args) {
 		
+		// find salary with experience
+		
 		int exp = 4;
 		
 		double salary = 40000;
