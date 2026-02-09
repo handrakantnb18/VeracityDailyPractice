@@ -22,7 +22,7 @@ public class UserNameDemo {
 			
 		}
 		
-		// print valid and invalid userName and password check
+		// print valid and invalid userName lenght and password length check
 		
 		System.out.println("Enter password : ");
 		String password = sc.next();
