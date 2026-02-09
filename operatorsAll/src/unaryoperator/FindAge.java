@@ -10,6 +10,14 @@ public class FindAge {
 		String s = (age >= 18) ? "You are eligible for Driving" : "You are not eligible for Driving";
 		
 		System.out.println(s);
+		
+		int age1 = 15;
+		
+		String a =(age1 >= 18)? "Your are eligible for Driving" : "You are not eligible for the Driving";
+		
+		System.out.println("\n"+a);
+		
+		
 	}
 
 }
