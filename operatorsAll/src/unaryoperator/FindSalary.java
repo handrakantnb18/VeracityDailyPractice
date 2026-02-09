@@ -13,5 +13,12 @@ public class FindSalary {
 		double findSalary = (exp >=5 ) ? salary + 5000: salary + 2000;
 		
 		System.out.println(findSalary);
+		
+		// find salary with experience greater than 5
+		
+		double sal = (exp <= 5) ? salary + 5000 : salary + 2000;
+		
+		System.out.println(sal);
+		
 	}
 }
