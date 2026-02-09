@@ -16,10 +16,16 @@ public class Simple {
 		
 		System.out.println("Welcome");
 		
+		// check the age for the eligibility
+		
 		int age = 25;
 		
 		if (age > 18) {
 			System.out.println("Your are eleigible");
+		}
+		
+		if (age < 10) {
+			System.out.println("You are not Eligible");
 		}
 	}
 	
