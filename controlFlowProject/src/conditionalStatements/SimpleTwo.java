@@ -6,7 +6,7 @@ public class SimpleTwo {
 
 	public static void main(String[] args) {
 
-		// count the number of charactors
+		// count the number of charactors length
 		
 		Scanner sc = new Scanner(System.in);
 
@@ -14,6 +14,7 @@ public class SimpleTwo {
 //
 //		int num = sc.nextInt();
 //		
+		
 		String name = "Chandrakant";
 		
 		System.out.println(name.length());
