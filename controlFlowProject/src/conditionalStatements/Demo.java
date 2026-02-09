@@ -6,7 +6,10 @@ public class Demo {
 
 	public static void main(String[] args) {
 	
-		// If statement checkinig the condition 
+		// If statement checkinig the condition
+		
+		// 10 > 20 condition true or false boolean value
+		
 		
 		if (false) {
 			System.out.println("Hello, priyanka");
