@@ -12,20 +12,31 @@ public class IfElse {
 //		else {
 //			System.out.println("Hii");
 //		}
-		
-		// check the condition of eligibility of Voting
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter your age : ");
-		
-		int age = sc.nextInt();
-		
-		if (age >= 18) {
-			System.out.println("Eligible for Voting");
+		// check the odd and even number
+
+		System.out.println("Enter any number : ");
+		int num = sc.nextInt();
+
+		if (num % 2 == 0) {
+			System.out.println("Even number.");
+		} else {
+			System.out.println("Odd number.");
 		}
-		else {
-			System.out.println("Not Elligible for the Voting.");
-		}
+
+		// check the condition of eligibility of Voting
+
+//		System.out.println("Enter your age : ");
+//		
+//		int age = sc.nextInt();
+//		
+//		if (age >= 18) {
+//			System.out.println("Eligible for Voting");
+//		}
+//		else {
+//			System.out.println("Not Elligible for the Voting.");
+//		}
 	}
 }
