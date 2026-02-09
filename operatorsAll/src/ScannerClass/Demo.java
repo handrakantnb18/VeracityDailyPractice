@@ -19,6 +19,18 @@ public class Demo {
 		
 		System.out.println(result);
 		
+		// checking the age is eligible for the Driving or not
+		
+		System.out.println("Enter your age : ");
+		
+		int age1;
+		
+		age1 = sc.nextInt();
+		
+		String res = (age1 >= 18)? "Your are Eligible for Driving." : "You are not Eligible for the Driving.";
+		
+		System.out.println(res);
+		
 		
 	}
 }
