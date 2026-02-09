@@ -18,7 +18,7 @@ public class FindSalary {
 		
 		double sal = (exp <= 5) ? salary + 5000 : salary + 2000;
 		
-		System.out.println(sal);
+		System.out.println("\n"+sal);
 		
 	}
 }
