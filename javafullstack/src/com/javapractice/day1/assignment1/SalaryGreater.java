@@ -14,11 +14,11 @@ public class SalaryGreater {
 		double salaryCheck = sc.nextDouble();
 		
 		if (salaryCheck >= 25000) {
-			System.out.println("Salary is greater. ");
+			System.out.println("Salary is greater than. "+salaryCheck);
 		}
 		
 		else {
-			System.out.println("Salary is smaller");
+			System.out.println("Salary is smaller than. "+salaryCheck);
 		}
 	}
 }
