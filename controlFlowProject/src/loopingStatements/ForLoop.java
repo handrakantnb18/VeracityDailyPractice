@@ -30,10 +30,25 @@ public class ForLoop {
 //
 //		}
 
-		for (int i = 1; i <= 50; i++) {
-			if (i % 2 != 0) {
-				System.out.println(i);
-			}
+		// print odd numbers
+//		for (int i = 1; i <= 50; i++) {
+//			if (i % 2 != 0) {
+//				System.out.println(i);
+//			}
+//		}
+
+		// increment
+		for (int i = 1; i <= 50; i += 5) {
+
+			System.out.println(i);
+
+		}
+
+		// decrement
+		for (int i = 100; i <= 1; i -= 5) {
+
+			System.out.println(i);
+
 		}
 	}
 
