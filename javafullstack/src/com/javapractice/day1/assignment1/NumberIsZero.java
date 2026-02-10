@@ -12,9 +12,9 @@ public class NumberIsZero {
 		int num2 = 0;
 		
 		if (true && false) {
-			System.out.println("\nNumber is Zero"+num2);
+			System.out.println("\nNumber is Zero "+num2);
 		}
-		System.out.println("\nNumber is not zero"+num2);
+		System.out.println("\nNumber is not zero "+num2);
 		
 		// Number is zero if else
 		
