@@ -26,6 +26,12 @@ public class ElseIF {
 			System.out.println("Discounted amount : "+discount);
 			System.out.println("Final price : "+(price - discount));
 		}
+		else if (price >= 1000) {
+			System.out.println("Discount applied 2%");
+			double discount = price * 0.01;
+			System.out.println("Discounted amount : "+discount);
+			System.out.println("Final price : "+(price - discount));
+		}
 		else {
 			System.out.println("No Discount.");
 		}
