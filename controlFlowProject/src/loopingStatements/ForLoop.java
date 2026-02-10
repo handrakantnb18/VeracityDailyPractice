@@ -57,9 +57,17 @@ public class ForLoop {
 		System.out.println("Enter any Number : ");
 		int num = sc.nextInt();
 		
-		for(int i = 1; i <=10; i++) {
-			System.out.println(num+" * "+i+ " = " +num * i);
+		// checking condition dont use (-) minus number
+		if (num <= 0) {
+			System.out.println("Invalid number");
 		}
+		else
+		{
+			for(int i = 1; i <=10; i++) {
+				System.out.println(num+" * "+i+ " = " +num * i);
+			}
+		}
+		
 	}
 
 }
