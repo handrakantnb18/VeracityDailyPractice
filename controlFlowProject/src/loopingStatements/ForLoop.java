@@ -1,98 +1,17 @@
 package loopingStatements;
 
+import java.util.Iterator;
+
 public class ForLoop {
 	
 	public static void main(String[] args) {
 		  // 1 lakh line code in = 1 line  = looping statement
 		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
+		for (int i = 1; i < 10; i++) {
+			System.out.println("Server Error");
+		}
 		
 		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
-		System.out.println("Server Error");
 	}
 
 }
