@@ -1,6 +1,7 @@
 package loopingStatements;
 
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class ForLoop {
 
@@ -38,17 +39,26 @@ public class ForLoop {
 //		}
 
 		// increment
-		for (int i = 1; i <= 50; i += 5) {
-
-			System.out.println(i);
-
-		}
+//		for (int i = 1; i <= 50; i += 5) {
+//
+//			System.out.println(i);
+//
+//		}
 
 		// decrement
-		for (int i = 100; i <= 1; i -= 5) {
-
-			System.out.println(i);
-
+//		for (int i = 100; i <= 1; i -= 5) {
+//
+//			System.out.println(i);
+//
+//		}
+		
+		// check the condition of the num * i 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any Number : ");
+		int num = sc.nextInt();
+		
+		for(int i = 1; i <=10; i++) {
+			System.out.println(num+" * "+i+ " = " +num * i);
 		}
 	}
 
