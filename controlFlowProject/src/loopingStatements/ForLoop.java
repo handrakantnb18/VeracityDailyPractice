@@ -23,11 +23,17 @@ public class ForLoop {
 //		}
 
 		// checked Even numbers
-		for (int i = 1; i <= 10; i++) {
-			if (i % 2 == 0) {
+//		for (int i = 1; i <= 10; i++) {
+//			if (i % 2 == 0) {
+//				System.out.println(i);
+//			}
+//
+//		}
+
+		for (int i = 1; i <= 50; i++) {
+			if (i % 2 != 0) {
 				System.out.println(i);
 			}
-
 		}
 	}
 
