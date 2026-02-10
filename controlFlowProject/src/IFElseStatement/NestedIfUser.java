@@ -25,12 +25,30 @@ public class NestedIfUser {
 			System.out.println("Enter the amount for deposite. ");
 
 			double amount = sc.nextDouble();
+			if (amount > 0) {
+				bankBalance += amount;
 
-			bankBalance += amount;
-			
-			System.out.println("Deposite success : "+bankBalance);
+				System.out.println("Deposite success : " + bankBalance);
+
+			} else {
+				System.out.println("Invalid amount.");
+			}
+		} else if (choice == 2) {
+			System.out.println("Enter the withdraw amount ");
+
+			double amount = sc.nextDouble();
+
+			if (amount > 0) {
+				bankBalance -= amount;
+
+				System.out.println("Withdraw success.");
+
+			} else {
+				System.out.println("Invalid amount.");
+			}
 
 		}
+		
 
 	}
 
