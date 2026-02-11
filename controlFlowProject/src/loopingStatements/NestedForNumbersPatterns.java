@@ -73,11 +73,22 @@ public class NestedForNumbersPatterns {
 		
 		// create number of the lines
 		
-		for( int i = 1; i <= 2; i++)
+//		for( int i = 1; i <= 2; i++)
+//		{
+//			for(int j = 97; j <= 122; j++)
+//			{
+//				System.out.print((char)j+ " ");
+//			}
+//			System.out.println();
+//		}
+		
+		// print using char data type horizontally
+		
+		for (char c='A'; c <= 'E'; c++) 
 		{
-			for(int j = 97; j <= 122; j++)
+			for (int i = 1; i <= 5; i++)
 			{
-				System.out.print((char)j+ " ");
+				System.out.print(c+" ");
 			}
 			System.out.println();
 		}
