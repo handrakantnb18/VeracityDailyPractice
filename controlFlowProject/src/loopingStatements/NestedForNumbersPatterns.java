@@ -62,9 +62,20 @@ public class NestedForNumbersPatterns {
 		
 		// using = j char data type type conversion done Alphabets as ASCII Value
 	
-		for( int i = 97; i <= 101; i++)
+//		for( int i = 97; i <= 101; i++)
+//		{
+//			for(int j = 97; j <= 101; j++)
+//			{
+//				System.out.print((char)j+ " ");
+//			}
+//			System.out.println();
+//		}
+		
+		// create number of the lines
+		
+		for( int i = 1; i <= 2; i++)
 		{
-			for(int j = 97; j <= 101; j++)
+			for(int j = 97; j <= 122; j++)
 			{
 				System.out.print((char)j+ " ");
 			}
