@@ -82,16 +82,28 @@ public class NestedForNumbersPatterns {
 //			System.out.println();
 //		}
 		
-		// print using char data type horizontally
+//		// print using char data type horizontally
+//		
+//		for (char c='A'; c <= 'E'; c++) 
+//		{
+//			for (int i = 1; i <= 5; i++)
+//			{
+//				System.out.print(c+" ");
+//			}
+//			System.out.println();
+//		}
 		
-		for (char c='A'; c <= 'E'; c++) 
-		{
-			for (int i = 1; i <= 5; i++)
-			{
-				System.out.print(c+" ");
-			}
-			System.out.println();
-		}
+		
+		// print using char data type vortically
+		
+				for (int i= 1; i<= 5; i++) 
+				{
+					for (char c='A'; c<= 'E'; c++)
+					{
+						System.out.print(c+" ");
+					}
+					System.out.println();
+				}
 	}
 
 }
