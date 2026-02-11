@@ -18,21 +18,37 @@ public class NestedForNumbersPatterns {
 		
 		// checking the condition print 3rd line * and &
 		
-		for (int i = 1; i <=5; i++) {
-			for(int j = 1; j <= 5; j++) {
-				if( i == 3) {
-					System.out.print("* ");
-				}
-				else if(j == 3) {
-					System.out.print("& ");
-				}
-				else {
-					System.out.print(j+ " ");
-				}
-				
+//		for (int i = 1; i <=5; i++) {
+//			for(int j = 1; j <= 5; j++) {
+//				if( i == 3) {
+//					System.out.print("* ");
+//				}
+//				else if(j == 3) {
+//					System.out.print("& ");
+//				}
+//				else {
+//					System.out.print(j+ " ");
+//				}
+//				
+//			}
+//			System.out.println();
+//		}
+		
+		
+		
+		// print 1 to 25 all numbers using num variable
+		
+		int num = 1;
+		for (int i = 1; i <= 4; i++) 
+		{
+			for (int j = 1; j <= 5; j++) 
+			{
+				System.out.print(num + " ");
+				num++;
 			}
 			System.out.println();
 		}
+		
 	}
 
 }
