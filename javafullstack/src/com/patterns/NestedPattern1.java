@@ -1,5 +1,5 @@
 package com.patterns;
-
+// 11/02/2026
 public class NestedPattern1 {
 	
 	public static void main(String[] args) {
