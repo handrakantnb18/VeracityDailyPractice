@@ -44,28 +44,60 @@ public class WhileLoopFirst {
 		// re-comemnded while loop
 		// simple Enter ATM PIN limited pin and access denied to check 
 		
-		int correctPin = 1818;
+//		int correctPin = 1818;
+//		Scanner sc = new Scanner(System.in);
+//		
+//		int attempt = 0;
+//		
+//		while(attempt < 3) {
+//			System.out.println("Enter ATM PIN : ");
+//			int pin = sc.nextInt();
+//			
+//			if(correctPin == pin) {
+//				System.out.println("Access Granted..");
+//				break; // it is used to end your loop
+//			}
+//			else {
+//				attempt++;
+//				System.out.println("Wrong pin... Attempt Left "+(3-attempt));
+//				
+//				if(attempt == 3) {
+//					System.out.println("Card Blocked.. due to multiple attempts.");
+//				}
+//			}
+//			
+//		}
+		
+		
+		// Login system - userName and Password
+		
+		// Take userName and password from user until its correct
+		
 		Scanner sc = new Scanner(System.in);
 		
-		int attempt = 0;
+		String userName = "Chandr";
+		String password = "1818";
 		
-		while(attempt < 3) {
-			System.out.println("Enter ATM PIN : ");
-			int pin = sc.nextInt();
+		String uname, pwd;
+		
+		while(true)
+		{
+			System.out.println("Enter User Name : ");
+			uname = sc.next();
 			
-			if(correctPin == pin) {
-				System.out.println("Access Granted..");
-				break; // it is used to your loop
+			System.out.println("Enter password : ");
+			pwd = sc.next();
+			
+			if(userName.equals(uname) && password.equals(pwd))
+			{
+				System.out.println("Login Successfull.");
+				break;
 			}
-			else {
-				attempt++;
-				System.out.println("Wrong pin... Attempt Left "+(3-attempt));
+			else 
+			{
+				System.out.println("Invalid username and password.. Try again.");
 				
-				if(attempt == 3) {
-					System.out.println("Card Blocked.. due to multiple attempts.");
-				}
 			}
-			
 		}
 	}
 }
