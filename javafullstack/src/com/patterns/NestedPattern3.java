@@ -26,7 +26,6 @@ public class NestedPattern3 {
 				{
 					System.out.print("* ");
 				}
-				
 			}
 			System.out.println();
 		}
