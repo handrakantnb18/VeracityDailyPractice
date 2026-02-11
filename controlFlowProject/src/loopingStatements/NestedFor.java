@@ -18,13 +18,45 @@ public class NestedFor {
 		
 		// print * in pattern
 		
+//		for (int i = 1; i <= 5; i++) {
+//
+//			for (int j = 1; j <= 5; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}
+		
+		// using if statement change the ROW or COLUMN diffrent conditons
+				
 		for (int i = 1; i <= 5; i++) {
 
 			for (int j = 1; j <= 5; j++) {
-				System.out.print("* ");
+				
+				if (i == 3) {
+					System.out.print("0 ");
+				}
+				else {
+					System.out.print("* ");
+				}
+				
 			}
 			System.out.println();
 		}
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
