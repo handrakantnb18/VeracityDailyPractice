@@ -8,10 +8,20 @@ public class NestedFor {
 
 		// Nested for loop first patter program
 
+//		for (int i = 1; i <= 5; i++) {
+//
+//			for (int j = 1; j <= 5; j++) {
+//				System.out.print("A | ");
+//			}
+//			System.out.println();
+//		}
+		
+		// print * in pattern
+		
 		for (int i = 1; i <= 5; i++) {
 
 			for (int j = 1; j <= 5; j++) {
-				System.out.print("A | ");
+				System.out.print("* ");
 			}
 			System.out.println();
 		}
