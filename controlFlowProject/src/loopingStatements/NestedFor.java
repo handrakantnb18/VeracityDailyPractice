@@ -53,11 +53,28 @@ public class NestedFor {
 		
 		// print even number $ sign
 		
+//		for (int i = 1; i <= 5; i++) {
+//
+//			for (int j = 1; j <= 5; j++) {
+//				
+//				if (j % 2 == 0) {
+//					System.out.print("$ ");
+//				}
+//				else {
+//					System.out.print("* ");
+//				}				
+//				
+//			}
+//			System.out.println();
+//		}
+		
+		// print Odd numbers $ sign
+		
 		for (int i = 1; i <= 5; i++) {
 
 			for (int j = 1; j <= 5; j++) {
 				
-				if (j % 2 == 0) {
+				if (j % 2 != 0) {
 					System.out.print("$ ");
 				}
 				else {
