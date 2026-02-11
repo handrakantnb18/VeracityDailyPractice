@@ -36,10 +36,10 @@ public class NestedForNumbersPatterns {
 		
 		
 		
-		// print 1 to 25 all numbers using num variable
+		// print 1 to 20 all numbers using num variable
 		
-		int num = 1;
-		for (int i = 1; i <= 4; i++) 
+		
+		for (int i = 1, num = 1; i <= 4; i++) 
 		{
 			for (int j = 1; j <= 5; j++) 
 			{
