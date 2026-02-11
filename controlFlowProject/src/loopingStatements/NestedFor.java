@@ -6,6 +6,7 @@ public class NestedFor {
 
 	public static void main(String[] args) {
 
+		// start pattern all 
 		// Nested for loop first patter program
 
 //		for (int i = 1; i <= 5; i++) {
@@ -84,20 +85,20 @@ public class NestedFor {
 		
 		// change condition using else if and if
 		
-		for (int i = 1; i <= 5; i++) {
-			for (int j = 1; j <= 5; j++) {
-				if (j == 1) {
-					System.out.print("$ ");
-				}
-				else if (i == 1) {
-					System.out.print("# ");
-				}
-				else {
-					System.out.print("* ");
-				}
-			}
-			System.out.println();
-		}
+//		for (int i = 1; i <= 5; i++) {
+//			for (int j = 1; j <= 5; j++) {
+//				if (j == 1) {
+//					System.out.print("$ ");
+//				}
+//				else if (i == 1) {
+//					System.out.print("# ");
+//				}
+//				else {
+//					System.out.print("* ");
+//				}
+//			}
+//			System.out.println();
+//		}
 		
 	}
 
