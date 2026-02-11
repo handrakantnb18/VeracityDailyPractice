@@ -39,16 +39,26 @@ public class NestedForNumbersPatterns {
 		// print 1 to 20 all numbers using num variable
 		
 		
-		for (int i = 1, num = 1; i <= 4; i++) 
+//		for (int i = 1, num = 1; i <= 4; i++) 
+//		{
+//			for (int j = 1; j <= 5; j++) 
+//			{
+//				System.out.print(num + " ");
+//				num++;
+//			}
+//			System.out.println();
+//		}
+		
+		// using = i char data type type conversion done Alphabets as ASCII Value
+		
+		for (int i = 65; i <=69; i++)
 		{
-			for (int j = 1; j <= 5; j++) 
+			for (int j = 65; j <= 69; j++) 
 			{
-				System.out.print(num + " ");
-				num++;
+				System.out.print((char)i +" ");
 			}
 			System.out.println();
 		}
-		
 	}
 
 }
