@@ -51,11 +51,22 @@ public class NestedForNumbersPatterns {
 		
 		// using = i char data type type conversion done Alphabets as ASCII Value
 		
-		for (int i = 65; i <=69; i++)
+//		for (int i = 65; i <=69; i++)
+//		{
+//			for (int j = 65; j <= 69; j++) 
+//			{
+//				System.out.print((char)i +" ");
+//			}
+//			System.out.println();
+//		}
+		
+		// using = j char data type type conversion done Alphabets as ASCII Value
+	
+		for( int i = 65; i <= 69; i++)
 		{
-			for (int j = 65; j <= 69; j++) 
+			for(int j = 65; j <= 69; j++)
 			{
-				System.out.print((char)i +" ");
+				System.out.print((char)j+ " ");
 			}
 			System.out.println();
 		}
