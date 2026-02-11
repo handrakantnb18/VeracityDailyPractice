@@ -70,10 +70,27 @@ public class NestedFor {
 		
 		// print Odd numbers $ sign 1 - 3 - 5- 7
 		
+//		for (int i = 1; i <= 5; i++) {
+//			for (int j = 1; j <= 5; j++) {
+//				if (j % 2 != 0) {
+//					System.out.print("$ ");
+//				}
+//				else {
+//					System.out.print("* ");
+//				}
+//			}
+//			System.out.println();
+//		}
+		
+		// change condition using else if and if
+		
 		for (int i = 1; i <= 5; i++) {
 			for (int j = 1; j <= 5; j++) {
-				if (j % 2 != 0) {
+				if (j == 1) {
 					System.out.print("$ ");
+				}
+				else if (i == 1) {
+					System.out.print("# ");
 				}
 				else {
 					System.out.print("* ");
@@ -81,6 +98,7 @@ public class NestedFor {
 			}
 			System.out.println();
 		}
+		
 	}
 
 }
