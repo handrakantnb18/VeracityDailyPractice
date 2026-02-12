@@ -32,6 +32,7 @@ public class WhileLoopTwo {
 			int choice = sc.nextInt();
 
 			double discount = 0;
+			double discount1 = 0;
 			
 			if (choice == 1) {
 				System.out.println("Enter Number of Pizza 1- Rs. 400 : ");
@@ -47,11 +48,18 @@ public class WhileLoopTwo {
 					System.out.println("Discount : "+discount);
 				}
 				
+				if (totalAmount >= 1500) 
+				{
+					discount1 = totalAmount * 0.02;
+				}
+				
 				if (pizza > 0) {
 					totalAmount = pizza * 400;
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
-					System.out.println("Total pizza Amount : " +(totalAmount - discount));
+					System.out.println("Total pizza Amount : " +(totalAmount - discount ));
+					
+					System.out.println("\n");
 				} else {
 					System.out.println("Invalid Numbers.");
 					break;
@@ -74,6 +82,7 @@ public class WhileLoopTwo {
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
 					System.out.println("Total Burger Amount : "+(totalAmount - discount));
+					System.out.println("\n");
 				}
 				else
 				{
@@ -98,6 +107,7 @@ public class WhileLoopTwo {
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
 					System.out.println("Total VadaPav Amount : "+(totalAmount - discount));
+					System.out.println("\n");
 				}
 				else
 				{
@@ -121,6 +131,7 @@ public class WhileLoopTwo {
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
 					System.out.println("Total MisalPav Amount :"+(totalAmount - discount));
+					System.out.println("\n");
 				}
 				else
 				{
@@ -129,7 +140,8 @@ public class WhileLoopTwo {
 				}
 			}
 			else if (choice == 5) {
-				System.out.println("Exit. ");
+				System.out.println("\nExit. ");
+				
 				break;
 			}
 			
