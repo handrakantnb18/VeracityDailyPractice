@@ -128,7 +128,7 @@ public class WhileLoopFirst {
 			int choice = sc.nextInt();
 
 			if (choice == 1) {
-				System.out.println("Enter Deposite Amopunt..");
+				System.out.println("Enter Deposite Amount..");
 				int deposit = sc.nextInt();
 
 				if (deposit > 0) {
