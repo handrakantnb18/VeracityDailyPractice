@@ -6,8 +6,6 @@ public class WhileLoopTwo {
 
 	public static void main(String[] args) {
 
-		// 8, 13, 14, 17, 18, 21, 24, 26, 28
-
 		// online food order system == e-commerce applications
 		// 1. pizza = (Rs. 400)
 		// 2. Burger = (Rs. 250)
@@ -51,6 +49,7 @@ public class WhileLoopTwo {
 				if (pizza > 0) {
 					totalAmount = pizza * 400;
 					discount = totalAmount * 0.10;
+					System.out.println("Total Discount : "+discount);
 					System.out.println("Total pizza : " +(totalAmount - discount));
 				} else {
 					System.out.println("Invalid Numbers.");
@@ -69,6 +68,7 @@ public class WhileLoopTwo {
 				{
 					totalAmount += burger * 250;
 					discount = totalAmount * 0.10;
+					System.out.println("Total Discount : "+discount);
 					System.out.println("Total Burger : "+(totalAmount - discount));
 				}
 				else
@@ -89,6 +89,7 @@ public class WhileLoopTwo {
 				{
 					totalAmount += vadapav * 30;
 					discount = totalAmount * 0.10;
+					System.out.println("Total Discount : "+discount);
 					System.out.println("Total VadaPav : "+(totalAmount - discount));
 				}
 				else
@@ -108,6 +109,7 @@ public class WhileLoopTwo {
 				{
 					totalAmount += misalpav * 100;
 					discount = totalAmount * 0.10;
+					System.out.println("Total Discount : "+discount);
 					System.out.println("Total MisalPav :"+(totalAmount - discount));
 				}
 				else
@@ -123,7 +125,7 @@ public class WhileLoopTwo {
 			
 			else
 			{
-				System.out.println("Invalid Creaditials... please enter 1 - 5 numbers.");
+				System.out.println("Invalid Creadintials... please enter 1 - 5 numbers.");
 			}
 		}
 	}
