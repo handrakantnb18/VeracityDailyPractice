@@ -39,7 +39,7 @@ public class WhileLoopTwo {
 				int pizza = sc.nextInt();
 				
 				System.out.println("\nPizza");
-				System.out.println("\nNumber of Pizza : "+pizza);
+				System.out.println("\nNumber of qty : "+pizza);
 				
 				if (totalAmount >= 5000)
 				{
@@ -66,7 +66,7 @@ public class WhileLoopTwo {
 				int burger = sc.nextInt();
 				
 				System.out.println("\nBurger");
-				System.out.println("\nNumber of Burger : "+burger);
+				System.out.println("\nNumber of qty : "+burger);
 				
 				if (burger > 0)
 				{
@@ -90,7 +90,7 @@ public class WhileLoopTwo {
 				int vadapav = sc.nextInt();
 				
 				System.out.println("\nVadaPav");
-				System.out.println("\nNumber of VadaPav : "+vadapav);
+				System.out.println("\nNumber of qty : "+vadapav);
 				
 				if (vadapav > 0)
 				{
@@ -113,7 +113,7 @@ public class WhileLoopTwo {
 				int misalpav = sc.nextInt();
 				
 				System.out.println("\nMisalPav");
-				System.out.println("\nNumber of MisalPav  : "+misalpav);
+				System.out.println("\nNumber of qty  : "+misalpav);
 				
 				if (misalpav > 0)
 				{
