@@ -147,7 +147,7 @@ public class WhileLoopTwo {
 			
 			else
 			{
-				System.err.println("Invalid Creadintials... please enter 1 to 5.");
+				System.err.println("Invalid Number... please enter 1 to 5.");
 			}
 		}
 	}
