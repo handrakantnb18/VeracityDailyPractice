@@ -15,7 +15,6 @@ public class CheckTemperature {
 		System.out.println("Enter Temperature");
 		int temprature = sc.nextInt();
 
-		
 		if (temprature > 50) {
 			System.out.println("High Temperature...");
 		} else {
@@ -25,13 +24,10 @@ public class CheckTemperature {
 		// check Temperature for simple way
 
 		int Temperature1 = 30;
-		
-		if (Temperature1 > 35)
-		{
+
+		if (Temperature1 > 35) {
 			System.out.println("High Temperature");
-		}
-		else
-		{
+		} else {
 			System.out.println("Low Temperature");
 		}
 
