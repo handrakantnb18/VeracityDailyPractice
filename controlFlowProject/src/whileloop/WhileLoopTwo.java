@@ -38,7 +38,7 @@ public class WhileLoopTwo {
 
 				int pizza = sc.nextInt();
 
-				
+				System.out.println("Number of Pizza : "+pizza);
 				
 				if (totalAmount >= 5000)
 				{
@@ -50,7 +50,7 @@ public class WhileLoopTwo {
 					totalAmount = pizza * 400;
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
-					System.out.println("Total pizza : " +(totalAmount - discount));
+					System.out.println("Total pizza Amount : " +(totalAmount - discount));
 				} else {
 					System.out.println("Invalid Numbers.");
 					break;
@@ -64,12 +64,14 @@ public class WhileLoopTwo {
 				
 				int burger = sc.nextInt();
 				
+				System.out.println("Number of Burger : "+burger);
+				
 				if (burger > 0)
 				{
 					totalAmount += burger * 250;
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
-					System.out.println("Total Burger : "+(totalAmount - discount));
+					System.out.println("Total Burger Amount : "+(totalAmount - discount));
 				}
 				else
 				{
@@ -85,12 +87,14 @@ public class WhileLoopTwo {
 				
 				int vadapav = sc.nextInt();
 				
+				System.out.println("Number of VadaPav : "+vadapav);
+				
 				if (vadapav > 0)
 				{
 					totalAmount += vadapav * 30;
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
-					System.out.println("Total VadaPav : "+(totalAmount - discount));
+					System.out.println("Total VadaPav Amount : "+(totalAmount - discount));
 				}
 				else
 				{
@@ -105,12 +109,14 @@ public class WhileLoopTwo {
 				
 				int misalpav = sc.nextInt();
 				
+				System.out.println("Number of MisalPav  : "+misalpav);
+				
 				if (misalpav > 0)
 				{
 					totalAmount += misalpav * 100;
 					discount = totalAmount * 0.10;
 					System.out.println("Total Discount : "+discount);
-					System.out.println("Total MisalPav :"+(totalAmount - discount));
+					System.out.println("Total MisalPav Amount :"+(totalAmount - discount));
 				}
 				else
 				{
