@@ -13,10 +13,12 @@ public class DoWhile {
 		// Do while loop is Exit control loop
 		
 		
+		// Do While loop  check condition ins change using i++;
 		int i = 1;
 		
 		do {
 			System.out.println("Hello");
+			i++;
 		}while(i <= 10);
 	}
 }
