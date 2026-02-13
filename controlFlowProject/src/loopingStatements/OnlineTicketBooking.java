@@ -6,7 +6,7 @@ public class OnlineTicketBooking {
 
 	public static void main(String[] args) {
 		
-		// Movie Booking table
+		// Movie Booking ticket static app
 		
 				String movie = " ";
 				
