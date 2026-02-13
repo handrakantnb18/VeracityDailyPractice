@@ -7,6 +7,8 @@ public class OnlineTicketBookGlobal {
 	public static void main(String[] args) {
 
 		// Movie Booking ticket Global App
+		
+		// Array, Collection, Object == we can store multiple book  movie
 
 		String movie = " ";
 		int qty = 0;
