@@ -22,7 +22,9 @@ public class StudentMgmtSystem {
 		int choice;
 		int id = 0;
 		int age = 0;
-		String name = " ", address = " ", collageNmae = " ";
+		String name = " ";
+		String address = " ";
+		String collageNmae = " ";
 		double marks = 0;
 		char grade = ' ';
 		
