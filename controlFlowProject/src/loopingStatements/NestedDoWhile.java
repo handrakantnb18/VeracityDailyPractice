@@ -42,6 +42,9 @@ public class NestedDoWhile {
 		
 		// print * pattern
 		
+		
+		// ATM - do while = assignments
+		
 		int i = 1;
 
 		do {
