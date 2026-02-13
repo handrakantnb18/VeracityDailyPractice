@@ -14,10 +14,22 @@ public class DoWhile {
 		
 		
 		// Do While loop  check condition ins change using i++;
+//		int i = 1;
+//		
+//		do {
+//			System.out.println("Hello");
+//			i++;
+//		}while(i <= 10);
+		
+		// print Even and Odd numbers
+		
 		int i = 1;
 		
 		do {
-			System.out.println("Hello");
+			if (i % 2 != 0)
+			{
+				System.out.println(i);
+			}
 			i++;
 		}while(i <= 10);
 	}
