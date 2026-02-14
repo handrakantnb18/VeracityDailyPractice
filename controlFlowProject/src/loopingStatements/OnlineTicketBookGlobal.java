@@ -34,6 +34,7 @@ public class OnlineTicketBookGlobal {
 			System.out.println("3. Bordar 2 - 450Rs");
 			System.out.println("4. Kantara - 200Rs");
 			System.out.println("5. Exit");
+			
 
 			System.out.println(" Enter your choice to book movie tickit (1 - 4)");
 			int choice = sc.nextInt();
