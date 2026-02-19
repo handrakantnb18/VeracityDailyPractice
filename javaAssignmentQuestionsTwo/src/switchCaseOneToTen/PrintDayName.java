@@ -9,6 +9,7 @@ public class PrintDayName {
 		// case.
 
 		// int case= 0;
+		// simple way static days access
 		
 		int day1 = 1;
 		
@@ -30,8 +31,22 @@ public class PrintDayName {
 		case 5:
 			System.out.println("Friday");
 			break;
+		case 6:
+			System.out.println("Saturday");
+			break;
+			
+		case 7:
+			System.out.println("Sunday");
+			break;
+			
+			default :
+				System.out.println("Enter 1 to 7 numbers. ");
+				break;
 		}
 
+		// to print day name using day number (1–7) using switch
+		// using sacnner class to fetch data from users
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Day ");
 		int day = sc.nextInt();
