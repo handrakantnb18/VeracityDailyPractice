@@ -17,7 +17,6 @@ public class CalculaterTwo {
 
 		System.out.println("Operator is : ");
 		char operator = sc.next().charAt(0);
-		
 
 		double res;
 
