@@ -10,10 +10,9 @@ public class EvenOddNumbers {
 			if (i % 2 == 0) {
 				System.out.print("Even Number : " + i);
 			}
-			else
-			{
-				System.out.print("Odd number  : "+i);
-			}
+			/*
+			 * else { System.out.print("Odd number  : "+i); }
+			 */
 			System.out.println();
 		}
 	}
