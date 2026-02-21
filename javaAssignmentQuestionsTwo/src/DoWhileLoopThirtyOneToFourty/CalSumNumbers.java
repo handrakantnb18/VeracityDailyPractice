@@ -6,6 +6,7 @@ public class CalSumNumbers {
 	public static void main(String[] args) {
 
 		// 34. Calculate sum of numbers from 1 to 50 using do-while loop.
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Number : ");
 		
@@ -14,10 +15,11 @@ public class CalSumNumbers {
 		
 		do
 		{
-			a = a +b;
-			b++;
-		}while(b <= 20);
-		System.out.println("Sum : ");
+			b = b + a;
+			a++;
+		}while(a <= 20);
+		System.out.println("Sum : "+b);
+		
 		// simple way
 
 //		int i = 1;
