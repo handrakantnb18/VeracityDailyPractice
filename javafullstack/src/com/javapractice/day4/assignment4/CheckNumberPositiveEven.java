@@ -11,6 +11,7 @@ public class CheckNumberPositiveEven {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter number : ");
+		
 		int num = sc.nextInt();
 		
 		if(num > 0)
@@ -28,5 +29,6 @@ public class CheckNumberPositiveEven {
 		{
 			System.out.println("Number is not positive.");
 		}
+		
 	}
 }
