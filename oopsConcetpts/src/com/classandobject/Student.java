@@ -4,14 +4,17 @@ public class Student {
 
 	// variables 
 	
-	int id = 1;
-	String name = "Chandrakant";
-	
+//	int id = 1;
+//	String name = "Chandrakant";
+//	
 	// function
+	
+	int id;
+	String name;
 	
 	void add()
 	{
-		
+		System.out.println("Add method.");
 	}
 	
 	public static void main(String[] args) {
@@ -21,14 +24,26 @@ public class Student {
 		
 		Student s1 = new Student();
 		// memory address find
+		s1.id = 101;
+		s1.name = "Chandra";
 		
-		System.out.println(s1);
+		System.out.println(s1.id);
+		System.out.println(s1.name);
 		
+		System.out.println();
 		Student s2 = new Student();
-		System.out.println(s2);
+		s2.id = 102;
+		s2.name = "Priyanka";
 		
+		System.out.println(s2.id);
+		System.out.println(s2.name);
+		
+		System.out.println();
 		Student s3 = new Student();
-		System.out.println(s3);
+		s3.id = 103;
+		s3.name = "Bhosale";
+		System.out.println(s3.id);
+		System.out.println(s3.name);
 		
 		
 	}
