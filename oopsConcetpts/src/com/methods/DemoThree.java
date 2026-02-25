@@ -7,6 +7,7 @@ public class DemoThree {
 
 	int add() {
 		return 100;
+		
 	}
 	
 	String get()
