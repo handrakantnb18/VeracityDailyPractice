@@ -26,6 +26,7 @@ public class Employee {
 	{
 		salary = newSalary;
 	}
+	
 	public static void main(String[] args) {
 		
 		Employee.get();
