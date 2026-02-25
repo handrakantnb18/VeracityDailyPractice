@@ -29,5 +29,7 @@ public class DemoThree {
 
 		int i = d3.x();
 		System.out.println(i);
+		
+		
 	}
 }
