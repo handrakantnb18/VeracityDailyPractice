@@ -3,7 +3,7 @@ package com.constructor;
 public class User {
 
 	
-	// parameterized constructor is created username, password, email
+	// parameterized constructor is created username, password, email, age
 	
 	String username;
 	String password;
