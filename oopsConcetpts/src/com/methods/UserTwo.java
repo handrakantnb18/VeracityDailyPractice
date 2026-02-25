@@ -8,6 +8,9 @@ public class UserTwo {
 	String password;
 	String email;
 	
+	// product - id, name, price, quantity - 5 object
+	// book - id, name, price, auther 5 object
+	
 	void set(String username, String password, String email)
 	{
 		this.username = username;
@@ -31,7 +34,8 @@ public class UserTwo {
 //		user1.username = "Chandrakant";
 //		user1.password = "123456";
 //		user1.email = "chandrakant@hmail.com";
-//		
+//		user1.show();
+		
 //		System.out.println(user1.username);
 //		System.out.println(user1.password);
 //		System.out.println(user1.email);
@@ -42,7 +46,7 @@ public class UserTwo {
 //		user2.username = "Vijay";
 //		user2.password = "987654";
 //		user2.email = "vijay@gmail.com";
-//		
+//		user2.show();
 		
 //		System.out.println(user2.username);
 //		System.out.println(user2.password);
@@ -54,7 +58,8 @@ public class UserTwo {
 //		user3.username = "Ram";
 //		user3.password = "987123";
 //		user3.email = "ram@gmail.com";
-//		
+//		user3.show();
+		
 //		System.out.println(user3.username);
 //		System.out.println(user3.password);
 //		System.out.println(user3.email);
