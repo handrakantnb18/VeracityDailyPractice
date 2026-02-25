@@ -5,6 +5,11 @@ public class DemoFour {
 	
 	// 4) method with return type and with parameter
 	
+//	double add(int x, int y)
+//	{
+//		return x * 0.02;
+//	}
+	
 	int add(int a, int b)
 	{
 		return a+ b;
