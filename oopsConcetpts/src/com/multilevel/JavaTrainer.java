@@ -2,16 +2,25 @@ package com.multilevel;
 
 public class JavaTrainer extends Trainer{
 
+	
+	
+	JavaTrainer(int trainerId, String subject, String name, int age, String address, String project) {
+		super(trainerId, subject, name, age, address);
+		this.porject = project;
+		showJavaTrainer();
+		
+		//System.out.println("JavaTrainer 2 param constructor");
+	}
 	String porject;
 	
-	void setJavaTrainerData(String project, int trainerId, String subject, String name, int age, String address)
-	{
-		this.porject = project;
-		super.setTrainerData(trainerId, subject, name, age, address);
+//	void setJavaTrainerData(String project, int trainerId, String subject, String name, int age, String address)
+//	{
+//		this.porject = project;
+//		super.setTrainerData(trainerId, subject, name, age, address);
 //		super.trainerId = trainerId;
 //		super.subject = subject;
 //				
-	}
+//	}
 	
 	void showJavaTrainer()
 	{
@@ -21,16 +30,16 @@ public class JavaTrainer extends Trainer{
 	
 	public static void main(String[] args) {
 		
-		JavaTrainer j = new JavaTrainer();
+		 new JavaTrainer(1111, "java", "Chandrakant", 25, "Pune", "Java project");
 		
 		//j.setPersonData("Chandraknt", 20, "Pune");
 		// j.setTrainerData(11111, "Chandra B");
 		
-		j.setJavaTrainerData("Java Project", 1011, "Java", "Chandraknt", 25, "Pune");
+		//j.setJavaTrainerData("Java Project", 1011, "Java", "Chandraknt", 25, "Pune");
 		
 		//j.showPerson();
 		//j.showTrainer();
-		j.showJavaTrainer();
+		// j.showJavaTrainer();
 		
 		// using fields to create simple access
 //		j.name = "Chandraaknt";
