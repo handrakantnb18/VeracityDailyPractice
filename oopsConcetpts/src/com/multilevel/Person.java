@@ -7,12 +7,22 @@ public class Person {
 	int age;
 	String address;
 	
-	void setPersonData(String name, int age, String address)
+	Person(String name, int age, String address)
 	{
 		this.name = name;
 		this.age = age;
 		this.address = address;
+		
+		//System.out.println("Person 0 param constructor.");
 	}
+	
+	
+//	void setPersonData(String name, int age, String address)
+//	{
+//		this.name = name;
+//		this.age = age;
+//		this.address = address;
+//	}
 	
 	void showPerson()
 	{
