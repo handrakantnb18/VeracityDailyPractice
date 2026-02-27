@@ -7,11 +7,11 @@ public class Employee {
 	
 	void work()
 	{
-		System.out.println("Employee id");
+		System.out.println("Employee is working.");
 	}
 	
 	void eat()
 	{
-		System.out.println("Employee name.");
+		System.out.println("Employee is eating.");
 	}
 }
