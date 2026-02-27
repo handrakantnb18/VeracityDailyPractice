@@ -4,13 +4,18 @@ public class JavaTrainer extends Trainer{
 
 	String porject;
 	
-	void setJavaTrainerData(String project)
+	void setJavaTrainerData(String project, int trainerId, String subject, String name, int age, String address)
 	{
 		this.porject = project;
+		super.setTrainerData(trainerId, subject, name, age, address);
+//		super.trainerId = trainerId;
+//		super.subject = subject;
+//				
 	}
 	
 	void showJavaTrainer()
 	{
+		showTrainer();
 		System.out.println("Project     : "+porject);
 	}
 	
@@ -18,13 +23,13 @@ public class JavaTrainer extends Trainer{
 		
 		JavaTrainer j = new JavaTrainer();
 		
-		j.setPersonData("Chandraknt", 20, "Pune");
-		j.showPerson();
+		//j.setPersonData("Chandraknt", 20, "Pune");
+		// j.setTrainerData(11111, "Chandra B");
 		
-		j.setTrainerData(11111, "Chandra B");
-		j.showTrainer();
+		j.setJavaTrainerData("Java Project", 1011, "Java", "Chandraknt", 25, "Pune");
 		
-		j.setJavaTrainerData("Java Project");
+		//j.showPerson();
+		//j.showTrainer();
 		j.showJavaTrainer();
 		
 		// using fields to create simple access
