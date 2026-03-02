@@ -4,27 +4,45 @@ public class Student {
 
 	
 	// simple polymorphism prigram
-	// if class having two or more methods with the same name but different parameters
-	
-	void study()
-	{
-		System.out.println("Student doing study using mobile");
-	}
+	// if cl.ass having two or more methods with the same name but different parameters
+//	
+//	void study()
+//	{
+//		System.out.println("Student doing study using mobile");
+//	}
+//	
+//	void study(int i)
+//	{
+//		System.out.println("Student doing study using laptop");
+//	}
+//	
+//	void study(int i, int j)
+//	{
+//		System.out.println("Student doing study using tab");
+//	}
+//	
+//	
+	// type of parameter different
 	
 	void study(int i)
 	{
-		System.out.println("Student doing study using laptop");
+		System.out.println("Type of parameter int");
 	}
 	
-	void study(int i, int j)
+	void study(String a)
 	{
-		System.out.println("Student doing study using tab");
+		System.out.println("Type of parameter String");
 	}
+	
 	
 	public static void main(String[] args) {
 		Student s1 = new Student();
-		s1.study();
+//		s1.study();
+//		s1.study(18);
+//		s1.study(13, 06);
+		
 		s1.study(18);
-		s1.study(13, 06);
+		s1.study("ABC");
+    
 	}
 }
