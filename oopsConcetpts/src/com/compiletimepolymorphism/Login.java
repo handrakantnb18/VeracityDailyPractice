@@ -22,7 +22,9 @@ public class Login {
 		else
 		{
 			System.out.println("Login fail");
+			// return 0;
 		}
+		// return 0;
 	}
 	
 	void login(String username, String password)
@@ -35,6 +37,7 @@ public class Login {
 		{
 			System.out.println("Login failed");
 		}
+		// return 0;
 	}
 	
 	void login(String gmail)
