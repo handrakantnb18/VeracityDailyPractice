@@ -7,6 +7,7 @@ public class Payment {
 	void pay()
 	{
 		
+		System.out.println("pay using general payment mode.");
 	}
 	
 	
