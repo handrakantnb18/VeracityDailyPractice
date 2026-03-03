@@ -8,6 +8,11 @@ public class Student {
 	
 	public int id = 18;
 	
+	
+	// protected variable, method, constructor allow to access 
+	
+	// protected int id = 18;
+	
 	// default modifiers access only same package not outside package
 	
 	// int id = 18;
@@ -19,12 +24,27 @@ public class Student {
 		
 	}
 	
+	// protected
+	
+//	protected Student()
+//	{
+//		
+//	}
+//	
+	
 	// method call acces public same package and import package
 	
 	public void m1()
 	{
 		
 	}
+	
+	// protected
+//	protected void m1()
+//	{
+//		
+//	}
+//	
 	
 	public static void main(String[] args) {
 		
