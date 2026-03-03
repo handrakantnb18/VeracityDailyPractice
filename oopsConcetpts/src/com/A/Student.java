@@ -15,12 +15,19 @@ public class Student {
 		
 	}
 	
+	// method call acces public same package and import package
 	
+	public void m1()
+	{
+		
+	}
 	
 	public static void main(String[] args) {
 		
 		Student s1 = new Student();
 		
 		System.out.println(s1.id);
+		
+		s1.m1();
 	}
 }
