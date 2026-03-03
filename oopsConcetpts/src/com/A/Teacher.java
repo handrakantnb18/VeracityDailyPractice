@@ -11,5 +11,9 @@ public class Teacher {
 		// accessed different class variables
 		
 		System.out.println(s1.id);
+		
+		// access same package object call
+		
+		s1.m1();
 	}
 }
