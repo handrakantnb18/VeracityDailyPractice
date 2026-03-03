@@ -8,6 +8,14 @@ public class Demo {
 	
 	final String name = "Chandrakant";
 	
+	
+	// method final then we can not access / override
+	
+	final void house()
+	{
+		System.out.println("1 BHK");
+	}
+	
 	public static void main(String[] args) {
 		
 		// final variable can not access other variables
