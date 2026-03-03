@@ -5,4 +5,38 @@ package com.abstraction;
 
 public abstract class Student {
 
+	// created methods and variable static but object not created
+	
+	public Student()
+	{
+		
+	}
+	
+	int id;
+	
+	static String name = "ABC";
+	
+	void m1()
+	{
+		
+	}
+	
+	static void m2()
+	{
+		
+	}
+	
+	abstract void login(int x);
+	
+	abstract void register();
+	
+	abstract void work();
+	
+	
+	
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		
+		
+	}
 }
