@@ -8,7 +8,11 @@ public class User {
 	
 	public static void main(String[] args) {
 		
-		Student s3 = new Student();
+		Student s1 = new Student();
+		
+		// accessed different class and package variables
+		
+		System.out.println(s1.id);
 	}
 
 }
