@@ -8,6 +8,10 @@ public class Student {
 	
 	public int id = 18;
 	
+	// default modifiers access only same package not outside package
+	
+	// int id = 18;
+	
 	// constructor access by using public keyword same package and import package
 	
 	public Student()
