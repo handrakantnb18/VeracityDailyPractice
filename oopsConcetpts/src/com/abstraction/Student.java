@@ -9,7 +9,7 @@ public abstract class Student {
 	
 	public Student()
 	{
-		
+		System.out.println("Student constructor.");
 	}
 	
 	int id;
@@ -26,6 +26,10 @@ public abstract class Student {
 		
 	}
 	
+	// abstract multiple methods created access in child class
+	
+	abstract void chat(String sender, String reciever);
+		
 	abstract void login(int x);
 	
 	abstract void register();
@@ -35,7 +39,8 @@ public abstract class Student {
 	
 	
 	public static void main(String[] args) {
-		Student s1 = new Student();
+		
+		// Student s1 = new Student();
 		
 		
 	}
