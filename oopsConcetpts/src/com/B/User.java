@@ -13,6 +13,10 @@ public class User {
 		// accessed different class and package variables
 		
 		System.out.println(s1.id);
+		
+		// access different package public keyword
+		
+		s1.m1();
 	}
 
 }
