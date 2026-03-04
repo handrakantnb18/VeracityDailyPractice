@@ -21,6 +21,8 @@ public interface Test {
 //	}
 //	
 	
+	// abstract method
+	
 	void login(); // public abstract
 	
 	public abstract void register();
