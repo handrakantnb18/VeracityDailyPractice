@@ -21,6 +21,9 @@ public interface Test {
 //	}
 //	
 	
+	void login(); // public abstract
+	
+	public abstract void register();
 	
 	public static void main(String[] args) {
 		System.out.println(Test.id);
