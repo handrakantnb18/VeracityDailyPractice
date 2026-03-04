@@ -21,14 +21,14 @@ public interface Test {
 //	}
 //	
 	
-	// abstract method
+	// abstract method public abstract static
 	
 	void login(); // public abstract
 	
 	public abstract void register();
 	
-	public static void main(String[] args) {
-		System.out.println(Test.id);
-	}
+//	public static void main(String[] args) {
+//		System.out.println(Test.id);
+//	}
 	
 }
