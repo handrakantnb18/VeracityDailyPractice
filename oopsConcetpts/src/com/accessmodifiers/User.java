@@ -24,17 +24,18 @@ public class User {
 	 
 	// private modifiers
 	
-	private int id = 101;
-	private String name= "Chandrakant";
-	
-	private void display()
-	{
-		 int age = 25;
-	}
+//	private int id = 101;
+//	private String name= "Chandrakant";
+//	
+//	private void display()
+//	{
+//		 int age = 25;
+//	}
 
-	// abstract void add();
+	// abstract method
+	 abstract void add();
 	
-	// protected modifiers
+	 protected modifiers
 	
 //	protected int id = 101;
 //	protected String name= "Chandrakant";
