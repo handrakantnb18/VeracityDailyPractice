@@ -2,6 +2,8 @@ package com.interface4;
 
 public interface DemoOne {
 
+	void login();
+	
 	static void m1()
 	{
 		System.out.println("Static method");
