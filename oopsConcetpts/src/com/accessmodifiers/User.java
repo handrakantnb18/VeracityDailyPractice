@@ -33,9 +33,9 @@ public class User {
 //	}
 
 	// abstract method
-	 abstract void add();
-	
-	 protected modifiers
+//	 abstract void add();
+//	
+//	 protected modifiers
 	
 //	protected int id = 101;
 //	protected String name= "Chandrakant";
