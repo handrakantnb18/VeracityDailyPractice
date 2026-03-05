@@ -3,9 +3,13 @@ package com.accessmodifiers;
 public class User {
 
 	// default modifiers
-//	int id = 101;
-//	String name= "Chandrakant";
-//	
+	int id = 101;
+	String name= "Chandrakant";
+	
+	  void display()
+		{
+			 int age = 25;
+		}
 	
 	// public modifiers
 	
@@ -21,22 +25,24 @@ public class User {
 	
 	// protected modifiers
 	
-	protected int id = 101;
-	protected String name= "Chandrakant";
-	
-	
-	 protected void display()
-	{
-		 int age = 25;
-	}
-	
-	 protected User()
-	 {
-		 System.out.println("Chandraknt");
-	 }
-	 
+//	protected int id = 101;
+//	protected String name= "Chandrakant";
+//	
+//	
+//	 protected void display()
+//	{
+//		 int age = 25;
+//	}
+//	
+//	 protected User()
+//	 {
+//		 System.out.println("Chandraknt");
+//	 }
+//	 
 	
 	public static void main(String[] args) {
+		User u = new User();
+		
 		
 	}
 }
