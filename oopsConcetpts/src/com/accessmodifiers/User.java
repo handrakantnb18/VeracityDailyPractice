@@ -3,20 +3,25 @@ package com.accessmodifiers;
 public class User {
 
 	// default modifiers
-	int id = 101;
-	String name= "Chandrakant";
+//	int id = 101;
+//	String name= "Chandrakant";
+//	
+//	  void display()
+//		{
+//			 int age = 25;
+//		}
+//	
+	// public modifiers
 	
-	  void display()
+	public int id = 101;
+	public String name= "Chandrakant";
+	
+	 public void display()
 		{
 			 int age = 25;
 		}
 	
-	// public modifiers
-	
-//	public int id = 101;
-//	public String name= "Chandrakant";
-//	
-	
+	 
 	// private modifiers
 //	private int id = 101;
 //	private String name= "Chandrakant";
