@@ -4,15 +4,15 @@ package com.accessmodifiers;
 
 	 // default modifiers
 	 
-	 int age = 25;
-	 String name = "Chandrakant";
+	 // int age = 25;
+	 // String name = "Chandrakant";
 	 
 	 
 	 // public modifiers
 	 
-//	 public int age = 25;
-//	 public String name = "Chandrakant";
-//	 
+	 public int age = 25;
+	 public String name = "Chandrakant";
+	 
 	 // private modifiers
 	 
 //	 private int age = 25;
@@ -34,18 +34,18 @@ package com.accessmodifiers;
 //	 
 	  // default modifiers
 	 
-	 void display()
-	 {
-		 
-	 }
+//	 void display()
+//	 {
+//		 
+//	 }
 	 
 	 //
 	 
-//	 public void  display()
-//	 {
-//		 int id = 101;
-//	 }
-//	 
+	 public void  display()
+	 {
+		 int id = 101;
+	 }
+	 
 	 
 	 // abstract method
 	 
