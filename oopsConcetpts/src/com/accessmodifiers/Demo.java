@@ -10,14 +10,14 @@ package com.accessmodifiers;
 	 
 	 // public modifiers
 	 
-	 public int age = 25;
-	 public String name = "Chandrakant";
+	// public int age = 25;
+	 // public String name = "Chandrakant";
 	 
 	 // private modifiers
 	 
-//	 private int age = 25;
-//	 private String name = "Chandrakant";
-//	 
+	 private int age = 25;
+	 private String name = "Chandrakant";
+	 
 	 // default modifiers
 	 
 //	 Demo()
