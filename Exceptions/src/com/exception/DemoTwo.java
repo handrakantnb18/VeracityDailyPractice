@@ -18,7 +18,10 @@ public class DemoTwo {
 		}
 		catch(NullPointerException n)
 		{
-			System.out.println(n.getMessage());
+			System.out.println("Null value assign.");
+			// System.out.println(n.getMessage());
+			// System.out.println(n);
+			n.printStackTrace();
 		}
 		
 	}
