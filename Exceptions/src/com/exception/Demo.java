@@ -14,7 +14,7 @@ public class Demo {
 		}
 		catch(ArithmeticException e)
 		{
-			System.out.println("Dont divide by zero ");
+			System.out.println("Do not divide by zero ");
 			e.getMessage();
 		}
 		System.out.println("I am from pune");
