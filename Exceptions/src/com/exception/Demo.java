@@ -2,7 +2,6 @@ package com.exception;
 
 public class Demo {
 
-	
 	public static void main(String[] args) {
 		// Exception handling
 		
@@ -22,26 +21,26 @@ public class Demo {
 		System.out.println("I am student");
 		System.out.println("I like play cricket");
 		
-		System.out.println("I am from pune");
-		System.out.println("I am student");
-		System.out.println("I like play cricket");
-	
+//		System.out.println("I am from pune");
+//		System.out.println("I am student");
+//		System.out.println("I like play cricket");
+//	
 		
-		System.out.println("I am from pune");
-		System.out.println("I am student");
-		System.out.println("I like play cricket");
-	
-		System.out.println("I am from pune");
-		System.out.println("I am student");
-		System.out.println("I like play cricket");
-	
-		System.out.println("I am from pune");
-		System.out.println("I am student");
-		System.out.println("I like play cricket");
-	
-		System.out.println("I am from pune");
-		System.out.println("I am student");
-		System.out.println("I like play cricket");
+//		System.out.println("I am from pune");
+//		System.out.println("I am student");
+//		System.out.println("I like play cricket");
+//	
+//		System.out.println("I am from pune");
+//		System.out.println("I am student");
+//		System.out.println("I like play cricket");
+//	
+//		System.out.println("I am from pune");
+//		System.out.println("I am student");
+//		System.out.println("I like play cricket");
+//	
+//		System.out.println("I am from pune");
+//		System.out.println("I am student");
+//		System.out.println("I like play cricket");
 	
 	}
 }
