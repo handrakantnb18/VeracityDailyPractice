@@ -2,6 +2,7 @@ package com.abstraction.practice;
 
 abstract class Payment {
 
+	// instance variable
 	//int id = 10;
 	
 	//static String collageName = "Abc";
