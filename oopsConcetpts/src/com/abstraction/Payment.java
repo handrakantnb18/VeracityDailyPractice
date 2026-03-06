@@ -6,6 +6,7 @@ public abstract class Payment {
 	
 	public Payment()
 	{
+	
 		System.out.println("Payment constructor");
 	}
 	// abstract void payAmount();
