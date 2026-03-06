@@ -20,7 +20,8 @@ public class DemoThree {
 		}
 		catch(InputMismatchException i)
 		{
-			System.out.println(i.getMessage());
+			//System.out.println(i.getMessage());
+			i.printStackTrace();
 		}
 	}
 }
