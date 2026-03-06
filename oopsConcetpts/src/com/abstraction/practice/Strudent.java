@@ -18,7 +18,6 @@ abstract class Strudent {
 	
 	
 	// constructor 
-	
 	Strudent()
 	{
 		
