@@ -2,7 +2,7 @@ package com.exception;
 
 public class DemoThrows {
 
-	void fun() throws ArithmeticException
+	void fun() throws ArithmeticException, NegativeArraySizeException, Exception
 	{
 		
 		// yes or NO : throws
@@ -13,7 +13,7 @@ public class DemoThrows {
 		DemoThrows d = new DemoThrows();
 		try
 		{
-			d.fun();
+//			d.fun();
 		}
 		catch (ArithmeticException e) {
 			// TODO: handle exception
