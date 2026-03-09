@@ -7,18 +7,21 @@ public class Demo {
 
 	
 	public static void main(String[] args) {
-		File file = new File("D:\\Veracity\\File Handling\\student.txt");
+		File file = new File("D:\\Veracity\\File Handling\\abc.txt");
 		
 		try
 		{
-		file.createNewFile(); // create new file // compile time Exception
+			if(file.createNewFile())
+			{
+				System.out.println("File created");
+				// create new file // compile time Exception
+			}
 		}
 		catch (IOException e)
 		{
 			System.out.println(e.getMessage());
 		}
 		
-		
-		
+		System.out.println("File already exists");
 	}
 }
