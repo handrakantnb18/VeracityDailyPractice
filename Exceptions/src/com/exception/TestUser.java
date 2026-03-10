@@ -17,7 +17,7 @@ public class TestUser {
 		
 		try
 		{
-			tu.user("gest");
+			tu.user("chandra");
 		}
 		catch(UserNotValidException ua)
 		{
