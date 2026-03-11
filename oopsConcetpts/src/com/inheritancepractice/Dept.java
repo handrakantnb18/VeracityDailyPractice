@@ -1,13 +1,13 @@
 package com.inheritancepractice;
 
-public class Dept extends Employee {
+public class Dept extends Child {
 
 	// Single inheritance
 	
 	void admin()
 	{
-		super.emp();
-		//super.childmain();
+		
+		super.childmain();
 		System.out.println("Child class access prperties from parent");
 	}
 	
@@ -19,7 +19,7 @@ public class Dept extends Employee {
 		d.admin();
 		//d.emp();
 		
-		Child c = new Child();
-		c.childmain();
+		//Child c = new Child();
+		//c.childmain();
 	}
 }
