@@ -11,13 +11,21 @@ public class User {
 		FileWriter fw = null;
 		try
 		{
-			fw = new FileWriter("D:\\Veracity\\File Handling\\abc.txt", true);
+			fw = new FileWriter("D:\\Veracity\\File Handling\\text.txt", true);
+			
+			for(int i = 1; i <= 100; i++)
+			{
+				// fw.write("\nMy name is chandrakant bhosale");
+				// fw.write("\nIntegers : "+i);
+				// fw.write(Integer.toString(i)+ " | ");
+				fw.write("\nValues : "+i);
+			}
 		}
 		catch(IOException eio)
 		{
 			eio.printStackTrace();
 		}
-		finally {// finally is block which is used to close the resources
+		finally {// finally is block which is used to close the resources ex. filewriter, DB connection
 			
 			try
 			{
