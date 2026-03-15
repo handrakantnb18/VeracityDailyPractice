@@ -125,7 +125,32 @@ public class CRUD {
 			int choice =sc.nextInt();
 			sc.nextLine();
 			
-			
+			switch (choice)
+				{
+				case 1:
+					crud.createFile();
+					break;
+					
+				case 2:
+					crud.writeDataIntoFile();
+					break;
+					
+				case 3:
+					crud.readDataFromFile();
+					break;
+					
+				case 4:
+					crud.deleteFile();
+					break;
+					
+				case 5:
+					System.out.println("Exited.");
+					System.exit(0);
+					
+				default :
+					System.out.println("Invalid Choice.");
+						
+				}
 			
 		}
 	}
