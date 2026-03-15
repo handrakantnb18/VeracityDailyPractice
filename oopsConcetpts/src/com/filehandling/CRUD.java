@@ -1,6 +1,7 @@
 package com.filehandling;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -16,7 +17,7 @@ public class CRUD {
 			System.out.println("Enter file name : ");
 			String fileName = sc.nextLine();
 			
-			File f = new File("");
+			File f = new File("D:\\Veracity\\File Handling\\user.txt");
 			
 			if (f.createNewFile())
 			{
@@ -34,14 +35,44 @@ public class CRUD {
 		}
 	}
 	
+	// file delete
+	
 	void writeDataIntoFile()
 	{
-		
+		try
+		{
+			System.out.println("Enter file name : ");
+			String fileName = sc.nextLine();
+			
+			FileWriter fw = new FileWriter("D:\\Veracity\\File Handling\\abc1.txt", true);
+			
+			System.out.println("Enter data to write : ");
+			String data = sc.nextLine();
+			
+			fw.write(data+"\n ");
+			fw.close();
+			
+			System.out.println("Data written successfully");
+			
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
 	}
+	
+	// file read
 	
 	void readDataFromFile()
 	{
-		
+		try
+		{
+			
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
 	}
 	
 	void deleteFile()
