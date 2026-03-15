@@ -36,6 +36,13 @@ public class DemoThree {
 		
 		String s1 = "Chandraaknt ";
 		
+		String s2 = "chandraaknt ";
+		
+//		System.out.println(s1.compareTo(s2)); // check the ascii value there count
+		
+//		System.out.println(s1.compareToIgnoreCase(s2)); // not check the case sensitive
+		
+		
 		
 		
 //		System.out.println(s1.length());
