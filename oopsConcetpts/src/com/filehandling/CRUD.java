@@ -67,13 +67,29 @@ public class CRUD {
 	{
 		try
 		{
+			System.out.println("Enter file name : ");
+			String fileName = sc.nextLine();
 			
+			File file = new File("D:\\Veracity\\File Handling\\user.txt");
+			Scanner sc = new Scanner(file);
+			
+			System.out.println("\nFile Contents..");
+			
+			while (sc.hasNextLine())
+			{
+				System.out.println(sc.nextLine());
+			}
+			
+			sc.close();
 		}
 		catch(IOException e)
 		{
-			System.out.println(e.getMessage());
+			System.out.println("Error reading file.");
 		}
 	}
+	
+	
+	// delete file
 	
 	void deleteFile()
 	{
