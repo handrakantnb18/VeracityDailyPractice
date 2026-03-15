@@ -10,6 +10,7 @@ public class CRUD {
 	Scanner sc = new Scanner(System.in);
 	
 	// file create
+	
 	void createFile()
 	{
 		try
@@ -81,6 +82,7 @@ public class CRUD {
 			}
 			
 			sc.close();
+			
 		}
 		catch(IOException e)
 		{
@@ -114,6 +116,7 @@ public class CRUD {
 		
 		while(true)
 		{
+			System.out.println("===============================");
 			System.out.println("1.create file ");
 			System.out.println("2. WriteFile ");
 			System.out.println("3.ReadFileFromFile ");
