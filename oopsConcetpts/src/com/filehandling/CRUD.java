@@ -118,7 +118,14 @@ public class CRUD {
 			System.out.println("2. WriteFile ");
 			System.out.println("3.ReadFileFromFile ");
 			System.out.println("4.DeleteFile");
-			System.out.println();
+			System.out.println("5.Exit");
+			
+			System.out.println("Enter Choice : ");
+			
+			int choice =sc.nextInt();
+			sc.nextLine();
+			
+			
 			
 		}
 	}
