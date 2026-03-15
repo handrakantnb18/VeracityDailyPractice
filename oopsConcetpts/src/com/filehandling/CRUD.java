@@ -1,10 +1,37 @@
 package com.filehandling;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
 public class CRUD {
 
+	Scanner sc = new Scanner(System.in);
+	
+	// file create
 	void createFile()
 	{
-		
+		try
+		{
+			System.out.println("Enter file name : ");
+			String fileName = sc.nextLine();
+			
+			File f = new File("");
+			
+			if (f.createNewFile())
+			{
+				System.out.println("File created.");
+			}
+			else
+			{
+				System.out.println("File allready exits.");
+			}
+			
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
 	}
 	
 	void writeDataIntoFile()
