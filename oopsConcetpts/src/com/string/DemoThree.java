@@ -50,10 +50,20 @@ public class DemoThree {
 		
 //		System.out.println(s1.contains(" from pune " ));
 		
-		System.out.println(s1.concat(" from pune "));
+//		System.out.println(s1.concat(" from pune "));
 		
 		
+//		System.out.println(s1.toUpperCase());
 		
+//		System.out.println(s1.toLowerCase());
+		
+//		System.out.println(s1.startsWith("C"));
+		
+//		System.out.println(s1.endsWith("t"));
+		
+		System.out.println(s1.isEmpty());
+		
+		System.out.println();
 		
 	}
 }
