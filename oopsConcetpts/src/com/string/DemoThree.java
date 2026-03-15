@@ -34,14 +34,26 @@ public class DemoThree {
 		// .equals check the content / value
 		
 		
-		String s1 = "Chandraaknt";
+		String s1 = "Chandraaknt ";
 		
-		System.out.println(s1.length());
+//		System.out.println(s1.length());
+//		
+//		System.out.println(s1.indexOf('a')); // first index
+//		
+//		System.out.println(s1.lastIndexOf('t'));  // last index
 		
-		System.out.println(s1.indexOf('a')); // first index
+//		System.out.println(s1.charAt(5)); // check char position where this index 
 		
-		System.out.println(s1.lastIndexOf('t'));  // last index
+//		System.out.println(s1.equals("Chandraaknt")); // check char correct or not
 		
-		System.out.println();
+//		System.out.println(s1.equalsIgnoreCase("chandraaknt"));
+		
+//		System.out.println(s1.contains(" from pune " ));
+		
+		System.out.println(s1.concat(" from pune "));
+		
+		
+		
+		
 	}
 }
