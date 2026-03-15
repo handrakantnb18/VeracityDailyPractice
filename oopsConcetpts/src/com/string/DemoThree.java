@@ -15,11 +15,21 @@ public class DemoThree {
 		
 		// it will check the contend of both String
 		
-		String s1 = new String("abc");
+//		String s1 = new String("abc");
+//		
+//		String s2 = new String("abc");
+//		
+//		System.out.println(s1.equals(s2));
 		
-		String s2 = new String("abc");
 		
-		System.out.println(s1.equals(s2));
+		String s1 ="chandrakant"; // scp memory
+		
+		String s2 = new String("chandrakant"); // heap memory
+		
+//		System.out.println(s1 == s2); // false
+		
+		System.out.println(s1.equals(s2)); // true
+		
 		
 	}
 }
