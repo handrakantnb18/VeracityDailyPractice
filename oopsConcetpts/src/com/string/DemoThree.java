@@ -36,6 +36,8 @@ public class DemoThree {
 		
 		String s1 = "Chandraaknt ";
 		
+		
+		
 //		System.out.println(s1.length());
 //		
 //		System.out.println(s1.indexOf('a')); // first index
@@ -61,9 +63,11 @@ public class DemoThree {
 		
 //		System.out.println(s1.endsWith("t"));
 		
-		System.out.println(s1.isEmpty());
+//		System.out.println(s1.isEmpty()); // space will read
 		
-		System.out.println();
+//		System.out.println(s1.isBlank()); // space will not read
+		
+//		System.out.println(s1.trim()); // space remove
 		
 	}
 }
