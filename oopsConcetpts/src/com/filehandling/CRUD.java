@@ -44,7 +44,7 @@ public class CRUD {
 			System.out.println("Enter file name : ");
 			String fileName = sc.nextLine();
 			
-			FileWriter fw = new FileWriter("D:\\Veracity\\File Handling\\abc1.txt", true);
+			FileWriter fw = new FileWriter("D:\\Veracity\\File Handling\\user.txt", true);
 			
 			System.out.println("Enter data to write : ");
 			String data = sc.nextLine();
@@ -70,7 +70,7 @@ public class CRUD {
 			System.out.println("Enter file name : ");
 			String fileName = sc.nextLine();
 			
-			File file = new File("D:\\Veracity\\File Handling\\user.txt");
+			File file = new File(fileName);
 			Scanner sc = new Scanner(file);
 			
 			System.out.println("\nFile Contents..");
@@ -93,10 +93,24 @@ public class CRUD {
 	
 	void deleteFile()
 	{
+		System.out.println("Enter file name : ");
+		String fileName = sc.nextLine();
 		
+		File file = new File(fileName);
+		
+		if(file.delete())
+		{
+			System.out.println("File deleted successfully.....");
+		}
+		else
+		{
+			System.out.println("File not fount.");
+		}
 	}
 	
 	public static void main(String[] args) {
+		CRUD crud = new CRUD();
+		Scanner sc = new Scanner(System.in);
 		
 		while(true)
 		{
@@ -104,6 +118,7 @@ public class CRUD {
 			System.out.println("2. WriteFile ");
 			System.out.println("3.ReadFileFromFile ");
 			System.out.println("4.DeleteFile");
+			System.out.println();
 			
 		}
 	}
