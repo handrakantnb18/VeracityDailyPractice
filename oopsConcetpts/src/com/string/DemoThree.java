@@ -22,14 +22,26 @@ public class DemoThree {
 //		System.out.println(s1.equals(s2));
 		
 		
-		String s1 ="chandrakant"; // scp memory
+//		String s1 ="chandrakant"; // scp memory
 		
-		String s2 = new String("chandrakant"); // heap memory
+//		String s2 = new String("chandrakant"); // heap memory
 		
 //		System.out.println(s1 == s2); // false
 		
-		System.out.println(s1.equals(s2)); // true
+//		System.out.println(s1.equals(s2)); // true
+		
+		// == check the memory
+		// .equals check the content / value
 		
 		
+		String s1 = "Chandraaknt";
+		
+		System.out.println(s1.length());
+		
+		System.out.println(s1.indexOf('a')); // first index
+		
+		System.out.println(s1.lastIndexOf('t'));  // last index
+		
+		System.out.println();
 	}
 }
