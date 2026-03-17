@@ -46,6 +46,14 @@ public class ArrayListDemo {
 		al.add("Vijay");
 		al.add("ram");
 		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("Chandra");
+		al.add("Priyanka");
+		al.add("Vijay");
+		al.add("ram");
+		
+		
+		
 //		System.out.println(al.size()); // size checked
 //		System.out.println(al.get(1));
 //		System.out.println(al.set(1, "ravi"));
@@ -62,7 +70,8 @@ public class ArrayListDemo {
 //		System.out.println(al.indexOf("rama")); // if not available the  -1
 //		System.out.println(al.reversed());
 		
-		
+//		System.out.println(al.getFirst());
+//		System.out.println(al.getLast());
 		
 		
 		// float data type addded
