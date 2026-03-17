@@ -16,6 +16,14 @@ public class Employee {
 
 	
 	
+//	@Override
+//	public String toString() {
+//		return "Employee [id=" + id + ", name=" + name + ", address=" + address + ", salary=" + salary + ", dep=" + dep
+//				+ ", gender=" + gender + "]";
+//	}
+
+
+
 	public Employee(int id, String name, String address, String salary, String dep, String gender) {
 		super();
 		this.id = id;
