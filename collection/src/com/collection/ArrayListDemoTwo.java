@@ -47,17 +47,20 @@ public class ArrayListDemoTwo {
 //			System.out.println(al.get(i));
 //		}
 		
-//		for(Student s : al)
-//		{
-//			System.out.println(s);
-//		}
-		
-		Iterator<Student> itr = al.iterator();
-		
-		while(itr.hasNext())
+		for(Student s : al)
 		{
-			System.out.println(itr.next());
+			System.out.println("Id	: "+s.getId());
+			System.out.println("Name 	: "+s.getName());
+			System.out.println("Address : "+s.getAddress());
+			System.out.println("==================");
 		}
+		
+//		Iterator<Student> itr = al.iterator();
+//		
+//		while(itr.hasNext())
+//		{
+//			System.out.println(itr.next());
+//		}
 		
 		
 	}
