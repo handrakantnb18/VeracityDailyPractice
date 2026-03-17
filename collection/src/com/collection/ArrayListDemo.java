@@ -12,21 +12,21 @@ public class ArrayListDemo {
 		
 		// ArrayList
 		
-		ArrayList<Integer> al = new ArrayList<Integer>();
-		
-		al.add(100);  
-		al.add(200);
-		al.add(450);
-		al.add(244);
-		al.add(350);
-		al.add(900);
-		al.add(900);
-		al.add(600);
-		al.add(null);
-		al.add(null); // null value taken any number of time
-		
-		System.out.println(al.get(1)); // indexing format
-		
+//		ArrayList<Integer> al = new ArrayList<Integer>();
+//		
+//		al.add(100);  
+//		al.add(200);
+//		al.add(450);
+//		al.add(244);
+//		al.add(350);
+//		al.add(900);
+//		al.add(900);
+//		al.add(600);
+//		al.add(null);
+//		al.add(null); // null value taken any number of time
+//		
+//		System.out.println(al.get(1)); // indexing format
+//		
 		// all types of data we can add
 		
 //		ArrayList<Object> al = new ArrayList<Object>();
@@ -40,14 +40,21 @@ public class ArrayListDemo {
 		
 		// String datatype only added
 		
-//		ArrayList<String> al = new ArrayList<String>();
-//		al.add("Chandra");
-//		al.add("Priyanka");
-//		al.add("Vijay");
-//		al.add("ram");
-//		
-//		System.out.println(al);
-//		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("Chandra");
+		al.add("Priyanka");
+		al.add("Vijay");
+		al.add("ram");
+		
+//		System.out.println(al.size()); // size checked
+//		System.out.println(al.get(1));
+//		System.out.println(al.set(1, "ravi"));
+		
+//		System.out.println(al.remove(1));
+//		System.out.println(al.remove("ram"));
+		
+		System.out.println();
+		
 		// float data type addded
 		
 //		ArrayList<Float> al = new ArrayList<Float>();
