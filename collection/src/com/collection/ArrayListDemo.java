@@ -45,15 +45,23 @@ public class ArrayListDemo {
 //		
 		// float data type addded
 		
-		ArrayList<Float> al = new ArrayList<Float>();
-		al.add(45.45f);
-		al.add(55.54f);
-		al.add(99.89f);
-		al.add(4.5f);
+//		ArrayList<Float> al = new ArrayList<Float>();
+//		al.add(45.45f);
+//		al.add(55.54f);
+//		al.add(99.89f);
+//		al.add(4.5f);
+//		
+//		System.out.println(al);
+//		
+		// Charactor data added only
+		
+		ArrayList<Character> al = new ArrayList<Character>();
+		al.add('A');
+		al.add('B');
+		al.add('C');
+		al.add('D');
 		
 		System.out.println(al);
-		
-		
 		
 	}
 }
