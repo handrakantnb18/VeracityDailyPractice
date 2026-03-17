@@ -24,14 +24,25 @@ public class ArrayListDemo {
 		
 		// all types of data we can add
 		
-		ArrayList<Object> al = new ArrayList<Object>();
-		al.add(100);
-		al.add("Chandr");
-		al.add(true);
-		al.add(55.45);
-		al.add('A');
+//		ArrayList<Object> al = new ArrayList<Object>();
+//		al.add(100);
+//		al.add("Chandr");
+//		al.add(true);
+//		al.add(55.45);
+//		al.add('A');
+//		
+//		System.out.println(al);
+		
+		// String datatype only added
+		
+		ArrayList<String> al = new ArrayList<String>();
+		al.add("Chandra");
+		al.add("Priyanka");
+		al.add("Vijay");
+		al.add("ram");
 		
 		System.out.println(al);
+		
 		
 		
 	}
