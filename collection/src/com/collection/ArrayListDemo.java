@@ -1,6 +1,7 @@
 package com.collection;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.ListIterator;
 
@@ -86,17 +87,22 @@ public class ArrayListDemo {
 		// we can use only list
 		// we can iterator list both direction
 		
-		ListIterator<String> ltr = al.listIterator();
+//		ListIterator<String> ltr = al.listIterator();
+//		
+//		while(ltr.hasNext())
+//		{
+//			System.out.println(ltr.next());
+//		}
+//		
+//		System.out.println("===========");
+//		while(ltr.hasPrevious())
+//		{
+//			System.out.println(ltr.previous());
+//		}
 		
-		while(ltr.hasNext())
+		for(String s: al)
 		{
-			System.out.println(ltr.next());
-		}
-		
-		System.out.println("===========");
-		while(ltr.hasPrevious())
-		{
-			System.out.println(ltr.previous());
+			System.out.println(s);
 		}
 		
 		
