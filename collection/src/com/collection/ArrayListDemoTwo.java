@@ -1,6 +1,7 @@
 package com.collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemoTwo {
 
@@ -46,9 +47,18 @@ public class ArrayListDemoTwo {
 //			System.out.println(al.get(i));
 //		}
 		
-		for(Student s : al)
+//		for(Student s : al)
+//		{
+//			System.out.println(s);
+//		}
+		
+		Iterator<Student> itr = al.iterator();
+		
+		while(itr.hasNext())
 		{
-			System.out.println(s);
+			System.out.println(itr.next());
 		}
+		
+		
 	}
 }
