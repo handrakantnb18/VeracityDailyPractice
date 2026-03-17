@@ -35,11 +35,21 @@ public class ArrayListDemo {
 		
 		// String datatype only added
 		
-		ArrayList<String> al = new ArrayList<String>();
-		al.add("Chandra");
-		al.add("Priyanka");
-		al.add("Vijay");
-		al.add("ram");
+//		ArrayList<String> al = new ArrayList<String>();
+//		al.add("Chandra");
+//		al.add("Priyanka");
+//		al.add("Vijay");
+//		al.add("ram");
+//		
+//		System.out.println(al);
+//		
+		// float data type addded
+		
+		ArrayList<Float> al = new ArrayList<Float>();
+		al.add(45.45f);
+		al.add(55.54f);
+		al.add(99.89f);
+		al.add(4.5f);
 		
 		System.out.println(al);
 		
