@@ -17,11 +17,11 @@ public class Employees {
 	
 	
 	
-//	@Override
-//	public String toString() {
-//		return "Employees [id=" + id + ", name=" + name + ", address=" + address + ", salary=" + salary + ", dep=" + dep
-//				+ ", gender=" + gender + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Employees [id=" + id + ", name=" + name + ", address=" + address + ", salary=" + salary + ", dep=" + dep
+				+ ", gender=" + gender + "]";
+	}
 
 	
 	public Employees(int id, String name, String address, String salary, String dep, String gender) {
