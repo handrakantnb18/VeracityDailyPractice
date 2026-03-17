@@ -2,12 +2,32 @@ package com.collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 public class ArrayListDemoTwo {
 
 	public static void main(String[] args) {
 		
+		ArrayList<Employee> employee= new ArrayList<Employee>();
 		
+		employee.add(new Employee(1, "Chandraaknt", "Pune", "540000", "IT", "Male"));
+		employee.add(new Employee(2, "priyanka", "Pune", "550000", "IT", "Female"));
+		employee.add(new Employee(3, "ram", "Pune", "450000", "HR", "Male"));
+		employee.add(new Employee(4, "prakash", "Pune", "350000", "Account", "Male"));
+		employee.add(new Employee(5, "viajay", "mumbai", "250000", "IT", "Male"));
+		employee.add(new Employee(6, "amiee smith", "Pune", "500000", "Software", "Female"));
+		
+		for(Employee emp1 :employee)
+		{
+			System.out.println("\n==============================");
+			
+			System.out.println("Id      : "+emp1.getId());
+			System.out.println("Name    : "+emp1.getName());
+			System.out.println("Address : "+emp1.getAddress());
+			System.out.println("Salary  : "+emp1.getSalary());
+			System.out.println("Dept    : "+emp1.getDep());
+			System.out.println("Gender  : "+emp1.getGender());
+		}
 		
 		
 //		ArrayList<Integer> al = new ArrayList<Integer>();
