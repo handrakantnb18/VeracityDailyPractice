@@ -14,26 +14,26 @@ public class ArrayListDemoTwo {
 //		
 //		System.out.println(al);
 		
-		Student s1 = new Student();
-		s1.setId(1);
-		s1.setName("chandrakant");
-		s1.setAddress("pune");
+		Student s1 = new Student(1, "Chandraaknt","Pune");
+//		s1.setId(1);
+//		s1.setName("chandrakant");
+//		s1.setAddress("pune");
 		
 		
-		Student s2 = new Student();
-		s2.setId(2);
-		s2.setName("priyanka");
-		s2.setAddress("sangli");
+		Student s2 = new Student(2, "Priyanka", "Sangli");
+//		s2.setId(2);
+//		s2.setName("priyanka");
+//		s2.setAddress("sangli");
 		
-		Student s3 = new Student();
-		s3.setId(3);
-		s3.setName("ravi");
-		s3.setAddress("pune");
-		
-		Student s4 = new Student();
-		s4.setId(4);
-		s4.setName("vijay");
-		s4.setAddress("mumbai");
+		Student s3 = new Student(3, "Ravi", "Pune");
+//		s3.setId(3);
+//		s3.setName("ravi");
+//		s3.setAddress("pune");
+//		
+		Student s4 = new Student(4, "Vijay", "Mumbai");
+//		s4.setId(4);
+//		s4.setName("vijay");
+//		s4.setAddress("mumbai");
 		
 		
 		ArrayList<Student> al = new ArrayList<Student>();
