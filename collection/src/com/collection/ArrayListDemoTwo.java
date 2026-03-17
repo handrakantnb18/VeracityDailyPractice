@@ -14,23 +14,23 @@ public class ArrayListDemoTwo {
 //		System.out.println(al);
 		
 		Student s1 = new Student();
-		s1.setId(0);
+		s1.setId(1);
 		s1.setName("chandrakant");
 		s1.setAddress("pune");
 		
 		
 		Student s2 = new Student();
-		s2.setId(1);
+		s2.setId(2);
 		s2.setName("priyanka");
 		s2.setAddress("sangli");
 		
 		Student s3 = new Student();
-		s3.setId(2);
+		s3.setId(3);
 		s3.setName("ravi");
 		s3.setAddress("pune");
 		
 		Student s4 = new Student();
-		s4.setId(3);
+		s4.setId(4);
 		s4.setName("vijay");
 		s4.setAddress("mumbai");
 		
@@ -41,10 +41,14 @@ public class ArrayListDemoTwo {
 		al.add(s3);
 		al.add(s4);
 		
-		for(int i= 0; i <al.size(); i++)
-		{
-			System.out.println(al.get(i));
-		}
+//		for(int i= 0; i <al.size(); i++)
+//		{
+//			System.out.println(al.get(i));
+//		}
 		
+		for(Student s : al)
+		{
+			System.out.println(s);
+		}
 	}
 }
