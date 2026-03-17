@@ -53,7 +53,17 @@ public class ArrayListDemo {
 //		System.out.println(al.remove(1));
 //		System.out.println(al.remove("ram"));
 		
-		System.out.println();
+//		System.out.println(al);
+//		al.clear();
+//		System.out.println(al);
+//		System.out.println(al.isEmpty());
+//		System.out.println(al.contains("ram"));
+		
+//		System.out.println(al.indexOf("rama")); // if not available the  -1
+//		System.out.println(al.reversed());
+		
+		
+		
 		
 		// float data type addded
 		
