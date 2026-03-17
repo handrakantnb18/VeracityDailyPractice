@@ -47,5 +47,20 @@ public class ArrayListThree {
 //				
 //			System.out.println(emp3);
 //		}
+		
+		for (Employees emp3 :employees)
+		{
+			if (emp3.getGender().equals("Female"))
+			{
+				int existingSalary = emp3.getSalary();
+				
+				emp3.setSalary(existingSalary + 50000);
+				
+				System.out.println(emp3);
+				
+			}
+				
+			//System.out.println(emp3);
+		}
 	}
 }
