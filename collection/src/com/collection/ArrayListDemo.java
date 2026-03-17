@@ -2,6 +2,7 @@ package com.collection;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 public class ArrayListDemo {
 
@@ -66,19 +67,31 @@ public class ArrayListDemo {
 //		}
 		
 		// 3) iterator() method
+		// we can use in hole collection 1. list, 2. set, 3. queue
+		// iterator can iterator element in forward direction
 		
 //		while (al.iterator().hasNext())
 //		{
 //			System.out.println(al.iterator().next());
 //		}
 		
-		Iterator<String> itr = al.iterator();
+//		Iterator<String> itr = al.iterator();
+//		
+//		while (itr.hasNext())
+//		{
+//			System.out.println(itr.next());
+//		}
 		
-		while (itr.hasNext())
+		// 4) List iterator
+		// we can use only list
+		// we can iterator list both direction
+		
+		ListIterator<String> ltr = al.listIterator();
+		
+		while(ltr.hasNext())
 		{
-			System.out.println(itr.next());
+			System.out.println(ltr.next());
 		}
-		
 		
 		
 //		ArrayList<String> al2 = new ArrayList<String>();
