@@ -7,6 +7,9 @@ public class ArrayListDemoTwo {
 
 	public static void main(String[] args) {
 		
+		
+		
+		
 //		ArrayList<Integer> al = new ArrayList<Integer>();
 //		al.add(100);
 //		al.add(200);
@@ -36,11 +39,11 @@ public class ArrayListDemoTwo {
 //		s4.setAddress("mumbai");
 		
 		
-		ArrayList<Student> al = new ArrayList<Student>();
-		al.add(new Student(1, "Chandraaknt","Pune"));
-		al.add(new Student(2, "Priyanka", "Sangli"));
-		al.add(new Student(3, "Ravi", "Pune"));
-		al.add(new Student(4, "Vijay", "Mumbai"));
+//		ArrayList<Student> al = new ArrayList<Student>();
+//		al.add(new Student(1, "Chandraaknt","Pune"));
+//		al.add(new Student(2, "Priyanka", "Sangli"));
+//		al.add(new Student(3, "Ravi", "Pune"));
+//		al.add(new Student(4, "Vijay", "Mumbai"));
 		
 		
 //		al.add(s1);
@@ -53,13 +56,13 @@ public class ArrayListDemoTwo {
 //			System.out.println(al.get(i));
 //		}
 		
-		for(Student s : al)
-		{
-			System.out.println("Id	: "+s.getId());
-			System.out.println("Name 	: "+s.getName());
-			System.out.println("Address : "+s.getAddress());
-			System.out.println("==================");
-		}
+//		for(Student s : al)
+//		{
+//			System.out.println("Id	: "+s.getId());
+//			System.out.println("Name 	: "+s.getName());
+//			System.out.println("Address : "+s.getAddress());
+//			System.out.println("==================");
+//		}
 		
 //		Iterator<Student> itr = al.iterator();
 //		
