@@ -12,15 +12,20 @@ public class ArrayListDemo {
 		
 		// ArrayList
 		
-//		ArrayList<Integer> al = new ArrayList<Integer>();
-//		
-//		al.add(100);  
-//		al.add(200);
-//		al.add(450);
-//		al.add(244);
-//		al.add(350);
-//		
-//		System.out.println(al);
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		
+		al.add(100);  
+		al.add(200);
+		al.add(450);
+		al.add(244);
+		al.add(350);
+		al.add(900);
+		al.add(900);
+		al.add(600);
+		al.add(null);
+		al.add(null); // null value taken any number of time
+		
+		System.out.println(al.get(1)); // indexing format
 		
 		// all types of data we can add
 		
@@ -55,13 +60,13 @@ public class ArrayListDemo {
 //		
 		// Charactor data added only
 		
-		ArrayList<Character> al = new ArrayList<Character>();
-		al.add('A');
-		al.add('B');
-		al.add('C');
-		al.add('D');
-		
-		System.out.println(al);
-		
+//		ArrayList<Character> al = new ArrayList<Character>();
+//		al.add('A');
+//		al.add('B');
+//		al.add('C');
+//		al.add('D');
+//		
+//		System.out.println(al);
+//		
 	}
 }
