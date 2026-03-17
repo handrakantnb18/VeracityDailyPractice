@@ -1,6 +1,7 @@
 package com.collection;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo {
 
@@ -50,17 +51,35 @@ public class ArrayListDemo {
 		
 //		System.out.println(al);
 		
+		// 1) for loop
+		
 //		for(int i = 0; i < al.size(); i++)
 //		{
 //			System.out.println(al.get(i));
 //		}
 		
-		// forEach loop
+		// 2) forEach loop
 		
-		for(String s:al)
+//		for(String s:al)
+//		{
+//			System.out.println(s);
+//		}
+		
+		// 3) iterator() method
+		
+//		while (al.iterator().hasNext())
+//		{
+//			System.out.println(al.iterator().next());
+//		}
+		
+		Iterator<String> itr = al.iterator();
+		
+		while (itr.hasNext())
 		{
-			System.out.println(s);
+			System.out.println(itr.next());
 		}
+		
+		
 		
 //		ArrayList<String> al2 = new ArrayList<String>();
 //		al2.add("adi");
