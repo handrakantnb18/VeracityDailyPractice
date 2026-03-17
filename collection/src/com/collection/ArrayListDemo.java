@@ -45,20 +45,31 @@ public class ArrayListDemo {
 		al.add("Priyanka");
 		al.add("Vijay");
 		al.add("ram");
+		al.add("sachin");
 		
-		ArrayList<String> al2 = new ArrayList<String>();
-		al2.add("adi");
-		al2.add("Prakash");
-		al2.add("shyam");
-		al2.add("kishor");
 		
-		al.addAll(al2);
+//		System.out.println(al);
 		
-		System.out.println(al);
-		System.out.println(al.size());
+		for(int i = 0; i < al.size(); i++)
+		{
+			System.out.println(al.get(i));
+		}
 		
-		System.out.println(al.contains("ram"));
 		
+		
+//		ArrayList<String> al2 = new ArrayList<String>();
+//		al2.add("adi");
+//		al2.add("Prakash");
+//		al2.add("shyam");
+//		al2.add("kishor");
+//		
+//		al.addAll(al2);
+//		
+//		System.out.println(al);
+//		System.out.println(al.size());
+//		
+//		System.out.println(al.contains("ram"));
+//		
 		
 //		System.out.println(al.size()); // size checked
 //		System.out.println(al.get(1));
