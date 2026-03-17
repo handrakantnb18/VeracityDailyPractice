@@ -93,6 +93,12 @@ public class ArrayListDemo {
 			System.out.println(ltr.next());
 		}
 		
+		System.out.println("===========");
+		while(ltr.hasPrevious())
+		{
+			System.out.println(ltr.previous());
+		}
+		
 		
 //		ArrayList<String> al2 = new ArrayList<String>();
 //		al2.add("adi");
