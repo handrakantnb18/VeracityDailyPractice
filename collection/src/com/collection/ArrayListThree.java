@@ -27,9 +27,16 @@ public class ArrayListThree {
 //			
 //		}
 		
+//		for (Employees emp3 :employees)
+//		{
+//			if (emp3.getAddress().equals("Pune"))
+//				
+//			System.out.println(emp3);
+//		}
+		
 		for (Employees emp3 :employees)
 		{
-			if (emp3.getAddress().equals("Pune"))
+			if (emp3.getDep().equals("IT"))
 				
 			System.out.println(emp3);
 		}
