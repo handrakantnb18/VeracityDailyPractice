@@ -6,6 +6,16 @@ public class Student {
 	private String name;
 	private String address;
 	
+	
+	
+	public Student(int id, String name, String address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.address = address;
+	}
+
+
 	// to convert address into string
 	// toString method
 	
