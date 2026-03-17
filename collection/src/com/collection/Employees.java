@@ -8,7 +8,7 @@ public class Employees {
 	
 	private String address;
 	
-	private String salary;
+	private int salary;
 	
 	private String dep;
 	
@@ -24,7 +24,7 @@ public class Employees {
 	}
 
 	
-	public Employees(int id, String name, String address, String salary, String dep, String gender) {
+	public Employees(int id, String name, String address, int salary, String dep, String gender) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -64,12 +64,12 @@ public class Employees {
 	}
 
 
-	public String getSalary() {
+	public int getSalary() {
 		return salary;
 	}
 
 
-	public void setSalary(String salary) {
+	public void setSalary(int salary) {
 		this.salary = salary;
 	}
 
