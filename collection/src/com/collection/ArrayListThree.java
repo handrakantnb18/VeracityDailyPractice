@@ -8,10 +8,10 @@ public class ArrayListThree {
 		
 		ArrayList<Employees> employees = new ArrayList<Employees>();
 		
-		employees.add(new Employees(1, "Chandrakant", "india", "45000", "IT", "Male"));
-		employees.add(new Employees(2, "priyanka", "Pune", "550000", "IT", "Female"));
-		employees.add(new Employees(3, "Ram", "Mumbai", "250000", "HR", "Male"));
-		employees.add(new Employees(4, "vijay", "Mumbai", "270000", "HR", "Male"));
+		employees.add(new Employees(1, "Chandrakant", "india", 45000, "IT", "Male"));
+		employees.add(new Employees(2, "priyanka", "Pune", 550000, "IT", "Female"));
+		employees.add(new Employees(3, "Ram", "Mumbai", 250000, "HR", "Male"));
+		employees.add(new Employees(4, "vijay", "Mumbai", 270000, "HR", "Male"));
 		
 //		for(Employees emp:employees)
 //		{
@@ -34,11 +34,18 @@ public class ArrayListThree {
 //			System.out.println(emp3);
 //		}
 		
-		for (Employees emp3 :employees)
-		{
-			if (emp3.getDep().equals("IT"))
-				
-			System.out.println(emp3);
-		}
+//		for (Employees emp3 :employees)
+//		{
+//			if (emp3.getDep().equals("IT"))
+//				
+//			System.out.println(emp3);
+//		}
+		
+//		for (Employees emp3 :employees)
+//		{
+//			if (emp3.getSalary() < 300000)
+//				
+//			System.out.println(emp3);
+//		}
 	}
 }
