@@ -13,18 +13,25 @@ public class ArrayListThree {
 		employees.add(new Employees(3, "Ram", "Mumbai", "250000", "HR", "Male"));
 		employees.add(new Employees(4, "vijay", "Mumbai", "270000", "HR", "Male"));
 		
-		for(Employees emp:employees)
+//		for(Employees emp:employees)
+//		{
+//			System.out.println("=====================");
+//			
+//			System.out.println("Id      : "+emp.getId());
+//			System.out.println("Name    : "+emp.getName());
+//			System.out.println("Address : "+emp.getAddress());
+//			System.out.println("Salary  : "+emp.getSalary());
+//			System.out.println("Dept    : "+emp.getDep());
+//			System.out.println("Gender  : "+emp.getGender());
+//			
+//			
+//		}
+		
+		for (Employees emp3 :employees)
 		{
-			System.out.println("=====================");
-			
-			System.out.println("Id      : "+emp.getId());
-			System.out.println("Name    : "+emp.getName());
-			System.out.println("Address : "+emp.getAddress());
-			System.out.println("Salary  : "+emp.getSalary());
-			System.out.println("Dept    : "+emp.getDep());
-			System.out.println("Gender  : "+emp.getGender());
-			
-			
+			if (emp3.getAddress().equals("Pune"))
+				
+			System.out.println(emp3);
 		}
 	}
 }
