@@ -50,12 +50,17 @@ public class ArrayListDemo {
 		
 //		System.out.println(al);
 		
-		for(int i = 0; i < al.size(); i++)
+//		for(int i = 0; i < al.size(); i++)
+//		{
+//			System.out.println(al.get(i));
+//		}
+		
+		// forEach loop
+		
+		for(String s:al)
 		{
-			System.out.println(al.get(i));
+			System.out.println(s);
 		}
-		
-		
 		
 //		ArrayList<String> al2 = new ArrayList<String>();
 //		al2.add("adi");
