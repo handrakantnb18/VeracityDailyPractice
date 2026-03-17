@@ -4,6 +4,18 @@ import java.util.ArrayList;
 
 public class ArrayListThree {
 
+	
+	// try to write business logic
+	// product -- id, name, price, category, qty, discount
+	
+	// create ArrayList and add 5 products   iterate 4 ways
+	// create ArrayList and add 5 Users      iterate 4 ways
+	
+	// create ArrayList and add 5 Books      iterate 4 ways
+	// create ArrayList and add 5 Students   iterate 4 ways
+	// create ArrayList and add 5 Employees  iterate 4 ways
+	
+	
 	public static void main(String[] args) {
 		
 		ArrayList<Employees> employees = new ArrayList<Employees>();
@@ -12,6 +24,7 @@ public class ArrayListThree {
 		employees.add(new Employees(2, "priyanka", "Pune", 550000, "IT", "Female"));
 		employees.add(new Employees(3, "Ram", "Mumbai", 250000, "HR", "Male"));
 		employees.add(new Employees(4, "vijay", "Mumbai", 270000, "HR", "Male"));
+		
 		
 //		for(Employees emp:employees)
 //		{
@@ -68,10 +81,11 @@ public class ArrayListThree {
 //			if(emp3.getName().equals("Vijay"))
 //			{
 //				emp3.setName("Dyana");
-//				System.out.println(emp3);
+//				
 //			}
+//		System.out.println(emp3);
 //		}
-		
+//		
 		
 	}
 }
