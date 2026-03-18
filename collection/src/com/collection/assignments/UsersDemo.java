@@ -16,7 +16,7 @@ public class UsersDemo {
 		users.add(new Users(5, "adam", "252518", "UK", "987654000", "London"));
 		users.add(new Users(6, "Brook", "101025", "UK", "9876050500", "London"));
 		users.add(new Users(7, "king", "505645", "west indis", "8978554321", "indis"));
-		users.add(new Users(8, "sam karan", "568978", "Ingland", "98525254321", "idan gardan"));
+		users.add(new Users(8, "sam karan", "568978", "USA", "98525254321", "idan gardan"));
 		users.add(new Users(9, "tim kook", "2324578", "ANZ", "98765256121", "wilington"));
 		users.add(new Users(10, "Markram", "454545", "South Africa", "987654321", "Durban"));
 		
@@ -63,9 +63,9 @@ public class UsersDemo {
 		
 		for(Users user6 : users)
 		{
-			if(user6.getUserName().startsWith("v"))
+			if(user6.getUserName().startsWith("s") && user6.getCity().startsWith(""))
 			{
-				user6.setUserName("VijayRaje");
+				user6.setAddress("England");
 			}
 			System.out.println(user6);
 		}
