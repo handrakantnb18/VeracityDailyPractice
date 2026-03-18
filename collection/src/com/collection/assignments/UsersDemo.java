@@ -53,12 +53,21 @@ public class UsersDemo {
 //				System.out.println(user4);
 //		}
 		
-		for(Users user5 : users)
+//		for(Users user5 : users)
+//		{
+////			if(user5.getCity().equals("London"))
+//			if(user5.getCity().equals("Pune"))
+//
+//			System.out.println(user5);
+//		}
+		
+		for(Users user6 : users)
 		{
-//			if(user5.getCity().equals("London"))
-			if(user5.getCity().equals("Pune"))
-
-			System.out.println(user5);
+			if(user6.getUserName().startsWith("v"))
+			{
+				user6.setUserName("VijayRaje");
+			}
+			System.out.println(user6);
 		}
 		
 	}
