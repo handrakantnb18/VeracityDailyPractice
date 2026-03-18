@@ -32,10 +32,22 @@ public class ProductDemo {
 			System.out.println("Quantity : "+prod1.getQty());
 			System.out.println("Discount : "+prod1.getDiscount());
 			
-//			int existingSalary = emp3.getSalary();
+			double qty = prod1.getQty();
 			
-//			emp3.setSalary(existingSalary + 50000);
-		
+			double price1 = prod1.getPrice();
+			
+			double discount1 = prod1.getDiscount();
+			
+			double totalPrice = price1 * qty;
+			
+			double discountedAmount = totalPrice * discount1 / 100;
+			
+			double finalPrice1 = totalPrice - discountedAmount;
+			
+			System.out.println("Discounted price : "+finalPrice1);
+			
+			
+			
 			double price = prod1.getPrice();
 			
 			double discount = prod1.getDiscount();
