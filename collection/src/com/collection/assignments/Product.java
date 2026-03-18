@@ -15,11 +15,11 @@ public class Product {
 	private double discount;
 
 	
-//	@Override
-//	public String toString() {
-//		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", category=" + category + ", qty=" + qty
-//				+ ", discount=" + discount + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", category=" + category + ", qty=" + qty
+				+ ", discount=" + discount + "]";
+	}
 
 	public Product(int id, String name, double price, String category, int qty, double discount) {
 		super();
