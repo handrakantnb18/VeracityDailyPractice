@@ -20,6 +20,7 @@ public class ProductDemo {
 		product.add(new Product(9, "Bata", 2500, "Shoes", 90, 5));
 		product.add(new Product(10, "Head Phone", 1100, "Electronics", 60, 45));
 		
+		//double discount = 0;
 		
 		for(Product prod1 : product)
 		{
@@ -30,7 +31,18 @@ public class ProductDemo {
 			System.out.println("Category : "+prod1.getCategory());
 			System.out.println("Quantity : "+prod1.getQty());
 			System.out.println("Discount : "+prod1.getDiscount());
-
+			
+//			int existingSalary = emp3.getSalary();
+			
+//			emp3.setSalary(existingSalary + 50000);
+		
+			double price = prod1.getPrice();
+			
+			double discount = prod1.getDiscount();
+			
+			double finalPrice = price - (price * discount / 100);
+			
+			System.out.println("Final price : "+finalPrice);
 		}
 		
 	}
