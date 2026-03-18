@@ -45,12 +45,20 @@ public class UsersDemo {
 //				System.out.println(user3);
 //		}
 		
-		for(Users user4 : users)
+//		for(Users user4 : users)
+//		{
+////			if(user4.getUserName().equals("chandrakant"))
+////			if(user4.getUserName().equals("priyanka"))
+//			if(user4.getUserName().equals("smith"))
+//				System.out.println(user4);
+//		}
+		
+		for(Users user5 : users)
 		{
-//			if(user4.getUserName().equals("chandrakant"))
-//			if(user4.getUserName().equals("priyanka"))
-			if(user4.getUserName().equals("smith"))
-				System.out.println(user4);
+//			if(user5.getCity().equals("London"))
+			if(user5.getCity().equals("Pune"))
+
+			System.out.println(user5);
 		}
 		
 	}
