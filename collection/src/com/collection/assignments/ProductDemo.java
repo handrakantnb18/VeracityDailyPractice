@@ -66,14 +66,22 @@ public class ProductDemo {
 //		}
 		
 
-		for(Product prod2 : product)
-		{
-			
-			if(prod2.getPrice() < 50000)
-			{
-				System.out.println(prod2);
-			}
-		}
+//		for(Product prod2 : product)
+//		{
+//			
+//			if(prod2.getPrice() < 50000)
+//			{
+//				System.out.println(prod2);
+//			}
+//		}
+
+
+//		for(Product prod2 : product)
+//		{
+//			
+//			if(prod2.getCategory().equals("Mobile"))
+//			System.out.println(prod2);
+//		}
 
 		
 	}
