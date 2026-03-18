@@ -22,39 +22,45 @@ public class ProductDemo {
 		
 		//double discount = 0;
 		
-		for(Product prod1 : product)
+//		for(Product prod1 : product)
+//		{
+//			System.out.println("\n===============================");
+//			System.out.println("Id : "+prod1.getId());
+//			System.out.println("Name : "+prod1.getName());
+//			System.out.println("Price : "+prod1.getPrice());
+//			System.out.println("Category : "+prod1.getCategory());
+//			System.out.println("Quantity : "+prod1.getQty());
+//			System.out.println("Discount : "+prod1.getDiscount());
+//			
+//			double qty = prod1.getQty();
+//			
+//			double price1 = prod1.getPrice();
+//			
+//			double discount1 = prod1.getDiscount();
+//			
+//			double totalPrice = price1 * qty;
+//			
+//			double discountedAmount = totalPrice * discount1 / 100;
+//			
+//			double finalPrice1 = totalPrice - discountedAmount;
+//			
+//			System.out.println("Discounted price : "+finalPrice1);
+//			
+//			
+//			
+//			double price = prod1.getPrice();
+//			
+//			double discount = prod1.getDiscount();
+//			
+//			double finalPrice = price - (price * discount / 100);
+//			
+//			System.out.println("Final price : "+finalPrice);
+//		}
+		
+		
+		for(Product prod2 : product)
 		{
-			System.out.println("\n===============================");
-			System.out.println("Id : "+prod1.getId());
-			System.out.println("Name : "+prod1.getName());
-			System.out.println("Price : "+prod1.getPrice());
-			System.out.println("Category : "+prod1.getCategory());
-			System.out.println("Quantity : "+prod1.getQty());
-			System.out.println("Discount : "+prod1.getDiscount());
-			
-			double qty = prod1.getQty();
-			
-			double price1 = prod1.getPrice();
-			
-			double discount1 = prod1.getDiscount();
-			
-			double totalPrice = price1 * qty;
-			
-			double discountedAmount = totalPrice * discount1 / 100;
-			
-			double finalPrice1 = totalPrice - discountedAmount;
-			
-			System.out.println("Discounted price : "+finalPrice1);
-			
-			
-			
-			double price = prod1.getPrice();
-			
-			double discount = prod1.getDiscount();
-			
-			double finalPrice = price - (price * discount / 100);
-			
-			System.out.println("Final price : "+finalPrice);
+			System.out.println(prod2);
 		}
 		
 	}
