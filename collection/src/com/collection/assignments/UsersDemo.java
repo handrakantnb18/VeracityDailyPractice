@@ -38,11 +38,19 @@ public class UsersDemo {
 //		}
 		
 		
-		for(Users user3 : users)
+//		for(Users user3 : users)
+//		{
+////			if(user3.getAddress().equals("UK"))
+//			if(user3.getAddress().equals("India"))
+//				System.out.println(user3);
+//		}
+		
+		for(Users user4 : users)
 		{
-//			if(user3.getAddress().equals("UK"))
-			if(user3.getAddress().equals("India"))
-				System.out.println(user3);
+//			if(user4.getUserName().equals("chandrakant"))
+//			if(user4.getUserName().equals("priyanka"))
+			if(user4.getUserName().equals("smith"))
+				System.out.println(user4);
 		}
 		
 	}
