@@ -13,7 +13,15 @@ public class Books {
 	private String category;
 
 	
-	
+//	
+//	@Override
+//	public String toString() {
+//		return "Books [id=" + id + ", name=" + name + ", author=" + author + ", price=" + price + ", category="
+//				+ category + "]";
+//	}
+
+
+
 	public Books(int id, String name, String author, double price, String category) {
 		super();
 		this.id = id;
