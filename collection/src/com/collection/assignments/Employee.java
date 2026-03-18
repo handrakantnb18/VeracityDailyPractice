@@ -16,6 +16,25 @@ public class Employee {
 
 	
 	
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", empName=" + empName + ", dept=" + dept + ", salary=" + salary + ", city="
+				+ city + ", mobile=" + mobile + "]";
+	}
+
+	
+	
+	public Employee(int empId, String empName, String dept, double salary, String city, String mobile) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.dept = dept;
+		this.salary = salary;
+		this.city = city;
+		this.mobile = mobile;
+	}
+
+
 	public int getEmpId() {
 		return empId;
 	}
