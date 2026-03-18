@@ -32,9 +32,18 @@ public class UsersDemo {
 //			System.out.println("| City          : "+user1.getCity());
 //		}
 		
-		for(Users user2: users )
+//		for(Users user2: users )
+//		{
+//			System.out.println(user2);
+//		}
+		
+		
+		for(Users user3 : users)
 		{
-			System.out.println(user2);
+//			if(user3.getAddress().equals("UK"))
+			if(user3.getAddress().equals("India"))
+				System.out.println(user3);
 		}
+		
 	}
 }
