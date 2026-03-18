@@ -83,6 +83,15 @@ public class ProductDemo {
 //			System.out.println(prod2);
 //		}
 
-		
+		for(Product prod2 : product)
+		{
+			
+			if(prod2.getName().equals("Laptop"))
+			{
+				prod2.setName("Computer");
+			}
+			System.out.println(prod2);
+		}
+
 	}
 }
