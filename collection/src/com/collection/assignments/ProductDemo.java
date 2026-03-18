@@ -60,8 +60,12 @@ public class ProductDemo {
 		
 		for(Product prod2 : product)
 		{
+			
+			if(prod2.getName().equals("Laptop"))
 			System.out.println(prod2);
 		}
+		
+		
 		
 	}
 }
