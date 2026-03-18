@@ -21,15 +21,20 @@ public class UsersDemo {
 		users.add(new Users(10, "Markram", "454545", "South Africa", "987654321", "Durban"));
 		
 		
-		for(Users user1 : users)
+//		for(Users user1 : users)
+//		{
+//			System.out.println("\n============================");
+//			System.out.println("| User Id       : "+user1.getuId());
+//			System.out.println("| User Name     : "+user1.getUserName());
+//			System.out.println("| User Password : "+user1.getPassword());
+//			System.out.println("| Address       : "+user1.getAddress());
+//			System.out.println("| Mobile number : "+user1.getMobileNo());
+//			System.out.println("| City          : "+user1.getCity());
+//		}
+		
+		for(Users user2: users )
 		{
-			System.out.println("\n============================");
-			System.out.println("| User Id       : "+user1.getuId());
-			System.out.println("| User Name     : "+user1.getUserName());
-			System.out.println("| User Password : "+user1.getPassword());
-			System.out.println("| Address       : "+user1.getAddress());
-			System.out.println("| Mobile number : "+user1.getMobileNo());
-			System.out.println("| City          : "+user1.getCity());
+			System.out.println(user2);
 		}
 	}
 }
