@@ -15,11 +15,11 @@ public class Users {
 	private String city;
 
 	
-	@Override
-	public String toString() {
-		return "Users [uId=" + uId + ", userName=" + userName + ", password=" + password + ", Address=" + Address
-				+ ", mobileNo=" + mobileNo + ", city=" + city + "]";
-	}
+//	@Override
+//	public String toString() {
+//		return "Users [uId=" + uId + ", userName=" + userName + ", password=" + password + ", Address=" + Address
+//				+ ", mobileNo=" + mobileNo + ", city=" + city + "]";
+//	}
 
 
 	
