@@ -8,13 +8,18 @@ public class ArrayListFour {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Integer> al = new ArrayList<Integer>();
+//		ArrayList<Integer> al = new ArrayList<Integer>();
+//		
+//		List<Integer> number = new ArrayList<Integer>();
 		
-		List<Integer> number = new ArrayList<Integer>();
+//		List<Integer> num = Arrays.asList(1, 2, 3, 4, 5, 6);
+//		
+//		System.out.println(num);
 		
-		List<Integer> num = Arrays.asList(1, 2, 3, 4, 5, 6);
+		List<Student> nums = Arrays.asList(new Student(1, "Chandrakant", "Pune"), new Student(2, "Priyanka", "Sangli"));
 		
-		System.out.println(num);
+		
+		System.out.println(nums);
 		
 	}
 }
