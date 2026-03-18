@@ -19,10 +19,10 @@ public class Student {
 	// to convert address into string
 	// toString method
 	
-//	@Override
-//	public String toString() {
-//		return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
-//	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
+	}
 
 
 	// 
