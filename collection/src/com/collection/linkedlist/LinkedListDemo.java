@@ -26,9 +26,12 @@ public class LinkedListDemo {
 
 //		System.out.println(s.pop()); // top element remove
 		
-		s.clear();
-		System.out.println(s.isEmpty());
+//		s.clear();
+//		System.out.println(s.isEmpty());
 		
+		System.out.println(s.getFirst());
+		
+		System.out.println(s.getLast());
 		
 		// vector is a legacy class / old class
 		// vector is synchronized class
