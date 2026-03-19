@@ -29,9 +29,17 @@ public class HashSetDemo {
 //		
 //		System.out.println(hs);
 //		
-		
+		// < type > - generic type 
 		// linkedHashSet
 		
+		// 5 student
+		
+		// 5 books
+				
+		// 5 Employees
+				
+		// 5 Users
+				
 		LinkedHashSet<Integer> lhs = new LinkedHashSet<Integer>();
 		lhs.add(255);
 		lhs.add(333);
@@ -42,6 +50,7 @@ public class HashSetDemo {
 		lhs.add(123);
 		
 		System.out.println(lhs);
+		
 		
 	}
 }
