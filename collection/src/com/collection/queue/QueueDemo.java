@@ -47,5 +47,6 @@ public class QueueDemo {
 		
 		System.out.println(pq.pollLast()); // delete last
 		
+		
 	}
 }
