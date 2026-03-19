@@ -12,6 +12,8 @@ public class LinkedListDemo {
 		list.add(25);
 		list.add(45);
 		list.add(11);
+		list.add(null);
+		list.add(null);
 		
 		System.out.println(list);
 	}
