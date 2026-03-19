@@ -22,6 +22,8 @@ public class LinkedListDemo {
 		s.add(null);
 		s.add(null);
 		
+		System.out.println(s.peek()); // top element get
+		
 		System.out.println(s);
 		
 		
