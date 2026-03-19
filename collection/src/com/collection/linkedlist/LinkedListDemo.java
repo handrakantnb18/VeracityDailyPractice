@@ -19,6 +19,9 @@ public class LinkedListDemo {
 		s.add(25);
 		s.add(45);
 		s.add(11);
+		
+		System.out.println(s);
+		
 		// s.add(null);
 		// s.add(null);
 		
@@ -29,9 +32,9 @@ public class LinkedListDemo {
 //		s.clear();
 //		System.out.println(s.isEmpty());
 		
-		System.out.println(s.getFirst());
+//		System.out.println(s.getFirst());
 		
-		System.out.println(s.getLast());
+//		System.out.println(s.getLast());
 		
 		// vector is a legacy class / old class
 		// vector is synchronized class
