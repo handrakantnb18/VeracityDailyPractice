@@ -28,7 +28,8 @@ public class QueueDemo {
 		pq.add(88);
 		pq.add(456);
 		pq.add(123);
-		// pq.add(null);
+		// pq.add(null)
+		pq.add(255);
 		pq.add(123);
 		
 		System.out.println(pq);
