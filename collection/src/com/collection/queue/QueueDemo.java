@@ -33,6 +33,12 @@ public class QueueDemo {
 		pq.add(123);
 		pq.add(-11);
 		
+		System.out.println(pq.peekFirst()); // 
+		
+		System.out.println(pq.peekLast());
+		
+		System.out.println(pq.peek());
+		
 		System.out.println(pq);
 		
 	}
