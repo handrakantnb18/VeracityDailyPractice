@@ -1,6 +1,7 @@
 package com.hashset;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class HashSetDemo {
 
@@ -17,16 +18,30 @@ public class HashSetDemo {
 		// clear, size, isEmpty, contains, iterator, remove, reverse, 
 		// ArrayList all methods are present expect get, set, indexOf, lastIndexOf
 		
-		HashSet<Integer> hs = new HashSet<Integer>();
-		hs.add(255);
-		hs.add(333);
-		hs.add(88);
-		hs.add(456);
-		hs.add(123);
-		hs.add(null);
-		hs.add(123);
+//		HashSet<Integer> hs = new HashSet<Integer>();
+//		hs.add(255);
+//		hs.add(333);
+//		hs.add(88);
+//		hs.add(456);
+//		hs.add(123);
+//		hs.add(null);
+//		hs.add(123);
+//		
+//		System.out.println(hs);
+//		
 		
-		System.out.println(hs);
+		// linkedHashSet
+		
+		LinkedHashSet<Integer> lhs = new LinkedHashSet<Integer>();
+		lhs.add(255);
+		lhs.add(333);
+		lhs.add(88);
+		lhs.add(456);
+		lhs.add(123);
+		lhs.add(null);
+		lhs.add(123);
+		
+		System.out.println(lhs);
 		
 	}
 }
