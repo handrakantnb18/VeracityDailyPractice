@@ -72,6 +72,18 @@ public class HashSetDemo {
 		// ts.add(null);
 		ts.add(123);
 		
+		
+		TreeSet<String> ts2 = new TreeSet<String>();
+		ts2.add("Chandr");
+		ts2.add("Ajay");
+		ts2.add("Subhash");
+		ts2.add("Ram");
+		ts2.add("Balu");
+		// ts.add(null);
+		ts2.add("Priyanka");
+		
+		System.out.println(ts2);
+		
 		System.out.println(ts);
 		
 	}
