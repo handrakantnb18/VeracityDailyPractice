@@ -41,12 +41,13 @@ public class QueueDemo {
 		
 //		System.out.println(pq);
 		
-		System.out.println(pq.pop()); // delete 
+//		System.out.println(pq.pop()); // delete 
 		
-		System.out.println(pq.pollFirst()); // delete first
+//		System.out.println(pq.pollFirst()); // delete first
 		
-		System.out.println(pq.pollLast()); // delete last
+//		System.out.println(pq.pollLast()); // delete last
 		
+		System.out.println(pq);
 		
 	}
 }
