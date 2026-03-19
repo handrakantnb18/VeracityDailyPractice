@@ -19,10 +19,12 @@ public class LinkedListDemo {
 		s.add(25);
 		s.add(45);
 		s.add(11);
-		s.add(null);
-		s.add(null);
+		// s.add(null);
+		// s.add(null);
 		
-		System.out.println(s.peek()); // top element get
+//		System.out.println(s.peek()); // top element get
+
+		System.out.println(s.pop()); // top element remove
 		
 		System.out.println(s);
 		
