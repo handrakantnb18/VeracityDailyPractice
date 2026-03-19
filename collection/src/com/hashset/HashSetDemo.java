@@ -2,6 +2,7 @@ package com.hashset;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.TreeSet;
 
 public class HashSetDemo {
 
@@ -40,17 +41,38 @@ public class HashSetDemo {
 				
 		// 5 Users
 				
-		LinkedHashSet<Integer> lhs = new LinkedHashSet<Integer>();
-		lhs.add(255);
-		lhs.add(333);
-		lhs.add(88);
-		lhs.add(456);
-		lhs.add(123);
-		lhs.add(null);
-		lhs.add(123);
+//		LinkedHashSet<Integer> lhs = new LinkedHashSet<Integer>();
+//		lhs.add(255);
+//		lhs.add(333);
+//		lhs.add(88);
+//		lhs.add(456);
+//		lhs.add(123);
+//		lhs.add(null);
+//		lhs.add(123);
+//		
+//		System.out.println(lhs);
+//		
 		
-		System.out.println(lhs);
+		// TreeSet
 		
+		// 5 student
+		
+		// 5 books
+						
+		// 5 Employees
+						
+		// 5 Users
+				
+		TreeSet<Integer> ts = new TreeSet<Integer>();
+		ts.add(255);
+		ts.add(333);
+		ts.add(88);
+		ts.add(456);
+		ts.add(123);
+		// ts.add(null);
+		ts.add(123);
+		
+		System.out.println(ts);
 		
 	}
 }
