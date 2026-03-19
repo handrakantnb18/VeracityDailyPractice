@@ -24,9 +24,10 @@ public class LinkedListDemo {
 		
 //		System.out.println(s.peek()); // top element get
 
-		System.out.println(s.pop()); // top element remove
+//		System.out.println(s.pop()); // top element remove
 		
-		System.out.println(s);
+		s.clear();
+		System.out.println(s.isEmpty());
 		
 		
 		// vector is a legacy class / old class
