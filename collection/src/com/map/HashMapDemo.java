@@ -39,13 +39,20 @@ public class HashMapDemo {
 		
 		
 		// ALT + SHIFT + L
-				 Set<java.util.Map.Entry<String, String>> entrySet = map.entrySet();
-				
-				 for(java.util.Map.Entry<String, String> data : entrySet)
-				 {
-					 System.out.println(data.getKey() + " = "+data.getValue());
-				 }
-				
+//				 Set<java.util.Map.Entry<String, String>> entrySet = map.entrySet();
+//				
+//				 for(java.util.Map.Entry<String, String> data : entrySet)
+//				 {
+//					 System.out.println(data.getKey() + " = "+data.getValue());
+//				 }
+//				
+		
+//		 Set<java.util.Map.Entry<String, String>> entrySet = map.entrySet();
+			
+		 for(java.util.Map.Entry<String, String> data : map.entrySet())
+		 {
+			 System.out.println(data.getKey() + " = "+data.getValue());
+		 }
 		
 		
 //		System.out.println(map);
