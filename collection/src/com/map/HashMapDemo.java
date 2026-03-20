@@ -11,6 +11,9 @@ public class HashMapDemo {
 		map.put("priyanka", "vodafone");
 		map.put("Ram", "Youtuber");
 		map.put("Chandrakant", ".net");
+		map.put(null, "Html"); // only one null key allowed
+		map.put("Vijay", null); // multiple value null allowed
+		map.put("sachin", null);
 		
 		
 		System.out.println(map);
