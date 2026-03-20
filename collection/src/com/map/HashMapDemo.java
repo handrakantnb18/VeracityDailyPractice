@@ -1,6 +1,7 @@
 package com.map;
 
-import java.util.HashMap;
+import java.security.KeyStore.Entry;
+import java.util.*;
 
 public class HashMapDemo {
 
@@ -28,8 +29,18 @@ public class HashMapDemo {
 		
 //		System.out.println(map.isEmpty()); // to check the map is empty or not
 		
-		System.out.println(map);
+//		System.out.println(map.get("Ram")); // key to get the value
 		
+//		map.remove("Ram"); // remove the key data
+		
+//		map.replace("Ram", "Software");
+		
+//		System.out.println(map.containsKey("Youtuber"));
+		
+		
+		
+		
+//		System.out.println(map);
 //		System.out.println(map);
 	}
 }
