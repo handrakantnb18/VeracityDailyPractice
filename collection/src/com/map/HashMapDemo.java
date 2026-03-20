@@ -15,7 +15,16 @@ public class HashMapDemo {
 		map.put("Vijay", null); // multiple value null allowed
 		map.put("sachin", null);
 		
+		// check the hashmap methods -- LinkedHashMap, TreeMap, HashTable
+//		System.out.println(map.size());
 		
-		System.out.println(map);
+//		System.out.println(map.keySet()); // keys
+		
+//		System.out.println(map.values()); // values
+		
+		System.out.println(map.isEmpty());
+		
+		System.out.println();
+//		System.out.println(map);
 	}
 }
