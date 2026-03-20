@@ -22,9 +22,14 @@ public class HashMapDemo {
 		
 //		System.out.println(map.values()); // values
 		
-		System.out.println(map.isEmpty());
+//		System.out.println(map.isEmpty());
 		
-		System.out.println();
+//		map.clear(); // remove all entries from map
+		
+//		System.out.println(map.isEmpty()); // to check the map is empty or not
+		
+		System.out.println(map);
+		
 //		System.out.println(map);
 	}
 }
