@@ -17,5 +17,7 @@ public class HashTableDemo {
 		// map.put("Vijay", null); // multiple value null allowed
 		// map.put("sachin", null);
 		
+		System.out.println(map);
+		
 	}
 }
