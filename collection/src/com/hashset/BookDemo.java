@@ -13,6 +13,7 @@ public class BookDemo {
 		hs.add(new Book(3, "Atomatic Habits", "James Clear", 180, 11));
 		hs.add(new Book(4, "Think and Grow Rich", "Napoleon Hill", 555, 15));
 		hs.add(new Book(5, "The power of positive thinking", "Norman vincent peale", 300, 10));
+		hs.add(new Book(6, "ABC", "abc", 100, 50));
 		
 		System.out.println(hs);
 		
