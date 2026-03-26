@@ -1,16 +1,23 @@
 package com.demo;
 
+import java.sql.DriverManager;
+
 public class Demo {
 
 	public static void main(String[] args) {
-		
-		try
-		{ 
+
+		try {
+
 			
-		Class.forName("com.mysql.cj.jdbc.Driver");
-		
-		System.out.println("Driver added successfully.");
-		}catch (ClassNotFoundException e) {
+			// Driver Class Load / Register
+			
+			Class.forName("com.mysql.cj.jdbc.Driver");
+
+			DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "root");
+			
+			System.out.println("Driver added successfully.");
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
