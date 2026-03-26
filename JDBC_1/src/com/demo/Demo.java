@@ -15,7 +15,8 @@ public class Demo {
 
 			DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "root");
 			
-			System.out.println("Driver added successfully.");
+			System.out.println("Connection success");
+			System.out.println("Driver class added successfully.");
 
 		} catch (Exception e) {
 			e.printStackTrace();
