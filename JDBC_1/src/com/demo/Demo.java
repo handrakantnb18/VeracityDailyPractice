@@ -1,5 +1,6 @@
 package com.demo;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class Demo {
@@ -10,14 +11,22 @@ public class Demo {
 
 			
 			// Driver Class Load / Register
+			// connection is interface
+			// connection is a return type of getConnection methods
+			// DriverManager is a class
+			// getConnection method present in DriverManager class
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
-
-			DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "root");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "root");
 			
-			System.out.println("Connection success");
-			System.out.println("Driver class added successfully.");
+			
+			
+			
+//			
+//			System.out.println("Connection success");
+//			System.out.println("Driver class added successfully.");
 
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
