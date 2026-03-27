@@ -2,6 +2,7 @@ package com.demomysql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -111,12 +112,29 @@ public class Demo {
 			
 //			stmt.execute("delete from student where id = 1");
 
-			stmt.execute("delete from student where id = NULL");
+//			stmt.execute("delete from student where id = NULL");
+//
+//			System.out.println("Data Deleted.");
+			
 
-			System.out.println("Data Deleted.");
+			ResultSet rs =stmt.executeQuery("select * from student");
 			
+			while(rs.next())
+			{
+				int id = rs.getInt("id");
+				String name = rs.getString("name");
+				String address = rs.getString("address");
+				int marks = rs.getInt("marks");
+				
+				System.out.println(id);
+				System.out.println(name);
+				System.out.println(address);
+				System.out.println(marks);
+				
+				System.out.println("-------------");
+			}
 			
-			
+//			System.out.println(rs);
 			
 			
 			
