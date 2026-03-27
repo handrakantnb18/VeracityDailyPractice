@@ -8,10 +8,19 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
-		int id = 10;
-		String name = "pruthvi";
-		String address = "goa";
-		int marks = 100;
+		// scanner --  class not in use
+		
+//		int id = 10;
+//		String name = "pruthvi";
+//		String address = "goa";
+//		int marks = 100;
+//		
+		
+		Student s1 = new Student();
+		s1.setId(9);
+		s1.setName("sachin");
+		s1.setAddress("panjab");
+		s1.setMarks(89);
 		
 		try
 		{
@@ -33,7 +42,9 @@ public class Demo {
 
 //			stmt.execute("insert into student values(4, 'priyanka', 'banglore', 56),(5, 'vijay', 'chennai', 89),(6, 'viraj', 'dehli', 88)");
 			
-			stmt.execute("insert into student values('"+id+"', '"+name+"', '"+address+"', '"+marks+"')");
+//			stmt.execute("insert into student values('"+id+"', '"+name+"', '"+address+"', '"+marks+"')");
+			
+			stmt.execute("insert into student values('"+s1.getId()+"','"+s1.getName()+"','"+s1.getAddress()+"','"+s1.getMarks()+"')");
 			
 			System.out.println("table created");
 			
