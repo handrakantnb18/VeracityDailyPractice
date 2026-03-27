@@ -6,6 +6,16 @@ import com.exception.SomethingWentWrongException;
 
 public class EmployeeMain {
 
+	
+	// 1. User -- username, password, email, gender, dob, mobileNo, address, age
+	// insert, update, delete, get, getall
+	
+	// 2. Book -- id, name, price, auther, qty, mfgdate, expand
+	// insert, updated, delete, get. getAll
+	
+	// 3. Product -- id, name, price, catagory, qty
+	// insert, update, delete, get, getAll
+	
 	public static void main(String[] args) {
 		
 		
