@@ -18,7 +18,13 @@ public class Demo {
 			
 			// stmt.execute("create database 27march");
 			
-			stmt.execute("create table student (id int, name varchar(34), address varchar(34), marks int)");
+//			stmt.execute("create table student (id int, name varchar(34), address varchar(34), marks int)");
+			
+//			stmt.execute("create table employee (id int, name varchar(34), address varchar(34))");
+
+//			stmt.execute("insert into student values(1,'Ram', 'pune', 45)");
+			
+			stmt.execute("insert into student values(3, 'rohit', 'mumbai',99)");
 			System.out.println("table created");
 			
 			
