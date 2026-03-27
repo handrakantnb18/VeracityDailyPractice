@@ -3,6 +3,7 @@ package com.demomysql;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class Demo {
 
@@ -46,6 +47,15 @@ public class Demo {
 		s5.setAddress("vijapur");
 		s5.setMarks(45);
 		
+		// 4 ways to create object
+		ArrayList<Student> al = new ArrayList<Student>();
+		al.add(s1);
+		al.add(s2);
+		al.add(s3);
+		al.add(s4);
+		al.add(s5);
+		
+		
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -69,15 +79,20 @@ public class Demo {
 //			stmt.execute("insert into student values('"+id+"', '"+name+"', '"+address+"', '"+marks+"')");
 			
 //			stmt.execute("insert into student values('"+s1.getId()+"','"+s1.getName()+"','"+s1.getAddress()+"','"+s1.getMarks()+"')");
+//			
+//			stmt.execute("insert into student values('"+s2.getId()+"','"+s2.getName()+"','"+s2.getAddress()+"','"+s2.getMarks()+"')");
+//			
+//			stmt.execute("insert into student values('"+s3.getId()+"','"+s3.getName()+"','"+s3.getAddress()+"','"+s3.getMarks()+"')");
+//			
+//			stmt.execute("insert into student values('"+s4.getId()+"','"+s4.getName()+"','"+s4.getAddress()+"','"+s4.getMarks()+"')");
+//			
+//			stmt.execute("insert into student values('"+s5.getId()+"','"+s5.getName()+"','"+s5.getAddress()+"','"+s5.getMarks()+"')");
+//			
 			
-			stmt.execute("insert into student values('"+s2.getId()+"','"+s2.getName()+"','"+s2.getAddress()+"','"+s2.getMarks()+"')");
-			
-			stmt.execute("insert into student values('"+s3.getId()+"','"+s3.getName()+"','"+s3.getAddress()+"','"+s3.getMarks()+"')");
-			
-			stmt.execute("insert into student values('"+s4.getId()+"','"+s4.getName()+"','"+s4.getAddress()+"','"+s4.getMarks()+"')");
-			
-			stmt.execute("insert into student values('"+s5.getId()+"','"+s5.getName()+"','"+s5.getAddress()+"','"+s5.getMarks()+"')");
-			
+			for(Student std: al)
+			{
+				stmt.execute("insert into student values('"+std.getId()+"','"+std.getName()+"','"+std.getAddress()+"','"+std.getMarks()+"')");
+			}
 			System.out.println("table created");
 			
 			
