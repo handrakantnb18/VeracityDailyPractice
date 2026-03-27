@@ -102,9 +102,22 @@ public class Demo {
 			
 //			stmt.execute("update student set name = 'shyam' where id = 20");
 
-			stmt.execute("update student set name = 'chaitanya', marks = 99 where id = 19");
+//			stmt.execute("update student set name = 'chaitanya', marks = 99 where id = 19");
+//
+//			System.out.println("table updated");
+			
 
-			System.out.println("table updated");
+			// delete data
+			
+//			stmt.execute("delete from student where id = 1");
+
+			stmt.execute("delete from student where id = NULL");
+
+			System.out.println("Data Deleted.");
+			
+			
+			
+			
 			
 			
 		}
