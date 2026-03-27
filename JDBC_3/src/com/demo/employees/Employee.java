@@ -34,7 +34,7 @@ public class Employee {
 		}
 		
 		public static void main(String[] args) {
-			EmployeeDao dao = new EmployeeDao();
+			Employee dao = new Employee();
 			dao.createTable(); 
 		}
 
