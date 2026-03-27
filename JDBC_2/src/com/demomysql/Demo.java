@@ -12,13 +12,14 @@ public class Demo {
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "root");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/27march", "root", "root");
 			
 			Statement stmt = conn.createStatement();
 			
-			stmt.execute("create database 27march");
+			// stmt.execute("create database 27march");
 			
-			System.out.println("Database created");
+			stmt.execute("create table student (id int, name varchar(34), address varchar(34), marks int)");
+			System.out.println("table created");
 			
 			
 		}
