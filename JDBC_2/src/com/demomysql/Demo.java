@@ -8,6 +8,11 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
+		int id = 10;
+		String name = "pruthvi";
+		String address = "goa";
+		int marks = 100;
+		
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -26,7 +31,10 @@ public class Demo {
 			
 //			stmt.execute("insert into student values(3, 'rohit', 'mumbai',99)");
 
-			stmt.execute("insert into student values(4, 'priyanka', 'banglore', 56),(5, 'vijay', 'chennai', 89),(6, 'viraj', 'dehli', 88)");
+//			stmt.execute("insert into student values(4, 'priyanka', 'banglore', 56),(5, 'vijay', 'chennai', 89),(6, 'viraj', 'dehli', 88)");
+			
+			stmt.execute("insert into student values('"+id+"', '"+name+"', '"+address+"', '"+marks+"')");
+			
 			System.out.println("table created");
 			
 			
