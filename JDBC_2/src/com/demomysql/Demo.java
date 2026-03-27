@@ -92,11 +92,19 @@ public class Demo {
 //			stmt.execute("insert into student values('"+s5.getId()+"','"+s5.getName()+"','"+s5.getAddress()+"','"+s5.getMarks()+"')");
 //			
 			
-			for(Student std: al)
-			{
-				stmt.execute("insert into student values('"+std.getId()+"','"+std.getName()+"','"+std.getAddress()+"','"+std.getMarks()+"')");
-			}
-			System.out.println("table created");
+//			for(Student std: al)
+//			{
+//				stmt.execute("insert into student values('"+std.getId()+"','"+std.getName()+"','"+std.getAddress()+"','"+std.getMarks()+"')");
+//			}
+			
+			
+			// update the student name
+			
+//			stmt.execute("update student set name = 'shyam' where id = 20");
+
+			stmt.execute("update student set name = 'chaitanya', marks = 99 where id = 19");
+
+			System.out.println("table updated");
 			
 			
 		}
