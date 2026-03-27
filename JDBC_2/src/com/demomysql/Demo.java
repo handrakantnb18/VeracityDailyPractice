@@ -24,7 +24,9 @@ public class Demo {
 
 //			stmt.execute("insert into student values(1,'Ram', 'pune', 45)");
 			
-			stmt.execute("insert into student values(3, 'rohit', 'mumbai',99)");
+//			stmt.execute("insert into student values(3, 'rohit', 'mumbai',99)");
+
+			stmt.execute("insert into student values(4, 'priyanka', 'banglore', 56),(5, 'vijay', 'chennai', 89),(6, 'viraj', 'dehli', 88)");
 			System.out.println("table created");
 			
 			
