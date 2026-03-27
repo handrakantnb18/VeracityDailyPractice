@@ -60,8 +60,18 @@ public class EmployeeDao {
 	public static void main(String[] args) {
 		EmployeeDao dao = new EmployeeDao();
 		Employee e1 = new Employee(22, "ram", "Male", "pune", 25252, "IT");
+		Employee e2 = new Employee(3, "vishal", "Male", "chennai", 450000, "HR");
+		Employee e3 = new Employee(4, "vijay", "Male", "dehli", 770000, "sales");
+		Employee e4 = new Employee(5, "pooja", "Female", "kolkatta", 320000, "IT");
+		Employee e5 = new Employee(6, "Asha", "Female", "patana", 350000, "transport");
+		Employee e6 = new Employee(7, "smith", "Male", "banglore", 560000, "medical");
 		
 		dao.insertEmployee(e1);
+		dao.insertEmployee(e2);
+		dao.insertEmployee(e3);
+		dao.insertEmployee(e4);
+		dao.insertEmployee(e5);
+		dao.insertEmployee(e6);
 		
 //		System.out.println(e1);
 //		e1.setId(25);
