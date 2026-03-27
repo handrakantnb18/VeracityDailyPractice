@@ -55,6 +55,8 @@ public class EmployeeDao {
 			}
 		}
 		
+		// not recommended this types
+		
 	public static void main(String[] args) {
 		EmployeeDao dao = new EmployeeDao();
 		Employee e1 = new Employee(22, "ram", "Male", "pune", 25252, "IT");
