@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Demo {
 
@@ -18,43 +20,44 @@ public class Demo {
 //		
 		
 		Student s1 = new Student();
-		s1.setId(11);
+		s1.setId(16);
 		s1.setName("smith");
 		s1.setAddress("sidany");
 		s1.setMarks(80);
 		
 		Student s2 = new Student();
-		s2.setId(12);
+		s2.setId(17);
 		s2.setName("andru");
 		s2.setAddress("landon");
 		s2.setMarks(90);
 		
 		Student s3 = new Student();
-		s3.setId(13);
+		s3.setId(18);
 		s3.setName("satish");
 		s3.setAddress("patana");
 		s3.setMarks(70);
 		
 		Student s4 = new Student();
-		s4.setId(14);
+		s4.setId(19);
 		s4.setName("prakash");
 		s4.setAddress("jamnagar");
 		s4.setMarks(75);
 		
 		Student s5 = new Student();
-		s5.setId(15);
+		s5.setId(20);
 		s5.setName("anil");
 		s5.setAddress("vijapur");
 		s5.setMarks(45);
 		
 		// 4 ways to create object
-		ArrayList<Student> al = new ArrayList<Student>();
-		al.add(s1);
-		al.add(s2);
-		al.add(s3);
-		al.add(s4);
-		al.add(s5);
+//		ArrayList<Student> al = new ArrayList<Student>();
+//		al.add(s1);
+//		al.add(s2);
+//		al.add(s3);
+//		al.add(s4);
+//		al.add(s5);
 		
+		List<Student> al = Arrays.asList(s1,s2,s3,s4,s5);
 		
 		try
 		{
