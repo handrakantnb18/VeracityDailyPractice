@@ -126,10 +126,10 @@ public class Demo {
 				String address = rs.getString("address");
 				int marks = rs.getInt("marks");
 				
-				System.out.println(id);
-				System.out.println(name);
-				System.out.println(address);
-				System.out.println(marks);
+				System.out.println("ID      : " +id);
+				System.out.println("name    : " +name);
+				System.out.println("Address : " +address);
+				System.out.println("Marks   : " +marks);
 				
 				System.out.println("-------------");
 			}
