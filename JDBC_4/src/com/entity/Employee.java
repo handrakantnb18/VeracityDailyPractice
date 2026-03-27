@@ -16,12 +16,11 @@ public class Employee {
 	
 	
 
-	public Employee(int id, String name, double salary, String gender, String city, String dept) {
+	public Employee(int id, String name,  String gender, String city, String dept) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.salary = salary;
-		this.gender = gender;
+//		this.gender = gender;
 		this.city = city;
 		this.dept = dept;
 	}
