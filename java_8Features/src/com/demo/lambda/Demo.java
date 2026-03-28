@@ -89,9 +89,11 @@ public class Demo {
 		
 		Test t = (Student student) ->
 		{
-			System.out.println(student.getId());
-			System.out.println(student.getName());
-			System.out.println(student.getAddress());
+//			System.out.println(student.getId());
+//			System.out.println(student.getName());
+//			System.out.println(student.getAddress());
+			
+			System.out.println(student);
 		};
 		
 		Student s1 = new Student(1, "Datta", "Pune");
