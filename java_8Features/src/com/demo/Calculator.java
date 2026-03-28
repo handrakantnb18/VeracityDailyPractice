@@ -34,14 +34,36 @@ public class Calculator {
 		
 		// we are passing object to the Method as an arguments
 		
-		Calculator.calculator(new Addition());
+//		Calculator.calculator(new Addition());
 		
-		Calculator.calculator(new Substraction());
+//		Calculator.calculator(new Substraction());
 		
-		Calculator.calculator(new Division());
+//		Calculator.calculator(new Division());
 		
-		Calculator.calculator(new Multiplication());
+//		Calculator.calculator(new Multiplication());
 		
+		// Lambda expression with less code
+		
+		Calculator.calculator((int a, int b)->
+		{
+			System.out.println("Addition : "+(a+b));
+		});
+		
+		
+		Calculator.calculator((int a, int b) ->
+		{
+			System.out.println("Substraction : "+(a-b));
+		});
+		
+		Calculator.calculator((int a, int b) ->
+		{
+			System.out.println("Division : "+(a/b));
+		});
+		
+		Calculator.calculator((int a, int b)->
+		{
+			System.out.println("Multiplication : "+(a*b));
+		});
 		
 		
 		// Test x = new Addition();
