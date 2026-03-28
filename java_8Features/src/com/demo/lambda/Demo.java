@@ -42,6 +42,16 @@ public class Demo {
 		
 //		System.out.println(t.getName("Chandra", "Chandra")); // true -> check the values are equals or not
 		
+		Test t = (int[]arr) ->
+		{
+			for(int x : arr)
+			{
+				System.out.println(x);
+			}
+		};
 		
+		int numbers[] = {1,2,3,4,5};
+		
+		t.takeNumbers(numbers);
 	}
 }
