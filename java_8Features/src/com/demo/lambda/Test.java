@@ -10,8 +10,8 @@ public interface Test {
 	
 //	boolean getName(String str1, String str2);
 	
-	void takeNumbers(int[] arr);
+//	void takeNumbers(int[] arr);
 	
-	
+	int[] getNumbers(int[]numbers);
 	
 }
