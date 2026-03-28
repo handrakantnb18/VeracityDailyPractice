@@ -46,12 +46,17 @@ public class Demo {
 		{
 			for(int x : arr)
 			{
-				System.out.println(x);
+				if(x % 2 == 0)
+				{
+					System.out.println(x);
+				}
 			}
 		};
 		
 		int numbers[] = {1,2,3,4,5};
 		
 		t.takeNumbers(numbers);
+		
+		
 	}
 }
