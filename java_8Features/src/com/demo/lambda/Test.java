@@ -1,6 +1,7 @@
 package com.demo.lambda;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public interface Test {
@@ -21,7 +22,14 @@ public interface Test {
 	
 //	void takeStudent(Student student);
 	
-	void takeStudent(List<Student>students);
+//	void takeStudent(List<Student>students);
 	
+	// Employee
+	// Book
+	// product
+	// User
+	
+	
+	void takePairs(HashMap<Integer, Integer> map);
 	
 }
