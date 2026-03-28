@@ -2,7 +2,9 @@ package com.demo.lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map.Entry;
 
 public class Demo {
 
@@ -103,22 +105,40 @@ public class Demo {
 //		t.takeStudent(s1);
 		
 		
-		Test t = (List<Student> students) ->
+//		Test t = (List<Student> students) ->
+//		{
+//			for(Student s: students)
+//			{
+////				if(s.getAddress().equals("Pune"))
+//				if(s.getName().equals("Vittal"))
+//				{
+//					System.out.println(s);
+//
+//				}
+//			}
+//		};
+//		
+//		List<Student>  students = Arrays.asList(new Student(1, "Ram", "Pune"), new Student(2, "Vittal", "Pune"), new Student(3, "Datta", "banglore"));
+//		
+//		
+//		t.takeStudent(students);
+		
+		
+		Test t = (map) ->
 		{
-			for(Student s: students)
+			for(Entry<Integer, Integer> entry : map.entrySet())
 			{
-//				if(s.getAddress().equals("Pune"))
-				if(s.getName().equals("Vittal"))
-				{
-					System.out.println(s);
-
-				}
+				System.out.println(entry.getKey() + " = "+entry.getValue());
+				
 			}
 		};
 		
-		List<Student>  students = Arrays.asList(new Student(1, "Ram", "Pune"), new Student(2, "Vittal", "Pune"), new Student(3, "Datta", "banglore"));
+		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+		map.put(1, 100);
+		map.put(2, 200);
+		
+		t.takePairs(map);
 		
 		
-		t.takeStudent(students);
 	}
 }
