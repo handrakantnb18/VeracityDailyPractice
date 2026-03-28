@@ -23,6 +23,9 @@ public class Calculator {
 		
 		Calculator.calculator(substraction);
 		
+		Division division = new Division();
+		
+		Calculator.calculator(division);
 		
 		
 		// Test x = new Addition();
