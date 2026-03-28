@@ -106,10 +106,17 @@ public class Demo {
 		Test t = (List<Student> students) ->
 		{
 			for(Student s: students)
-				System.out.println(s);
+			{
+//				if(s.getAddress().equals("Pune"))
+				if(s.getName().equals("Vittal"))
+				{
+					System.out.println(s);
+
+				}
+			}
 		};
 		
-		List<Student>  students = Arrays.asList(new Student(1, "Ram", "Pune"), new Student(2, "Vittal", "Mumbai"), new Student(3, "Datta", "banglore"));
+		List<Student>  students = Arrays.asList(new Student(1, "Ram", "Pune"), new Student(2, "Vittal", "Pune"), new Student(3, "Datta", "banglore"));
 		
 		
 		t.takeStudent(students);
