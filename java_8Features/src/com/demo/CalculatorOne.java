@@ -8,6 +8,7 @@ public class CalculatorOne {
 	}
 	
 	// lambda expression in simple way function inside the function in java
+	// functional programming implement functional programmming lambda came into picture
 	
 	public static void main(String[] args) {
 		
