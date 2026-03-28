@@ -9,8 +9,20 @@ public class Demo {
 //			System.out.println("Add ");
 //		};
 		
-		Test t = () -> System.out.println("Add");
+//		Test t = () -> System.out.println("Add");
 		
-		t.add();
+//		t.add();
+		
+//		Test t =(int a, int b) ->
+//		{
+//			System.out.println(a+b);
+//		};
+//		
+//		t.add(12, 20);
+		
+		Test t = (a, b) -> System.out.println(a+b);
+		
+		t.add(25, 20);
+		
 	}
 }
