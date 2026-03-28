@@ -66,18 +66,24 @@ public class Demo {
 //		t.takeNumbers(numbers);
 //		
 		
-		Test t = (int[] x) ->
-		{
-			return x;
-		};
+//		Test t = (int[] x) ->
+//		{
+//			return x;
+//		};
+//		
+////		int numbers[] = {1,2,3,4,5};
+//		
+//		int arr[] = t.getNumbers(new int[] {10,20,30,40,50}); // pro level used
+//		
+//		// toString method used
+//		System.out.println(Arrays.toString(arr));
 		
-//		int numbers[] = {1,2,3,4,5};
 		
-		int arr[] = t.getNumbers(new int[] {10,20,30,40,50}); // pro level used
+		Test t = () -> new String[] {"chandrakant", "Priyanka","Vijay", "anil", "sachin"};
 		
-		// toString method used
-		System.out.println(Arrays.toString(arr));
+		String str[] = t.getNames();
 		
+		System.out.println(Arrays.toString(str));
 		
 	}
 }
