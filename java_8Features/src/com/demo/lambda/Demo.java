@@ -42,15 +42,21 @@ public class Demo {
 		
 //		System.out.println(t.getName("Chandra", "Chandra")); // true -> check the values are equals or not
 		
+		
 		Test t = (int[]arr) ->
 		{
+			int sum = 0;
 			for(int x : arr)
 			{
-				if(x % 2 == 0)
-				{
-					System.out.println(x);
-				}
+//				if(x % 2 == 0)
+//				{
+//					System.out.println(x);
+//				}
+				
+				sum = sum + x;
 			}
+			System.out.println("Sum : "+sum);
+			
 		};
 		
 		int numbers[] = {1,2,3,4,5};
