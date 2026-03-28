@@ -27,6 +27,9 @@ public class Calculator {
 		
 		Calculator.calculator(division);
 		
+		Multiplication multiplication = new Multiplication();
+		
+		Calculator.calculator(multiplication);
 		
 		// Test x = new Addition();
 		
