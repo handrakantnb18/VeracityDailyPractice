@@ -1,6 +1,8 @@
 package com.demo.lambda;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Demo {
 
@@ -87,18 +89,29 @@ public class Demo {
 //		System.out.println(Arrays.toString(str));
 		
 		
-		Test t = (Student student) ->
+//		Test t = (Student student) ->
+//		{
+////			System.out.println(student.getId());
+////			System.out.println(student.getName());
+////			System.out.println(student.getAddress());
+//			
+//			System.out.println(student);
+//		};
+//		
+//		Student s1 = new Student(1, "Datta", "Pune");
+//		
+//		t.takeStudent(s1);
+		
+		
+		Test t = (List<Student> students) ->
 		{
-//			System.out.println(student.getId());
-//			System.out.println(student.getName());
-//			System.out.println(student.getAddress());
-			
-			System.out.println(student);
+			for(Student s: students)
+				System.out.println(s);
 		};
 		
-		Student s1 = new Student(1, "Datta", "Pune");
+		List<Student>  students = Arrays.asList(new Student(1, "Ram", "Pune"), new Student(2, "Vittal", "Mumbai"), new Student(3, "Datta", "banglore"));
 		
-		t.takeStudent(s1);
 		
+		t.takeStudent(students);
 	}
 }
