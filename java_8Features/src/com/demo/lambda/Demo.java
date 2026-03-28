@@ -1,5 +1,7 @@
 package com.demo.lambda;
 
+import java.util.Arrays;
+
 public class Demo {
 
 	public static void main(String[] args) {
@@ -43,25 +45,38 @@ public class Demo {
 //		System.out.println(t.getName("Chandra", "Chandra")); // true -> check the values are equals or not
 		
 		
-		Test t = (int[]arr) ->
+//		Test t = (int[]arr) ->
+//		{
+//			int sum = 0;
+//			for(int x : arr)
+//			{
+////				if(x % 2 == 0)
+////				{
+////					System.out.println(x);
+////				}
+//				
+//				sum = sum + x;
+//			}
+//			System.out.println("Sum : "+sum);
+//			
+//		};
+//		
+//		int numbers[] = {1,2,3,4,5};
+//		
+//		t.takeNumbers(numbers);
+//		
+		
+		Test t = (int[] x) ->
 		{
-			int sum = 0;
-			for(int x : arr)
-			{
-//				if(x % 2 == 0)
-//				{
-//					System.out.println(x);
-//				}
-				
-				sum = sum + x;
-			}
-			System.out.println("Sum : "+sum);
-			
+			return x;
 		};
 		
-		int numbers[] = {1,2,3,4,5};
+//		int numbers[] = {1,2,3,4,5};
 		
-		t.takeNumbers(numbers);
+		int arr[] = t.getNumbers(new int[] {10,20,30,40,50}); // pro level used
+		
+		// toString method used
+		System.out.println(Arrays.toString(arr));
 		
 		
 	}
