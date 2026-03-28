@@ -14,7 +14,9 @@ public interface Test {
 	
 //	int[] getNumbers(int[]numbers);
 	
-	String[] getNames();
+//	String[] getNames();
+	
+	void takeStudent(Student student);
 	
 	
 }
