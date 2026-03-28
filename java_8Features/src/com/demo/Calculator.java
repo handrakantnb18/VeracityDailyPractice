@@ -15,21 +15,34 @@ public class Calculator {
 	
 	public static void main(String[] args) {
 		
-		Addition addition = new Addition();
+//		Addition addition = new Addition();
 		
-		Calculator.calculator(addition);
+//		Calculator.calculator(addition);
+//		
+//		Substraction substraction = new Substraction();
+//		
+//		Calculator.calculator(substraction);
+//		
+//		Division division = new Division();
+//		
+//		Calculator.calculator(division);
+//		
+//		Multiplication multiplication = new Multiplication();
+//		
+//		Calculator.calculator(multiplication);
+	
 		
-		Substraction substraction = new Substraction();
+		// we are passing object to the Method as an arguments
 		
-		Calculator.calculator(substraction);
+		Calculator.calculator(new Addition());
 		
-		Division division = new Division();
+		Calculator.calculator(new Substraction());
 		
-		Calculator.calculator(division);
+		Calculator.calculator(new Division());
 		
-		Multiplication multiplication = new Multiplication();
+		Calculator.calculator(new Multiplication());
 		
-		Calculator.calculator(multiplication);
+		
 		
 		// Test x = new Addition();
 		
