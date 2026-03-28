@@ -12,6 +12,9 @@ public interface Test {
 	
 //	void takeNumbers(int[] arr);
 	
-	int[] getNumbers(int[]numbers);
+//	int[] getNumbers(int[]numbers);
+	
+	String[] getNames();
+	
 	
 }
