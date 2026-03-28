@@ -1,5 +1,8 @@
 package com.demo.lambda;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public interface Test {
 
 //	void add();
@@ -16,7 +19,9 @@ public interface Test {
 	
 //	String[] getNames();
 	
-	void takeStudent(Student student);
+//	void takeStudent(Student student);
+	
+	void takeStudent(List<Student>students);
 	
 	
 }
