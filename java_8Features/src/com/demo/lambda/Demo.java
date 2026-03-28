@@ -8,7 +8,24 @@ import java.util.Map.Entry;
 
 public class Demo {
 
+	
+	static void calculate(Test t)
+	{
+		t.calculate(88, 77);
+	}
 	public static void main(String[] args) {
+		
+		
+		Demo.calculate((a, b) -> System.out.println("Addition       : "+(a+b)));
+		
+		Demo.calculate((a, b) -> System.out.println("Substraction   : "+(a-b)));
+		
+		Demo.calculate((a, b) -> System.out.println("Division       : "+(a/b)));
+		
+		Demo.calculate((a, b) -> System.out.println("Multiplication : "+(a*b)));
+		
+		
+		
 		
 //		Test t = () ->
 //		{
@@ -124,21 +141,21 @@ public class Demo {
 //		t.takeStudent(students);
 		
 		
-		Test t = (map) ->
-		{
-			for(Entry<Integer, Integer> entry : map.entrySet())
-			{
-				System.out.println(entry.getKey() + " = "+entry.getValue());
-				
-			}
-		};
-		
-		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-		map.put(1, 100);
-		map.put(2, 200);
-		
-		t.takePairs(map);
-		
+//		Test t = (map) ->
+//		{
+//			for(Entry<Integer, Integer> entry : map.entrySet())
+//			{
+//				System.out.println(entry.getKey() + " = "+entry.getValue());
+//				
+//			}
+//		};
+//		
+//		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+//		map.put(1, 100);
+//		map.put(2, 200);
+//		
+//		t.takePairs(map);
+//		
 		
 	}
 }
