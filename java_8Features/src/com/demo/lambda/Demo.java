@@ -24,13 +24,24 @@ public class Demo {
 //		
 //		t.add(25, 20);
 		
-		Test t = (x, y) ->
-		{
-			return x+y;
-		};
+//		Test t = (x, y) ->
+//		{
+//			return x+y;
+//		};
+//		
+//		int x = t.add(25, 25);
+//		System.out.println(x);
 		
-		int x = t.add(25, 25);
-		System.out.println(x);
+//		Test t = (s1, s2) ->
+//		{
+//			return s1.equals(s2);
+//		};
+//		
+//		System.out.println(t.getName("Chandra", "chandra")); // false -> check the values name are same or not (name convention )
+		// compare two values - capital letters and small case
+		
+//		System.out.println(t.getName("Chandra", "Chandra")); // true -> check the values are equals or not
+		
 		
 	}
 }
