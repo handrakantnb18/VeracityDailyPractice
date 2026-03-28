@@ -78,12 +78,25 @@ public class Demo {
 //		// toString method used
 //		System.out.println(Arrays.toString(arr));
 		
+		// access without return type
+//		
+//		Test t = () -> new String[] {"chandrakant", "Priyanka","Vijay", "anil", "sachin"};
+//		
+//		String str[] = t.getNames();
+//		
+//		System.out.println(Arrays.toString(str));
 		
-		Test t = () -> new String[] {"chandrakant", "Priyanka","Vijay", "anil", "sachin"};
 		
-		String str[] = t.getNames();
+		Test t = (Student student) ->
+		{
+			System.out.println(student.getId());
+			System.out.println(student.getName());
+			System.out.println(student.getAddress());
+		};
 		
-		System.out.println(Arrays.toString(str));
+		Student s1 = new Student(1, "Datta", "Pune");
+		
+		t.takeStudent(s1);
 		
 	}
 }
