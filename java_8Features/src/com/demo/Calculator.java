@@ -66,9 +66,9 @@ public class Calculator {
 //		});
 //		
 //		
+		// lambda expression in one line to pro level
 		
 		Calculator.calculator((int a, int b)-> System.out.println("Addition : "+(a+b)));
-		
 		
 		Calculator.calculator((int a, int b) -> System.out.println("Substraction : "+(a-b)));
 		
@@ -78,8 +78,6 @@ public class Calculator {
 		
 		
 		// Test x = new Addition();
-		
-		
-		
+			
 	}
 }
