@@ -6,6 +6,12 @@ import java.util.List;
 
 public interface Test {
 
+	void calculate(int a, int b);
+	
+	
+	
+	
+	
 //	void add();
 	
 //	void add(int a, int b);
@@ -30,6 +36,6 @@ public interface Test {
 	// User
 	
 	
-	void takePairs(HashMap<Integer, Integer> map);
+//	void takePairs(HashMap<Integer, Integer> map);
 	
 }
