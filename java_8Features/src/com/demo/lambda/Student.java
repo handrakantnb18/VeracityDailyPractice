@@ -26,6 +26,11 @@ public class Student {
 	public String getAddress() {
 		return address;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
+	}
 	
 	
 }
