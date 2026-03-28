@@ -19,6 +19,12 @@ public class Calculator {
 		
 		Calculator.calculator(addition);
 		
+		Substraction substraction = new Substraction();
+		
+		Calculator.calculator(substraction);
+		
+		
+		
 		// Test x = new Addition();
 		
 		
