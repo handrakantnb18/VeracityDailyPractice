@@ -44,26 +44,37 @@ public class Calculator {
 		
 		// Lambda expression with less code
 		
-		Calculator.calculator((int a, int b)->
-		{
-			System.out.println("Addition : "+(a+b));
-		});
+//		Calculator.calculator((int a, int b)->
+//		{
+//			System.out.println("Addition : "+(a+b));
+//		});
+//		
+//		
+//		Calculator.calculator((int a, int b) ->
+//		{
+//			System.out.println("Substraction : "+(a-b));
+//		});
+//		
+//		Calculator.calculator((int a, int b) ->
+//		{
+//			System.out.println("Division : "+(a/b));
+//		});
+//		
+//		Calculator.calculator((int a, int b)->
+//		{
+//			System.out.println("Multiplication : "+(a*b));
+//		});
+//		
+//		
+		
+		Calculator.calculator((int a, int b)-> System.out.println("Addition : "+(a+b)));
 		
 		
-		Calculator.calculator((int a, int b) ->
-		{
-			System.out.println("Substraction : "+(a-b));
-		});
+		Calculator.calculator((int a, int b) -> System.out.println("Substraction : "+(a-b)));
 		
-		Calculator.calculator((int a, int b) ->
-		{
-			System.out.println("Division : "+(a/b));
-		});
+		Calculator.calculator((int a, int b) -> System.out.println("Division : "+(a/b)));
 		
-		Calculator.calculator((int a, int b)->
-		{
-			System.out.println("Multiplication : "+(a*b));
-		});
+		Calculator.calculator((int a, int b)-> System.out.println("Multiplication : "+(a*b)));
 		
 		
 		// Test x = new Addition();
