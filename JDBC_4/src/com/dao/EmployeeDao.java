@@ -90,19 +90,46 @@ public class EmployeeDao {
 			ps.setInt(6, employee.getId());
 //			ps.setString(6, employee.getName());
 
-			ps.executeUpdate();
+			int value = ps.executeUpdate(); // insert update and delete value
 //			ps.execute();
 			
 //			int value = ps.execute();
 			
 			
-//			if(value > 0)
-//			{
-//				return "Employee update successfully";
-//			}
+			if(value > 0)
+			{
+				return "Employee update successfully";
+			}
 			
 			
 		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	// delete 
+	
+	
+	public String delete(int id)
+	{
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("delete from employees where id=?");
+			
+			ps.setInt(1, id);
+			
+			int value = ps.executeUpdate();
+			
+			if(value>0)
+			{
+				return "Employee deleted Successfully";
+			}
+			
+		}
+		catch(Exception e)
+		{
 			e.printStackTrace();
 		}
 		
