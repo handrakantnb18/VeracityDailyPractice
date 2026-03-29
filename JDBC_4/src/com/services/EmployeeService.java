@@ -1,8 +1,11 @@
 package com.services;
 
+import java.util.ArrayList;
+
 import com.dao.EmployeeDao;
 import com.entity.Employee;
 import com.exception.EmployeeNotFoundException;
+import com.exception.EmployeeNotFountException;
 import com.exception.SomethingWentWrongException;
 
 public class EmployeeService {
@@ -52,7 +55,7 @@ public class EmployeeService {
 		
 		if(employee == null)
 		{
-			throw new EmployeeNotFoundException("Employee not found");
+			throw new EmployeeNotFoundException("Employee not found with id : "+id);
 		}
 		
 		
@@ -60,5 +63,17 @@ public class EmployeeService {
 		
 	}
 	
+	public ArrayList<Employee> getAll()
+	{
+		// return dao.getAllEmployees();
+		
+		ArrayList<Employee> employees = dao.getAllEmployees();
+		
+		if(employees.isEmpty())
+		{
+			throw new EmployeeNotFountException("No Employee present in the Database.");
+		}
+		return employees;
+	}
 	
 }
