@@ -24,29 +24,33 @@ public class EmployeeMain {
 		
 		EmployeeController controller = new EmployeeController();
 		
-		while(true)
-		{
-			System.out.println("1. Insert Employee.");
-			System.out.println("2. Update Employee.");
-			System.out.println("3. Delete Employee.");
-			System.out.println("4. Get By ID Employee.");
-			System.out.println("5. Get By name Employee.");
-			System.out.println();
-			System.out.println();
-			
-			System.out.println("5. Get All Employee.");
-			System.out.println("6. Exit.");
-
-
-		}
+//		while(true)
+//		{
+//			System.out.println("1. Insert Employee.");
+//			System.out.println("2. Update Employee.");
+//			System.out.println("3. Delete Employee.");
+//			System.out.println("4. Get By ID Employee.");
+//			System.out.println("5. Get By name Employee.");
+//			System.out.println();
+//			System.out.println();
+//			
+//			System.out.println("5. Get All Employee.");
+//			System.out.println("6. Exit.");
+//
+//
+//		}
+//		
 		
-		
+//		try
+//		{
 //		Employee e1 = new Employee(25, "Sachin", "Male", "Pune", 26000, "Sales");
 //		Employee e2 = new Employee(26, "Pratik", "Male", "Mumbai", 45000, "IT");
 //		Employee e3 = new Employee(27, "Shid", "Male", "Sangli", 880000, "HR");
 //		Employee e4 = new Employee(28, "Pramod", "Male", "Pune", 5500000, "Account");
 //		Employee e5 = new Employee(29, "Santosh", "Male", "Kashmir", 560000, "ED");
 //		
+//		
+////		String msg6 = controller.insertEmployee(null);
 //		
 //		String msg1 = controller.insertEmployee(e1);
 //		String msg2 = controller.insertEmployee(e2);
@@ -59,7 +63,14 @@ public class EmployeeMain {
 //		System.out.println(msg3);
 //		System.out.println(msg4);
 //		System.out.println(msg5);
-//		
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+		
+		
+		
 //		try
 //		{
 //		Employee e6 = new Employee(28, "matt", "Female", "Pune", 25000, "IT");
@@ -96,29 +107,29 @@ public class EmployeeMain {
 //			System.out.println(e.getMessage());
 //		}
 		
-		try
-		{
-		ArrayList<Employee> all = controller.getAll();
-		
-		for(Employee emp : all)
-		{
-//			System.out.println(emp);
-			
-			System.out.println("ID     : "+emp.getId());
-			System.out.println("Name   : "+emp.getName());
-			System.out.println("Dept   : "+emp.getDept());
-			System.out.println("Gender : "+emp.getGender());
-			System.out.println("Salary : "+emp.getSalary());
-			System.out.println("City   : "+emp.getCity());
-			
-			System.out.println("------------------------");
-
-
-		}
-		}catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
-		
+//		try
+//		{
+//		ArrayList<Employee> all = controller.getAll();
+//		
+//		for(Employee emp : all)
+//		{
+////			System.out.println(emp);
+//			
+//			System.out.println("ID     : "+emp.getId());
+//			System.out.println("Name   : "+emp.getName());
+//			System.out.println("Dept   : "+emp.getDept());
+//			System.out.println("Gender : "+emp.getGender());
+//			System.out.println("Salary : "+emp.getSalary());
+//			System.out.println("City   : "+emp.getCity());
+//			
+//			System.out.println("------------------------");
+//
+//
+//		}
+//		}catch(Exception e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+//		
 	}
 }
