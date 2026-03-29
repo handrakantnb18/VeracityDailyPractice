@@ -3,6 +3,7 @@ package com.main;
 import com.controller.EmployeeController;
 import com.entity.Employee;
 import com.exception.SomethingWentWrongException;
+import com.exception.EmployeeNotFoundException;
 
 public class EmployeeMain {
 
@@ -54,14 +55,28 @@ public class EmployeeMain {
 //		}
 	
 		
+//		try
+//		{
+//			System.out.println(controller.delete(29));
+//		}
+//		catch(SomethingWentWrongException e)
+//		{
+//			e.printStackTrace();
+//		}
+//		
 		try
 		{
-			System.out.println(controller.delete(22));
+		Employee employee =  controller.get(29);
+		
+//		System.out.println(employee.getId());
+		
+		System.out.println(employee);
 		}
-		catch(SomethingWentWrongException e)
+		catch(Exception e)
 		{
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
+		
 		
 	}
 }
