@@ -23,7 +23,7 @@ public class JDBCUtil {
 		
 			conn = DriverManager.getConnection(url, username, password);
 			
-			System.out.println("Connected to database.");
+			//System.out.println("Connected to database.");
 		}
 		catch (Exception e)
 		{
