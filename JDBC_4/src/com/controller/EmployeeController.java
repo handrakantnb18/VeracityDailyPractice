@@ -32,5 +32,9 @@ public class EmployeeController {
 //		return msg;
 	}
 	
+	public Employee get(int id)
+	{
+		return service.getEmployeeById(id);
+	}
 	
 }
