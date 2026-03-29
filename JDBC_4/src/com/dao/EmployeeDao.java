@@ -172,7 +172,7 @@ public class EmployeeDao {
 		return employee;
 	}
 	
-	public Employee getAllEmployees()
+	public ArrayList<Employee> getAllEmployees()
 	{
 		
 		ArrayList<Employee> employees = new ArrayList<Employee>();
@@ -206,7 +206,7 @@ public class EmployeeDao {
 		{
 			e.printStackTrace();
 		}
-		return employee;
+		return employees;
 	}
 
 }
