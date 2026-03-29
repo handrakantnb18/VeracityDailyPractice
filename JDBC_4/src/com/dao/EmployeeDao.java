@@ -2,7 +2,9 @@ package com.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 // import com.demo.jdbcConnection.JDBCUtil;
 import com.entity.Employee;
@@ -135,4 +137,76 @@ public class EmployeeDao {
 		
 		return null;
 	}
+	
+	// get single employee
+	
+	public Employee getEmployeeById(int id)
+	{
+		Employee employee = null;
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("select * from employees where id=?");
+		
+			ps.setInt(1, id);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next())
+			{
+			int id1 = rs.getInt("id");
+			String name = rs.getString("name");
+			String gender = rs.getString("gender");
+			String dept = rs.getString("dept");
+			String city = rs.getString("city");
+			double salary = rs.getDouble("salary");
+			
+			employee= new Employee(id1, name, gender, city, salary, dept);
+			}
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return employee;
+	}
+	
+	public Employee getAllEmployees()
+	{
+		
+		ArrayList<Employee> employees = new ArrayList<Employee>();
+		Employee employee = null;
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("select * from employees");
+		
+			// ps.setInt(1, id);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next())
+			{
+			int id1 = rs.getInt("id");
+			String name = rs.getString("name");
+			String gender = rs.getString("gender");
+			String dept = rs.getString("dept");
+			String city = rs.getString("city");
+			double salary = rs.getDouble("salary");
+			
+			employee= new Employee(id1, name, gender, city, salary, dept);
+			
+			employees.add(employee);
+			
+			}
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return employee;
+	}
+
 }
