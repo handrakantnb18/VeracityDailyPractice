@@ -8,7 +8,19 @@ public interface Test {
 
 	void calculate(int a, int b);
 	
+	// void abc(int[]arr1, String[]arr2);
+	// void bbc(String str, student s1);
+	// void cbc(ArrayList<Student> s1, ArrayList<Employee> e1);
+	// List <Book> getBooks()
+	// ArrayList<Product> getProducts()
+	// void takePairs(TreeMap<String, String> map)
 	
+	// void takenumbers(int[]numbres) // take array and return sum
+	
+	// void takenumbers(int[]numbres) // take array and return MAX elements
+
+	// void takenumbers(int[]numbres) // take array and return MIN elements
+
 	
 	
 	
