@@ -24,8 +24,24 @@ public class EmployeeService {
 		
 		if(msg == null)
 		{
-			throw new SomethingWentWrongException("check your SQL query");
+			throw new SomethingWentWrongException("Check your SQL query");
 		}
 		return msg;
 	}
+	
+	// delete
+	
+	public String delete(int id)
+	{
+		String msg = dao.delete(id);
+		
+		if(msg == null)
+		{
+			throw new SomethingWentWrongException("Check your SQL query");
+		}
+		
+		return msg;
+	}
+	
+	
 }
