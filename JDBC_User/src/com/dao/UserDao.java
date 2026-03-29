@@ -63,4 +63,67 @@ public class UserDao {
 		
 		return "User inserted successfuly";
 	}
+	
+	// UpdateUser data
+	
+	public String updateUser(User user)
+	{
+		try
+		{
+			PreparedStatement ps= conn.prepareStatement("update user set username=?,password=?,email=?,gender=?,dob=?,mobileNo=?,address=?,age=? where id=?");
+		
+			ps.setString(1, user.getUsername());
+			ps.setString(2, user.getPassword());
+			ps.setString(3, user.getEmail());
+			ps.setString(4, user.getGender());
+			ps.setString(5, user.getDob());
+			ps.setString(6, user.getMobileNo());
+			ps.setString(7, user.getAddress());
+			ps.setInt(8, user.getAge());
+			ps.setInt(9, user.getId());
+			
+			int num= ps.executeUpdate();
+			
+			if(num>0)
+			{
+				return "User Update Successfully";
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return null;
+		
+	}
+		// delete user from table
+		
+		public String delete(int id)
+		{
+			try
+			{
+				PreparedStatement ps = conn.prepareStatement("delete from user where id=?");
+			
+				ps.setInt(1, id);
+				
+				int value = ps.executeUpdate();
+				
+				if(value>0)
+				{
+					return "User deleted Successfully.";
+				}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			return null;
+		}
+		
+		
+		// get single user into table
+		
+		
+	
 }
