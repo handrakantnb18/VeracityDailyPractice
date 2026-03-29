@@ -40,17 +40,28 @@ public class EmployeeMain {
 //		System.out.println(msg4);
 //		System.out.println(msg5);
 //		
+//		try
+//		{
+//		Employee e6 = new Employee(28, "matt", "Female", "Pune", 25000, "IT");
+//		
+//		String msg = controller.update(e6);
+//		
+//		System.out.println(msg);
+//		}
+//		catch(SomethingWentWrongException e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+	
+		
 		try
 		{
-		Employee e6 = new Employee(6, "Priyanka", "Female", "Pune", 25000, "IT");
-		
-		String msg = controller.update(e6);
-		
-		System.out.println(msg);
+			System.out.println(controller.delete(22));
 		}
 		catch(SomethingWentWrongException e)
 		{
-			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
+		
 	}
 }
