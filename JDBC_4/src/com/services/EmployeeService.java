@@ -2,6 +2,7 @@ package com.services;
 
 import com.dao.EmployeeDao;
 import com.entity.Employee;
+import com.exception.EmployeeNotFoundException;
 import com.exception.SomethingWentWrongException;
 
 public class EmployeeService {
@@ -41,6 +42,22 @@ public class EmployeeService {
 		}
 		
 		return msg;
+	}
+	
+	public Employee getEmployeeById(int id) 
+	{
+		// return dao.getEmployeeById(id); // pro level
+		
+		Employee employee = dao.getEmployeeById(id);
+		
+		if(employee == null)
+		{
+			throw new EmployeeNotFoundException("Employee not found");
+		}
+		
+		
+		return employee;
+		
 	}
 	
 	
