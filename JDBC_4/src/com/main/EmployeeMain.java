@@ -1,5 +1,7 @@
 package com.main;
 
+import java.util.ArrayList;
+
 import com.controller.EmployeeController;
 import com.entity.Employee;
 import com.exception.SomethingWentWrongException;
@@ -21,6 +23,23 @@ public class EmployeeMain {
 		
 		
 		EmployeeController controller = new EmployeeController();
+		
+		while(true)
+		{
+			System.out.println("1. Insert Employee.");
+			System.out.println("2. Update Employee.");
+			System.out.println("3. Delete Employee.");
+			System.out.println("4. Get By ID Employee.");
+			System.out.println("5. Get By name Employee.");
+			System.out.println();
+			System.out.println();
+			
+			System.out.println("5. Get All Employee.");
+			System.out.println("6. Exit.");
+
+
+		}
+		
 		
 //		Employee e1 = new Employee(25, "Sachin", "Male", "Pune", 26000, "Sales");
 //		Employee e2 = new Employee(26, "Pratik", "Male", "Mumbai", 45000, "IT");
@@ -64,19 +83,42 @@ public class EmployeeMain {
 //			e.printStackTrace();
 //		}
 //		
+//		try
+//		{
+//		Employee employee =  controller.get(29);
+//		
+////		System.out.println(employee.getId());
+//		
+//		System.out.println(employee);
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+		
 		try
 		{
-		Employee employee =  controller.get(29);
+		ArrayList<Employee> all = controller.getAll();
 		
-//		System.out.println(employee.getId());
-		
-		System.out.println(employee);
+		for(Employee emp : all)
+		{
+//			System.out.println(emp);
+			
+			System.out.println("ID     : "+emp.getId());
+			System.out.println("Name   : "+emp.getName());
+			System.out.println("Dept   : "+emp.getDept());
+			System.out.println("Gender : "+emp.getGender());
+			System.out.println("Salary : "+emp.getSalary());
+			System.out.println("City   : "+emp.getCity());
+			
+			System.out.println("------------------------");
+
+
 		}
-		catch(Exception e)
+		}catch(Exception e)
 		{
 			System.out.println(e.getMessage());
 		}
-		
 		
 	}
 }
