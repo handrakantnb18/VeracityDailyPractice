@@ -6,25 +6,27 @@ public class Employee {
 
 	private String name;
 
-	private double salary;
-
 	private String gender;
 
 	private String city;
 
-	private String dept;
-	
-	
+	private double salary;
 
-	public Employee(int id, String name,  String gender, String city, String dept) {
+	private String dept;
+
+// constructor
+
+	public Employee(int id, String name, String gender, String city, double salary, String dept) {
 		super();
 		this.id = id;
 		this.name = name;
-//		this.gender = gender;
+		this.gender = gender;
 		this.city = city;
+		this.salary = salary;
 		this.dept = dept;
 	}
 
+//	getter and setter methods
 	
 	public int getId() {
 		return id;
@@ -38,16 +40,8 @@ public class Employee {
 		return name;
 	}
 
-	public void setName(String anme) {
-		this.name = anme;
-	}
-
-	public double getSalary() {
-		return salary;
-	}
-
-	public void setSalary(double salary) {
-		this.salary = salary;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getGender() {
@@ -66,6 +60,14 @@ public class Employee {
 		this.city = city;
 	}
 
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
 	public String getDept() {
 		return dept;
 	}
@@ -73,5 +75,6 @@ public class Employee {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
+
 
 }
