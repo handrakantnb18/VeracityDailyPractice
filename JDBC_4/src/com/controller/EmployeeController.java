@@ -21,4 +21,16 @@ public class EmployeeController {
 		
 		return msg;
 	}
+	
+	public String delete(int id)
+	{
+		
+		return service.delete(id);
+		
+//		String msg = service.delete(id);
+//		
+//		return msg;
+	}
+	
+	
 }
