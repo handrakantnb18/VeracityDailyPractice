@@ -17,7 +17,7 @@ public class JDBCUtil {
 		
 		try
 		{
-			Class.forName("com.mysql.jc.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			 conn = DriverManager.getConnection(url, username, password);
 			
