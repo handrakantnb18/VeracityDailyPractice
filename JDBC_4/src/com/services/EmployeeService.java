@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.dao.EmployeeDao;
 import com.entity.Employee;
+import com.exception.EmployeeIsNullExceptiopn;
 import com.exception.EmployeeNotFoundException;
 import com.exception.EmployeeNotFountException;
 import com.exception.SomethingWentWrongException;
@@ -16,6 +17,10 @@ public class EmployeeService {
 	
 	public String inseretEmployee(Employee employee)
 	{
+		if(employee == null)
+		{
+			throw new EmployeeIsNullExceptiopn("Employee Null ");
+		}
 		String msg = dao.insertEmployee(employee);
 		
 		return msg;
