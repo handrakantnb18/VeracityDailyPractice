@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.ArrayList;
+
 import com.entity.Employee;
 import com.services.EmployeeService;
 
@@ -37,4 +39,8 @@ public class EmployeeController {
 		return service.getEmployeeById(id);
 	}
 	
+	public ArrayList<Employee> getAll()
+	{
+		return service.getAll();
+	}
 }
