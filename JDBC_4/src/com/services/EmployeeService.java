@@ -10,16 +10,17 @@ public class EmployeeService {
 	
 	EmployeeDao dao = new EmployeeDao();
 	
-//	public String inseretEmployee(Employee employee)
-//	{
-//		String msg = dao.insertEmployee(employee);
-//		
-//		return msg;
-//	}
+	public String inseretEmployee(Employee employee)
+	{
+		String msg = dao.insertEmployee(employee);
+		
+		return msg;
+	}
+	
 	
 	public String update(Employee employee)
 	{
-		String msg = dao.update(employee);
+		String msg = dao.updateEmployee(employee);
 		
 		if(msg == null)
 		{
