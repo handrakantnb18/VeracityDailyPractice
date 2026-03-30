@@ -2,6 +2,7 @@ package com.services;
 
 import com.book.Book;
 import com.dao.BookDao;
+import com.exception.SomethingWentWrongException;
 
 public class BookService {
 
@@ -18,7 +19,20 @@ public class BookService {
 	
 	// update book info
 	
+	public String update(Book book)
+	{
+		String msg = dao.updateBook(book);
+		
+		if(msg == null)
+		{
+			throw new SomethingWentWrongException("Check your SQL Query.");
+		}
+		
+		return msg;
+	}
 	
+	
+	// delete single Book
 	
 	
 }
