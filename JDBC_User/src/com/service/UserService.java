@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import com.dao.UserDao;
 import com.exception.SomethingWentWrongException;
 import com.exception.UserIsNullException;
+import com.exception.UserNotFoundException;
 import com.user.User;
 
 public class UserService {
@@ -72,13 +73,15 @@ public class UserService {
 	
 	public ArrayList<User> getAll()
 	{
-		ArrayList<User> user = new ArrayList<User>();
+		ArrayList<User> users = dao.getAllUsers();
 		
-		if(user.isEmpty())
+		if(users.isEmpty())
 		{
+			
 			throw new UserNotFoundException("No User found in the database");
 		}
-		return user;
+		
+		return users;
 	}
 	
 	
