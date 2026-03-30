@@ -1,8 +1,11 @@
 package com.services;
 
+import java.util.ArrayList;
+
 import com.book.Book;
 import com.dao.BookDao;
 import com.exception.BookIsNullException;
+import com.exception.BookNotFoundException;
 import com.exception.SomethingWentWrongException;
 
 public class BookService {
@@ -66,6 +69,16 @@ public class BookService {
 	
 	// getAll Books into table 
 	
-	
+	public ArrayList<Book> getAll()
+	{
+		ArrayList<Book> books = dao.getAllBooks();
+		
+		if(books.isEmpty())
+		{
+			throw new BookNotFoundException("No Book Found");
+		}
+		
+		return books;
+	}
 	
 }
