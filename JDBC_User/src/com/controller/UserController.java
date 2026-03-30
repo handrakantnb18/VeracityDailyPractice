@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.ArrayList;
+
 import com.service.UserService;
 import com.user.User;
 
@@ -45,6 +47,9 @@ public class UserController {
 	
 	// get all user from table
 	
-	
+	public ArrayList<User> getAll()
+	{
+		return service.getAll();
+	}
 	
 }
