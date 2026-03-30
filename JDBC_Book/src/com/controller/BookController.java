@@ -28,5 +28,21 @@ public class BookController {
 	
 	// Delete one Book
 	
+	public String delete(int id)
+	{
+		return service.delete(id);
+	}
+	
+	// get single Book from table
+	
+	public Book get(int id)
+	{
+		return service.getBookById(id);
+	}
+	
+	// getAll Books from table
+	
+	
+	
 	
 }
