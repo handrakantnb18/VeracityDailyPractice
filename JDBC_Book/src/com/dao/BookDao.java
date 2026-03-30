@@ -69,8 +69,40 @@ public class BookDao {
 	}
 	
 	
-	// Update Book into database
+	// Update Book into table
 	
+	public String updateBook(Book book)
+	{
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("update book set "
+					+ "name=?,price=?,auther=?,qty=?,mfgdate=?,expand=? where id=?");
+			
+			ps.setString(1, book.getName());
+			ps.setInt(2, book.getPrice());
+			ps.setString(3, book.getAuther());
+			ps.setInt(4, book.getQty());
+			ps.setString(5, book.getMfgdate());
+			ps.setString(6, book.getExpand());
+			ps.setInt(7, book.getId());
+			
+			int value = ps.executeUpdate();
+			
+			if(value>0)
+			{
+				return "Book update Successfully.";
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	
+	// delete single Book id in table
 	
 	
 }
