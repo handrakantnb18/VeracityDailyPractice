@@ -1,6 +1,7 @@
 package com.services;
 
 import com.dao.ProductDao;
+import com.exception.SomethingWentWrongException;
 import com.product.Product;
 
 public class ProductServices {
@@ -15,4 +16,22 @@ public class ProductServices {
 		
 		return msg;
 	}
+	
+	// update product info
+	
+	public String update(Product product)
+	{
+		String msg = dao.updateProduct(product);
+		
+		if(msg == null)
+		{
+			throw new SomethingWentWrongException("Check SQL Query ");
+			
+		}
+		return msg;
+	}
+	
+	// Delete single product into table
+	
+	
 }
