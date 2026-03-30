@@ -1,5 +1,7 @@
 package com.main;
 
+import java.util.ArrayList;
+
 import com.book.Book;
 import com.controller.BookController;
 import com.exception.SomethingWentWrongException;
@@ -47,22 +49,74 @@ public class BookMain {
 		
 		// update books
 		
+//		try
+//		{
+//			Book b10 = new Book(1, "The Power of Habit", 480, "Charles Duhigg", 8, "2021-02-18", "Habit");
+//			
+//			String msg = controller.update(b10);
+//			
+//			System.out.println(msg);
+//		}
+//		catch(SomethingWentWrongException e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+		
+		
+		// delete single book into table
+		
+//		try
+//		{
+//			System.out.println(controller.delete(1));
+//			
+//		}catch(SomethingWentWrongException e)
+//		{
+//			e.printStackTrace();
+//		}
+//		
+		
+		
+		// get single Book into table
+		
 		try
 		{
-			Book b10 = new Book(1, "The Power of Habit", 480, "Charles Duhigg", 8, "2021-02-18", "Habit");
 			
-			String msg = controller.update(b10);
+			Book book = controller.get(4);
 			
-			System.out.println(msg);
+			System.out.println(book);
+			
 		}
-		catch(SomethingWentWrongException e)
+		catch(Exception e)
 		{
 			System.out.println(e.getMessage());
 		}
 		
+		// getAll Books into table
 		
-		// delete single book
 		
+//		try
+//		{
+//			ArrayList<Book> all = controller.getAll();
+//			
+//			for(Book bk : all)
+//			{
+//				
+//				System.out.println("ID : "+bk.getId());
+//				System.out.println("Name : "+bk.getName());
+//				System.out.println("Price : "+bk.getPrice());
+//				System.out.println("Auther : "+bk.getAuther());
+//				System.out.println("Qty : "+bk.getQty());
+//				System.out.println("Mfgdate : "+bk.getMfgdate());
+//				System.out.println("Expand : "+bk.getExpand());
+//				
+//				System.out.println(" ------------------------- ");
+//			}
+//			
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
 		
 	}
 }
