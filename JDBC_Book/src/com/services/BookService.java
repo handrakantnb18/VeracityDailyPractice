@@ -2,6 +2,7 @@ package com.services;
 
 import com.book.Book;
 import com.dao.BookDao;
+import com.exception.BookIsNullException;
 import com.exception.SomethingWentWrongException;
 
 public class BookService {
@@ -33,6 +34,38 @@ public class BookService {
 	
 	
 	// delete single Book
+	
+	public String delete(int id)
+	{
+		String msg = dao.delete(id);
+		
+		if(msg == null)
+		{
+			throw new SomethingWentWrongException("Check your SQL Query.");
+		}
+		
+		return msg;
+	}
+	
+	
+	// get single Book into table by id
+	
+	
+	public Book getBookById(int id)
+	{
+		Book book = dao.getBookById(id);
+		
+		if(book == null)
+		{
+			throw new BookIsNullException("Book Null");
+		}
+		
+		return book;
+	}
+	
+	
+	// getAll Books into table 
+	
 	
 	
 }
