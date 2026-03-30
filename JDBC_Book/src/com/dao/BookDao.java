@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import com.book.Book;
 import com.util.JDBCUtil;
@@ -171,7 +172,41 @@ public class BookDao {
 	
 	// getAll books from tables 
 	
-	
+	public ArrayList<Book> getAllBooks()
+	{
+		
+		ArrayList<Book> books = new ArrayList<Book>();
+		Book book = null;
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("select * from book");
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next())
+			{
+				int id1 = rs.getInt("id");
+				String name = rs.getString("name");
+				int price = rs.getInt("price");
+				String auther = rs.getString("auther");
+				int qty = rs.getInt("qty");
+				String mfgdate = rs.getString("mfgdate");
+				String expand = rs.getString("expand");
+				
+				book = new Book(id1, name, price, auther, qty, mfgdate, expand);
+				
+				books.add(book);
+			}
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return books;
+	}
 	
 	
 }
