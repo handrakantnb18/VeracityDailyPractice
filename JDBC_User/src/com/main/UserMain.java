@@ -1,5 +1,7 @@
 package com.main;
 
+import java.util.ArrayList;
+
 import com.controller.UserController;
 import com.exception.SomethingWentWrongException;
 import com.user.User;
@@ -81,22 +83,46 @@ public class UserMain {
 		
 		// get one user from table
 		
+//		try
+//		{
+//		User user = controller.get(4);
+//		
+//		System.out.println(user);
+//		
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+//		
+//		
+		// get all user from table
+		
+		
 		try
 		{
-		User user = controller.get(4);
+			ArrayList<User> all = controller.getAll();
 		
-		System.out.println(user);
-		
+			for(User usr : all)
+			{
+				System.out.println("");
+				System.out.println("ID       : "+usr.getId());
+				System.out.println("UserName : "+usr.getUsername());
+				System.out.println("Password : "+usr.getPassword());
+				System.out.println("Email    : "+usr.getEmail());
+				System.out.println("Gender   : "+usr.getGender());
+				System.out.println("DOB      : "+usr.getDob());
+				System.out.println("MobileNo : "+usr.getMobileNo());
+				System.out.println("Address  : "+usr.getAddress());
+				System.out.println("Age      : "+usr.getAge());
+				
+				System.out.println("--------------------------------------");
+			}
 		}
 		catch(Exception e)
 		{
 			System.out.println(e.getMessage());
 		}
-		
-		
-		// get all user from table
-		
-		
 		
 	}
 }
