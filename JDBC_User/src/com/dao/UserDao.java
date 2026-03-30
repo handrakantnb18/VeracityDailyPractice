@@ -2,6 +2,7 @@ package com.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 import com.user.User;
@@ -97,7 +98,7 @@ public class UserDao {
 		return null;
 		
 	}
-		// delete user from table
+		// delete single user from table
 		
 		public String delete(int id)
 		{
@@ -124,6 +125,43 @@ public class UserDao {
 		
 		// get single user into table
 		
-		
+		public User getUserById(int id)
+		{
+			User user = null;
+			try
+			{
+				PreparedStatement ps = conn.prepareStatement("select * from user where id=?");
+			
+				ps.setInt(1, id);
+			
+				ResultSet rs = ps.executeQuery();
+			
+				while(rs.next())
+				{
+					int id1 = rs.getInt("id");
+					String username = rs.getNString("username");
+					String password = rs.getString("password");
+					String email = rs.getString("email");
+					String gender = rs.getString("gender");
+					String dob = rs.getString("dob");
+					String mobileNo = rs.getString("mobileNo");
+					String address = rs.getString("address");
+					int age = rs.getInt("age");
+					
+					user = new User(id1, username, password, email, gender, dob, mobileNo, address, age);
+					
+				}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			
+			return user;
+		}
 	
+		
+		// get all user from User
+		
+		
 }
