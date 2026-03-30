@@ -1,5 +1,7 @@
 package com.service;
 
+import java.util.ArrayList;
+
 import com.dao.UserDao;
 import com.exception.SomethingWentWrongException;
 import com.exception.UserIsNullException;
@@ -51,6 +53,33 @@ public class UserService {
 	}
 	
 	// get single user from table by id
+	
+	
+	public User getUserById(int id)
+	{
+		User user = dao.getUserById(id);
+		
+		if(user == null)
+		{
+			throw new UserIsNullException("User Null");
+		}
+		
+		return user;
+	}
+	
+	
+	// get all users from table
+	
+	public ArrayList<User> getAll()
+	{
+		ArrayList<User> user = new ArrayList<User>();
+		
+		if(user.isEmpty())
+		{
+			throw new UserNotFoundException("No User found in the database");
+		}
+		return user;
+	}
 	
 	
 }
