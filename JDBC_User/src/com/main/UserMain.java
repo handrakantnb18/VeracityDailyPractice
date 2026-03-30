@@ -81,6 +81,22 @@ public class UserMain {
 		
 		// get one user from table
 		
+		try
+		{
+		User user = controller.get(4);
+		
+		System.out.println(user);
+		
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		
+		
+		// get all user from table
+		
+		
 		
 	}
 }
