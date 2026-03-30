@@ -2,6 +2,7 @@ package com.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.Statement;
 
 import com.book.Book;
@@ -103,6 +104,74 @@ public class BookDao {
 	
 	
 	// delete single Book id in table
+	
+	public String delete(int id)
+	{
+		try
+		{
+			
+			PreparedStatement ps = conn.prepareStatement("delete from book where id=?");
+			
+			ps.setInt(1, id);
+			
+			int vlaue = ps.executeUpdate();
+			
+			if(vlaue>0)
+			{
+				return "Book deleted Successfully.";
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	
+	// get single book into table with id
+	
+	public Book getBookById(int id)
+	{
+		
+		Book book = null;
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("select * from book where id=?");
+					
+			ps.setInt(1, id);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next())
+			{
+				int id1 = rs.getInt("id");
+				String name = rs.getString("name");
+				int price = rs.getInt("price");
+				String auther = rs.getString("auther");
+				int qty = rs.getInt("qty");
+				String mfgdate = rs.getString("mfgdate");
+				String expand = rs.getString("expand");
+				
+				book = new Book(id1, name, price, auther, qty, mfgdate, expand);
+				
+				
+			}
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return book;
+	}
+	
+	// getAll books from tables 
+	
+	
 	
 	
 }
