@@ -37,6 +37,14 @@ public class UserController {
 	
 	// get single user from table
 	
+	public User get(int id)
+	{
+		return service.getUserById(id);
+	}
+	
+	
+	// get all user from table
+	
 	
 	
 }
