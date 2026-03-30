@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import com.user.User;
 import com.util.JDBCUtil;
@@ -163,5 +164,41 @@ public class UserDao {
 		
 		// get all user from User
 		
-		
+		public ArrayList<User> getAllUsers()
+		{
+			
+			ArrayList<User> users = new ArrayList<User>();
+			User user = null;
+			
+			try
+			{
+				PreparedStatement ps = conn.prepareStatement("select * from user");
+			
+				ResultSet rs = ps.executeQuery();
+			
+				while(rs.next())
+				{
+					
+					int id1 = rs.getInt("id");
+					String username = rs.getNString("username");
+					String password = rs.getString("password");
+					String email = rs.getString("email");
+					String gender = rs.getString("gender");
+					String dob = rs.getString("dob");
+					String mobileNo = rs.getString("mobileNo");
+					String address = rs.getString("address");
+					int age = rs.getInt("age");
+					
+					user = new User(id1, username, password, email, gender, dob, mobileNo, address, age);
+					
+					users.add(user);
+				}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			
+			return users;
+		}
 }
