@@ -70,6 +70,30 @@ public class ProductDao {
 	
 	
 	// update product into table
-	
+	public String updateProduct(Product product)
+	{
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("update product set name=?,price=?,category=?,qty=? where id=?");
+			
+			ps.setString(1, product.getName());
+			ps.setInt(2, product.getPrice());
+			ps.setString(3, product.getCategory());
+			ps.setInt(4, product.getQty());
+			ps.setInt(5, product.getId());
+			
+			int vlaue = ps.executeUpdate();
+			if(vlaue>0)
+			{
+				return "Product update Successfullly";
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
 	
 }
