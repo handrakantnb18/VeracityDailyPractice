@@ -78,45 +78,45 @@ public class BookMain {
 		
 		// get single Book into table
 		
-		try
-		{
-			
-			Book book = controller.get(4);
-			
-			System.out.println(book);
-			
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-		}
-		
-		// getAll Books into table
-		
-		
 //		try
 //		{
-//			ArrayList<Book> all = controller.getAll();
 //			
-//			for(Book bk : all)
-//			{
-//				
-//				System.out.println("ID : "+bk.getId());
-//				System.out.println("Name : "+bk.getName());
-//				System.out.println("Price : "+bk.getPrice());
-//				System.out.println("Auther : "+bk.getAuther());
-//				System.out.println("Qty : "+bk.getQty());
-//				System.out.println("Mfgdate : "+bk.getMfgdate());
-//				System.out.println("Expand : "+bk.getExpand());
-//				
-//				System.out.println(" ------------------------- ");
-//			}
+//			Book book = controller.get(4);
+//			
+//			System.out.println(book);
 //			
 //		}
 //		catch(Exception e)
 //		{
 //			System.out.println(e.getMessage());
 //		}
+		
+		// getAll Books into table
+		
+		
+		try
+		{
+			ArrayList<Book> all = controller.getAll();
+			
+			for(Book bk : all)
+			{
+				
+				System.out.println("ID : "+bk.getId());
+				System.out.println("Name : "+bk.getName());
+				System.out.println("Price : "+bk.getPrice());
+				System.out.println("Auther : "+bk.getAuther());
+				System.out.println("Qty : "+bk.getQty());
+				System.out.println("Mfgdate : "+bk.getMfgdate());
+				System.out.println("Expand : "+bk.getExpand());
+				
+				System.out.println(" ------------------------- ");
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
 		
 	}
 }
