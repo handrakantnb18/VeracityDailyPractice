@@ -20,5 +20,12 @@ public class ProductController {
 	
 	// update product into table
 	
+	public String update(Product product)
+	{
+		return service.update(product);
+	}
+	
+	// Delete one Product into table
+	
 	
 }
