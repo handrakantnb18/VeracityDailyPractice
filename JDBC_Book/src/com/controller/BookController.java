@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.ArrayList;
+
 import com.book.Book;
 import com.services.BookService;
 
@@ -42,7 +44,10 @@ public class BookController {
 	
 	// getAll Books from table
 	
-	
+	public ArrayList<Book> getAll()
+	{
+		return service.getAll();
+	}
 	
 	
 }
