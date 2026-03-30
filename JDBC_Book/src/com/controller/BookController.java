@@ -20,6 +20,13 @@ public class BookController {
 	
 	// update book info
 	
+	public String update(Book book)
+	{
+		return service.update(book);
+	}
+	
+	
+	// Delete one Book
 	
 	
 }
