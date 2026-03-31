@@ -1,5 +1,6 @@
 package com.generics.a;
 
+import java.util.Arrays;
 
 public interface Test<T, U> {
 
@@ -21,6 +22,13 @@ public interface Test<T, U> {
 			System.out.println(y);
 		};
 		d2.add(55.45f, true);
+		
+		Test<Integer, int[]> d3=(x,y)->
+		{
+			System.out.println(x);
+			System.out.println(Arrays.toString(y));
+		};
+		d3.add(55, new int[] {78, 89, 45, 56});
 		
 	}
 }
