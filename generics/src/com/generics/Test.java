@@ -1,5 +1,7 @@
 package com.generics;
 
+import java.util.Arrays;
+
 public interface Test<T> {
 
 	void fun(T t);
@@ -27,5 +29,11 @@ public interface Test<T> {
 		
 		d3.fun(55.23f);
 		
+		Test<int[]> d4=(b)->
+		{
+			System.out.println(Arrays.toString(b));
+		};
+		
+		d4.fun(new int[] {1,2,3,4,5,});
 	}
 }
