@@ -1,8 +1,11 @@
 package com.dao;
 
+import java.awt.print.Book;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 import com.product.Product;
 import com.util.JDBCUtil;
@@ -95,5 +98,104 @@ public class ProductDao {
 		
 		return null;
 	}
+	
+	
+	// delete single product into table
+	
+	public String delete(int id)
+	{
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("delete from product where id=?");
+			
+			ps.setInt(1, id);
+			
+			int value = ps.executeUpdate();
+			
+			if(value>0)
+			{
+				return "Product deleted successfully";
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return null;
+	}
+	
+	// get single product into table with id
+	
+	public Product getProductById(int id)
+	{
+		Product product = null;
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("select * from product where id=?");
+			
+			ps.setInt(1, id);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next())
+			{
+				int id1 = rs.getInt("id");
+				String name = rs.getString("name");
+				int price = rs.getInt("price");
+				String category = rs.getString("category");
+				int qty = rs.getInt("qty");
+				
+				product = new Product(id1, name, price, category, qty);
+				
+			}
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return product;
+		
+	}
+	
+	// getAll Product from table
+	
+	public ArrayList<Product> getAllProducts()
+	{
+		ArrayList<Product> products = new ArrayList<Product>();
+		Product product = null;
+		
+		try
+		{
+			PreparedStatement ps = conn.prepareStatement("select * from product");
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next())
+			{
+				int id1 = rs.getInt("id");
+				String name = rs.getString("name");
+				int price = rs.getInt("price");
+				String category = rs.getString("category");
+				int qty = rs.getInt("qty");
+				
+				product = new Product(id1, name, price, category, qty);
+				
+				products.add(product);
+				
+			}
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return products;
+	}
+	
 	
 }
