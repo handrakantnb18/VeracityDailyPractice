@@ -5,7 +5,7 @@ package com.generics;
 
 public interface Demo<T> {
 
-	void add(T t1, T t2); // using generics
+	void add(T t1, T t2); // using generics type (T - is a type)
 	
 	public static void main(String[] args) {
 		
