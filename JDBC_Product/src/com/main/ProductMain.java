@@ -1,6 +1,9 @@
 package com.main;
 
+import java.util.ArrayList;
+
 import com.controller.ProductController;
+import com.exception.SomethingWentWrongException;
 import com.product.Product;
 
 public class ProductMain {
@@ -61,24 +64,68 @@ public class ProductMain {
 		
 		// update product
 		
-		try
-		{
-			Product pro = new Product(1, "Smart Watch", 4500, "Electronics", 10);
-			
-			 String msg = controller.update(pro);
-			
-			System.out.println(msg);
-			
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-		
+//		try
+//		{
+//			Product pro = new Product(1, "Smart Watch", 4500, "Electronics", 10);
+//			
+//			 String msg = controller.update(pro);
+//			
+//			System.out.println(msg);
+//			
+//		}
+//		catch(Exception e)
+//		{
+//			e.printStackTrace();
+//		}
+//		
 		
 		// Delete single Product into table
 		
+//		try
+//		{
+//			System.out.println(controller.delete(1));
+//		}
+//		catch(SomethingWentWrongException e)
+//		{
+//			e.printStackTrace();
+//		}
+//		
 		
+		// get single product into table with id
+		
+//		try
+//		{
+//			Product product = controller.get(4);
+//			
+//			System.out.println(product);
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
+//		
+		
+		// getAll Product into table
+		
+		try
+		{
+			ArrayList<Product> all = controller.getAll();
+			
+			for(Product pro : all)
+			{
+				System.out.println("ID : "+pro.getId());
+				System.out.println("Name : "+pro.getName());
+				System.out.println("Price : "+pro.getPrice());
+				System.out.println("Category : "+pro.getCategory());
+				System.out.println("Qty : "+pro.getQty());
+								
+				System.out.println(" ------------------------- ");
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
 		
 	}
 }
