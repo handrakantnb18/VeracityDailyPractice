@@ -15,5 +15,12 @@ public interface Test<T, U> {
 		
 		t1.add(1, "Chandrakant");
 		
+		Test<Float, Boolean> d2=(x,y)->
+		{
+			System.out.println(x);
+			System.out.println(y);
+		};
+		d2.add(55.45f, true);
+		
 	}
 }
