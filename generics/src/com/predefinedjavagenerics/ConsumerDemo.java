@@ -44,12 +44,15 @@ public class ConsumerDemo {
 		{
 			for(int s:j)
 			{
+//				if(s % 2 == 0)
+				if(s % 2 != 0)
 				System.out.println(s);
 			}
 		};
-	
-
+		
 		c3.accept(new int[] {1,2,3,4,5,8,9,7,6});
+		
+		
 		
 	}
 	
