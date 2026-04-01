@@ -8,12 +8,23 @@ public class ConsumerDemo {
 		
 		// java predefined generics
 		
-		Consumer<Integer> c = (i)->
-		{
-			System.out.println(i);
-		};
+//		Consumer<Integer> c = (i)->
+//		{
+//			System.out.println(i);
+//		};
+//		
+//		c.accept(500);
 		
-		c.accept(500);
+		Consumer<String> c1= (j)->
+		{
+			System.out.println(j);
+		};
+	
+		c1.accept("Chandrakant");
+		
+		
+		
 	}
+	
 	
 }
