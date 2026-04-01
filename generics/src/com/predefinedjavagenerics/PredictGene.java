@@ -29,8 +29,9 @@ public class PredictGene {
 			// return a.startsWith("C");
 			// return a.equals("Chandrakant");
 			
-			return a.contains(a);
+			// return a.contains(a);
 			
+			return a.endsWith(a);
 		};
 		
 		boolean b = p.test("Chandrakant");
