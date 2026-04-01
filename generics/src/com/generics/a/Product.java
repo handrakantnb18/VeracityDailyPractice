@@ -10,10 +10,12 @@ private int id;
 	
 	private String address;
 
+	
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", address=" + address + "]";
 	}
+	
 
 	public Product(int id, String name, int price, String address) {
 		super();
