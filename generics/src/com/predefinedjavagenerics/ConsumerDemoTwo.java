@@ -29,6 +29,13 @@ public class ConsumerDemoTwo {
 				new Student(2, "Chandraaknt", 89.55),
 				new Student(3, "Priyanka", 85.66)));
 		
+		// Book
+		// Product
+		// Employee
+		// List Book
+		// List PRoduct
+		// List Employee
+		
 		
 	}
 }
