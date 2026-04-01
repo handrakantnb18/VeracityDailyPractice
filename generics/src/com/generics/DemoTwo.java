@@ -1,5 +1,7 @@
 package com.generics;
 
+import java.util.Arrays;
+
 public interface DemoTwo<T,U,R> {
 
 	// T - First parameter
@@ -10,11 +12,27 @@ public interface DemoTwo<T,U,R> {
 	
 	public static void main(String[] args) {
 		
-		DemoTwo<Integer,String,String> t1= (i,j) ->
+		// String is return type
+		
+//		DemoTwo<Integer,String,String> t1= (i,j) ->
+//		{
+//			return j;
+//		};
+//		
+//		System.out.println(t1.fun(1, "chandrakant"));
+		
+		DemoTwo<int[], int[], Integer> t2 = (i, j)->
 		{
-			return j;
+			System.out.println(Arrays.toString(i));
+			System.out.println(Arrays.toString(j));
+			
+			return 900;
 		};
 		
-		System.out.println(t1.fun(1, "chandrakant"));
+		int x = t2.fun(new int[] {12,15,18,21}, new int[] {15,25,35,45});
+		
+		System.out.println(x);
+		
+		
 	}
 }
