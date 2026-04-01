@@ -30,13 +30,21 @@ public class FunctionDemo {
 		
 //		System.out.println(f.apply(100));
 		
-		Function<Student, Student> f=(a)->
+//		Function<Student, Student> f=(a)->
+//		{
+//			return a;
+//			// return new Student(1, "Ram", 54.60);
+//		};
+//		
+//		System.out.println(f.apply(new Student(2, "Chandrakant", 55.50)));
+		
+		Function<String, Integer> f1 = (i) ->
 		{
-			return a;
-			// return new Student(1, "Ram", 54.60);
+			//return 100;
+			return i.length();
 		};
 		
-		System.out.println(f.apply(new Student(2, "Chandrakant", 55.50)));
+		System.out.println(f1.apply("Chandrakant"));
 		
 		
 		
