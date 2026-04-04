@@ -6,6 +6,8 @@ public interface Test {
 	
 //	void add();
 	
-	void add(String x);
+//	void add(String x);
+
+	void add(String x, int y);
 
 }
