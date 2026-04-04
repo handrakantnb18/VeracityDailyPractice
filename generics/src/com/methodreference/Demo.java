@@ -2,6 +2,10 @@ package com.methodreference;
 
 public class Demo {
 
+	public Demo() {
+		System.out.println("Default constructor");
+		// TODO Auto-generated constructor stub
+	}
 	void fun()
 	{
 		System.out.println("This is fun method.");
@@ -46,7 +50,12 @@ public class Demo {
 //		t.add();
 		
 		// static method reference
-		Test t = Demo::m1;
+//		Test t = Demo::m1;
+//		
+//		t.add();
+		
+		
+		Test t = Demo:: new;
 		
 		t.add();
 		
