@@ -11,6 +11,12 @@ public class Demo {
 		
 		numbers.stream().filter(i -> i % 2 == 0).forEach(i -> System.out.println(i));
 		
+		// Lambda 
+		// Functional interface
+		// generics interface
+		// method reference
+		// consumer, predicate, supplier, function
+		
 		
 		
 		// Even or Odd numbers print
