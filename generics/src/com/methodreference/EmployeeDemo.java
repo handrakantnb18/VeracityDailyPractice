@@ -8,12 +8,27 @@ public class EmployeeDemo {
 
 	public static void main(String[] args) {
 		
-		
-		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+		String[] str = {"ABC", "DEF","GHI","JKL"};
 
-		Stream<Integer> stream = list.stream();
+		// str.stream()  // not posible to convert list then convert string method
+		
+		List<String> list = Arrays.asList(str);
+		
+		Stream<String> stream = list.stream();
 		
 		stream.forEach(x -> System.out.println(x));
+		
+		
+		
+		
+		
+		
+		
+//		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+//
+//		Stream<Integer> stream = list.stream();
+//		
+//		stream.forEach(x -> System.out.println(x));
 		
 		
 //		String[] str = {"ABC", "DEF","GHI","JKL"};
