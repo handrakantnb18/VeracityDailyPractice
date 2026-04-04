@@ -10,8 +10,8 @@ public class Demo {
 	
 	// constructor 
 	
-	public Demo(String a) {
-		System.out.println("Constructor method used : "+a);
+	public Demo(String a, int b) {
+		System.out.println("Constructor method used : "+(a+b));
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -101,6 +101,6 @@ public class Demo {
 		
 		Test t= Demo::new;
 		
-		t.add("Chandraaknt");
+		t.add("Chandraaknt ", 1818);
 	}
 }
