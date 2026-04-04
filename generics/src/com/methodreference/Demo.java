@@ -2,11 +2,20 @@ package com.methodreference;
 
 public class Demo {
 	
-	void fun(int a)
+	// instance method
+	
+//	void fun(int a)
+//	{
+//		System.out.println("Fun add : "+a);
+//	}
+
+	// Static method
+	
+	static void fun(int a)
 	{
 		System.out.println("Fun add : "+a);
 	}
-
+	
 //	public Demo() {
 //		System.out.println("Default constructor");
 //		// TODO Auto-generated constructor stub
@@ -66,8 +75,13 @@ public class Demo {
 //		
 //		t.add();
 		
-		Test t =new Demo()::fun;
+//		Test t =new Demo()::fun;
+//		
+//		t.add(34);
+		
+		Test t =Demo::fun;
 		
 		t.add(34);
+
 	}
 }
