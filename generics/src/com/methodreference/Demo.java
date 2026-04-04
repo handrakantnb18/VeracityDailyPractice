@@ -1,29 +1,36 @@
 package com.methodreference;
 
 public class Demo {
+	
+	void fun(int a)
+	{
+		System.out.println("Fun add : "+a);
+	}
 
-	public Demo() {
-		System.out.println("Default constructor");
-		// TODO Auto-generated constructor stub
-	}
-	void fun()
-	{
-		System.out.println("This is fun method.");
-	}
+//	public Demo() {
+//		System.out.println("Default constructor");
+//		// TODO Auto-generated constructor stub
+//	}
+//	void fun()
+//	{
+//		System.out.println("This is fun method.");
+//	}
+//	
+//	void display()
+//	{
+//		int a = 100, b = 20;
+//		System.out.println("Addition       : "+(a+b));
+//		System.out.println("Substraction   : "+(a-b));
+//		System.out.println("Division       : "+(a/b));
+//		System.out.println("Multiplication : "+(a*b));
+//	}
+//	
+//	static void m1()
+//	{
+//		System.out.println("Static method reference used");
+//	}
 	
-	void display()
-	{
-		int a = 100, b = 20;
-		System.out.println("Addition       : "+(a+b));
-		System.out.println("Substraction   : "+(a-b));
-		System.out.println("Division       : "+(a/b));
-		System.out.println("Multiplication : "+(a*b));
-	}
 	
-	static void m1()
-	{
-		System.out.println("Static method reference used");
-	}
 	public static void main(String[] args) {
 		
 //		Test t =()->
@@ -55,9 +62,12 @@ public class Demo {
 //		t.add();
 		
 		
-		Test t = Demo:: new;
+//		Test t = Demo:: new;
+//		
+//		t.add();
 		
-		t.add();
+		Test t =new Demo()::fun;
 		
+		t.add(34);
 	}
 }
