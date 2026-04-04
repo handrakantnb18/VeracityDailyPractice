@@ -102,5 +102,7 @@ public class Demo {
 		Test t= Demo::new;
 		
 		t.add("Chandraaknt ", 1818);
+		
+		 // we want to change return type then required the same return value
 	}
 }
