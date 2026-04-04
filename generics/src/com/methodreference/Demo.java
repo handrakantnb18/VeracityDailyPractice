@@ -15,6 +15,11 @@ public class Demo {
 		System.out.println("Division       : "+(a/b));
 		System.out.println("Multiplication : "+(a*b));
 	}
+	
+	static void m1()
+	{
+		System.out.println("Static method reference used");
+	}
 	public static void main(String[] args) {
 		
 //		Test t =()->
@@ -35,8 +40,15 @@ public class Demo {
 //		
 //		t.add();
 		
-		Test t = new Demo()::display;
+		// instance method reference
+//		Test t = new Demo()::display;
+//		
+//		t.add();
+		
+		// static method reference
+		Test t = Demo::m1;
 		
 		t.add();
+		
 	}
 }
