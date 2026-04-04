@@ -9,11 +9,23 @@ public class EmployeeDemo {
 	public static void main(String[] args) {
 		
 		
-		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 		
-		Stream<List<Integer>> stream = Stream.of(list);
 		
-		stream.forEach((i) -> System.out.println(i));
+		
+		
+//		String[] str = {"ABC", "DEF","GHI","JKL"};
+//		
+//		Stream<String> stream = Stream.of(str);
+//		
+//		stream.forEach(x -> System.out.println(x.toLowerCase()));
+		
+		
+		
+//		List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+//		
+//		Stream<List<Integer>> stream = Stream.of(list);
+//		
+//		stream.forEach((i) -> System.out.println(i));
 		
 		
 		
