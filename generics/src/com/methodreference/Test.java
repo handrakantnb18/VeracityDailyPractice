@@ -2,6 +2,7 @@ package com.methodreference;
 
 public interface Test {
 
-	void add();
+	void add(int x);
 	
+//	void add();
 }
