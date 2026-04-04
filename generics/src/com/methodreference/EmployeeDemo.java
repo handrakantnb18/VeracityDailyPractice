@@ -9,9 +9,9 @@ public class EmployeeDemo {
 		
 		List<Employee> emp = Arrays.asList(new Employee(1, "Chandraaknt", "Male", 2500000.00, "Pune"));
 		
-		System.out.println(emp);
+		//System.out.println(emp);
 		
-		//emp.forEach();
+		emp.forEach((i) ->System.out.println(i));
 		
 	}
 }
