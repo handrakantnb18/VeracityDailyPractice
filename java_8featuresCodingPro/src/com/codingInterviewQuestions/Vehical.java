@@ -6,4 +6,5 @@ public interface Vehical {
 	{
 		System.out.println("Vehical Started");
 	}
+	
 }
