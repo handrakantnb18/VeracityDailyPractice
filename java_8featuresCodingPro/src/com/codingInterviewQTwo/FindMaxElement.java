@@ -1,6 +1,7 @@
 package com.codingInterviewQTwo;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class FindMaxElement {
@@ -13,5 +14,14 @@ public class FindMaxElement {
                           .get();
          System.out.println(max); 
          
+         
+         int[] arr = {10,15,8,49,25,98,98,32,15}; 
+         
+         int maxdata = Arrays.stream(arr).boxed()
+                 .max(Comparator.naturalOrder()).get(); 
+
+         
+         	System.out.println(maxdata); 
+         	
 	}
 }
