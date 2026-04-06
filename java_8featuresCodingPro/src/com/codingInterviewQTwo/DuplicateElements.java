@@ -18,14 +18,26 @@ public class DuplicateElements {
 		.forEach(System.out::println);
 		
 		
-		public static void getDataWithoutDuplicates()
-		{
-			List<Integer> list2 = Arrays.asList(1,1,25,20,20,56,56,4,3,8);
-			Set<Integer> set1 = new HashSet<>(list2);
-			
-			List<Integer> uniqData = set1.stream().collect(Collectors.toList());
-			
-			uniqData.forEach(System.out::println);
-		}
+		// 1
+//		public static void getDataWithoutDuplicates()
+//		{
+//		     List<Integer> myList = Arrays.asList(1, 1, 85, 6, 2, 3, 65, 6, 45, 45, 5662, 2582, 2, 2, 266, 666, 656);
+//		     myList.stream().distinct().forEach(noDuplicateData -> System.out.println(noDuplicateData));
+//		 }
+		
+		// 2
+//		public static void getDataWithoutDuplicates()
+//		{
+//			List<Integer> list3 = Arrays.asList(1,1,25,20,20,56,56,4,3,8);
+//			Set<Integer> set1 = new HashSet<>(list3);
+//			
+//			List<Integer> uniqData = set1.stream().collect(Collectors.toList());
+//			
+//			uniqData.forEach(System.out::println);
+//		}
+		
+		
+		
+		
 	}
 }
