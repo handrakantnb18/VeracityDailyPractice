@@ -55,6 +55,10 @@ public class CheckDeposite {
 					System.out.println("Withdraw success : "+bankBalance);
 					
 				}
+				else
+				{
+					System.out.println("Insufficient funds");
+				}
 						
 			}
 			else
@@ -63,5 +67,21 @@ public class CheckDeposite {
 			}
 			
 		}
+		
+		else if(choice == 3)
+		{
+			System.out.println("Your bank balance is : "+bankBalance);
+		}
+		
+		else if(choice == 4)
+		{
+			System.out.println("Thank you for using our App..");
+		}
+		
+		else
+		{
+			System.out.println("Invalid choice please enter choice between 1 - 4");
+		}
+		
 	}
 }
