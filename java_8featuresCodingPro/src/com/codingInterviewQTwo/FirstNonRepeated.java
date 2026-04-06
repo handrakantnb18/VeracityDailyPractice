@@ -22,6 +22,10 @@ public class FirstNonRepeated {
 	    System.out.println(result); 
 	    
 	    
+	    input.chars().mapToObj(c -> (char) c)
+        .filter(ch -> input.indexOf(ch) == input.lastIndexOf(ch))
+        .findFirst().orElse(null);   
+	    
 	    
 	}
 }
