@@ -34,5 +34,6 @@ public class Discount {
 		{
 			System.out.println("No Discount");
 		}
+		
 	}
 }
