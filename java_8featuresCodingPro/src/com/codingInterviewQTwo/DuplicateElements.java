@@ -37,6 +37,10 @@ public class DuplicateElements {
 //		}
 		
 		
+		int[] arr = {10,15,20,25,45,55,60,80,90};
+		
+		List<Integer> list = Arrays.stream(arr).boxed().distinct()
+				.collect(Collectors.toList());
 		
 		
 	}
