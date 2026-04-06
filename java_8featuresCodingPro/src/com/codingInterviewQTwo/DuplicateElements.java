@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class DuplicateElements {
 
@@ -17,5 +18,14 @@ public class DuplicateElements {
 		.forEach(System.out::println);
 		
 		
+		public static void getDataWithoutDuplicates()
+		{
+			List<Integer> list2 = Arrays.asList(1,1,25,20,20,56,56,4,3,8);
+			Set<Integer> set1 = new HashSet<>(list2);
+			
+			List<Integer> uniqData = set1.stream().collect(Collectors.toList());
+			
+			uniqData.forEach(System.out::println);
+		}
 	}
 }
