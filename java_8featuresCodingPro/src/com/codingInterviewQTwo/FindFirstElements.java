@@ -13,9 +13,9 @@ public class FindFirstElements {
 		.findFirst()
 		.ifPresent(System.out::println);
 		
-		int[] arr = {25,10,35,65,89,78,45,12,55};
-		
-		Arrays.stream(arr).boxed().findFirst().ifPresent(System.out::println);
+//		int[] arr = {25,10,35,65,89,78,45,12,55};
+//		
+//		Arrays.stream(arr).boxed().findFirst().ifPresent(System.out::println);
 		
 		
 	}
