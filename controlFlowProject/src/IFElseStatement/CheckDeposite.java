@@ -40,28 +40,28 @@ public class CheckDeposite {
 
 		}
 		
-//		else if(choice == 2)
-//		{
-//			System.out.println("Enter withdraw amount");
-//			
-//			double amount = sc.nextDouble();
-//			
-//			if(amount > 0)
-//			{
-//				if(amount <= bankBalance)
-//				{
-//					bankBalance -= amount;
-//					
-//					System.out.println("Withdraw success : "+bankBalance);
-//					
-//				}
-//						
-//			}
-//			else
-//			{
-//				System.out.println("Invalid amount");
-//			}
-//			
-//		}
+		else if(choice == 2)
+		{
+			System.out.println("Enter withdraw amount");
+			
+			double amount = sc.nextDouble();
+			
+			if(amount > 0)
+			{
+				if(amount <= bankBalance)
+				{
+					bankBalance -= amount;
+					
+					System.out.println("Withdraw success : "+bankBalance);
+					
+				}
+						
+			}
+			else
+			{
+				System.out.println("Invalid amount");
+			}
+			
+		}
 	}
 }
