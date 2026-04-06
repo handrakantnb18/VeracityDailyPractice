@@ -1,6 +1,8 @@
 package com.codingInterviewQTwo;
 
+import java.util.HashSet;
 import java.util.LinkedHashMap;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -22,6 +24,14 @@ public class FirstRepeated {
          System.out.println(result); 
          
          
+//         Set<Character> seenCharacters = new HashSet<>();
+//
+//         return input.chars()
+//                 .mapToObj(c -> (char) c)
+//                		 .filter(c -> !seenCharacters.add(c))
+//                		 .findFirst()
+//                		 .orElse(null);
+      
          
 	}
 }
