@@ -2,14 +2,30 @@ package com.streamAPI;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Demo {
 
 	public static void main(String[] args) {
 		
-		List<Integer> numbers =Arrays.asList(1,2,3,4,88,54,45,3,7,9,107);
 		
-		numbers.stream().filter(i -> i % 2 == 0).forEach(i -> System.out.println(i));
+		List<Integer> num = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+		
+		Stream<Integer> stream = num.stream();
+		
+		Stream<Integer> filter = stream.filter((i) -> i % 2 == 0);
+		
+		filter.forEach(i -> System.out.println(i));
+		
+		
+		
+		
+		
+		
+		
+//		List<Integer> numbers =Arrays.asList(1,2,3,4,88,54,45,3,7,9,107);
+//		
+//		numbers.stream().filter(i -> i % 2 == 0).forEach(i -> System.out.println(i));
 		
 		// Lambda 
 		// Functional interface
