@@ -20,10 +20,25 @@ public class Demo {
 		
 		List<Employee> employees = Arrays.asList(e1,e2,e3,e4,e5);
 		
+//		employees.stream().map(e -> e.getName()).forEach(i -> System.out.println(i));
+		
+		
+		List<Integer> num = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+
+//		num.stream().map(i -> i +5).forEach(i -> System.out.println(i));
+		
+		num.stream().map(i -> i * 5).forEach(i -> System.out.println(i));
+
+		
+		
+		
+		
+		
 //		employees.stream().filter(e -> e.getGender().equals("Male")).forEach(i -> System.out.println(i));
 		
-		employees.stream().filter(e -> e.getGender().equals("Female")).forEach(i -> System.out.println(i));
+//		employees.stream().filter(e -> e.getGender().equalsIgnoreCase("Female")).forEach(i -> System.out.println(i));
 
+//		employees.stream().filter(e -> e.getCity().equals("Pune")).forEach(i -> System.out.println(i));
 		
 		
 		
