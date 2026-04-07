@@ -23,7 +23,18 @@ Employee e1 = new Employee(1, "Chandrakant", "Male", 250000.00, "Pune");
 		
 		List<Employee> employees = Arrays.asList(e1,e2,e3,e4,e5);
 		
-		// redicate boolean value
+		// allMatch method
+		boolean allMatch = employees.stream().allMatch(e ->e.getCity().equals("Pune"));
+
+		System.out.println("Namy match in Pune : "+allMatch);
+
+		// nonMatch
+		boolean noneMatch = employees.stream().noneMatch(e ->e.getCity().equals("Banglore"));
+
+		System.out.println("Namy match in Banglore : "+noneMatch);
+
+		
+		// predicate boolean value
 		
 //		boolean anyMatch = employees.stream().anyMatch(e ->e.getCity().equals("Pune"));
 //
@@ -34,9 +45,9 @@ Employee e1 = new Employee(1, "Chandrakant", "Male", 250000.00, "Pune");
 //		System.out.println("Namy match in Mumbai : "+anyMatch);
 
 
-		boolean anyMatch = employees.stream().anyMatch(e ->e.getCity().equals("Banglore"));
-
-		System.out.println("Namy match in Banglore : "+anyMatch);
+//		boolean anyMatch = employees.stream().anyMatch(e ->e.getCity().equals("Banglore"));
+//
+//		System.out.println("Namy match in Banglore : "+anyMatch);
 
 		
 //		List<String> backend = Arrays.asList("core java","core java", "Advanced java", "Spring Boot");
