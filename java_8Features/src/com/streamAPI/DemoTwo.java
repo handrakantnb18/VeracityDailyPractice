@@ -2,6 +2,7 @@ package com.streamAPI;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class DemoTwo {
 
@@ -11,12 +12,25 @@ public class DemoTwo {
 		
 		List<String> frontend = Arrays.asList("HTML", "CSS", "Java Script");
 		
-		List<List<String>> asList = Arrays.asList(backend, frontend);
-		
-		for(List<String> list : asList)
-		{
-			System.out.println(list);
-		}
+		List<String> db = Arrays.asList("SQL", "MYSQL", "Oracle");
 
+		List<List<String>> asList = Arrays.asList(backend, frontend,db);
+		
+		Stream<String> flatmap =  asList.stream().flatMap(e->e.stream());
+		
+		flatmap.forEach(i -> System.out.println(i));
+		
+		
+//		asList.stream().forEach(i -> System.out.println(i));
+		
+		
+		
+//		for(List<String> list : asList)
+//		{
+//			System.out.println(list);
+//		}
+
+		
+		
 	}
 }
