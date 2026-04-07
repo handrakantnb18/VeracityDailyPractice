@@ -8,10 +8,19 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
+		String[] names = {"chandrakant", "Abhi", "Vijay", "Priyanka","Ram","Puja"};
 		
-		List<Integer> num = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+		List<String> list = Arrays.asList(names);
 		
-		num.stream().filter(i -> i % 2 == 0).forEach(i -> System.out.println(i));
+		list.stream().filter(name -> name.startsWith("c"))
+		.forEach(i -> System.out.println(i));
+		
+		
+		
+//		List<Integer> num = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
+//		
+//		num.stream().filter(i -> i % 2 == 0).forEach(i -> System.out.println(i));
+		
 		
 		
 //		Stream<Integer> stream = num.stream();
