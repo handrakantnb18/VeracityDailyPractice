@@ -8,12 +8,36 @@ public class Demo {
 
 	public static void main(String[] args) {
 		
-		String[] names = {"chandrakant", "Abhi", "Vijay", "Priyanka","Ram","Puja"};
+		Employee e1 = new Employee(1, "Chandrakant", "Male", 250000.00, "Pune");
 		
-		List<String> list = Arrays.asList(names);
+		Employee e2 = new Employee(2, "Priyanka", "Female", 350000, "Pune");
 		
-		list.stream().filter(name -> name.startsWith("c"))
-		.forEach(i -> System.out.println(i));
+		Employee e3 = new Employee(3, "Ram", "Male", 550000, "Mumbai");
+		
+		Employee e4 = new Employee(4, "Vijay", "Male", 650000, "Mumbai");
+		
+		Employee e5 = new Employee(5, "Seema", "Male", 220000, "Pune");
+		
+		List<Employee> employees = Arrays.asList(e1,e2,e3,e4,e5);
+		
+//		employees.stream().filter(e -> e.getGender().equals("Male")).forEach(i -> System.out.println(i));
+		
+		employees.stream().filter(e -> e.getGender().equals("Female")).forEach(i -> System.out.println(i));
+
+		
+		
+		
+		
+//		String[] names = {"chandrakant", "Abhi", "Vijay", "Priyanka","Ram","Puja"};
+//		
+//		List<String> list = Arrays.asList(names);
+//		
+//		list.stream().filter(name -> name.startsWith("c"))
+//		.forEach(i -> System.out.println(i));
+//		
+//		list.stream().filter(name -> name.endsWith("a"))
+//		.forEach(i -> System.out.println(i));
+		
 		
 		
 		
