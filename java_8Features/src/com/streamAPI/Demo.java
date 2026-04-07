@@ -11,13 +11,16 @@ public class Demo {
 		
 		List<Integer> num = Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15);
 		
-		Stream<Integer> stream = num.stream();
+		num.stream().filter(i -> i % 2 == 0).forEach(i -> System.out.println(i));
+		
+		
+//		Stream<Integer> stream = num.stream();
 		
 //		Stream<Integer> filter = stream.filter((i) -> i % 2 == 0);
 		
-		Stream<Integer> filter = stream.filter((i) -> i % 2 != 0);
+//		Stream<Integer> filter = stream.filter((i) -> i % 2 != 0);
 
-		filter.forEach(i -> System.out.println(i));
+//		filter.forEach(i -> System.out.println(i));
 		
 		
 		
