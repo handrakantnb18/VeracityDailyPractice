@@ -22,6 +22,7 @@ public class Demo {
 		
 		
 		employees.stream()
+		.filter(e->e.getCity().equals("Pune"))
 		.map(e-> e.getName()+ " = "+ e.getName().length())
 		.forEach(i -> System.out.println(i));
 
