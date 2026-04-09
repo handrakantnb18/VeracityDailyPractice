@@ -1,5 +1,7 @@
 package com.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -39,8 +41,23 @@ public class UserDao {
 		
 		return user;
 		
+	}
+	
+	public List<User> getAllUSers()
+	{
+		Session session =  sf.openSession(); // save, update, delete, get
+
+		// HQL - hebernate query language
+		// Spring findAll
+		List<User> users = session.createQuery("From User").list();
+		
+		return users;
 		
 	}
 	
+	public void updateById()
+	{
+		
+	}
 	
 }
