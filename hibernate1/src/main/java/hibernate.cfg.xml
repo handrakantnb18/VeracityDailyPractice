@@ -6,7 +6,7 @@
 
 	<session-factory>
 
-		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate_db</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernateDb</property>
 
 		<property name="hibernate.connection.username">root</property>
 
@@ -15,9 +15,12 @@
 		<property name="hibernate.connection.driver-class-name">com.mysql.cj.jdbc.Driver</property>
 
 		<property name="hibernate.hbm2ddl.auto">update</property>
+
+		<property name="hibernate.show_sql">true</property>
 		
-		
-		
+		<mapping class="com.entity.User" />
+
+
 	</session-factory>
 
 
