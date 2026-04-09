@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.List;
+
 import com.entity.User;
 import com.service.UserService;
 
@@ -16,6 +18,11 @@ public class UserController {
 	public User getUser(int id)
 	{
 		return service.getUser(id);
+	}
+	
+	public List<User> getAll()
+	{
+		return service.getAll();
 	}
 	
 	
