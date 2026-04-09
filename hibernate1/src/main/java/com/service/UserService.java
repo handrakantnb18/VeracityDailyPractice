@@ -1,5 +1,7 @@
 package com.service;
 
+import java.util.List;
+
 import com.dao.UserDao;
 import com.entity.User;
 import com.exception.UserNotFoundException;
@@ -26,5 +28,10 @@ public class UserService
 		//return dao.getUser(id);
 	}
 	
+	
+	public List<User> getAll()
+	{
+		return dao.getAllUSers();
+	}
 	
 }
