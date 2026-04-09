@@ -20,7 +20,10 @@
 		
 		<mapping class="com.entity.User" />
 
-
+		<mapping class="com.entity.UserOrder" />
+		
+		<mapping class="com.entity.Employee" />
+		
 	</session-factory>
 
 
