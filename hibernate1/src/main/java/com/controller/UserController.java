@@ -25,5 +25,8 @@ public class UserController {
 		return service.getAll();
 	}
 	
-	
+	public String update(User user)
+	{
+		return service.update(user);
+	}
 }
