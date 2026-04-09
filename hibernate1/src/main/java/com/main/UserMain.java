@@ -2,6 +2,7 @@ package com.main;
 
 import com.controller.UserController;
 import com.entity.User;
+import com.exception.UserNotFoundException;
 
 public class UserMain {
 
@@ -9,9 +10,16 @@ public class UserMain {
 		
 		UserController controller = new UserController();
 		
-		 User user = controller.getUser(2);
+		try
+		{
+		 User user = controller.getUser(1);
 		 
 		 System.out.println(user);
+		}
+		catch(UserNotFoundException e)
+		{
+			System.out.println(e.getMessage());
+		}
 		
 //		User user = new User(1,"priyanka","1818","Pune");
 		
