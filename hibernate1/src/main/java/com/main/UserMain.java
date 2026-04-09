@@ -1,5 +1,7 @@
 package com.main;
 
+import java.util.List;
+
 import com.controller.UserController;
 import com.entity.User;
 import com.exception.UserNotFoundException;
@@ -10,16 +12,24 @@ public class UserMain {
 		
 		UserController controller = new UserController();
 		
-		try
+		List<User> users = controller.getAll();
+		
+		for(User user : users)
 		{
-		 User user = controller.getUser(1);
-		 
-		 System.out.println(user);
+			System.out.println(users);
 		}
-		catch(UserNotFoundException e)
-		{
-			System.out.println(e.getMessage());
-		}
+		
+		
+//		try
+//		{
+//		 User user = controller.getUser(1);
+//		 
+//		 System.out.println(user);
+//		}
+//		catch(UserNotFoundException e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
 		
 //		User user = new User(1,"priyanka","1818","Pune");
 		
