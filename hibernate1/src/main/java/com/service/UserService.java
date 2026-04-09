@@ -2,6 +2,7 @@ package com.service;
 
 import com.dao.UserDao;
 import com.entity.User;
+import com.exception.UserNotFoundException;
 
 public class UserService 
 {
@@ -15,7 +16,14 @@ public class UserService
 	
 	public User getUser(int id)
 	{
-		return dao.getUser(id);
+		User user = dao.getUser(id);
+		 if(user == null)
+		 {
+			 throw new UserNotFoundException("USer not found with id : "+id);
+		 }
+		 
+		 return user;
+		//return dao.getUser(id);
 	}
 	
 	
