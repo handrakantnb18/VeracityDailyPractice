@@ -34,4 +34,8 @@ public class UserService
 		return dao.getAllUSers();
 	}
 	
+	public String update(User user)
+	{
+		return dao.updateById(user);
+	}
 }
