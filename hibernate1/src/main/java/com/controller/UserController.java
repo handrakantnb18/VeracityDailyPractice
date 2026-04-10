@@ -29,4 +29,10 @@ public class UserController {
 	{
 		return service.update(user);
 	}
+	
+	public String delete(int id)
+	{
+		return service.delete(id);
+	}
+	
 }
