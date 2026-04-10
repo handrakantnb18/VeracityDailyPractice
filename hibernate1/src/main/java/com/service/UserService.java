@@ -38,4 +38,9 @@ public class UserService
 	{
 		return dao.updateById(user);
 	}
+	
+	public String delete(int id)
+	{
+		return dao.delete(id);
+	}
 }
