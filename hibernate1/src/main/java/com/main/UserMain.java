@@ -8,16 +8,33 @@ import com.exception.UserNotFoundException;
 
 public class UserMain {
 
+	// 4 projects
+	// Book
+	// Product
+	// Employee
+	// Student
+	
 	public static void main(String[] args) {
 		
 		UserController controller = new UserController();
 		
-		List<User> users = controller.getAll();
+		String msg = controller.delete(1);
 		
-		for(User user : users)
-		{
-			System.out.println(users);
-		}
+		System.out.println(msg);
+		
+		
+//		User user = new User(2,"vijay","3131","mumbai");
+//
+//		String msg = controller.update(user);
+//		
+//		System.out.println(msg);
+		
+//		List<User> users = controller.getAll();
+//		
+//		for(User user : users)
+//		{
+//			System.out.println(users);
+//		}
 		
 		
 //		try
