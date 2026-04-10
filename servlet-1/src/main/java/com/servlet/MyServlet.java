@@ -16,6 +16,7 @@ public class MyServlet extends HttpServlet {
 	
 		System.out.println("Servlet Method.");
 	
+		resp.getWriter().print("<h1>Servlet Responce done.</h1>");
 	}
 	
 }
