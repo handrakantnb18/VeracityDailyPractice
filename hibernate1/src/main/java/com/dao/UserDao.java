@@ -55,8 +55,46 @@ public class UserDao {
 		
 	}
 	
-	public void updateById()
+	// 2.
+	public String updateById(User user)
 	{
+		Session session =  sf.openSession(); // save, update, delete, get
+
+		Transaction tr = session.beginTransaction();
+
+		User existing = session.get(User.class, user.getId());
+		
+		existing.setUsername(user.getUsername());
+		existing.setPassword(user.getPassword());
+		existing.setAddress(user.getAddress());
+		
+		session.update(existing);
+		
+		tr.commit();
+		
+		session.close();
+		
+		return "Updated";
+	}
+	
+	public String delete(int id)
+	{
+		
+		Session session =  sf.openSession(); // save, update, delete, get
+
+		Transaction tr = session.beginTransaction();
+
+//		User user= session.get(User.class, id);
+		
+		User user = new UserDao().getUser(id);
+		
+		session.delete(user);
+		
+		tr.commit();
+		
+		session.close();
+		
+		return "User deleted Successfully";
 		
 	}
 	
