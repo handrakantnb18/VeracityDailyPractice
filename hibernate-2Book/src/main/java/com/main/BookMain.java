@@ -2,6 +2,7 @@ package com.main;
 
 import com.controller.BookController;
 import com.entity.Book;
+import com.exception.BookNotFoundException;
 
 public class BookMain {
 
@@ -35,9 +36,25 @@ public class BookMain {
 		
 		// delete field By Id
 		
-		String msg = controller.delete(2);
+//		String msg = controller.delete(2);
+//		
+//		System.out.println(msg);
 		
-		System.out.println(msg);
+		// get book
+		
+		try
+		{
+		Book book = controller.getBook(1);
+		
+		System.out.println(book);
+		}
+		catch(BookNotFoundException e)
+		{
+			System.out.println(e.getMessage());
+		}
+		
+		// get AllBook
+		
 		
 	}
 }
