@@ -1,7 +1,7 @@
 package com.services;
 
 import com.dao.BookDao;
-import com.entiry.Book;
+import com.entity.Book;
 
 public class BookService {
 
