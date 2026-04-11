@@ -1,5 +1,7 @@
 package com.services;
 
+import java.util.List;
+
 import com.dao.BookDao;
 import com.entity.Book;
 import com.exception.BookNotFoundException;
@@ -41,5 +43,9 @@ public class BookService {
 	
 	// get AllBooks 
 	
+	public List<Book> getAll()
+	{
+		return dao.getAllBooks();
+	}
 	
 }
