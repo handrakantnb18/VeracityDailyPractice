@@ -1,7 +1,12 @@
 package com.entiry;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Book {
 
+	@Id
 	private int id;
 	
 	private String bookname;
@@ -17,6 +22,12 @@ public class Book {
 		this.auther = auther;
 		this.price = price;
 	}
+
+	@Override
+	public String toString() {
+		return "Book [id=" + id + ", bookname=" + bookname + ", auther=" + auther + ", price=" + price + "]";
+	}
+	
 	
 	
 }
