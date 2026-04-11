@@ -9,6 +9,9 @@ public class BookMain {
 		
 		BookController controller = new BookController();
 		
+		
+//		BookController controller = new BookController();
+		
 		// save data in DB
 //		Book book = new Book(1, "Java", "Gemse Gosling", 500);
 		
@@ -30,6 +33,11 @@ public class BookMain {
 //		System.out.println(msg);
 		
 		
-		//
+		// delete field By Id
+		
+		String msg = controller.delete(2);
+		
+		System.out.println(msg);
+		
 	}
 }
