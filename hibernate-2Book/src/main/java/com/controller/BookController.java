@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.List;
+
 import com.entity.Book;
 import com.services.BookService;
 
@@ -35,5 +37,8 @@ public class BookController {
 	
 	// get allBooks
 	
-	
+	public List<Book> getAll()
+	{
+		return service.getAll();
+	}
 }
