@@ -18,8 +18,10 @@
 
 		<property name="hibernate.show_sql">true</property>
 		
-		<mapping class="com.entity.Book" />
-
+<!-- 		<mapping class="com.entity.Book" />
+ -->
+ 
+ 		<mapping class="com.entity.Book"/>
 		
 	</session-factory>
 
