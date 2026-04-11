@@ -2,6 +2,7 @@ package com.services;
 
 import com.dao.BookDao;
 import com.entity.Book;
+import com.exception.BookNotFoundException;
 
 public class BookService {
 
@@ -24,4 +25,21 @@ public class BookService {
 	{
 		return dao.delete(id);
 	}
+	
+	// get single book id
+	
+	public Book getBook(int id)
+	{
+		Book book = dao.getBook(id);
+		
+		if(book == null)
+		{
+			throw new BookNotFoundException("Book not found");
+		}
+		return book;
+	}
+	
+	// get AllBooks 
+	
+	
 }
