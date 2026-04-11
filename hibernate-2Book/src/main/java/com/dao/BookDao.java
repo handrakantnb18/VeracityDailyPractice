@@ -33,6 +33,29 @@ public class BookDao {
 		
 	}
 	
+	// update By Id book
 	
+	public String updateById(Book book)
+	{
+		Session session = sf.openSession();
+		
+		Transaction tr = session.beginTransaction();
+		
+		Book existing = session.get(Book.class, book.getId());
+		
+		existing.setBookname(book.getBookname());
+		existing.setAuther(book.getAuther());
+		existing.setPrice(book.getPrice());
+		
+		session.update(existing);
+		
+		tr.commit();
+		
+		session.close();
+		
+		return "Updated";
+		
+		
+	}
 	
 }
