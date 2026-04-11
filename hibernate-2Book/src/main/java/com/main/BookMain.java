@@ -1,7 +1,7 @@
 package com.main;
 
 import com.controller.BookController;
-import com.entiry.Book;
+import com.entity.Book;
 
 public class BookMain {
 
@@ -15,6 +15,9 @@ public class BookMain {
 		String msg = controller.save(book);
 		
 		System.out.println(msg);
+		
+		// 
+		
 		
 	}
 }
