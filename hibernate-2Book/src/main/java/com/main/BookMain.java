@@ -1,5 +1,8 @@
 package com.main;
 
+import java.util.Iterator;
+import java.util.List;
+
 import com.controller.BookController;
 import com.entity.Book;
 import com.exception.BookNotFoundException;
@@ -42,18 +45,25 @@ public class BookMain {
 		
 		// get book
 		
-		try
-		{
-		Book book = controller.getBook(1);
-		
-		System.out.println(book);
-		}
-		catch(BookNotFoundException e)
-		{
-			System.out.println(e.getMessage());
-		}
+//		try
+//		{
+//		Book book = controller.getBook(1);
+//		
+//		System.out.println(book);
+//		}
+//		catch(BookNotFoundException e)
+//		{
+//			System.out.println(e.getMessage());
+//		}
 		
 		// get AllBook
+		
+		List<Book> books = controller.getAll();
+		
+		for(Book book : books)
+		{
+			System.out.println(books);
+		}
 		
 		
 	}
