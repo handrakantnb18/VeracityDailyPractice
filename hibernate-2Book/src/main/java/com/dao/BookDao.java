@@ -1,5 +1,7 @@
 package com.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -112,6 +114,17 @@ public class BookDao {
 		
 		return book;
 		
+	}
+	
+	// getAll Books
+	
+	public List<Book> getAllBooks()
+	{
+		Session session = sf.openSession();
+		
+		List<Book> books = session.createQuery("From Book").list();
+		
+		return books;
 	}
 	
 }
