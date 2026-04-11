@@ -12,6 +12,9 @@ public class BookService {
 		return dao.saveBook(book);
 	}
 	
-	
+	public String update(Book book)
+	{
+		return dao.updateById(book);
+	}
 	
 }
