@@ -1,6 +1,6 @@
 package com.controller;
 
-import com.entiry.Book;
+import com.entity.Book;
 import com.services.BookService;
 
 public class BookController {
