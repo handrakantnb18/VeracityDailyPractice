@@ -26,4 +26,14 @@ public class BookController {
 		return service.delete(id);
 	}
 	
+	// get single book
+	
+	public Book getBook(int id)
+	{
+		return service.getBook(id);
+	}
+	
+	// get allBooks
+	
+	
 }
