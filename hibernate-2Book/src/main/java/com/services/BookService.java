@@ -1,12 +1,13 @@
 package com.services;
 
 import com.dao.BookDao;
+import com.entiry.Book;
 
 public class BookService {
 
 	BookDao dao = new BookDao();
 	
-	public void save(Book book)
+	public String save(Book book)
 	{
 		return dao.saveBook(book);
 	}
