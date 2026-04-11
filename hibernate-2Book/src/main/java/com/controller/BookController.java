@@ -19,6 +19,11 @@ public class BookController {
 		return service.update(book);
 	}
 	
-	// 
+	// Delete book by id
+	
+	public String delete(int id)
+	{
+		return service.delete(id);
+	}
 	
 }
