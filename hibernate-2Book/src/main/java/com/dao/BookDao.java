@@ -58,4 +58,48 @@ public class BookDao {
 		
 	}
 	
+	// delete by id
+	
+//	public String delete(int id)
+//	{
+//		Session session = sf.openSession();
+//		
+//		Transaction tr = session.beginTransaction();
+//		
+////		Book book = session.get(Book.class, id);
+//		
+////		Book book = new BookDao().getId(id);
+//		
+//		Book book = new BookDao().getBook(id);
+//		
+//		 session.delete(book);
+//		 
+//		 tr.commit();
+//		 
+//		 session.close();
+//		 
+//		 return "Book deleted succesfully";
+//		
+//	}
+	
+	public String delete(int id) {
+
+	    Session session = sf.openSession();
+	    Transaction tr = session.beginTransaction();
+
+	    Book book = session.get(Book.class, id);
+
+	    if (book == null) {
+	        session.close();
+	        return "Book not found";
+	    }
+
+	    session.remove(book);
+
+	    tr.commit();
+	    session.close();
+
+	    return "Book deleted successfully";
+	}
+	
 }
