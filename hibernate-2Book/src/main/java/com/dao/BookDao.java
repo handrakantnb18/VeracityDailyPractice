@@ -4,12 +4,15 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-import com.config.HhibernateConfig;
-import com.entiry.Book;
+import com.config.HibernateConfig;
+import com.entity.Book;
 
 public class BookDao {
 
-	SessionFactory sf = HhibernateConfig.getSessionFactory();
+//	SessionFactory sf = HibernateCongig.getSessionFactory();
+	
+	SessionFactory sf = HibernateConfig.getSessionFactory();
+	
 	
 	/// Save Book 
 	public String saveBook(Book book)
@@ -18,7 +21,9 @@ public class BookDao {
 		
 		Transaction tr = session.beginTransaction();
 		
-		session.persist(book);
+		session.save(book);
+		
+//		session.persist(book);
 		
 		tr.commit();
 		
