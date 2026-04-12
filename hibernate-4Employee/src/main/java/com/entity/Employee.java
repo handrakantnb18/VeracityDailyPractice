@@ -21,7 +21,23 @@ public class Employee {
 		return id;
 	}
 
-	
+	//toString method
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", empname=" + empname + ", salary=" + salary + ", dept=" + dept + ", email="
+				+ email + "]";
+	}
+
+	// Constructor
+	public Employee(int id, String empname, double salary, String dept, String email) {
+		super();
+		this.id = id;
+		this.empname = empname;
+		this.salary = salary;
+		this.dept = dept;
+		this.email = email;
+	}
+
 	// getter and setter method
 	public void setId(int id) {
 		this.id = id;
@@ -58,8 +74,6 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
 	
 	
 }
