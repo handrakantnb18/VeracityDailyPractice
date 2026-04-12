@@ -8,21 +8,39 @@ public class Student {
 
 	@Id
 	private int id;
-	
+
 	private String sname;
-	
+
 	private int age;
-	
+
 	private String course;
-	
+
 	private double marks;
+
+	
+	// toString method
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", sname=" + sname + ", age=" + age + ", course=" + course + ", marks=" + marks
+				+ "]";
+	}
+
+	// constructor
+	public Student(int id, String sname, int age, String course, double marks) {
+		super();
+		this.id = id;
+		this.sname = sname;
+		this.age = age;
+		this.course = course;
+		this.marks = marks;
+	}
+
+	// getter and setter method
 
 	public int getId() {
 		return id;
 	}
 
-	
-	// getter and setter method
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -58,6 +76,5 @@ public class Student {
 	public void setMarks(double marks) {
 		this.marks = marks;
 	}
-	
-	
+
 }
