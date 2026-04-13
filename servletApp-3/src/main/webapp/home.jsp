@@ -19,11 +19,11 @@ h1{
 
 div{
 	width: 300px;
-	height: 300px;
-	border: 2px solid black;
+	height: 80px;
+	box-shadow: 0px 0px 10px black;
 	text-align: center;
 	margin: 50px auto;
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 a{
@@ -33,6 +33,29 @@ a{
 	text-decoration: none;
 	
 }
+
+#login {
+	font-size: 20px;
+	color: white;
+	background-color: green;
+	text-decoration: none;
+	padding: 8px 15px;
+	margin-top: 200px;
+	margin-left: 10px;
+	border-radius: 15px;
+}
+
+#register{
+	font-size: 20px;
+	color: white;
+	background-color: red;
+	text-decoration: none;
+	padding: 8px 15px;
+	margin-top: 200px;
+	border-radius: 15px;
+}
+
+
 </style>
 </head>
 <body>
