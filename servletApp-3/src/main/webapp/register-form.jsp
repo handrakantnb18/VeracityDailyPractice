@@ -77,6 +77,8 @@
 		<h1>Register Form</h1>
 
 		<form action="registration" method="post">
+		
+		<p style="color: green;">${msg}</p>
 			<table>
 
 				<tr>
