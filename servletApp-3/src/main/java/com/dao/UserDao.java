@@ -30,7 +30,7 @@ public class UserDao {
 			e.printStackTrace();
 		}
 		
-		return "USer Register Successfully";
+		return "User Register Successfully";
 	}
 	
 	
