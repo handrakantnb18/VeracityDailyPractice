@@ -40,9 +40,9 @@ public class ProcessRegistration extends HttpServlet {
 		
 		String msg= service.saveUser(user);
 		
-		req.setAttribute("msg", msg);
+//		req.setAttribute("msg", msg);
 		
-		req.getRequestDispatcher("register-form.jsp").forward(req, resp);
+		req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
 	}
 	
 }
