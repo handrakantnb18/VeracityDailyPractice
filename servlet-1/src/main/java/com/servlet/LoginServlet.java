@@ -17,6 +17,9 @@ public class LoginServlet extends HttpServlet{
 		
 //		resp.getWriter().print("<h1>Login page</h1>");
 	
+		System.out.println("Login page");
+		
+		// forword your request for to UI page
 		req.getRequestDispatcher("Login.html").forward(req, resp);
 	}
 }
