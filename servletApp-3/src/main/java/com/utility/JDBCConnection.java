@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class JDBCConnection {
 
-	private static final String url ="jdbc:mysql://localhost:3306/ServletAppDb";
+	private static final String url ="jdbc:mysql://localhost:3306/ServletappDb";
 	
 	private static final String username ="root";
 	
