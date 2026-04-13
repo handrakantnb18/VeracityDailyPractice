@@ -42,7 +42,7 @@ public class ProcessRegistration extends HttpServlet {
 		
 //		req.setAttribute("msg", msg);
 		
-		req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
+		req.getRequestDispatcher("login.jsp").forward(req, resp);
 	}
 	
 }
