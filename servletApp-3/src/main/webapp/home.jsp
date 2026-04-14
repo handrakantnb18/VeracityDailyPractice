@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,17 +7,16 @@
 <title>Insert title here</title>
 
 <style type="text/css">
-
-*{
-	margin:0
+* {
+	margin: 0
 }
 
-h1{
+h1 {
 	height: 100px;
 	padding-top: 30px;
 }
 
-div{
+div {
 	width: 300px;
 	height: 80px;
 	box-shadow: 0px 0px 10px black;
@@ -26,12 +25,11 @@ div{
 	padding-top: 50px;
 }
 
-a{
+a {
 	font-size: 20px;
 	color: white;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	text-decoration: none;
-	
 }
 
 #login {
@@ -45,7 +43,7 @@ a{
 	border-radius: 15px;
 }
 
-#register{
+#register {
 	font-size: 20px;
 	color: white;
 	background-color: red;
@@ -54,19 +52,32 @@ a{
 	margin-top: 200px;
 	border-radius: 15px;
 }
-
-
 </style>
 </head>
 <body>
 
-	<h1 style="text-align: center;background-color: black;color: white;">Welcome To My Application</h1>
-	
-	<div>
-		<a id ="register" href="register-form">Register</a>
-		<a id ="login" href="login-form">Login</a>
-	
+	<div id="navbar">
+		
+		<div id="portfolio">
+			<h2>MyPortfolio</h2>
+		</div>
+		<div id="linkes">
+			<a href="">Home</a>
+			<a href="">About</a>
+			<a href="">Contact</a>
+			<a href="">Services</a>
+			
+		</div>
 	</div>
 	
+	<h1 style="text-align: center; background-color: black; color: white;">Welcome
+		To My Application</h1>
+
+	<div>
+		<a id="register" href="register-form">Register</a> <a id="login"
+			href="login-form">Login</a>
+
+	</div>
+
 </body>
 </html>
