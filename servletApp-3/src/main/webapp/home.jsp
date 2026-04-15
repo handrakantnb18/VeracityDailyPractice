@@ -11,6 +11,16 @@
 	margin: 0
 }
 
+
+#navbar{
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	color: white;
+	display: flex;
+	
+}
+
 h1 {
 	height: 100px;
 	padding-top: 30px;
