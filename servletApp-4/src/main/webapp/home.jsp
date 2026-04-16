@@ -59,7 +59,7 @@ a {
 	<div id="navbar">
 		
 		<div id="portfolio">
-			<h2>MyPortfolio</h2>
+			<h2>Student Management System</h2>
 		</div>
 		<div id="linkes">
 			<a href="">Home</a>
