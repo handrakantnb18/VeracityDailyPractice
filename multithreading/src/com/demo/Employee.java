@@ -13,13 +13,13 @@ public class Employee implements Runnable {
 		{
 			try
 			{
-			Thread.sleep(2000);
+			Thread.sleep(200);
 			}
 			catch(Exception e)
 			{
 				e.printStackTrace();
 			}
-			System.out.println(c[i]);
+			System.out.print(c[i]);
 		}
 	}
 	
