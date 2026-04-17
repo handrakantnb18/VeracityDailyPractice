@@ -7,7 +7,7 @@ public class Demo implements Runnable {
 
 //		System.out.println("Run thread : "+Thread.currentThread().getName());
 	
-		for(int i=1; i<= 5; i++)
+		for(int i=1; i<= 15; i++)
 		{
 			System.out.println(Thread.currentThread().getName()+" : "+i);
 		
@@ -29,14 +29,14 @@ public class Demo implements Runnable {
 		Thread t1 = new Thread(demo);
 		t1.start();
 		
-		Thread t2 = new Thread(demo);
-		t2.start();
-		
-		Thread t3 = new Thread(demo);
-		t3.start();
-		
-		Thread t4 = new Thread(demo);
-		t4.start();
+//		Thread t2 = new Thread(demo);
+//		t2.start();
+//		
+//		Thread t3 = new Thread(demo);
+//		t3.start();
+//		
+//		Thread t4 = new Thread(demo);
+//		t4.start();
 		
 		
 	}
