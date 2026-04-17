@@ -7,7 +7,7 @@ public class User implements Runnable {
 		
 //	System.out.println(10+20);
 		
-		String str = "my name is chandraaknt bhosale";
+		String str = "welcome to new born baby";
 		
 		char []c = str.toCharArray();
 		
@@ -15,7 +15,7 @@ public class User implements Runnable {
 		{
 			try
 			{
-			Thread.sleep(400);
+			Thread.sleep(1000);
 			}
 			catch(Exception e)
 			{
