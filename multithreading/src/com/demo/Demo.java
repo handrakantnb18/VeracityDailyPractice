@@ -9,7 +9,15 @@ public class Demo implements Runnable {
 	
 		for(int i=1; i<= 5; i++)
 		{
-			System.out.println(i+" : "+Thread.currentThread().getName());
+			System.out.println(Thread.currentThread().getName()+" : "+i);
+		
+			try {
+			Thread.sleep(2000);
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
 		}
 		
 	}
