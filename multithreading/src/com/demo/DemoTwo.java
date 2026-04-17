@@ -34,5 +34,15 @@ public class DemoTwo implements Runnable {
 		
 		Thread t1 = new Thread(demoTwo);
 		t1.start();
+		
+		Thread t2 = new Thread(demoTwo);
+		t2.start();
+		
+		Thread t3 = new Thread(demoTwo);
+		t3.start();
+		
+		Thread t4 = new Thread(demoTwo);
+		t4.start();
+		
 	}
 }
