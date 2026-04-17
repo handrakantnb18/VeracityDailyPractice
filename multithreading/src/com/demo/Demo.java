@@ -5,7 +5,9 @@ public class Demo implements Runnable {
 	@Override
 	public void run() {
 
-		System.out.println("Run thread : ");
+		System.out.println("Run thread : "+Thread.currentThread().getName());
+	
+		
 	}
 	
 	public static void main(String[] args) {
@@ -13,6 +15,16 @@ public class Demo implements Runnable {
 		Demo demo = new Demo();
 		
 		Thread t1 = new Thread(demo);
+		t1.start();
+		
+		Thread t2 = new Thread(demo);
+		t2.start();
+		
+		Thread t3 = new Thread(demo);
+		t3.start();
+		
+		Thread t4 = new Thread(demo);
+		t4.start();
 		
 		
 	}
