@@ -7,10 +7,21 @@ public class User implements Runnable {
 		
 //	System.out.println(10+20);
 		
-		for(int i=1;i<=5;i++)
+		String str = "my name is chandraaknt bhosale";
+		
+		char []c = str.toCharArray();
+		
+		for(int i=0;i<c.length;i++)
 		{
-			
-			System.out.println("Thread is : "+i);
+			try
+			{
+			Thread.sleep(400);
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			System.out.print(c[i]);
 		}
 	}
 	
@@ -19,5 +30,6 @@ public class User implements Runnable {
 		
 		Thread t1 = new Thread(u1);
 		t1.start();
+//		t1.sleep(1000);
 	}
 }
