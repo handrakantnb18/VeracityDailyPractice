@@ -5,8 +5,13 @@ public class User implements Runnable {
 	@Override
 	public void run() {
 		
-	System.out.println(10+20);
+//	System.out.println(10+20);
 		
+		for(int i=1;i<=5;i++)
+		{
+			
+			System.out.println("Thread is : "+i);
+		}
 	}
 	
 	public static void main(String[] args) {
