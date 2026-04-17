@@ -4,7 +4,7 @@ public class DemoTwo implements Runnable {
 
 	@Override
 	public void run() {
-		String str = "chandrakantbhosale";
+		String str = "=*=*=*=*=* chandrakant bhosale =*=*=*=*=*=";
 		
 		char []c= str.toCharArray();
 		
@@ -15,7 +15,15 @@ public class DemoTwo implements Runnable {
 		
 		for(int i=0;i<c.length;i++)
 		{
-			System.out.println(c[i]);
+			try
+			{
+			Thread.sleep(500);
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			System.out.print(c[i]);
 		}
 		
 	}
