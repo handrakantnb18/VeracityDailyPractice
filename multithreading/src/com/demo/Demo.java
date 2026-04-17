@@ -5,8 +5,12 @@ public class Demo implements Runnable {
 	@Override
 	public void run() {
 
-		System.out.println("Run thread : "+Thread.currentThread().getName());
+//		System.out.println("Run thread : "+Thread.currentThread().getName());
 	
+		for(int i=1; i<= 5; i++)
+		{
+			System.out.println(i+" : "+Thread.currentThread().getName());
+		}
 		
 	}
 	
