@@ -5,7 +5,7 @@ public class Test extends Thread {
 	@Override
 	public void run() {
 		
-		System.out.println("First main method");
+		System.out.println("First main method"+Thread.currentThread().getName());
 	}
 	
 	
