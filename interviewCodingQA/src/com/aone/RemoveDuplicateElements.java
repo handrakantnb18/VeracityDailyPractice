@@ -17,7 +17,35 @@ public class RemoveDuplicateElements {
 			}
 		}
 		
+		System.out.println("==========================");
+		
+		int arr1[] = {1,2,3,4,5,6,9,8,7,1,4,5,6,2};
+		
+		for(int i=0;i<arr1.length;i++)
+		{
+			for(int j=i+1;j<arr1.length;j++)
+			{
+				if(arr1[i] == arr1[j])
+				{
+					System.out.println(arr1[i]);
+				}
+			}
+		}
 		
 		
+		System.out.println("==========================");
+		
+		int arr2[] = {10,20,30,40,50,60,55,60,10,70,57,57,89,88,80,89};
+		
+		for(int i=0; i<arr2.length;i++)
+		{
+			for(int j=i+1;j<arr2.length;j++)
+			{
+				if(arr2[i] == arr2[j])
+				{
+					System.out.println(arr2[i]);
+				}
+			}
+		}
 	}
 }
