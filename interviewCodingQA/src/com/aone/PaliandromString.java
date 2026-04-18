@@ -4,7 +4,9 @@ public class PaliandromString {
 
 	public static void main(String[] args) {
 		
-		String str = "madam";
+//		String str = "madam";
+		
+		String str = "seen";
 		
 		String rev = new StringBuilder(str).reverse().toString();
 		
