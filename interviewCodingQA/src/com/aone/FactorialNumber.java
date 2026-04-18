@@ -12,5 +12,15 @@ public class FactorialNumber {
 			fact *= i;
 		}
 		System.out.println(fact);
+		
+		
+		int num1 = 10;
+		int fact1 =1;
+		
+		for(int i=1; i<=num1;i++)
+		{
+			fact1 *= i;
+		}
+		System.out.println(fact1);
 	}
 }
