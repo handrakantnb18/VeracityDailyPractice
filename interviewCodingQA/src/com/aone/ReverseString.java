@@ -24,8 +24,21 @@ public class ReverseString {
 		
 		System.out.println(rev1);
 
+		// 3
 		
+		String str2 = "Chandrakant Bhosale";
 		
+		String rev2 = " ";
+		
+		for(int i=str2.length() - 1; i >= 0; i--)
+		{
+			rev2 += str2.toUpperCase().charAt(i);
+			
+			//rev2 += str2.toLowerCase().charAt(i);
+
+			
+		}
+		System.out.println(rev2);
 	}
 	
 	
