@@ -17,5 +17,28 @@ public class PaliandromString {
 		else {
 			System.out.println("Not paliandrom");
 		}
+		
+		
+		int num = 121;
+		
+		int temp = num;
+		
+		int rev1 = 0;
+		
+		while(temp != 0)
+		{
+			int digit = temp % 10;
+			rev1 = rev1 * 10 + digit;
+			temp = temp / 10;
+		}
+		
+		if(num == rev1)
+		{
+			System.out.println("Paliondrom Number");
+		}
+		else
+		{
+			System.out.println("Not paliondrom number");
+		}
 	}
 }
