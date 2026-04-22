@@ -23,5 +23,22 @@ public class ListToMap {
 						));
 		
 		System.out.println(map);
+		
+		System.out.println("===============================================");
+		
+		List<EmployeesMap> list1 = Arrays.asList(
+				new EmployeesMap(1, "Ram", "Banglore"),
+				new EmployeesMap(2, "Subhash", "Pune"),
+				new EmployeesMap(3, "Sachin", "Chennai")
+				);
+		
+		Map<Integer, String> map1 = list1.stream()
+				.collect(Collectors.toMap(
+						EmployeesMap::getId,
+						EmployeesMap::getName
+						));
+		
+		System.out.println(map1);
+				
 	}
 }
