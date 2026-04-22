@@ -33,6 +33,16 @@ public class SortList {
 						.sorted(Comparator.comparing(User::getCity))
 						.forEach(System.out::println);
 	
+						System.out.println("===============================");
+						
+			List<Book> list2 = Arrays.asList(
+					new Book(1, "java", 250),
+					new Book(2, "Spring Boot", 450),
+					new Book(3, "HTML", 500)
+					);
+			list2.stream()
+			.sorted(Comparator.comparing(Book::getPrice))
+			.forEach(System.out::println);
 						
 	}
 }
