@@ -15,6 +15,14 @@ public class CountEachCharactor {
 		
 		System.out.print(map);
 		
+		String str1= "Priyanka Bhosale";
+		
+		Map<Character, Long> map1 = str1.chars()
+				.mapToObj(b -> (char) b)
+				.collect(Collectors.groupingBy(b -> b, Collectors.counting()));
+		
+		System.out.print(map1);
+		
 		
 	}
 }
