@@ -15,5 +15,15 @@ public class RemoveDuplicates {
 				.collect(Collectors.toList());
 		
 		System.out.println(unique);
+		
+		List<Integer> list1 = Arrays.asList(5,15,25,35,44,45,65,56,75,85,95,15,25,35,45,65,75,85,95,56,55,88,22,33,44,99);
+		
+		List<Integer> unique1 = list1.stream()
+				.distinct()
+				.collect(Collectors.toList());
+		
+		System.out.println(unique1);
+		
+		
 	}
 }
