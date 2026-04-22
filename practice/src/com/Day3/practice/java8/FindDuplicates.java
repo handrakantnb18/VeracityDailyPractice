@@ -28,5 +28,13 @@ public class FindDuplicates {
 		System.out.println(duplicatString);
 		
 		
+		List<Integer> list2 = Arrays.asList(1,4,6,8,1,5,7,8,2,3,3,4);
+		
+		Set<Integer> duplicate1 = list2.stream()
+				.filter(k -> Collections.frequency(list2, k) > 1)
+				.collect(Collectors.toSet());
+		
+		System.out.println(duplicate1);
+		
 	}
 }
