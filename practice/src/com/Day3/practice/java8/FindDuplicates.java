@@ -18,5 +18,15 @@ public class FindDuplicates {
 		
 		System.out.println(duplicates);
 		
+		
+		List<String> list1 = Arrays.asList("Ram","Datta","Chandrakant", "Priyanka","Vijay","Ram", "Datta");
+		
+		Set<String> duplicatString = list1.stream()
+				.filter(j -> Collections.frequency(list1, j) > 1)
+				.collect(Collectors.toSet());
+		
+		System.out.println(duplicatString);
+		
+		
 	}
 }
