@@ -13,5 +13,14 @@ public class FindMax {
 		
 		System.out.println(max);
 		
+		
+		List<Integer> list2 = Arrays.asList(23,56,45,78,88,98,235,200);
+		
+		int max1 = list2.stream().max(Integer::compare).get();
+		
+		System.out.println(max1);
+		
+		
+		
 	}
 }
