@@ -7,10 +7,11 @@ public class FindMax {
 
 	public static void main(String[] args) {
 		
-		List<Integer> list = Arrays.asList(1,88,55,25,45,65);
+		List<Integer> list = Arrays.asList(1,88,55,25,45,65,100, 250);
 		
 		int max = list.stream().max(Integer::compare).get();
 		
 		System.out.println(max);
+		
 	}
 }
