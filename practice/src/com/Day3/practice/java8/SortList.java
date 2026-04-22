@@ -21,7 +21,18 @@ public class SortList {
 	    .sorted(Comparator.comparing(Employee::getSalary))
 	    .forEach(System.out::println);
 		
+				System.out.println("================================");
 				
+				List<User> list1 = Arrays.asList(
+						new User(1, "Priyanka", "Pune"),
+						new User(2, "Chandrakant", "Mumbai"),
+						new User(3, "Vijay", "Mumbai")
+						);
 				
+						list1.stream()
+						.sorted(Comparator.comparing(User::getCity))
+						.forEach(System.out::println);
+	
+						
 	}
 }
