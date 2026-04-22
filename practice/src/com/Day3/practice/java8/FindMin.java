@@ -22,6 +22,14 @@ public class FindMin {
 		System.out.println(min1);
 		
 		
+		System.out.println("=================================");
+		
+		List<Integer> list3 = Arrays.asList(78,98,25,23,15,55,45,58);
+		
+		int min5= list3.stream().min(Integer::compare).get();
+		
+		System.out.println(min5);
+		
 		
 	}
 }
