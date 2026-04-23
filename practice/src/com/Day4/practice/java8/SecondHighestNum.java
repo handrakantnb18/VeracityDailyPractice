@@ -31,5 +31,18 @@ public class SecondHighestNum {
 				.get();
 		
 		System.out.println(thirdHighest);
+		
+		System.out.println("------------------");
+		int fourthHighest =
+				list.stream()
+				.distinct()
+				.sorted(Comparator.reverseOrder())
+				.skip(3)
+				.findFirst()
+				.get();
+		
+		System.out.println(fourthHighest);
+		
+		
 	}
 }
