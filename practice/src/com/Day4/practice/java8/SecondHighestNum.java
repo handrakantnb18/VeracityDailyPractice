@@ -20,6 +20,16 @@ public class SecondHighestNum {
 		
 		System.out.println(secondHighest);
 		
+		System.out.println("-------------");
 		
+		int thirdHighest =
+				list.stream()
+				.distinct()
+				.sorted(Comparator.reverseOrder())
+				.skip(2)
+				.findFirst()
+				.get();
+		
+		System.out.println(thirdHighest);
 	}
 }
