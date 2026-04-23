@@ -21,6 +21,9 @@ public class FlatMap {
 		
 		System.out.println(result);
 		
+		System.out.println("---------------------------------------------------");
+		
+		
 		List<List<Integer>> list1 = Arrays.asList(
 				Arrays.asList(1,2,3,4,5),
 				Arrays.asList(6,7,8,9)
@@ -33,6 +36,20 @@ public class FlatMap {
 		
 		System.out.println(res);
 		
+		System.out.println("-----------------------------------------");
+		
+		
+		List<List<Integer>> list2 = Arrays.asList(
+				Arrays.asList(10,12,13,44,25),
+				Arrays.asList(16,77,18,89)
+				);
+		
+		List<Integer> res2 = 
+				list2.stream()
+				.flatMap(Collection::stream)
+				.collect(Collectors.toList());
+		
+		System.out.println(res2);
 		
 	}
 }
