@@ -16,7 +16,14 @@ public class JoinString {
 		
 		System.out.println(result);
 		
+		List<String> list1 = Arrays.asList("Priyanka", "Bhosale", "Pune", "Welcome");
 		
-				
+		String res =
+				list1.stream()
+				.collect(Collectors.joining(" "));
+		
+		System.out.println(res);
+			
+		
 	}
 }
