@@ -21,6 +21,8 @@ public class EmployeeDept {
 		
 		System.out.println(map);
 		
+		System.out.println("--------------------------------------");
+		
 		
 		Map<String, Long> count =
 				list.stream()
@@ -31,5 +33,19 @@ public class EmployeeDept {
 						));
 		
 		System.out.println(count);
+		
+		System.out.println("-------------------------------------------");
+		
+		
+		Map<String, List<String>> names =
+				list.stream()
+				.collect(Collectors.groupingBy(
+						Employee::getDept,
+						Collectors.mapping(Employee::getName, Collectors.toList())
+						));
+		
+		System.out.println(names);
+		
+		
 	}
 }
