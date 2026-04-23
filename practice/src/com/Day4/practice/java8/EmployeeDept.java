@@ -21,5 +21,15 @@ public class EmployeeDept {
 		
 		System.out.println(map);
 		
+		
+		Map<String, Long> count =
+				list.stream()
+				.collect(Collectors.groupingBy(
+						Employee::getDept,
+						
+						Collectors.counting()
+						));
+		
+		System.out.println(count);
 	}
 }
