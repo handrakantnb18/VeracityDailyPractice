@@ -2,6 +2,7 @@ package com.Day4.practice.java8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class JoinString {
@@ -24,6 +25,15 @@ public class JoinString {
 		
 		System.out.println(res);
 			
+		
+		List<Integer> list2 = Arrays.asList(1,5,8,77,99,55,32,26);
+		
+		String num = 
+				list2.stream()
+				.map(String::valueOf)
+				.collect(Collectors.joining(" "));
+		
+		System.out.println(num);
 		
 	}
 }
