@@ -10,9 +10,9 @@ public class EmployeeDept {
 	public static void main(String[] args) {
 		
 		List<Employee> list = Arrays.asList(
-				new Employee(1, "Chandrakant", "Pune", "IT"),
-				new Employee(2, "Priyanka", "Pune", "Tra"),
-				new Employee(3, "Rahul", "Mumbai", "Sales")
+				new Employee(1, "Chandrakant", "Pune", "IT", 250000),
+				new Employee(2, "Priyanka", "Pune", "Tra",350000),
+				new Employee(3, "Rahul", "Mumbai", "Sales",450000)
 				);
 		
 		Map<String, List<Employee>> map =
