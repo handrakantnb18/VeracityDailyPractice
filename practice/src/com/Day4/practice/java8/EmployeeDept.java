@@ -46,6 +46,9 @@ public class EmployeeDept {
 		
 		System.out.println(names);
 		
+		System.out.println("----------------------------------------------------");
+		
+		
 		Map<String, List<String>> name =
 				list.stream()
 				.collect(Collectors.groupingBy(
@@ -55,6 +58,17 @@ public class EmployeeDept {
 		
 		System.out.println(name);
 		
+		System.out.println("------------------------------------------------------");
+		
+		
+		Map<String, List<String>> name1 =
+				list.stream()
+				.collect(Collectors.groupingBy(
+						Employee::getCity,
+						Collectors.mapping(Employee::getName, Collectors.toList())
+						));
+		
+		System.out.println(name1);
 		
 	}
 }
