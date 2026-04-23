@@ -70,5 +70,19 @@ public class EmployeeDept {
 		
 		System.out.println(name1);
 		
+		System.out.println("---------------------------------------------------------");
+		
+		Map<String, Long> count1 =
+				list.stream()
+				.collect(Collectors.groupingBy(
+						Employee::getName,
+						
+						Collectors.counting()
+						));
+		
+		System.out.println(count1);
+		
+		
+		
 	}
 }
