@@ -7,12 +7,14 @@ public class User {
 	private String name;
 	
 	private String city;
+	
 
 	@Override
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", city=" + city + "]";
 	}
 
+	
 	public User(int id, String name, String city) {
 		super();
 		this.id = id;
@@ -20,6 +22,7 @@ public class User {
 		this.city = city;
 	}
 
+	
 	public int getId() {
 		return id;
 	}
