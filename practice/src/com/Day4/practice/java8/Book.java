@@ -10,6 +10,7 @@ public class Book {
 	
 	private int price;
 
+	
 	@Override
 	public String toString() {
 		return "Book [id=" + id + ", name=" + name + ", author=" + author + ", price=" + price + "]";
@@ -54,6 +55,7 @@ public class Book {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+	
 	
 	
 }
