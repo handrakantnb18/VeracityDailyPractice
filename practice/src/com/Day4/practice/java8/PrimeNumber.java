@@ -13,5 +13,11 @@ public class PrimeNumber {
 		.filter(n -> n % 2 == 0)
 		.forEach(System.out::println);
 		
+		System.out.println("=======================");
+		
+		list.stream()
+		.filter(n -> n % 2 != 0)
+		.forEach(System.out::println);
+		
 	}
 }
