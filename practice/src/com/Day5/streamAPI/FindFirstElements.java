@@ -16,6 +16,15 @@ public class FindFirstElements {
 		
 		System.out.println(first);
 		
+		List<String> list1 = Arrays.asList("Chandrakant", "Namdev","Bhosale");
+		
+		String first1 = 
+				list1.stream()
+				.findFirst()
+				.get();
+		
+		System.out.println(first1);
+		
 		
 		
 	}
