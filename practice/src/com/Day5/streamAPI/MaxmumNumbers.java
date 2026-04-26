@@ -15,6 +15,21 @@ public class MaxmumNumbers {
 		
 		System.out.println(max);
 		
+		List<Integer> list1 = Arrays.asList(10,22,55,79,46,13,10,99,141);
+		
+		int max1 = list1.stream()
+		.max(Integer::compare)
+		.get();
+		
+		System.out.println(max1);
+		
+		List<Integer> list2 = Arrays.asList(5,100,250,150,500,35,78,92);
+		
+		int max3 = list2.stream()
+				.max(Integer::compare)
+				.get();
+		
+		System.out.println(max3);
 		
 	}
 }
