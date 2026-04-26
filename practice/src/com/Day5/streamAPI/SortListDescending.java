@@ -15,6 +15,19 @@ public class SortListDescending {
 		.sorted(Collections.reverseOrder())
 		.forEach(System.out::println);
 		
+		List<Integer> list1 = Arrays.asList(8,25,23,11,15,10,79,30,45,90);
+		
+		System.out.println("Second List : ");
+		list1.stream()
+		.sorted(Collections.reverseOrder())
+		.forEach(System.out::println);
+		
+		List<Integer> list2 = Arrays.asList(78,4,99,80,12,35,9,37,49);
+		
+		System.out.println("Third List : ");
+		list2.stream()
+		.sorted(Collections.reverseOrder())
+		.forEach(System.out::println);
 		
 	}
 }
