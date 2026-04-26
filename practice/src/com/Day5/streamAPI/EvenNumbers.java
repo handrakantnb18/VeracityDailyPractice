@@ -9,8 +9,15 @@ public class EvenNumbers {
 		
 		List<Integer> list = Arrays.asList(1,25,45,78,35,12);
 		
+		System.out.println("Even Numbers : ");
 		list.stream()
 		.filter(n -> n % 2 == 0)
+		.forEach(System.out::println);
+		
+		System.out.println("");
+		System.out.println("Odd Numbers : ");
+		list.stream()
+		.filter(n -> n % 2 != 0)
 		.forEach(System.out::println);
 		
 		
