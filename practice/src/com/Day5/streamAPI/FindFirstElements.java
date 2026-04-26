@@ -25,7 +25,11 @@ public class FindFirstElements {
 		
 		System.out.println(first1);
 		
+		list1.stream()
+		.findAny()
+		.get();
 		
+		System.out.println(list1);
 		
 	}
 }
