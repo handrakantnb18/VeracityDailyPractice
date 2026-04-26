@@ -20,6 +20,20 @@ public class EvenNumbers {
 		.filter(n -> n % 2 != 0)
 		.forEach(System.out::println);
 		
+		List<Integer> list1 = Arrays.asList(25,88,55,65,56,23,15,12);
+		
+		System.out.println("");
+		System.out.println("Even Numbers : ");
+		list1.stream()
+		.filter(m -> m % 2 == 0)
+		.forEach(System.out::println);
+		
+		System.out.println(" ");
+		System.out.println("Odd Numbers : ");
+		list1.stream()
+		.filter(m -> m % 2 != 0)
+		.forEach(System.out::println);
+		
 		
 	}
 
