@@ -25,6 +25,13 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", email=" + email + "]";
 	}
 
+	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public User(int id, String name, String email) {
 		super();
 		this.id = id;
