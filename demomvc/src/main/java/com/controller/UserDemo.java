@@ -20,11 +20,11 @@ public class UserDemo {
 	{
 		Session session = sessionFactory.getCurrentSession();
 		
-		User u = new User();
-		u.setName("Chandrakant");
-		u.setEmail("chandrakant@gmail.com");
+		User user = new User();
+		user.setName("Chandrakant");
+		user.setEmail("chandrakant@gmail.com");
 		
-		session.persist(u);
+		session.persist(user);
 		
 	}
 	
