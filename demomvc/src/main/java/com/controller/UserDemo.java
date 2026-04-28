@@ -33,6 +33,7 @@ public class UserDemo {
 		
 	}
 	
+	@Transactional
 	public void saveUser(List<User> users)
 	{
 		Session session = sessionFactory.getCurrentSession();
@@ -42,5 +43,7 @@ public class UserDemo {
 			session.persist(user);
 		}
 	}
+	
+	
 	
 }
