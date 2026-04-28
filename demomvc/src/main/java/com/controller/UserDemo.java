@@ -1,5 +1,7 @@
 package com.controller;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.hibernate.Session;
@@ -15,6 +17,9 @@ public class UserDemo {
 	@Autowired
 	private SessionFactory sessionFactory;
 	
+	@Autowired
+	private UserService userService;
+	
 	@Transactional
 	public void saveUser()
 	{
@@ -26,6 +31,16 @@ public class UserDemo {
 		
 		session.persist(user);
 		
+	}
+	
+	public void saveUser(List<User> users)
+	{
+		Session session = sessionFactory.getCurrentSession();
+
+		for(User user: users)
+		{
+			session.persist(user);
+		}
 	}
 	
 }
