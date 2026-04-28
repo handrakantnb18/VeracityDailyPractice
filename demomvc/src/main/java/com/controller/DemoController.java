@@ -42,6 +42,8 @@ public class DemoController {
 			
 		}
 		
+		userService.saveUser(list);
+		
 		return "userInertBulk";
 	}
 	
