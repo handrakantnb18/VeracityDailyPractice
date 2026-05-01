@@ -15,10 +15,11 @@ Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		map.put(4, null);
 		map.put(null, 104);
 		map.put(null, 105);
-		map.put(5, 106);
+		map.put(5, null);
 		map.put(6, null);
 		map.put(7, null);
 		map.put(null, 107);
+		map.put(5, null);
 
 
 		System.out.println(map);
