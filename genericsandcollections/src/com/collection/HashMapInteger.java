@@ -16,6 +16,10 @@ public class HashMapInteger {
 		map.put(null, "Ram");
 		map.put(null, "Rama");
 		map.put(5, null);
+		map.put(6, null);
+		map.put(7, null);
+		map.put(null, "Rama");
+
 
 		System.out.println(map);
 		
