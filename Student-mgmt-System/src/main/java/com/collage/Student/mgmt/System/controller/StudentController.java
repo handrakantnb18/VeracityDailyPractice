@@ -8,9 +8,17 @@ public class StudentController {
 		
 		StudentController studentController = new StudentController();
 		
-		String univercityName2 = studentController.univercityName;
+//		String univercityName2 = studentController.univercityName;
 		
-		System.out.println(univercityName2);
+//		System.out.println(univercityName2)
+
+		StudentController.univercityName("pune");
+		
+	}
+
+	private static void univercityName(String string) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
