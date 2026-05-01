@@ -1,7 +1,23 @@
 package com.generics;
 
+import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.List;
+
+class Test<T>
+{
+	T a;
+	
+	Test(T a)
+	{
+		this.a = a;
+	}
+		public T getObject()
+		{
+			return this.a;
+		}
+	
+}
 
 public class Demo {
 
@@ -25,6 +41,14 @@ public class Demo {
 		list1.add(789);
 		
 		System.out.println(list1);
+		
+		Test<Integer> test = new Test<Integer>(123);
+		System.out.println(test.getObject());
+		
+		Test<String> test1 = new Test<String>("Chandrakant");
+		
+		System.out.println(test1.getObject());
+//		test = test1;
 		
 	}
 }
