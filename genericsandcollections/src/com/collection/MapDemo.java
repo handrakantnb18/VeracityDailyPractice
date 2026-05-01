@@ -15,5 +15,6 @@ public class MapDemo {
 		map.put(4, 104);
 		
 		System.out.println(map);
+		
 	}
 }
