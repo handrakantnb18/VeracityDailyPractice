@@ -18,5 +18,13 @@ public class Demo {
 		System.out.println(i);
 		
 		
+		List<Integer> list1 = new ArrayList<Integer>();
+		
+		list1.add(123);
+		list1.add(456);
+		list1.add(789);
+		
+		System.out.println(list1);
+		
 	}
 }
