@@ -18,5 +18,16 @@ public class FindDuplicateElements {
 		
 		System.out.println(duplicates);
 		
+		List<Integer> list1 = Arrays.asList(10,20,30,10,40,20,50,30);
+		
+		Set<Integer> duplicate1 = 
+				list1.stream()
+				.filter(a -> Collections.frequency(list1, a) > 1)
+				.collect(Collectors.toSet());
+		
+		System.out.println(duplicate1);
+		
+		
+		
 	}
 }
