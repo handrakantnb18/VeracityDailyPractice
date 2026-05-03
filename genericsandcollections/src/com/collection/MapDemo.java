@@ -3,6 +3,8 @@ package com.collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.pojoclasses.Employee;
+
 public class MapDemo {
 
 	public static void main(String[] args) {
@@ -15,6 +17,15 @@ public class MapDemo {
 		map.put(4, 104);
 		
 		System.out.println(map);
+		
+		Map<Integer, String> map1 = new HashMap<Integer, String>();
+		
+		map1.put(1, "Chandraaknt");
+		map1.put(2, "Priyanka");
+		map1.put(3, "Chandraaknt");
+		
+		System.out.println(map1);
+		
 		
 	}
 }
