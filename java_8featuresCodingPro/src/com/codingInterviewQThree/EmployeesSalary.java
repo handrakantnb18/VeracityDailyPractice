@@ -42,6 +42,20 @@ public class EmployeesSalary {
 			
 			System.out.println("=============================================================");
 			
+//			List<Product> list3 = new Product(1, "OnePluse", 10, 100000);
+			
+			List<Product> list3 = new ArrayList<Product>();
+			
+			list3 = Arrays.asList(
+					new Product(1, "OnePluse", 10, 150000),
+					new Product(2, "OPPO", 5, 300000),
+					new Product(3, "Samsung", 11, 250000)
+					
+					);
+			
+			list3.stream()
+			.sorted(Comparator.comparing(Product::getQty))
+			.forEach(System.out::println);
 			
 			
 	}
