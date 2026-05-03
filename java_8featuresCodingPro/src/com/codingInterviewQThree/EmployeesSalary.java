@@ -26,6 +26,23 @@ public class EmployeesSalary {
 			    .sorted(Comparator.comparing(Employee::getSalary))
 			    .forEach(System.out::println);
 		
+			System.out.println("=============================================================");
+			
+			List<Book> list1 = new ArrayList<Book>();
+			
+			list1 = Arrays.asList(
+					new Book(1, "Java", 250),
+					new Book(2, "Chhava", 350),
+					new Book(3, "Shivaji kon hota", 100)
+					);
+			
+			list1.stream()
+			.sorted(Comparator.comparing(Book::getPrice))
+			.forEach(System.out::println);
+			
+			System.out.println("=============================================================");
+			
+			
 			
 	}
 }
