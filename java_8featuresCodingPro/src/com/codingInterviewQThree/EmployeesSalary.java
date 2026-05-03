@@ -72,5 +72,20 @@ public class EmployeesSalary {
 			.sorted(Comparator.comparing(User::getCity))
 			.forEach(System.out::println);
 			
+			System.out.println("=============================================================");
+
+			List<Student> list5 = new ArrayList<Student>();
+			
+			list5 = Arrays.asList(
+					new Student(1, "Rahul", "Pune univercity", "Pune"),
+					new Student(2, "Ram", "Pune university", "Pune"),
+					new  Student(3, "Sachin", "Kolhapur university", "Sangli")
+					);
+			
+			list5.stream()
+			.sorted(Comparator.comparing(Student::getCollage))
+			.forEach(System.out::println);
+			
+			
 	}
 }
