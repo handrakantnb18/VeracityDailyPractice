@@ -57,6 +57,20 @@ public class EmployeesSalary {
 			.sorted(Comparator.comparing(Product::getQty))
 			.forEach(System.out::println);
 			
+			System.out.println();
+			System.out.println("=============================================================");
+
+			List<User> list4 = new ArrayList<User>();
+			
+			list4 = Arrays.asList(
+					new User(1, "Chandrakant", "1818", "pune"),
+					new User(2, "Priyanka", "1313", "Pune"),
+					new User(3, "Shivraj", "1515", "Pune")
+					);
+			
+			list4.stream()
+			.sorted(Comparator.comparing(User::getCity))
+			.forEach(System.out::println);
 			
 	}
 }
