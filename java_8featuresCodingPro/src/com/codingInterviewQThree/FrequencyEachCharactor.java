@@ -7,7 +7,7 @@ public class FrequencyEachCharactor {
 
 	public static void main(String[] args) {
 		
-		String str1 = "Chandrakant";
+		String str1 = "Chandrakant Bhosale";
 		
 		Map<Character, Long> map = 
 				str1.chars()
@@ -17,8 +17,9 @@ public class FrequencyEachCharactor {
 		
 		System.out.println(map);
 		
+		System.out.println("=====================================");
 		
-		String str2 = "Priyanka";
+		String str2 = "Priyanka Bhosale";
 		
 		Map<Character, Long> map1 =
 				str2.chars()
@@ -28,8 +29,9 @@ public class FrequencyEachCharactor {
 		
 		System.out.println(map1);
 		
+		System.out.println("=====================================");
 		
-		String str3 = "Shivraj";
+		String str3 = "Shivraj Bhosale";
 		
 		Map<Character, Long> map3 =
 				str3.chars()
@@ -39,7 +41,8 @@ public class FrequencyEachCharactor {
 		
 		System.out.println(map3);
 		
-		String str4 = "Bhosale";
+		System.out.println("=====================================");
+		String str4 = "Swaraj Bhosale";
 		
 		Map<Character, Long> map4 =
 				str4.chars()
@@ -49,6 +52,15 @@ public class FrequencyEachCharactor {
 		
 		System.out.println(map4);
 		
-//		String
+		System.out.println("=====================================");
+		String str5 = "Dyanraj Bhosale";
+		
+		Map<Character, Long> map5 =
+				str5.chars()
+				.mapToObj(y -> (char) y)
+				.collect(Collectors.groupingBy(y -> y, Collectors.counting()));
+		
+		System.out.println(map5);
+		
 	}
 }
