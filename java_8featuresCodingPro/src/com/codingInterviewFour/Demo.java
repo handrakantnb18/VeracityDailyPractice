@@ -40,6 +40,18 @@ public class Demo {
 		
 		System.out.println(secondHeighest3);
 		
+		List<Integer> list4 = Arrays.asList(10,20,30,40,50,60,70,80,90,100);
+		
+		int secondHieght4 = 
+				list4.stream()
+				.sorted()
+				.skip(2)
+				.findFirst()
+				.get();
+		
+		System.out.println(secondHieght4);
+		
+		
 		
 	}
 }
