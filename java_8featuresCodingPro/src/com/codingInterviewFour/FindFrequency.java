@@ -25,6 +25,17 @@ public class FindFrequency {
 		
 		System.out.println(map1);
 		
+		String str2 = "Shivraj Bhosale";
+		
+		Map<Character, Long> map2 =
+				str2.chars()
+				.mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+		
+		System.out.println(map2);
+		
+		
+		
 		
 		
 	}
