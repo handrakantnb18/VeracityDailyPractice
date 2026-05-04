@@ -1,6 +1,7 @@
 package com.codingInterviewFour;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -16,6 +17,15 @@ public class RemoveDuplicates {
 				.collect(Collectors.toList());
 		
 		System.out.println(unique);
+		
+		List<Integer> list1 = Arrays.asList(11,12,13,14,15,16,17,11,15,16);
+		
+		List<Integer> unique1 =
+				list1.stream()
+				.distinct()
+				.collect(Collectors.toList());
+		
+		System.out.println(unique1);
 		
 		
 	}
