@@ -86,6 +86,5 @@ public class EmployeesSalary {
 			.sorted(Comparator.comparing(Student::getCollage))
 			.forEach(System.out::println);
 			
-			
 	}
 }
