@@ -29,6 +29,17 @@ public class Demo {
 		
 		System.out.println(secondHighest2);
 		
+		List<Integer> list3 = Arrays.asList(11,22,33,44,55,66,77,88,99);
+		
+		int secondHeighest3 =
+				list3.stream()
+				.sorted(Comparator.reverseOrder())
+				.skip(1)
+				.findFirst()
+				.get();
+		
+		System.out.println(secondHeighest3);
+		
 		
 	}
 }
