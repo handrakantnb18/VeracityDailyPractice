@@ -52,6 +52,17 @@ public class Demo {
 		System.out.println(secondHieght4);
 		
 		
+		List<Integer> list5 = Arrays.asList(56,25,35,478,98,65,73,82);
+		
+		int duplicate =
+				list5.stream()
+				.sorted()
+				.skip(3)
+				.findFirst()
+				.get();
+		
+		System.out.println(duplicate);
+		
 		
 	}
 }
