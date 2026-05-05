@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -43,10 +44,17 @@ public class StudentController {
 		return studentRepository.findById(id);
 	}
 	
-	
+	@PutMapping("/updateStudent/{id}")
 	public StudentEntity updateStudentById(@PathVariable long id, @RequestBody StudentEntity student)
 	{
 		return studentService.updateStudentById(id, student);
+	}
+	
+	@PutMapping("/updateStudent1/{id}")
+	public StudentEntity updateStudentById1(@PathVariable long id)
+	{
+		
+		return studentService.updateStudentById1(id);
 	}
 	
 	
