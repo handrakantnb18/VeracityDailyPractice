@@ -1,7 +1,12 @@
 package com.collage.Student.mgmt.System.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class StudentEntity {
 	
+	@Id
 	private long studentId;
 	
 	private String studentName;
@@ -18,6 +23,12 @@ public class StudentEntity {
 		this.studentId = studentId;
 		this.studentName = studentName;
 		this.emailId = emailId;
+	}
+
+	
+	public StudentEntity() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public long getStudentId() {
