@@ -26,5 +26,16 @@ public class StudentService {
 		
 		
 	}
+
+	public StudentEntity updateStudentById1(long id) {
+		StudentEntity student = 
+				studentRepository.findById(id).orElse(null);
+		
+		student.getStudentName();
+		student.getEmailId();
+		
+		return studentRepository.save(student);
+		
+	}
 	
 }
