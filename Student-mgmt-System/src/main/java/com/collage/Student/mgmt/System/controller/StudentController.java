@@ -1,5 +1,7 @@
 package com.collage.Student.mgmt.System.controller;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,6 +36,13 @@ public class StudentController {
 		
 		
 	}
+	
+	@GetMapping("/getStudent/{id}")
+	public Optional<StudentEntity> getStudentById(long id)
+	{
+		return studentRepository.findById(id);
+	}
+	
 	
 	
 	
