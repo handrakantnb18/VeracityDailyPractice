@@ -1,24 +1,51 @@
 package com.collage.Student.mgmt.System.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.collage.Student.mgmt.System.entity.StudentEntity;
+import com.collage.Student.mgmt.System.repository.StudentRepository;
+import com.collage.Student.mgmt.System.services.StudentService;
+
+@RestController
+@RequestMapping("/demo")
 public class StudentController {
 
-	static String univercityName = "pune univercity";
+	@Autowired
+	private StudentRepository studentRepository;
 	
-	public static void main(String[] args) {
-		
-		StudentController studentController = new StudentController();
-		
-//		String univercityName2 = studentController.univercityName;
-		
-//		System.out.println(univercityName2)
-
-		StudentController.univercityName("pune");
-		
+	@Autowired
+	private StudentService studentService;
+	
+	@GetMapping("/hello")
+	public String hello()
+	{
+		return "Hello from controller layer";
 	}
 
-	private static void univercityName(String string) {
-		// TODO Auto-generated method stub
-		
-	}
+	
+	
+	
+	
+//	public static void main(String[] args) {
+//		
+//		StudentController studentController = new StudentController();
+//		
+////		String univercityName2 = studentController.univercityName;
+//		
+////		System.out.println(univercityName2)
+//
+//		StudentController.univercityName("pune");
+//		
+//	}
+//
+//	private static void univercityName(String string) {
+//		// TODO Auto-generated method stub
+//		
+//	}
 	
 }
