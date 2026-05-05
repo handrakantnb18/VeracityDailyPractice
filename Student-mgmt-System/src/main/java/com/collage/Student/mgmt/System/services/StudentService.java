@@ -31,9 +31,12 @@ public class StudentService {
 		StudentEntity student = 
 				studentRepository.findById(id).orElse(null);
 		
-		student.getStudentName();
-		student.getEmailId();
+		student.setStudentName(student.getStudentName());
+		student.setEmailId(student.getEmailId());
 		
+//		student.getStudentName();
+//		student.getEmailId();
+//		
 		return studentRepository.save(student);
 		
 	}
