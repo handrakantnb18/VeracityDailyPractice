@@ -27,6 +27,13 @@ public class StudentController {
 		return "Hello from controller layer";
 	}
 
+	@PostMapping("/saveStudent")
+	public StudentEntity addStudent(@RequestBody StudentEntity studentEntity)
+	{
+		return studentRepository.save(studentEntity);
+		
+		
+	}
 	
 	
 	
