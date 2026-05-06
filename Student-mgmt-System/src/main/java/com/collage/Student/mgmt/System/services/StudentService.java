@@ -45,8 +45,8 @@ public class StudentService {
 		
 	}
 
-	public List<StudentEntity> getStudentIdGreaterThanFour() {
-		return studentRepository.getStudentIdGreaterThanFour( long id);
+	public List<StudentEntity> getStudentIdGreaterThanFour(long id) {
+		return studentRepository.getStudentIdGreaterThanFour( id);
 	}
 	
 	
