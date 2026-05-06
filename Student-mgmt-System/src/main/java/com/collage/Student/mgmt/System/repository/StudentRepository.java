@@ -11,6 +11,6 @@ import com.collage.Student.mgmt.System.entity.StudentEntity;
 @Repository
 public interface StudentRepository extends JpaRepository<StudentEntity, Long> {
 
-	@Query(value = "select * from student_entity where student_id = 5", nativeQuery = true)
+	@Query(value = "select * from student_entity where student_id > 5", nativeQuery = true)
 	List<StudentEntity> getStudentIdGreaterThanFour(long id);
 }
