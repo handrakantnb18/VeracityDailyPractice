@@ -1,5 +1,6 @@
 package com.collage.Student.mgmt.System.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +10,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.collage.Student.mgmt.System.entity.StudentEntity;
 import com.collage.Student.mgmt.System.repository.StudentRepository;
 import com.collage.Student.mgmt.System.services.StudentService;
+
+import jakarta.websocket.server.PathParam;
 
 @RestController
 @RequestMapping("/demo")
@@ -58,6 +62,12 @@ public class StudentController {
 	}
 	
 	
+	
+	@GetMapping("/getStudentIdGreaterThanFour")
+	public List<StudentEntity> getStudent(@RequestParam long id)
+	{
+		return studentService.getStudentIdGreaterThanFour(id);
+	}
 	
 	
 //	public static void main(String[] args) {
