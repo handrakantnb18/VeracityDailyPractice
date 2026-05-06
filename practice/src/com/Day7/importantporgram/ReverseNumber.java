@@ -1,0 +1,17 @@
+package com.Day7.importantporgram;
+
+public class ReverseNumber {
+
+	public static void main(String[] args) {
+		
+		String str = "chandrakant";
+		String rev = "";
+		
+		for(int i = str.length() - 1; i >= 0; i--)
+		{
+			rev = rev + str.charAt(i);
+		}
+		
+		System.out.println("Reverse String : "+rev);
+	}
+}
