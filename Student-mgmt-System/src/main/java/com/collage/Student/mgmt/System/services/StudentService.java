@@ -1,10 +1,14 @@
 package com.collage.Student.mgmt.System.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.collage.Student.mgmt.System.entity.StudentEntity;
 import com.collage.Student.mgmt.System.repository.StudentRepository;
+
+import jakarta.websocket.server.PathParam;
 
 @Service
 public class StudentService {
@@ -40,5 +44,11 @@ public class StudentService {
 		return studentRepository.save(student);
 		
 	}
+
+	public List<StudentEntity> getStudentIdGreaterThanFour() {
+		return studentRepository.getStudentIdGreaterThanFour( long id);
+	}
+	
+	
 	
 }
