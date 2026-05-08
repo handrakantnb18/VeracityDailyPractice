@@ -15,5 +15,19 @@ public class SwapNumber {
 		System.out.println(a);
 		
 		System.out.println(b);
+		
+		
+		int x = 45;
+		
+		int y = 54;
+		
+		x = x + y;
+		y = x - y;
+		x = x - y;
+		
+		System.out.println(x);
+		
+		System.out.println(y);
+		
 	}
 }
