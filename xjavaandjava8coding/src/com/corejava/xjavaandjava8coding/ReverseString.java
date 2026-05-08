@@ -11,6 +11,13 @@ public class ReverseString {
 		
 		System.out.println(reverse);
 		
+		String str1 = "priyanka bhosale";
+		
+		String rev =
+				new StringBuilder(str1).reverse().toString();
+		
+		System.out.println(rev);
+		
 		
 	}
 }
