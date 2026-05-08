@@ -16,6 +16,17 @@ public class FibonacciSeries {
 				b = c;
 		}
 		
+		int x = 0, y = 1;
 		
+		for(int j = 1; j <= 20; j++)
+		{
+			System.out.println(x + " ");
+			
+			int z = x + y;
+			
+				x = y;
+				y = z;
+				
+		}
 	}
 }
