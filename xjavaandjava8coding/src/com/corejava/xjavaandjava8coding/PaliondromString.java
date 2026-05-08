@@ -19,5 +19,7 @@ public class PaliondromString {
 		{
 			System.out.println("Not paliondrom String");
 		}
+		
+		
 	}
 }
