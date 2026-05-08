@@ -9,6 +9,14 @@ public class CountCharactor {
 		
 		System.out.println(str.length());
 		
+		String str1 = "Chandrakant Bhosale";
+		
+		System.out.println(str1.length());
+		
+		String str2 = "Priyanka Bhosale";
+		
+		System.out.println(str2.length());
+		
 		
 	}
 }
