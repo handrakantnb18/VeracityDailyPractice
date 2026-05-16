@@ -19,5 +19,17 @@ public class StreamIntermediate {
 	               .sorted()              
 	               .forEach(System.out::println);
 	    
+	        System.out.println("-------");
+	        
+	        List<Integer> numbers1 = Arrays.asList(5, 10, 15, 20, 25, 10, 25, 30, 40);
+
+	        
+	        numbers1.stream()
+            .filter(n -> n > 10)   
+            .map(n -> n * 2)       
+            .distinct()            
+            .sorted()              
+            .forEach(System.out::println);
+ 
 	}
 }
