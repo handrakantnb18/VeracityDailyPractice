@@ -14,6 +14,10 @@ public class Demo {
         List<String> list = Arrays.asList("Java", "Python", "C++");
         Stream<String> stream1 = list.stream();
 
+        // 1. From a Collection
+        List<String> list1 = Arrays.asList("Java", "Python", "C++");
+        Stream<String> stream11 = list.stream();
+
         // 2. From an Array
         String[] arr = {"A", "B", "C"};
         Stream<String> stream2 = Arrays.stream(arr);
