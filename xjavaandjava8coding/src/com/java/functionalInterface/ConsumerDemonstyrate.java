@@ -26,6 +26,7 @@ public class ConsumerDemonstyrate {
                 list.set(i, 2 * list.get(i));
         };
 
+        System.out.println("-------------");
         // Consumer to display a list of numbers
         Consumer<List<Integer> >
             dispList = list -> list.stream().forEach(a -> System.out.print(a + " "));
@@ -34,6 +35,8 @@ public class ConsumerDemonstyrate {
         list.add(2);
         list.add(1);
         list.add(3);
+        list.add(4);
+
 
         // Implement modify using accept()
         modify.accept(list);
