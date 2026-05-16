@@ -10,5 +10,11 @@ public class InfiniteStreamDemo {
          .limit(5)
          .forEach(System.out::println);
 
+		 System.out.println("----------------");
+		 
+		 Stream.iterate(1, n -> n + 1)
+         .limit(6)
+         .forEach(System.out::println);
+
 	}
 }
