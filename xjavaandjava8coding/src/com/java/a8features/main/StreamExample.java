@@ -10,7 +10,9 @@ import java.util.stream.Collectors;
 class Transaction
 {
 	private int id;
+	
     private int value;
+    
     private String type;
 
     public Transaction(int id, int value, String type) {
@@ -41,7 +43,9 @@ public class StreamExample {
 		            new Transaction(3, 80, "GROCERY"),
 		            new Transaction(6, 120, "GROCERY"),
 		            new Transaction(7, 40, "ELECTRONICS"),
+		            new Transaction(10, 50, "GROCERY"),
 		            new Transaction(10, 50, "GROCERY")
+
 		        );
 
 		        // Stream pipeline based on your diagram
