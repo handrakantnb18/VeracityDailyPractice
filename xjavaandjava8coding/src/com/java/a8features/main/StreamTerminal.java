@@ -23,5 +23,13 @@ public class StreamTerminal {
 		String result = names.stream().reduce("", (a, b) -> a + b + " ");
 		System.out.println(result);
 
+		// Reduce (concatenate names)
+		String result1 = names.stream().reduce("", (a, b) -> a + b + " ");
+		System.out.println(result1);
+
+		// Reduce (concatenate names)
+		String result2 = names.stream().reduce("", (a, b) -> a + b + " ");
+		System.out.println(result2);
+
 	}
 }
