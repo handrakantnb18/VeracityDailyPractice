@@ -11,6 +11,14 @@ public class SequentialStreamDemo {
 
 	        names.stream()
 	             .forEach(System.out::println);
-	    
+
+	        System.out.println("----------");
+	        
+	        List<String> names1 = Arrays.asList("A", "B", "C", "D");
+
+	        names1.stream()
+	             .forEach(System.out::println);
+
+	        
 	}
 }
