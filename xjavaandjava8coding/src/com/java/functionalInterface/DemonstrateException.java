@@ -31,6 +31,9 @@ public class DemonstrateException {
         list.add(8);
         list.add(6);
         list.add(7);
+        list.add(8);
+        list.add(6);
+        list.add(7);
 
 
         // using addThen()
