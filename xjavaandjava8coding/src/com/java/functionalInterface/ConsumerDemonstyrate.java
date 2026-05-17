@@ -36,6 +36,12 @@ public class ConsumerDemonstyrate {
         list.add(1);
         list.add(3);
         list.add(4);
+        list.add(8);
+        list.add(6);
+        list.add(7);
+
+		 // Consumer to multiply 2 to every integer of a list
+
 
 
         // Implement modify using accept()
