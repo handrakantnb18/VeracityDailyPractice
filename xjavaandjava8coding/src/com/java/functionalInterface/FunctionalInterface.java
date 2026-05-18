@@ -11,6 +11,7 @@ public class FunctionalInterface {
     
         new Thread(() -> System.out.println("One thread created")).start();
 
-		
+        new Thread(() -> System.out.println("One thread created")).start();
+
 	}
 }
