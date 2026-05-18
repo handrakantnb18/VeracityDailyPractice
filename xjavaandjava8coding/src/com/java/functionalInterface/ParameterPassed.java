@@ -27,6 +27,13 @@ public class ParameterPassed {
 	        int ans1 = s1.calculate(b);
 	        System.out.println(ans1);
 
+	        // lambda expression to define the calculate method
+	        Square s2 = (int x) -> x * x;
+
+	        // parameter passed and return type must be same as defined in the prototype
+	        int ans2 = s2.calculate(b);
+	        System.out.println(ans2);
+
 	        
 	}
 }
