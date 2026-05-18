@@ -39,6 +39,10 @@ public class ConsumerDemonstyrate {
         list.add(8);
         list.add(6);
         list.add(7);
+        list.add(4);
+        list.add(8);
+        list.add(6);
+        list.add(7);
 
 		 // Consumer to multiply 2 to every integer of a list
 
