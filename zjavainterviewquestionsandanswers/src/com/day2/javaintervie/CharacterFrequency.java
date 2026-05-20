@@ -16,6 +16,17 @@ public class CharacterFrequency {
 		
 		System.out.println(frequencies);
 		
+		System.out.println("=======================================");
+		
+		String str1 = "priyanka bhosale";
+		
+		Map<Character, Long> freq =
+				str1.chars()
+				.mapToObj(a -> (char)a)
+				.collect(Collectors.groupingBy(a -> a, Collectors.counting()));
+		
+		System.out.println(freq);
+		
 		
 	}
 }
