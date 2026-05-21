@@ -19,6 +19,23 @@ public class DuplicateElements {
 		.forEach(System.out::println);
 		
 		
+		public static void getDataWithOutDuplicates()
+		{
+			List<Integer> list1 = Arrays.asList(
+					12,15,14,18,15,19,25,22,35,25,14);
+			
+		     list1.stream()
+		     .distinct()
+		     .forEach(noDuplicateData -> 
+		     System.out.println(noDuplicateData));
+		     
+		}
+			
+			
+//			Set<Integer> set = new HashSet<Integer>(list1);
+//			
+//			List<Integer> 
+//		}
 		
 	}
 }
