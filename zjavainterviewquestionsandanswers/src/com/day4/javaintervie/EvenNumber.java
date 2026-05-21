@@ -3,6 +3,7 @@ package com.day4.javaintervie;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class EvenNumber {
 
@@ -15,9 +16,16 @@ public class EvenNumber {
 		.filter(n -> n % 2 == 0)
 		.forEach(System.out::println);
 		
-//		Map<Boolean, List<Integer>> list =
-//				Arrays.stream(arr)
-//				
+		System.out.println("=========================");
 		
+		int[] arr = {45,56,78,98,32,15,65,25,35,95};
+		
+		Map<Boolean, List<Integer>> list1 =
+				Arrays.stream(arr)
+				.boxed()
+				.collect(Collectors.partitioningBy(num -> num % 2 == 0));
+		
+		System.out.println(list1);
+				
 	}
 }
