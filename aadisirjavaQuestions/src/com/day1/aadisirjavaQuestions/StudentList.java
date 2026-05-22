@@ -9,6 +9,7 @@ public class StudentList {
 
 	public static void main(String[] args) {
 
+		// Student
 		Map<Integer, List<Student>> map = new HashMap<Integer, List<Student>>();
 
 		List<Student> list = Arrays.asList(
@@ -23,6 +24,22 @@ public class StudentList {
 		
 		System.out.println(map);
 
+		// product
+		
+		Map<Integer, List<Product>> map1 = new HashMap<Integer, List<Product>>();
+		
+		List<Product> list1 = Arrays.asList(
+				new Product(1, "Samsung", "Pune"),
+				new Product(2, "OPPO", "Mumbai"),
+				new Product(3, "OnePluse", "Pune")
+				);
+		
+		map1.put(1, list1);
+		map1.put(2, list1);
+		map1.put(3, list1);
+		
+		System.out.println(map1);
+		
 		
 	}
 }
