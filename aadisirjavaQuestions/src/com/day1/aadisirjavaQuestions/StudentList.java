@@ -17,8 +17,12 @@ public class StudentList {
 				);
 		
 		map.put(1, list);
+		map.put(2, list);
+		map.put(3, list);
+		
 		
 		System.out.println(map);
 
+		
 	}
 }
