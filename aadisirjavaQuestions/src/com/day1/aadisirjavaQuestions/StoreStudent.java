@@ -16,6 +16,21 @@ public class StoreStudent {
 		
 		System.out.println(list);
 		
+		// String
+		
+		List<String> list1 = new ArrayList<String>();
+		list1.add("Chandraaknt");
+		list1.add("Priyanka");
+		list1.add("Shivraj");
+		list1.add("Bhosale");
+		
+		System.out.println(list1);
+		
+		list1.remove(0);
+		
+		System.out.println(list1);
+		
+		
 		
 	}
 }
