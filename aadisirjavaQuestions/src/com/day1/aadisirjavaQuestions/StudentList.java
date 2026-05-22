@@ -41,5 +41,22 @@ public class StudentList {
 		System.out.println(map1);
 		
 		
+		// Book
+		
+				Map<Integer, List<Book>> map2 = new HashMap<Integer, List<Book>>();
+				
+				List<Book> list2 = Arrays.asList(
+						new Book(1, "java", "Pune"),
+						new Book(2, "Angular", "Mumbai"),
+						new Book(3, "Reactjs", "Pune")
+						);
+				
+				map2.put(1, list2);
+				map2.put(2, list2);
+				map2.put(3, list2);
+				
+				System.out.println(map2);
+				
+				
 	}
 }
