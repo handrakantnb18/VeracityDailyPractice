@@ -20,6 +20,22 @@ public class AddRemoveElementsInArrayList {
 		
 		System.out.println("Removed Fruits : "+list);
 		
+		System.out.println("==================================");
+		
+		ArrayList<Integer> list1 = new ArrayList<Integer>();
+		
+		list1.add(10);
+		list1.add(11);
+		list1.add(12);
+		list1.add(14);
+		list1.add(15);
+		
+		System.out.println("Add Number : "+list1);
+		
+		list1.remove(0);
+		
+		System.out.println("Removed Number : "+list1);
+		
 		
 		
 	}
