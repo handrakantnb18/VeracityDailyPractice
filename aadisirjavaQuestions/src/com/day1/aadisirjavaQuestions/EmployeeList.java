@@ -24,5 +24,26 @@ public class EmployeeList {
 		
 		System.out.println(map2);
 		
+		System.out.println("======================");
+		
+		 // Liabrary
+		
+		Map<Integer, List<Librarie>> map1 = new HashMap<Integer, List<Librarie>>();
+		
+		List<Librarie> list1 = Arrays.asList(
+				new Librarie(1, "Mahatma gandi vachanalay", 1500),
+				new Librarie(2, "Dr. BR Ambedkar vachanalay", 1200),
+				new Librarie(3, "LBS vachanalay", 1000)
+				);
+		
+		map1.put(1, list1);
+		map1.put(2, list1);
+		
+		
+		
+		System.out.println(map1);
+		
+		
+		
 	}
 }
