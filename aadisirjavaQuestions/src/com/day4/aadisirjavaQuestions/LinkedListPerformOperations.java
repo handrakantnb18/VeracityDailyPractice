@@ -16,6 +16,12 @@ public class LinkedListPerformOperations {
 		
 		System.out.println(list);
 		
+		list.addFirst("Strobery");
+		
+		list.addLast("Zing");
+		
+		System.out.println("Added last and first : "+list);
+		
 		
 		
 	}
