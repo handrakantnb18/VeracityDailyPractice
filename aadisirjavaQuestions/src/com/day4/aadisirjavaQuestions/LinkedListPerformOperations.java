@@ -23,6 +23,12 @@ public class LinkedListPerformOperations {
 		System.out.println("Added last and first : "+list);
 		
 		
+		list.removeFirst();
+		
+		System.out.println("Remove first : "+list);
+		
+		
+		
 		
 	}
 }
