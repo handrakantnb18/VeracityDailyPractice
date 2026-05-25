@@ -15,11 +15,21 @@ public class ReverseArrays {
 				6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
 				);
 		
+		System.out.println("Numbers : "+list);
+		
 		Collections.reverse(list);
 		
 		System.out.println("Reverse Array : "+list);
 		
 		// 2
+		
+		Collections.reverse(list);
+		
+		for(int i = list.size() - 1; i >=0; i--)
+		{
+			System.out.print(list.get(i));
+		}
+		
 		
 	}
 }
