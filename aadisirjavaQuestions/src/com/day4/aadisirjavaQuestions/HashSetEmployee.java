@@ -1,6 +1,7 @@
 package com.day4.aadisirjavaQuestions;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
@@ -15,6 +16,16 @@ public class HashSetEmployee {
 				);
 		
 		System.out.println(list);
+		
+		// 2
+		HashSet<String> emp = new HashSet<String>();
+		
+		emp.add("Raj");
+		emp.add("Rahul");
+		emp.add("Ram");
+		emp.add("Akash");
+		
+		System.out.println(emp);
 		
 		
 	}
