@@ -19,6 +19,13 @@ public class RemoveCities {
 		
 		System.out.println("City list : "+list);
 		
+		list.addFirst("Sangli");
+		
+		System.out.println("Add new List : "+list);
+		
+		list.remove(0);
+		
+		System.out.println("Remove list : "+list);
 		
 		
 		
