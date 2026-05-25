@@ -16,6 +16,13 @@ public class StoreInteger {
 		
 		System.out.println("Priority Queue : "+pq);
 		
+		Integer prio = pq.remove();
+		
+		System.out.println("Remove Queue : "+prio);
+		
+		pq.add(25);
+		
+		System.out.println("After Queue : "+pq);
 		
 	}
 }
