@@ -18,7 +18,14 @@ public class QueueInsert {
 		q.add("CSS");
 		q.add("JavaScript");
 		
-		System.out.println(q);
+		System.out.println("Elements : "+q);
+		
+		
+		String removeElemt = q.remove();
+		
+		System.out.println("Remove Elements : "+removeElemt);
+		
+		System.out.println("After delete Elements : "+q);
 		
 		
 	}
