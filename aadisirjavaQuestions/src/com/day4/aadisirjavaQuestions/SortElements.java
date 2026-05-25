@@ -49,6 +49,50 @@ public class SortElements {
 		
 		System.out.println("Sorted Numbers : "+list2);
 		
+		// 4 
 		
+		List<Integer> alist = new ArrayList<Integer>();
+		
+		alist.add(99);
+		alist.add(90);
+		alist.add(80);
+		alist.add(9);
+		alist.add(55);
+		alist.add(45);
+		alist.add(12);
+		
+		Collections.sort(alist);
+		
+		System.out.println("Sorted List : "+alist);
+		
+		for(Integer num : alist)
+		
+		{
+			boolean isPrime = true;
+			
+			if(num <= 1)
+			{
+				isPrime = false;
+				
+				System.out.println("prime numbers."+alist);
+			}
+			else
+			{
+				for(int i = 2; i <= num / 2; i++)
+				{
+				
+					if(num % i == 0)
+					{
+						isPrime = false;
+						System.out.println("Not prime numbers."+alist);
+						break;
+						
+					}
+				}
+				
+			}
+		}
+
+
 	}
 }
