@@ -24,5 +24,17 @@ public class StoreInteger {
 		
 		System.out.println("After Queue : "+pq);
 		
+		// 2
+		PriorityQueue<String> prq = new PriorityQueue<String>();
+		
+		prq.add("Shivraj");
+		prq.add("Chandraaknt");
+		prq.add("Priyanka");
+		prq.add("Vijay");
+		
+		System.out.println("Add Elements : "+prq);
+		
+		
+		
 	}
 }
