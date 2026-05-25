@@ -34,6 +34,13 @@ public class StoreInteger {
 		
 		System.out.println("Add Elements : "+prq);
 		
+		String pr = prq.remove();
+		
+		System.out.println("Remove Elements : "+pr);
+		
+		prq.add("Shayam");
+		
+		System.out.println("Add elements : "+prq);
 		
 		
 	}
