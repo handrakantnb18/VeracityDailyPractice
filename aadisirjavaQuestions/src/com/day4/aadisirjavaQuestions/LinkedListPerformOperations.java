@@ -27,6 +27,11 @@ public class LinkedListPerformOperations {
 		
 		System.out.println("Remove first : "+list);
 		
+		list.removeLast();
+		
+		System.out.println("Remove Last : "+list);
+		
+		
 		
 		
 		
