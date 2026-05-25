@@ -26,6 +26,8 @@ public class SortElements {
 		
 		System.out.println("Sorted numbers" +list);
 		
+		// 2 
+		
 		List<Integer> list1 = Arrays.asList(
 				500,90,78,65,23,15,78
 				);
@@ -33,6 +35,19 @@ public class SortElements {
 		Collections.sort(list1);
 		
 		System.out.println("Sorted numbers : "+list1);
+		
+		// 3
+		
+		ArrayList<Integer> list2 = new ArrayList<Integer>();
+		
+		list2.add(9);
+		list2.add(1);
+		list2.add(5);
+		list2.add(7);
+		
+		Collections.sort(list2);
+		
+		System.out.println("Sorted Numbers : "+list2);
 		
 		
 	}
