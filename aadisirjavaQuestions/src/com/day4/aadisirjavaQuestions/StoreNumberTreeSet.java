@@ -34,11 +34,11 @@ public class StoreNumberTreeSet {
 		// 12) TreeSet Example
 		// Write a program to store numbers in TreeSet and display sorted output.
 
-//		TreeSet<Integer> li = new TreeSet<Integer>( Arrays.asList(
-//				10,25,15,48,45,96,35,75,55
-//				));
-//		
-//		System.out.println(li);
+		TreeSet<Integer> li = new TreeSet<Integer>( Arrays.asList(
+				10,25,15,48,45,96,35,75,55
+				));
+		
+		System.out.println(li);
 		
 	}
 }
