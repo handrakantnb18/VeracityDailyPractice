@@ -11,8 +11,22 @@ public class SpringBoot1Application {
 		ConfigurableApplicationContext context =
 				SpringApplication.run(SpringBoot1Application.class, args);
 		
-		System.err.println(context.getClass().getName());
+//		System.err.println(context.getClass().getName());
 		
+		
+	}
+	
+	public void run(String... args) throws Exception
+	{
+		// validation
+		// Login checking
+		// other information before starting the application
+		
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println("Chandrakant Bhosale");
+			
+		}
 		
 	}
 
