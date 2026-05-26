@@ -21,16 +21,16 @@ public class StoreNumberTreeSet {
 		// 12) TreeSet Example
 		// Write a program to store numbers in TreeSet and display sorted output.
 
-//		TreeSet<Integer> list = new TreeSet<Integer>();
-//		
-//		list.add(10);
-//		list.add(20);
-//		list.add(30);
-//		list.add(40);
-//		list.add(50);
-//		
-//		System.out.println(list);
-//		
+		TreeSet<Integer> list = new TreeSet<Integer>();
+		
+		list.add(10);
+		list.add(20);
+		list.add(30);
+		list.add(40);
+		list.add(50);
+		
+		System.out.println(list);
+		
 		// 12) TreeSet Example
 		// Write a program to store numbers in TreeSet and display sorted output.
 
