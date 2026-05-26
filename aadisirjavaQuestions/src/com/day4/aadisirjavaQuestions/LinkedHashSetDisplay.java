@@ -20,6 +20,17 @@ public class LinkedHashSetDisplay {
 		// 13) LinkedHashSet Example
 		// Create a LinkedHashSet and display insertion order.
 
+		LinkedHashSet<String> list1 = new LinkedHashSet<String>();
+		
+		list1.add("Chandrakant");
+		list1.add("Priyanka");
+		list1.add("Shivraj");
+		list1.add("Swaraj");
+		
+		System.out.println(list1);
+		
+		
+		System.out.println();
 		
 	}
 }
