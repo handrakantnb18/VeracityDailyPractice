@@ -16,5 +16,15 @@ public class StudentController {
 		
 		return mav;
 	}
-	
+
+	@GetMapping("/register")
+	public ModelAndView register()
+	{
+		ModelAndView mav = new ModelAndView();
+		
+		mav.setViewName("register");
+		
+		return mav;
+	}
+
 }
