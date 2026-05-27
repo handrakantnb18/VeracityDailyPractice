@@ -28,8 +28,8 @@ public class Books {
 	
 	public static void main(String[] args) {
 		
-		Book b = new Books(null, null, null, null);
-		b.setId(100);
+//		Book b = new Books(null, null, null, null);
+//		b.setId(100);
 	}
 	 
 	
