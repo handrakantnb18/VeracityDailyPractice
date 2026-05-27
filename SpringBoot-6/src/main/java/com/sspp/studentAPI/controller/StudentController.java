@@ -27,4 +27,14 @@ public class StudentController {
 		return mav;
 	}
 
+	@GetMapping("/login")
+	public ModelAndView login()
+	{
+		ModelAndView mav = new ModelAndView();
+		
+		mav.setViewName("login");
+		
+		return mav;
+	}
+
 }
