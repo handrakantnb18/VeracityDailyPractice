@@ -13,6 +13,8 @@ public class StudentController {
 		ModelAndView mav = new ModelAndView();
 		
 		mav.setViewName("index");
+		mav.addObject("name", "chandrakant");
+		
 		
 		return mav;
 	}
