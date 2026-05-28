@@ -11,7 +11,7 @@
 	<h1>welcome in the register page</h1>
 	
 	<h1>${list }</h1>
-	<h1>${student }</h1>
+	<h1>${students }</h1>
 	
 </body>
 </html>
