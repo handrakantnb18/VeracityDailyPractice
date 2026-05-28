@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.sspp.studentAPI.entity.Student;
+
 @Controller
 public class StudentController {
 
@@ -31,6 +33,14 @@ public class StudentController {
 		
 		mav.setViewName("register");
 		mav.addObject("list", List.of(1,2,3,4,5));
+		
+		Student st = new Student();
+		st.setId(11);
+		st.setName("Ram");
+		st.setMarks(55.55);
+		
+		
+		mav.addObject("student", st);
 		
 		
 		return mav;
