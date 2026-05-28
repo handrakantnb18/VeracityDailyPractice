@@ -34,13 +34,18 @@ public class StudentController {
 		mav.setViewName("register");
 		mav.addObject("list", List.of(1,2,3,4,5));
 		
-		Student st = new Student();
-		st.setId(11);
-		st.setName("Ram");
-		st.setMarks(55.55);
+		Student st1 = new Student();
+		st1.setId(11);
+		st1.setName("Ram");
+		st1.setMarks(55.55);
 		
+		Student st2 = new Student();
+		st2.setId(12);
+		st2.setName("chandrakant");
+		st2.setMarks(66.66);
 		
-		mav.addObject("student", st);
+		mav.addObject("students", List.of(st1, st2));
+		
 		
 		
 		return mav;
