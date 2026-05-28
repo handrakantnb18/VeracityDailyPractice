@@ -44,7 +44,12 @@ public class StudentController {
 		st2.setName("chandrakant");
 		st2.setMarks(66.66);
 		
-		mav.addObject("students", List.of(st1, st2));
+		Student st3 = new Student();
+		st3.setId(13);
+		st3.setName("Priyanka");
+		st3.setMarks(77.77);
+		
+		mav.addObject("students", List.of(st1, st2, st3));
 		
 		
 		
