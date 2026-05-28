@@ -12,8 +12,9 @@
 
 	<h1>${name}</h1>
 	
+	<h1>${lastName }</h1>
 	
-	
+	<h1>${studentName }</h1>
 	
 	
 </body>
