@@ -1,5 +1,7 @@
 package com.sspp.studentAPI.controller;
 
+import java.util.Arrays;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -14,7 +16,9 @@ public class StudentController {
 		
 		mav.setViewName("index");
 		mav.addObject("name", "chandrakant");
-		
+		mav.addObject("lastName", "Bhosale");
+		mav.addObject("studentName", Arrays.toString(new String[] {"priyanka","Shivraj","Dyanraj"}));
+		 
 		
 		return mav;
 	}
