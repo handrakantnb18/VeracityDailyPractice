@@ -10,5 +10,11 @@
 
 	<H3>Welcome to Spring MVC Application</H3>
 
+	<h1>${name}</h1>
+	
+	
+	
+	
+	
 </body>
 </html>
