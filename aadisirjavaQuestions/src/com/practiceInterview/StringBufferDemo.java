@@ -9,10 +9,10 @@ public class StringBufferDemo {
 		sb.append("Chandrakant ");
 		sb.append("Bhosale");
 		
-//		String msg = sb.toString();
-//		
-//		System.out.println(msg);
-//		
+		String msg = sb.toString();
+		
+		System.out.println(msg);
+		
 		System.out.println(sb);
 	}
 }
