@@ -18,6 +18,17 @@ public class SortArrayList {
 		
 		System.out.println("List : "+list);
 		
+		List<Integer> list1 = new ArrayList<Integer>();
+		
+		list1.add(10);
+		list1.add(50);
+		list1.add(80);
+		list1.add(40);
+		list1.add(30);
+		
+		Collections.sort(list1);
+		
+		System.out.println("List : "+list1);
 		
 	}
 }
