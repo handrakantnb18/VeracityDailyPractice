@@ -16,6 +16,14 @@ public class AddRemoveElements {
 		
 		System.out.println("Book List : "+list1);
 		
+		list1.add("Ram");
+		
+		System.out.println("Added : "+list1);
+		
+		list1.remove(0);
+		
+		System.out.println("Removed Elements : "+list1);
+		
 		// 2
 		
 		ArrayList<Integer> list2 = new ArrayList<Integer>();
