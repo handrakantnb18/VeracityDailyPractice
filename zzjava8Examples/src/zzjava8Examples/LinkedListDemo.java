@@ -16,6 +16,12 @@ public class LinkedListDemo {
 		
 		System.out.println(list);
 		
+		list.remove("Banana");
+		
+		System.out.println("Removed : "+list);
+		
+		
+		
 		
 	}
 }
