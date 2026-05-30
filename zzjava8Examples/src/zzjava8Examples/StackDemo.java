@@ -14,6 +14,10 @@ public class StackDemo {
 
         System.out.println("Stack : " + stack);
         
-        
+        System.out.println("Peek : " + stack.peek());
+
+        System.out.println("Pop : " + stack.pop());
+
+        System.out.println("After Pop : " + stack);
 	}
 }
