@@ -16,6 +16,18 @@ public class AddRemoveElements {
 		
 		System.out.println("Book List : "+list1);
 		
+		// 2
+		
+		ArrayList<Integer> list2 = new ArrayList<Integer>();
+		
+		list2.add(100);
+		list2.add(102);
+		list2.add(103);
+		list2.add(104);
+		list2.add(105);
+		
+		System.out.println("Number List : "+list2);
+		
 		
 		
 	}
