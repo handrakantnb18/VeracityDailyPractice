@@ -20,5 +20,16 @@ public class ReverseArrayList {
 		
 		System.out.println("Reverse list : "+list);
 		
+		List<String> list1 = new ArrayList<String>();
+		
+		list1.add("abc");
+		list1.add("def");
+		list1.add("xyz");
+		list1.add("pqr");
+		
+		Collections.reverse(list1);
+		
+		System.out.println("Reversae : "+list1);
+		
 	}
 }
