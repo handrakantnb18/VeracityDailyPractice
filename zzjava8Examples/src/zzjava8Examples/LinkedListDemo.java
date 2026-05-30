@@ -20,6 +20,18 @@ public class LinkedListDemo {
 		
 		System.out.println("Removed : "+list);
 		
+		List<Integer> list1 = new ArrayList<Integer>();
+		
+		list1.add(10);
+		list1.add(20);
+		list1.add(30);
+		list1.add(40);
+		list1.add(50);
+		
+		System.out.println("Add : "+list1);
+		
+		
+		
 		
 		
 		
