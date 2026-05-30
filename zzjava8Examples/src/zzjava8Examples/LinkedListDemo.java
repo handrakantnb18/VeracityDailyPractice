@@ -1,6 +1,7 @@
 package zzjava8Examples;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LinkedListDemo {
@@ -30,10 +31,10 @@ public class LinkedListDemo {
 		
 		System.out.println("Add : "+list1);
 		
+		list1.remove(0);
 		
-		
-		
-		
+		System.out.println("Removed : "+list1);
 		
 	}
+	
 }
