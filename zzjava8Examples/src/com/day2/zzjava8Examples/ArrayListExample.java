@@ -1,6 +1,7 @@
 package com.day2.zzjava8Examples;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListExample {
 
@@ -41,6 +42,16 @@ public class ArrayListExample {
 		for(String name : list1)
 		{
 			System.out.println(name);
+		}
+		
+		System.out.println("============================");
+		
+		System.out.println("Student iterator : ");
+		Iterator<String> itr = list1.iterator();
+		
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
 		}
 		
 		
