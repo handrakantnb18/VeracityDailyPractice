@@ -15,7 +15,15 @@ public class LinkedHashSetExample {
 		
 		System.out.println("Sudent : "+ls);
 		
+		LinkedHashSet<Integer> ls1 = new LinkedHashSet<Integer>();
 		
-		System.out.println();
+		ls1.add(100);
+		ls1.add(102);
+		ls1.add(103);
+		ls1.add(104);
+		ls1.add(105);
+		
+		System.out.println("Integers : "+ls1);
+		
 	}
 }
