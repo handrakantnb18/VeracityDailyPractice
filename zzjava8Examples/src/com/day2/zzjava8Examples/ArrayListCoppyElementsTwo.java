@@ -19,5 +19,26 @@ public class ArrayListCoppyElementsTwo {
 
 	        System.out.println("List1: " + list1);
 	        System.out.println("List2: " + list2);
+	        
+	        System.out.println("=====================");
+
+			 ArrayList<String> list3 = new ArrayList<>();
+
+		        list3.add("Java");
+		        list3.add("HTML");
+		        list3.add("CSS");
+		        list3.add(".Net");
+		        list3.add("Phython");
+
+		        ArrayList<String> list4 = new ArrayList<>();
+
+		        for (String str : list3) {
+		            list4.add(str);
+		        }
+
+		        System.out.println("List3 : " + list3);
+		        System.out.println("List4 : " + list4);
+		        
+	        
 	}
 }
