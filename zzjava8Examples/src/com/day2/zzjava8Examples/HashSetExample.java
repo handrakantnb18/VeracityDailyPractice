@@ -13,7 +13,18 @@ public class HashSetExample {
 		hs.add("Chandrakant");
 		hs.add("Pooja");
 		
-		System.out.println(hs);
+		System.out.println("Students : "+hs);
+		
+		HashSet<Integer> hs1 = new HashSet<Integer>();
+		
+		hs1.add(50);
+		hs1.add(60);
+		hs1.add(10);
+		hs1.add(30);
+		hs1.add(20);
+		
+		System.out.println("Numbers : "+hs1);
+		
 		
 	}
 }
