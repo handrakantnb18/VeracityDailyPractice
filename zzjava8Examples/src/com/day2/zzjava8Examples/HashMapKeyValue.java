@@ -19,6 +19,11 @@ public class HashMapKeyValue {
 			System.out.println("Key : "+entry.getKey() + 
 					", Value : "+entry.getValue());
 		}
+		
+		for(Integer key : map.keySet())
+		{
+			System.out.println(key);
+		}
 	}
 	
 	
