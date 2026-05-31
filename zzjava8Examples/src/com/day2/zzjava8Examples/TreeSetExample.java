@@ -15,6 +15,14 @@ public class TreeSetExample {
 		
 		System.out.println("Employee : "+ts);
 		
+		TreeSet<Integer> ts1 = new TreeSet<Integer>();
+		ts1.add(50);
+		ts1.add(90);
+		ts1.add(30);
+		ts1.add(70);
+		ts1.add(60);
+		
+		System.out.println("Numbers : "+ts1);
 		
 	}
 }
