@@ -15,7 +15,18 @@ public class ArrayListElementCount {
 		
 		int count = list.size();
 		
-		System.out.println(count);
+		System.out.println("Totals : "+count);
 		
+		ArrayList<Integer> list1 = new ArrayList<Integer>();
+		list1.add(10);
+		list1.add(20);
+		list1.add(30);
+		list1.add(40);
+		list1.add(56);
+		list1.add(50);
+		
+		int num = list1.size();
+		
+		System.out.println("Count : "+num);
 	}
 }
