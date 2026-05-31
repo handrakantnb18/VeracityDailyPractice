@@ -21,6 +21,13 @@ public class ArrayListCoppyElements {
 		
 		System.out.println("Dest List : "+dest);
 		
+		System.out.println("===============");
 		
+		ArrayList<String> destinationList =
+                new ArrayList<>(list);
+
+        System.out.println("Destination : "+destinationList);
+
+        
 	}
 }
