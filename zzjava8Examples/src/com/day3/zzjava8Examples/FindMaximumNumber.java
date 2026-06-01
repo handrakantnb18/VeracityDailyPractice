@@ -1,6 +1,8 @@
 package com.day3.zzjava8Examples;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class FindMaximumNumber {
@@ -38,6 +40,17 @@ public class FindMaximumNumber {
 		}
 		
 		System.out.println("Minimum Number : "+min);
+		
+		// 2
+		
+		List<Integer> list = Arrays.asList(10,25,
+				45,85,66,99,88,37,85,92);
+		
+		int max11 = Collections.max(list);
+		
+		System.out.println("maximum Number : "+max11);
+		
+		
 		
 		
 		
