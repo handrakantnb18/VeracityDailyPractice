@@ -22,7 +22,27 @@ public class MergeList {
 		
 		employee1.addAll(employee2);
 		
-		System.out.println(employee1);
+		System.out.println("Merged Employee : "+employee1);
+		
+		System.out.println("======================");
+		
+		List<Integer> num1 = new ArrayList<Integer>();
+		num1.add(10);
+		num1.add(50);
+		num1.add(30);
+		num1.add(70);
+		num1.add(20);
+		
+		System.out.println("Without Merged : "+num1);
+		
+		List<Integer> num2 = new ArrayList<Integer>();
+		num2.add(80);
+		num2.add(40);
+		num2.add(60);
+		
+		num1.addAll(num2);
+		
+		System.out.println("Merged Numbers : "+num2);
 		
 		
 	}
