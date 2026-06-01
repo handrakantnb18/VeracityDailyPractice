@@ -27,6 +27,18 @@ public class FindMaximumNumber {
 		
 		System.out.println("Maximum Number : "+max);
 		
+		int min = num1.get(0);
+		
+		for(int number : num1)
+		{
+			if(number < min)
+			{
+				min = number;
+			}
+		}
+		
+		System.out.println("Minimum Number : "+min);
+		
 		
 		
 	}
