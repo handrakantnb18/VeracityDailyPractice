@@ -25,5 +25,24 @@ public class CollectionSorting {
         
         System.out.println("Duplicate Sorting : "+num);
         
+        System.out.println("================================");
+
+        ArrayList<String> str = new ArrayList<String>();
+        str.add("Rahul");
+        str.add("Amit");
+        str.add("Priya");
+        str.add("Chandrakant");
+        str.add("Anil");
+        str.add("Sunil");
+        str.add("Mahesh");
+        str.add("Shivraj");
+        
+        System.out.println("Original Strings : "+str);
+        
+        Collections.sort(str);
+        
+        System.out.println("String Sorted : "+str);
+        
+       
 	}
 }
