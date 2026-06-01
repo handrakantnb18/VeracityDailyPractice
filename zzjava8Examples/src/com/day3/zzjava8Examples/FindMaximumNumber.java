@@ -50,8 +50,9 @@ public class FindMaximumNumber {
 		
 		System.out.println("maximum Number : "+max11);
 		
+		int min11 = Collections.min(list);
 		
-		
+		System.out.println("Minimum Number : "+min11);
 		
 		
 	}
