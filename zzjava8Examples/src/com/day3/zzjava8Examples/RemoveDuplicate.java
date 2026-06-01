@@ -1,6 +1,7 @@
 package com.day3.zzjava8Examples;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicate {
@@ -24,7 +25,26 @@ public class RemoveDuplicate {
 		
 		System.out.println("Remo Duplicates : "+uniq);
 		
+		System.out.println("==================");
 		
+		ArrayList<String> name = new ArrayList<String>();
 		
+		name.add("Amit");
+		name.add("Sunil");
+		name.add("Anil");
+		name.add("Rahul");
+		name.add("Priya");
+		name.add("Pooja");
+		name.add("Priya");
+		name.add("Amit");
+		name.add("Sunil");
+		
+		System.out.println("Original List : "+name);
+		
+		HashSet<String> hs = new HashSet<String>(name);
+		
+		System.out.println("Remove Duplicates : "+hs);
+		
+			
 	}
 }
