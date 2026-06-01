@@ -15,6 +15,15 @@ public class StudentCollectionDemo {
 		
 		System.out.println("Students : "+list);
 		
+		System.out.println("========================");
+		
+		System.out.println("Students : ");
+		
+		for(Student student : list)
+		{
+			System.out.println(student);
+		}
+		
 		
 	}
 }
