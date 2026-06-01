@@ -1,7 +1,9 @@
 package com.day3.zzjava8Examples;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class CollectionSorting {
 
@@ -54,6 +56,17 @@ public class CollectionSorting {
        Collections.sort(str, Collections.reverseOrder());
        
        System.out.println("Reverse order : "+str);
+       
+       System.out.println("=======================================");
+       
+       List<Integer> list = Arrays.asList(12,55,22,33,45,55,89);
+       
+       System.out.println("Before Sort : "+list);
+       
+       Collections.sort(list);
+       
+       System.out.println("After Sort : "+list);
+       
        
 	}
 }
