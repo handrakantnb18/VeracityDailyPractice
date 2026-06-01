@@ -1,0 +1,33 @@
+package com.day3.zzjava8Examples;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FindMaximumNumber {
+
+	public static void main(String[] args) {
+		
+		List<Integer> num1 = new ArrayList<Integer>();
+		num1.add(80);
+		num1.add(50);
+		num1.add(70);
+		num1.add(60);
+		num1.add(40);
+		num1.add(10);
+		
+		int max = num1.get(0);
+		
+		for(int num : num1)
+		{
+			if(num > max)
+			{
+				max = num;
+			}
+		}
+		
+		System.out.println("Maximum Number : "+max);
+		
+		
+		
+	}
+}
