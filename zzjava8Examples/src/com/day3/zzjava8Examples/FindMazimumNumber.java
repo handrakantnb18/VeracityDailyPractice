@@ -20,12 +20,22 @@ public class FindMazimumNumber {
 		
 		System.out.println("Maximum No : "+max);
 		
+		int min = Collections.min(num1);
+		
+		System.out.println("Minimum Number : "+min);
+		
+		System.out.println("=======================");
+		
 		List<Integer> num2 = Arrays.asList(10,25,35,45,
 				95,85,65,75,33,55,88,66,99);
 		
 		int max1 = Collections.max(num2);
 		
 		System.out.println("Max No : "+max1);
+		
+		int min1 = Collections.min(num2);
+		
+		System.out.println("Minimum No : "+min1);
 		
 		
 	}
