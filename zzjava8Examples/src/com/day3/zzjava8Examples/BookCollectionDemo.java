@@ -18,6 +18,8 @@ public class BookCollectionDemo {
 			System.out.println(books);
 		}
 		
+		System.out.println("=========================");
 		
+		book.forEach(System.out::println);
 	}
 }
