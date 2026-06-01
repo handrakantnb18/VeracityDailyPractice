@@ -25,6 +25,12 @@ public class CollectionSorting {
         
         System.out.println("Duplicate Sorting : "+num);
         
+        System.out.println("-------------------");
+        
+        Collections.sort(num, Collections.reverseOrder());
+        
+        System.out.println("Reverce order : "+num);
+        
         System.out.println("================================");
 
         ArrayList<String> str = new ArrayList<String>();
