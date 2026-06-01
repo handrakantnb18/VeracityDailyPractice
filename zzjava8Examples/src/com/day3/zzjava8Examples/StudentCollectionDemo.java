@@ -28,5 +28,6 @@ public class StudentCollectionDemo {
 		
 		list.forEach(System.out::println);
 		
+		
 	}
 }
