@@ -24,6 +24,9 @@ public class StudentCollectionDemo {
 			System.out.println(student);
 		}
 		
+		System.out.println("=========================");
+		
+		list.forEach(System.out::println);
 		
 	}
 }
