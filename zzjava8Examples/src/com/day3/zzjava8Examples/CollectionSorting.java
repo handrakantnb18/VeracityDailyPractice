@@ -49,6 +49,11 @@ public class CollectionSorting {
         
         System.out.println("String Sorted : "+str);
         
+       System.out.println("--------------------");
+       
+       Collections.sort(str, Collections.reverseOrder());
+       
+       System.out.println("Reverse order : "+str);
        
 	}
 }
