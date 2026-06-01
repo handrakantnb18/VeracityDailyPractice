@@ -67,6 +67,15 @@ public class CollectionSorting {
        
        System.out.println("After Sort : "+list);
        
+       System.out.println("-----------------------------------------");
+       
+       List<Integer> list1 = Arrays.asList(12,55,22,33,45,55,89);
+
+       System.out.println("Befor reverse : "+list1);
+       
+       Collections.sort(list1, Collections.reverseOrder());
+       
+       System.out.println("Reverse order : "+list1);
        
 	}
 }
