@@ -14,6 +14,19 @@ public class StudentService {
 	
 	public void saveStudent(Student student)
 	{
+		if(student.getCourse().equalsIgnoreCase("Java Full Stack"))
+		{
+			student.setCourseFees(50000.00);
+		}
+		else if(student.getCourse().equalsIgnoreCase("Python Full Stack"))
+		{
+			student.setCourseFees(60000.00);
+		}
+		else
+		{
+			student.setCourseFees(80000.00);
+		}
+		
 		repository.save(student);
 	}
 }
