@@ -3,6 +3,7 @@ package com.sspp.studentAPI.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.sspp.studentAPI.entity.Student;
 
@@ -17,6 +18,14 @@ public class CourseController {
 		Student student = new Student();
 		
 		model.addAttribute("student", student);
+		
+		return "enrollment-form";
+	}
+	
+	@PostMapping("/saveStudent")
+	public String saveStudent(Student student)
+	{
+		System.err.println(student);
 		
 		return "enrollment-form";
 	}
