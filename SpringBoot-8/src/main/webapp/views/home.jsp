@@ -104,6 +104,7 @@ body{
     border-radius:10px;
     box-shadow:0px 2px 8px rgba(0,0,0,0.15);
     vertical-align:top;
+    transition:0.3s;
 }
 
 .course-box h3{
@@ -114,6 +115,12 @@ body{
 .course-box p{
     color:#555;
     line-height:1.5;
+    margin-bottom:15px;
+}
+
+.course-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Footer */
@@ -136,7 +143,7 @@ body{
 
     <div class="nav-links">
         <a href="#">Home</a>
-        <a href="#courses">Courses</a>
+        <a href="cources">Courses</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="enroll">Enroll Now</a>
@@ -161,6 +168,7 @@ body{
 </div>
 
 <!-- Courses Section -->
+<!-- Courses Section -->
 <div class="courses" id="courses">
 
     <h2>Popular Courses</h2>
@@ -168,20 +176,40 @@ body{
     <div class="course-box">
         <h3>Java Full Stack</h3>
         <p>Spring Boot, Hibernate, MySQL, HTML, CSS, JavaScript.</p>
+        <a href="enroll" class="enroll-btn">Enroll Now</a>
     </div>
 
     <div class="course-box">
         <h3>Python Full Stack</h3>
         <p>Django, REST API, Python, HTML, CSS, JavaScript.</p>
+        <a href="enroll" class="enroll-btn">Enroll Now</a>
     </div>
 
     <div class="course-box">
         <h3>Data Science</h3>
         <p>Machine Learning, Python, Pandas, NumPy, Power BI.</p>
+        <a href="enroll" class="enroll-btn">Enroll Now</a>
+    </div>
+
+    <div class="course-box">
+        <h3>AWS Cloud Computing</h3>
+        <p>EC2, S3, IAM, VPC, Load Balancer and Cloud Deployment.</p>
+        <a href="enroll" class="enroll-btn">Enroll Now</a>
+    </div>
+
+    <div class="course-box">
+        <h3>React JS</h3>
+        <p>Components, Hooks, Routing, Redux and API Integration.</p>
+        <a href="enroll" class="enroll-btn">Enroll Now</a>
+    </div>
+
+    <div class="course-box">
+        <h3>DevOps</h3>
+        <p>Git, GitHub, Docker, Jenkins, Kubernetes and CI/CD.</p>
+        <a href="enroll" class="enroll-btn">Enroll Now</a>
     </div>
 
 </div>
-
 <!-- Footer -->
 <div class="footer">
     © 2026 Course Enrollment Portal | All Rights Reserved
