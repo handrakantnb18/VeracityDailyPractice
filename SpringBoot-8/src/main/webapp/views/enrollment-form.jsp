@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+pageEncoding="UTF-8"%>
 
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
 <!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -11,80 +12,130 @@
 
 <style>
 
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		font-family: 'sagoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	}
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #03acb5;
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    .container {
-        width: 500px;
-        background: #fff;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15);
-    }
+body{
+    background:linear-gradient(to right,#dbeafe,#eff6ff);
+    min-height:100vh;
+}
 
-    h2 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 20px;
-    }
+/* Navbar */
+.navbar{
+    background:#1e3a8a;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
 
-    td {
-        padding: 12px;
-    }
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+    font-weight:bold;
+}
 
-    input[type="text"],
-    select {
-        width: 90%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+.nav-links a:hover{
+    color:#fbbf24;
+}
 
-    input[type="submit"] {
-        background-color: #2a49a9;
-        color: white;
-        padding: 10px 25px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
+/* Form Section */
+.form-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px 20px;
+}
 
-    input[type="submit"]:hover {
-        background-color: #03acb5;
-    }
+.container{
+    width:540px;
+    background:#fff;
+    padding:9px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
 
-    .btn-row {
-        text-align: center;
-    }
+h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
 
-    .message {
-        text-align: center;
-        color: green;
-        margin-top: 15px;
-    }
+table{
+    width:100%;
+}
+
+td{
+    padding:9px;
+}
+
+input[type="text"],
+input[type="email"],
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+input[type="submit"]:hover{
+    background:#2563eb;
+}
+
+.btn-row{
+    text-align:center;
+}
+
+.message{
+    text-align:center;
+    color:green;
+    margin-top:15px;
+    font-weight:bold;
+}
+
 </style>
 
 </head>
+
 <body>
+
+<div class="navbar">
+    <div class="logo">Course Enroll</div>
+
+<div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/#courses">Courses</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="enroll">Enroll Now</a>
+</div>
+
+
+</div>
+
+<div class="form-wrapper">
 
 <div class="container">
 
@@ -159,7 +210,9 @@
 
     </form:form>
 
-    <h5 class="message">${msg}</h5>
+    <div class="message">${msg}</div>
+
+</div>
 
 </div>
 
