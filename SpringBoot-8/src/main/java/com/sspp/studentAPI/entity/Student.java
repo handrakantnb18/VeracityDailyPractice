@@ -27,6 +27,6 @@ public class Student {
 	
 	private String mobileNo;
 	
-	
+	private String address;
 	
 }
