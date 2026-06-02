@@ -15,27 +15,27 @@
 
 		<tr>
 			<td>Student Name :</td>
-			<td><form:input path="" /></td>
+			<td><form:input path="name" /></td>
 		</tr>
 		<tr>
 			<td>Student Email :</td>
-			<td><form:input path="" /></td>
+			<td><form:input path="email" /></td>
 		</tr>
 		<tr>
 			<td>Student Mobile No :</td>
-			<td><form:input path="" /></td>
+			<td><form:input path="mobileNo" /></td>
 		</tr>
 		<tr>
 		<td>Student Gender :</td>
 			<td>
-				<form:rediobutton path="" value="Male" />Male 
-				<form:rediobutton path="" value="Female" />Female
+				<form:rediobutton path="gender" value="Male" />Male 
+				<form:rediobutton path="gender" value="Female" />Female
 			</td>
 		</tr>
 		<tr>
 			<td>Student Address :</td>
 			<td>
-				<form:select path="" />
+				<form:select path="address" />
 			
 				<form:option value="Pune">Pune</form:option>
 				<form:option value="Pune">Mumbai</form:option>
@@ -47,17 +47,18 @@
 		<tr>
 			<td>Select Course :</td>
 			<td>
-				<form:option value="Java Full Stack">Java Full Stack</form:option>
-				<form:option value="Python Full Stacl">Java Full Stack</form:option>
-				<form:option value="Data Science">Data Science</form:option>
-				
+				<form:select path="course">
+					<form:option value="Java Full Stack">Java Full Stack</form:option>
+					<form:option value="Python Full Stacl">Java Full Stack</form:option>
+					<form:option value="Data Science">Data Science</form:option>
+				</form:select>
 			</td>
 		</tr>
 		<td>Preferred Timing :</td>
 			<td>
-				<form:checkbox path="" value="Morning" />Morning 
-				<form:checkbox path="" value="Afternoon" />Afternoon
-				<form:checkbox path="" value="Evening" />Evening
+				<form:checkbox path="timing" value="Morning" />Morning 
+				<form:checkbox path="timing" value="Afternoon" />Afternoon
+				<form:checkbox path="timing" value="Evening" />Evening
 			</td>
 		</tr>
 		
