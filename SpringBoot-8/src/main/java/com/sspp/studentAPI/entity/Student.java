@@ -29,4 +29,5 @@ public class Student {
 	
 	private String address;
 	
+	private double courseFees;
 }
