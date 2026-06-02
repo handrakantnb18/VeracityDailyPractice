@@ -37,4 +37,10 @@ public class CourseController {
 		
 		return "enrollment-form";
 	}
+	
+	@GetMapping("/")
+	public String homePage()
+	{
+		return "home";
+	}
 }
