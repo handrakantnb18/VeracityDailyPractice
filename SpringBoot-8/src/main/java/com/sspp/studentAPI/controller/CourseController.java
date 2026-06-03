@@ -31,14 +31,16 @@ public class CourseController {
 	public String saveStudent(Student student, Model model)
 	{
 //		System.err.println(student);
-		studentService.saveStudent(student);
+		Student savedStudent = studentService.saveStudent(student);
 		
 //		model.addAttribute("msg", "Student Enroll Sucessfully.");
+		
+		System.err.println(savedStudent.getId());
 		
 		return "redirect:/dashboard";
 	}
 	
-	@GetMapping("/dashboard")
+	@GetMapping("/dashboard") 
 	public String getStudentDashboard()
 	{
 		return "dashboard";
