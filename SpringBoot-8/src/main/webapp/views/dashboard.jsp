@@ -167,7 +167,11 @@ table tr:hover{
             <div class="profile">
                 Welcome, Admin
             </div>
+            <div class="profile">
+                Log Out
+            </div>
         </div>
+        
 
         <!-- Cards -->
         <div class="cards">
