@@ -38,6 +38,12 @@ public class CourseController {
 		return "enrollment-form";
 	}
 	
+	@GetMapping("/dashboard")
+	public String getStudentDashboard()
+	{
+		return "dashboard";
+	}
+	
 	@GetMapping("/")
 	public String homePage()
 	{
