@@ -12,7 +12,7 @@ public class StudentService {
 	@Autowired
 	StudentRepository repository;
 	
-	public void saveStudent(Student student)
+	public Student saveStudent(Student student)
 	{
 		if(student.getCourse().equalsIgnoreCase("Java Full Stack"))
 		{
@@ -27,6 +27,9 @@ public class StudentService {
 			student.setCourseFees(80000.00);
 		}
 		
-		repository.save(student);
+		Student savedSudent = repository.save(student);
+		
+		return savedSudent;
+		
 	}
 }
