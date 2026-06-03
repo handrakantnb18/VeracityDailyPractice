@@ -33,9 +33,9 @@ public class CourseController {
 //		System.err.println(student);
 		studentService.saveStudent(student);
 		
-		model.addAttribute("msg", "Student Enroll Sucessfully.");
+//		model.addAttribute("msg", "Student Enroll Sucessfully.");
 		
-		return "enrollment-form";
+		return "redirect:/dashboard";
 	}
 	
 	@GetMapping("/dashboard")
