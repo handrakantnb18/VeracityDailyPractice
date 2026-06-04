@@ -117,6 +117,36 @@ tr:hover{
     color:white;
 }
 
+.heading{
+    text-align:right;
+    margin: 30px 0 20px 0;
+}
+
+/* Title */
+.heading h2{
+    color:#1e3a8a;
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+/* Total Students Badge */
+.count{
+    display:inline-block;
+    background:#1e3a8a;
+    color:white;
+    padding:8px 18px;
+    border-radius:25px;
+    font-size:15px;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Optional hover effect */
+.count:hover{
+    background:#2563eb;
+    cursor:pointer;
+}
+
 </style>
 
 </head>
@@ -140,7 +170,14 @@ tr:hover{
 <!-- CONTENT -->
 <div class="container">
 
-<h2>All Enrolled Students</h2>
+<div class ="heading">
+	<h2>All Enrolled Students</h2>
+
+<div class = "count">
+	Total Students : ${students.size()}
+</div>
+	
+</div>
 
 <table>
     <tr>
