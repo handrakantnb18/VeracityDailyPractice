@@ -1,5 +1,6 @@
 package com.sspp.studentAPI.service;
 
+import java.util.Arrays;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,17 @@ public class StudentService {
 		{
 			student = op.get();
 		}
+		
+		Student updatedStudent = new Student();
+		updatedStudent.setId(student.getId());
+		updatedStudent.setAddress(student.getAddress());
+		updatedStudent.setCourse(student.getCourse());
+		updatedStudent.setCourseFees(student.getCourseFees());
+		updatedStudent.setEmail(student.getEmail());
+		updatedStudent.setGender(student.getGender());
+		updatedStudent.setMobileNo(student.getMobileNo());
+		updatedStudent.setName(student.getName());
+		updatedStudent.setTiming(Arrays.asList(student.getTiming()));
 		
 		return student;
 	}
