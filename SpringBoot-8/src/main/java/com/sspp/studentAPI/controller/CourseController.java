@@ -68,7 +68,7 @@ public class CourseController {
 	@GetMapping("/getAllStudents")
 	public String getAllStudent(Model model)
 	{
-		List<Student> allStudents = studentService.getAllStudents();
+		List<StudentDto> allStudents = studentService.getAllStudents();
 		model.addAttribute("students",allStudents);
 		
 		return "students";
