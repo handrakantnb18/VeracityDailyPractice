@@ -158,7 +158,7 @@ tr:hover{
     <div class="logo">Course Enroll</div>
 
     <div class="nav-links">
-        <a href="home">Home</a>
+        <a href="/">Home</a>
         <a href="cources">Courses</a>
         <a href="enroll">Enroll</a>
         <a href="dashboard">Dashboard</a>
