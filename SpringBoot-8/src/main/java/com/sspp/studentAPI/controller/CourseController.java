@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.sspp.studentAPI.entity.Student;
+import com.sspp.studentAPI.entity.StudentDto;
 import com.sspp.studentAPI.service.StudentService;
 
 
@@ -46,7 +47,7 @@ public class CourseController {
 	public String getStudentDashboard(@PathVariable int id, Model model)
 	{
 		System.err.println(id);
-		Student student = studentService.getById(id);
+		StudentDto student = studentService.getById(id);
 		
 //		System.err.println(student.getTiming());
 		
