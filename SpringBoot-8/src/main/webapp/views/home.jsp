@@ -144,7 +144,7 @@ body{
     <div class="nav-links">
         <a href="home">Home</a>
         <a href="cources">Courses</a>
-        <a href="#">About</a>
+        <a href="about">About</a>
         <a href="getAllStudents">All Enrolled Students</a>
         <a href="enroll">Enroll Now</a>
     </div>
