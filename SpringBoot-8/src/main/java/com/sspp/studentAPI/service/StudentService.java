@@ -1,6 +1,7 @@
 package com.sspp.studentAPI.service;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,13 @@ public class StudentService {
 
 	@Autowired
 	StudentRepository repository;
+	
+	public List<Student> getAllStudents()
+	{
+		return repository.findAll();
+	}
+	
+	
 	
 	public StudentDto getById(int id)
 	{
