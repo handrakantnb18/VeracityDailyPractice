@@ -163,11 +163,11 @@ tr:hover{
         <a href="enroll">Enroll</a>
         <a href="dashboard">Dashboard</a>
         <a href="students">Students</a>
-        <a href="logout">Logout</a>
+        <a href="/">Logout</a>
     </div>
 </div>
  
-<!-- CONTENT -->
+<!-- CONTENT --> 
 <div class="container">
 
 <div class ="heading">
