@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sspp.studentAPI.entity.Student;
+import com.sspp.studentAPI.entity.StudentDto;
 import com.sspp.studentAPI.repo.StudentRepository;
 
 import jakarta.persistence.Id;
@@ -17,7 +18,7 @@ public class StudentService {
 	@Autowired
 	StudentRepository repository;
 	
-	public Student getById(int id)
+	public StudentDto getById(int id)
 	{
 		Student student = null;
 		Optional<Student> op = repository.findById(id);
@@ -26,7 +27,7 @@ public class StudentService {
 			student = op.get();
 		}
 		
-		Student updatedStudent = new Student();
+		StudentDto updatedStudent = new StudentDto();
 		updatedStudent.setId(student.getId());
 		updatedStudent.setAddress(student.getAddress());
 		updatedStudent.setCourse(student.getCourse());
@@ -35,9 +36,9 @@ public class StudentService {
 		updatedStudent.setGender(student.getGender());
 		updatedStudent.setMobileNo(student.getMobileNo());
 		updatedStudent.setName(student.getName());
-		updatedStudent.setTiming(Arrays.asList(student.getTiming()));
+		updatedStudent.setTiming(Arrays.toString(student.getTiming()));
 		
-		return student;
+		return updatedStudent;
 	}
 	
 	public Student saveStudent(Student student)
