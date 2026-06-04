@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.sspp.studentAPI.entity.Student;
 import com.sspp.studentAPI.service.StudentService;
@@ -35,14 +36,15 @@ public class CourseController {
 		
 //		model.addAttribute("msg", "Student Enroll Sucessfully.");
 		
-		System.err.println(savedStudent.getId());
+//		System.err.println(savedStudent.getId());
 		
-		return "redirect:/dashboard";
+		return "redirect:/dashboard?id = "+savedStudent.getId();
 	}
 	
 	@GetMapping("/dashboard") 
-	public String getStudentDashboard()
+	public String getStudentDashboard(@RequestParam int id)
 	{
+		System.err.println(id);
 		return "dashboard";
 	}
 	
