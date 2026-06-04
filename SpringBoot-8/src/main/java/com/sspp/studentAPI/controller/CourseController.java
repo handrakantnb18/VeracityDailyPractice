@@ -43,9 +43,11 @@ public class CourseController {
 	}
 	
 	@GetMapping("/dashboard/{id}") 
-	public String getStudentDashboard(@PathVariable int id)
+	public String getStudentDashboard(@PathVariable int id, Model model)
 	{
 		System.err.println(id);
+		Student student = studentService.getById(id);
+		model.addAttribute("student", student);
 		return "dashboard";
 	}
 	
