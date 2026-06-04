@@ -7,68 +7,104 @@
 <title>Student Dashboard</title>
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f6f9;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
 
-    .container {
-        width: 90%;
-        max-width: 1000px;
-        background: #ffffff;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    }
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
 
-    h2 {
-        text-align: center;
-        color: #1e3a8a;
-        margin-bottom: 20px;
-    }
+body{
+    background:#f4f7f9;
+}
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        overflow: hidden;
-        border-radius: 10px;
-    }
+/* Navbar (same as your portal) */
+.navbar{
+    background:#1e3a8a;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    th {
-        background: #1e3a8a;
-        color: white;
-        padding: 12px;
-        text-transform: uppercase;
-        font-size: 14px;
-    }
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
 
-    td {
-        padding: 12px;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-        font-size: 14px;
-        color: #333;
-    }
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+    font-weight:bold;
+}
 
-    tr:hover {
-        background: #f1f5ff;
-    }
+.nav-links a:hover{
+    color:#fbbf24;
+}
 
-    tr:nth-child(even) {
-        background: #fafafa;
-    }
+/* Dashboard Container */
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#1e3a8a;
+    color:white;
+    padding:12px;
+}
+
+td{
+    text-align:center;
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f1f5ff;
+}
+
 </style>
-
 </head>
 
 <body>
 
+<!-- ✅ NAVBAR ADDED -->
+<div class="navbar">
+    <div class="logo">Course Enroll</div>
+
+    <div class="nav-links">
+        <a href="home">Home</a>
+        <a href="cources">Courses</a>
+        <a href="enroll">Enroll</a>
+        <a href="dashboard">Dashboard</a>
+        <a href="logout">Logout</a>
+    </div>
+</div>
+
+<!-- Dashboard Content -->
 <div class="container">
 
 <h2>Student Dashboard</h2>
