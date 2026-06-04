@@ -127,8 +127,8 @@ input[type="submit"]:hover{
 <div class="nav-links">
     <a href="/">Home</a>
     <a href="cources">Courses</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="about">About</a>
+    <a href="contact">Contact</a>
     <a href="enroll">Enroll Now</a>
 </div>
 
