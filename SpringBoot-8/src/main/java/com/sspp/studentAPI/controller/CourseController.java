@@ -47,6 +47,9 @@ public class CourseController {
 	{
 		System.err.println(id);
 		Student student = studentService.getById(id);
+		
+//		System.err.println(student.getTiming());
+		
 		model.addAttribute("student", student);
 		return "dashboard";
 	}
