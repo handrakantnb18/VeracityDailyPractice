@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -38,11 +39,11 @@ public class CourseController {
 		
 //		System.err.println(savedStudent.getId());
 		
-		return "redirect:/dashboard?id = "+savedStudent.getId();
+		return "redirect:/dashboard/  "+savedStudent.getId();
 	}
 	
-	@GetMapping("/dashboard") 
-	public String getStudentDashboard(@RequestParam int id)
+	@GetMapping("/dashboard/{id}") 
+	public String getStudentDashboard(@PathVariable int id)
 	{
 		System.err.println(id);
 		return "dashboard";
