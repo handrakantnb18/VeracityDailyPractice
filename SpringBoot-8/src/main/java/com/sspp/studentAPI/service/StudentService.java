@@ -1,5 +1,6 @@
 package com.sspp.studentAPI.service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -19,9 +20,31 @@ public class StudentService {
 	@Autowired
 	StudentRepository repository;
 	
-	public List<Student> getAllStudents()
+	public List<StudentDto> getAllStudents()
 	{
-		return repository.findAll();
+		List<Student> students = repository.findAll();
+		
+		List<StudentDto> dtos = new ArrayList<StudentDto>();
+		
+		for(Student student : students)
+		{
+			StudentDto updatedStudent = new StudentDto();
+			
+			updatedStudent.setId(student.getId());
+			updatedStudent.setAddress(student.getAddress());
+			updatedStudent.setCourse(student.getCourse());
+			updatedStudent.setCourseFees(student.getCourseFees());
+			updatedStudent.setEmail(student.getEmail());
+			updatedStudent.setGender(student.getGender());
+			updatedStudent.setMobileNo(student.getMobileNo());
+			updatedStudent.setName(student.getName());
+			updatedStudent.setTiming(Arrays.toString(student.getTiming()));
+		
+			dtos.add(updatedStudent);
+			
+		}
+		
+		return dtos;
 	}
 	
 	
