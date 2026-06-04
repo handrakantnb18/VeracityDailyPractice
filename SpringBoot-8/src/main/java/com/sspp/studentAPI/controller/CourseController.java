@@ -65,6 +65,13 @@ public class CourseController {
 		return "home";
 	}
 	
+	@GetMapping("/about")
+	public String aboutPage()
+	{
+		return "about";
+	}
+	
+	
 	@GetMapping("/getAllStudents")
 	public String getAllStudent(Model model)
 	{
