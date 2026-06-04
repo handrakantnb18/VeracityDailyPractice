@@ -1,5 +1,7 @@
 package com.sspp.studentAPI.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -55,12 +57,22 @@ public class CourseController {
 		return "dashboard";
 	}
 	
+	
+	
 	@GetMapping("/")
 	public String homePage()
 	{
 		return "home";
 	}
 	
+	@GetMapping("/getAllStudents")
+	public String getAllStudent(Model model)
+	{
+		List<Student> allStudents = studentService.getAllStudents();
+		model.addAttribute("students",allStudents);
+		
+		return "students";
+	}
 	@GetMapping("/cources")
 	public String getCources()
 	{
