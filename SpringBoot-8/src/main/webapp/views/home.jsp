@@ -142,10 +142,10 @@ body{
     <div class="logo">Course Enroll</div>
 
     <div class="nav-links">
-        <a href="#">Home</a>
+        <a href="home">Home</a>
         <a href="cources">Courses</a>
         <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="getAllStudents">All Enrolled Students</a>
         <a href="enroll">Enroll Now</a>
     </div>
 </div>
