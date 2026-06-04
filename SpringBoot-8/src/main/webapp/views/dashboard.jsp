@@ -97,11 +97,11 @@ tr:hover{
 
     <div class="nav-links">
         <a href="home">Home</a>
-        <a href="cources">Courses</a>
         <a href="enroll">Enroll</a>
         <a href="dashboard">Dashboard</a>
-        <a href="logout">Logout</a>
-    </div>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+     </div>
 </div>
 
 <!-- Dashboard Content -->
