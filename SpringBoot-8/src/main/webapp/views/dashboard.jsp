@@ -10,7 +10,7 @@
 
 <h2> Student Dashboard</h2>
 
-<table>
+<table frame ="box" rules = "all" width ="100%">
 	<tr>
 		<th>ID</th>
 		<th>Name</th>
