@@ -18,5 +18,10 @@ public class WelcomeContainer {
 		return "welcome";
 	}
 	
+	@GetMapping("/product-form")
+	public String ProductForm()
+	{
+		return "product-form";
+	}
 	
 }
