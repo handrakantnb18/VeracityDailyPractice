@@ -71,6 +71,12 @@ public class CourseController {
 		return "about";
 	}
 	
+	@GetMapping("/contact")
+	public String contactPage()
+	{
+		return "contact";
+	}
+	
 	
 	@GetMapping("/getAllStudents")
 	public String getAllStudent(Model model)
