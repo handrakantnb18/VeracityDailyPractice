@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Page</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f7f9;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: #1e3a8a;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover {
+        color: #ffcc00;
+    }
+
+    /* Contact container */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+    }
+
+    .contact-box {
+        background: white;
+        padding: 30px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #1e3a8a;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    input[type="submit"] {
+        margin-top: 20px;
+        background: #1e3a8a;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background: #0f2557;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>Product Management</h2>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/add-product">Add Product</a></li>
+        <li><a href="/products">View Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Contact Form -->
+<div class="container">
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+
+        <form action="/contact" method="post">
+            
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea name="message" placeholder="Write your message..." required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
