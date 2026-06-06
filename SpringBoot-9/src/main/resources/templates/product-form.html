@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th = "www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Product Form</title>
@@ -118,9 +118,15 @@
 <!-- Form -->
 <div class="container">
     <div class="form-box">
-        <h2>Add Product</h2>
+        <h2>Add New Product</h2>
 
-        <form th:action="@{save-product}" method="post" th:object="${product}">
+        <form 
+        th:action="@{save-product}" 
+        method="post" 
+        th:object="${product}"
+        
+        enctype="multipart/form-data"
+        >
             <label>Enter ID</label>
             <input type="text" placeholder="Enter Product Id" th:field="*{id}">
 
@@ -134,7 +140,7 @@
             <input type="text" placeholder="Enter Product Qty" th:field="*{qty}">
 
             <label>Enter Image</label>
-            <input type="file" th:field="*{imageName}">
+            <input type="file" name="image" th:field="*{imageName}">
 
             <input type="submit" value="Save Product">
         </form>
