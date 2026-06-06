@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th = "www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Product Form</title>
@@ -120,7 +120,7 @@
     <div class="form-box">
         <h2>Add Product</h2>
 
-        <form action="">
+        <form th:action="${save-product}" method="post" th:object="@product">
             <label>Enter ID</label>
             <input type="text" placeholder="Enter Product Id">
 
