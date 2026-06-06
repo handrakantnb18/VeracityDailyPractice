@@ -2,30 +2,144 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Product Form</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f7f9;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: #1e3a8a;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar ul li {
+        cursor: pointer;
+    }
+
+    .navbar ul li:hover {
+        text-decoration: underline;
+    }
+
+    /* Form container */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .form-box {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .form-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #1e3a8a;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background: #1e3a8a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background: #0f2557;
+    }
+
+</style>
+
 </head>
+
 <body>
 
-	<form action="">
-	
-	<label>Enter ID : </label>
-		<input type="text" placeholder="Enter Product Id ">
-		<br>
-		<label>Enter Name : </label>
-		<input type="text" placeholder="Enter Product Name ">
-		<br>
-		<label>Enter Price : </label>
-		<input type="text" placeholder="Enter Product Price ">
-		<br>
-		<label>Enter Qty : </label>
-		<input type="text" placeholder="Enter Product Qty ">
-		<br>
-		<label>Enter Image : </label>
-		<input type="file" >
-		
-		<input type="submit" value="saveProduct">
-		
-		
-	</form>
+<!-- Navbar -->
+<div class="navbar">
+    <h2>Product Management</h2>
+    <ul>
+        <li>Home</li>
+        <li>Add Product</li>
+        <li>View Products</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+<!-- Form -->
+<div class="container">
+    <div class="form-box">
+        <h2>Add Product</h2>
+
+        <form action="">
+            <label>Enter ID</label>
+            <input type="text" placeholder="Enter Product Id">
+
+            <label>Enter Name</label>
+            <input type="text" placeholder="Enter Product Name">
+
+            <label>Enter Price</label>
+            <input type="text" placeholder="Enter Product Price">
+
+            <label>Enter Qty</label>
+            <input type="text" placeholder="Enter Product Qty">
+
+            <label>Enter Image</label>
+            <input type="file">
+
+            <input type="submit" value="Save Product">
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
