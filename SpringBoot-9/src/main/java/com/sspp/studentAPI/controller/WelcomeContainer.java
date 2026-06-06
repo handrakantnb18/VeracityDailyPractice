@@ -16,7 +16,13 @@ import com.sspp.studentAPI.entity.Product;
 @Controller
 public class WelcomeContainer {
 
-	@GetMapping({"/welcome","/home","/"})
+	@GetMapping("/")
+	public String homePage()
+	{
+		return "home";
+	}
+	
+	@GetMapping({"/welcome"})
 	public String welcome(Model model)
 	{
 		model.addAttribute("message", "Hello Chandrakant How are you!!!");
