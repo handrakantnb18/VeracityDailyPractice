@@ -121,7 +121,7 @@
         <h2>Add New Product</h2>
 
         <form 
-        th:action="@{save-product}" 
+        th:action="@{save}" 
         method="post" 
         th:object="${product}"
         
@@ -140,8 +140,8 @@
             <input type="text" placeholder="Enter Product Qty" th:field="*{qty}">
 
             <label>Enter Image</label>
-            <input type="file" name="image" th:field="*{imageName}">
-
+			<input type="file" name="image">
+            
             <input type="submit" value="Save Product">
         </form>
     </div>
