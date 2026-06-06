@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import com.sspp.studentAPI.entity.Product;
 
@@ -27,6 +28,14 @@ public class WelcomeContainer {
 //		product.setId(1111111);
 		
 		model.addAttribute("product", product);
+		return "product-form";
+	}
+	
+	@PostMapping("/save-product")
+	public String saveProduct(Product product)
+	{
+		System.err.println(product);
+		
 		return "product-form";
 	}
 	
