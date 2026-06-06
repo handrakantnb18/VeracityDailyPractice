@@ -1,11 +1,14 @@
 package com.sspp.studentAPI.controller;
 
+import java.io.File;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.sspp.studentAPI.entity.Product;
 
@@ -32,10 +35,19 @@ public class WelcomeContainer {
 	}
 	
 	@PostMapping("/save-product")
-	public String saveProduct(Product product)
+	public String saveProduct(Product product, @RequestParam("image") MultipartFile file) throws Exception
 	{
-		System.err.println(product);
+//		System.err.println(product);
 		
+//		System.out.println(file.getOriginalFilename());
+		
+		String fileName = file.getOriginalFilename();
+		
+		product.setImageName(fileName);
+		
+		String uploadPath = "C:\\Users\\CHANDRAKANT\\OneDrive\\Desktop\\resume\\";
+		
+		file.transferTo(new File(uploadPath + fileName));
 		return "product-form";
 	}
 	
