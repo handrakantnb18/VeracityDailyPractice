@@ -22,6 +22,12 @@ public class WelcomeContainer {
 		return "home";
 	}
 	
+	@GetMapping("/contact")
+	public String contactPage()
+	{
+		return "contact";
+	}
+	
 	@GetMapping({"/welcome"})
 	public String welcome(Model model)
 	{
