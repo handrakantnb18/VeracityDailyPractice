@@ -43,11 +43,13 @@ public class WelcomeContainer {
 		
 		String fileName = file.getOriginalFilename();
 		
-		product.setImageName(fileName);
+		long value = System.currentTimeMillis();
+		
+		product.setImageName(value + "_" +fileName);
 		
 		String uploadPath = "C:\\Users\\CHANDRAKANT\\OneDrive\\Desktop\\resume\\";
 		
-		file.transferTo(new File(uploadPath + fileName));
+		file.transferTo(new File(uploadPath + value + "_" + fileName));
 		
 		System.out.println(product);
 		
