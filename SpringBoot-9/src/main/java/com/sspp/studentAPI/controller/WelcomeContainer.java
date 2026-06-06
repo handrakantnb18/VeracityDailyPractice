@@ -34,7 +34,7 @@ public class WelcomeContainer {
 		return "product-form";
 	}
 	
-	@PostMapping("/save-product")
+	@PostMapping("/save")
 	public String saveProduct(Product product, @RequestParam("image") MultipartFile file) throws Exception
 	{
 //		System.err.println(product);
@@ -48,6 +48,9 @@ public class WelcomeContainer {
 		String uploadPath = "C:\\Users\\CHANDRAKANT\\OneDrive\\Desktop\\resume\\";
 		
 		file.transferTo(new File(uploadPath + fileName));
+		
+		System.out.println(product);
+		
 		return "product-form";
 	}
 	
