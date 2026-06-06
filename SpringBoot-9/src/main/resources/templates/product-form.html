@@ -120,21 +120,21 @@
     <div class="form-box">
         <h2>Add Product</h2>
 
-        <form th:action="${save-product}" method="post" th:object="@product">
+        <form th:action="@{save-product}" method="post" th:object="${product}">
             <label>Enter ID</label>
-            <input type="text" placeholder="Enter Product Id">
+            <input type="text" placeholder="Enter Product Id" th:field="*{id}">
 
             <label>Enter Name</label>
-            <input type="text" placeholder="Enter Product Name">
+            <input type="text" placeholder="Enter Product Name" th:field="*{name}">
 
             <label>Enter Price</label>
-            <input type="text" placeholder="Enter Product Price">
+            <input type="text" placeholder="Enter Product Price" th:field="*{price}">
 
             <label>Enter Qty</label>
-            <input type="text" placeholder="Enter Product Qty">
+            <input type="text" placeholder="Enter Product Qty" th:field="*{qty}">
 
             <label>Enter Image</label>
-            <input type="file">
+            <input type="file" th:field="*{imageName}">
 
             <input type="submit" value="Save Product">
         </form>
