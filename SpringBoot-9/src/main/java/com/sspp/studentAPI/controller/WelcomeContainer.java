@@ -24,6 +24,7 @@ public class WelcomeContainer {
 	public String ProductForm(Model model)
 	{
 		Product product = new Product();
+//		product.setId(1111111);
 		
 		model.addAttribute("product", product);
 		return "product-form";
