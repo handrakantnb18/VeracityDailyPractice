@@ -28,6 +28,12 @@ public class WelcomeContainer {
 		return "contact";
 	}
 	
+	@GetMapping("/viewproduct")
+	public String viewProduct()
+	{
+		return "viewproduct";
+	}
+	
 	@GetMapping({"/welcome"})
 	public String welcome(Model model)
 	{
