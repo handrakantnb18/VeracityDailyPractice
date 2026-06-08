@@ -21,8 +21,11 @@ public class lambdaExpression {
 		list.forEach(lt -> System.out.println(lt));
 		
 		
+		List<String> str = Arrays.asList(
+				"Appale", "Banana", "Mango"
+				);
 		
-		
+		str.forEach(names ->System.out.println(names) );
 		
 	}
 }
