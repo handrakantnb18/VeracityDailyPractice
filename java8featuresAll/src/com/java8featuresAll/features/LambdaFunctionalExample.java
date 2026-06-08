@@ -1,5 +1,10 @@
 package com.java8featuresAll.features;
 
+@FunctionalInterface
+interface Calculator {
+    int operate(int a, int b);
+}
+
 public class LambdaFunctionalExample {
 
 	 public static void main(String[] args) {
