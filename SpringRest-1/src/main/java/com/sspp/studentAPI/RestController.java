@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
@@ -80,10 +81,26 @@ public class RestController {
 //			
 //	}
 	
-	@GetMapping("/students")
-	public List<Student> getStudents()
+//	@GetMapping("/students")
+//	public List<Student> getStudents()
+//	{
+//		return List.of(
+//				new Student(1, "Chandrakant", 55.55),
+//				new Student(2, "Priyanka", 88.88),
+//				new Student(3, "Shivraj", 77.55),
+//				new Student(4, "Vijay", 66.99),
+//				new Student(5, "Dyanaraj", 99.99),
+//				new Student(6, "subhash", 98.98)
+//		);
+//			
+//	}
+//	
+	
+	@GetMapping("/students/{id}")
+	public List<Student> getStudents(@PathVariable Integer id)
 	{
-		return List.of(
+		System.err.println(id);
+		 List<Student> student = List.of(
 				new Student(1, "Chandrakant", 55.55),
 				new Student(2, "Priyanka", 88.88),
 				new Student(3, "Shivraj", 77.55),
@@ -92,6 +109,8 @@ public class RestController {
 				new Student(6, "subhash", 98.98)
 		);
 			
+		 return student;
+		 
 	}
 	
 }
