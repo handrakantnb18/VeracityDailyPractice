@@ -28,4 +28,15 @@ public class RestController {
 		return map;
 		
 	}
+	
+	@GetMapping("/student")
+	public Student getStudents()
+	{
+		Student std1 = new Student(1, "chandrakant", 55.55);
+		
+		
+		return std1;
+	}
+	
+	
 }
