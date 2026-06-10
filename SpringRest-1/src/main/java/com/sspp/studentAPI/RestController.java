@@ -1,6 +1,8 @@
 package com.sspp.studentAPI;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,18 +52,32 @@ public class RestController {
 //	}
 //	
 	
+//	@GetMapping("/students")
+//	public Student[] getStudents()
+//	{
+//		Student[] students = {
+//				new Student(1, "Chandrakant", 55.55),
+//				new Student(2, "Priyanka", 88.88),
+//				new Student(3, "Shivraj", 77.55),
+//				new Student(4, "Vijay", 66.99)				
+//		};
+//		
+//		return students;
+//		
+//	}
+//	
+	
 	@GetMapping("/students")
-	public Student[] getStudents()
+	public List<Student> getStudents()
 	{
-		Student[] students = {
+		return Arrays.asList(
 				new Student(1, "Chandrakant", 55.55),
 				new Student(2, "Priyanka", 88.88),
 				new Student(3, "Shivraj", 77.55),
-				new Student(4, "Vijay", 66.99)				
-		};
-		
-		return students;
-		
+				new Student(4, "Vijay", 66.99),
+				new Student(5, "Dyanaraj", 99.99)
+		);
+			
 	}
 	
 }
