@@ -97,10 +97,10 @@ public class RestController {
 //	
 	
 	@GetMapping("/students/{id}")
-	public List<Student> getStudents(@PathVariable Integer id)
+	public Student getStudents(@PathVariable Integer id)
 	{
 		System.err.println(id);
-		 List<Student> student = List.of(
+		 List<Student> students = List.of(
 				new Student(1, "Chandrakant", 55.55),
 				new Student(2, "Priyanka", 88.88),
 				new Student(3, "Shivraj", 77.55),
@@ -109,8 +109,14 @@ public class RestController {
 				new Student(6, "subhash", 98.98)
 		);
 			
-		 return student;
-		 
+		 for(Student student : students)
+		 {
+			 if(student.getId() == id)
+			 {
+				 return student;
+			 }
+		 }
+		 	return null;			 
 	}
 	
 }
