@@ -67,15 +67,29 @@ public class RestController {
 //	}
 //	
 	
+//	@GetMapping("/students")
+//	public List<Student> getStudents()
+//	{
+//		return Arrays.asList(
+//				new Student(1, "Chandrakant", 55.55),
+//				new Student(2, "Priyanka", 88.88),
+//				new Student(3, "Shivraj", 77.55),
+//				new Student(4, "Vijay", 66.99),
+//				new Student(5, "Dyanaraj", 99.99)
+//		);
+//			
+//	}
+	
 	@GetMapping("/students")
 	public List<Student> getStudents()
 	{
-		return Arrays.asList(
+		return List.of(
 				new Student(1, "Chandrakant", 55.55),
 				new Student(2, "Priyanka", 88.88),
 				new Student(3, "Shivraj", 77.55),
 				new Student(4, "Vijay", 66.99),
-				new Student(5, "Dyanaraj", 99.99)
+				new Student(5, "Dyanaraj", 99.99),
+				new Student(6, "subhash", 98.98)
 		);
 			
 	}
