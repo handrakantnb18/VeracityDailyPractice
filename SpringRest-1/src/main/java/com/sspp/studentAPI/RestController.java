@@ -116,7 +116,8 @@ public class RestController {
 				 return student;
 			 }
 		 }
-		 	return null;			 
+		 throw new StudentNotFoundException("Student not fount with id : "+id);
+		 
 	}
 	
 }
