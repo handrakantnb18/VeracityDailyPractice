@@ -29,13 +29,24 @@ public class RestController {
 		
 	}
 	
-	@GetMapping("/student")
-	public Student getStudents()
+	@GetMapping("/students")
+	public Student[] getStudents()
 	{
 		Student std1 = new Student(1, "chandrakant", 55.55);
 		
+		Student std2 = new Student(2, "Priyanka", 88.88);
 		
-		return std1;
+		Student std3 = new Student(3, "Sivraj", 99.99);
+		
+		Student std4 = new Student(4, "Vijay", 77.77);
+		
+		Student[] students = new Student[4];
+		students[0]= std1;
+		students[1]= std2;
+		students[2]= std3;
+		students[3]= std4;
+		
+		return students;
 	}
 	
 	
