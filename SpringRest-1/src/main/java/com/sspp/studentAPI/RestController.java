@@ -120,4 +120,23 @@ public class RestController {
 		 
 	}
 	
+	@GetMapping("/employee")
+	public String getEmployee()
+	{
+		return "employeeHome";
+	}
+	
+	
+	
+//	@GetMapping("/employees")
+//	public Map<String, String> getEmployees()
+//	{
+//		Map<String, String> map = new HashMap<String, String>();
+//		map.put( "Prakash", "Pune");
+//		map.put( "Sachin", "Mumbai");
+//				
+//		
+//		return map;
+//	}
+	
 }
