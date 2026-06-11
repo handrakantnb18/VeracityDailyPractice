@@ -128,15 +128,15 @@ public class RestController {
 	
 	
 	
-//	@GetMapping("/employees")
-//	public Map<String, String> getEmployees()
-//	{
-//		Map<String, String> map = new HashMap<String, String>();
-//		map.put( "Prakash", "Pune");
-//		map.put( "Sachin", "Mumbai");
-//				
-//		
-//		return map;
-//	}
+	@GetMapping("/employees")
+	public Map<String, String> getEmployees()
+	{
+		Map<String, String> map = new HashMap<String, String>();
+		map.put( "Prakash", "Pune");
+		map.put( "Sachin", "Mumbai");
+				
+		
+		return map;
+	}
 	
 }
