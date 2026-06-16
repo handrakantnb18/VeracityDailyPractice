@@ -5,7 +5,7 @@ import java.util.List;
 
 public class OddNumbers {
 
-	// Find Even Numbers from a List
+	// Find Odd Numbers from a List
 	public static void main(String[] args) {
 		
 		 List<Integer> numbers =
