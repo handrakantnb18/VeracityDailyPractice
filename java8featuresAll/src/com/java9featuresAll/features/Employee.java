@@ -1,6 +1,6 @@
 package com.java9featuresAll.features;
 
-public class Employee {
+final class Employee {
 
 	
 	    private final int id;
