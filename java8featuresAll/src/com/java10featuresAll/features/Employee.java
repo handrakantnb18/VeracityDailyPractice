@@ -2,7 +2,7 @@ package com.java10featuresAll.features;
 
 public class Employee {
 
-	private long id;
+	private Integer id;
 	
 	private String name;
 	
@@ -15,7 +15,7 @@ public class Employee {
 		return "Employee [id=" + id + ", name=" + name + ", dept=" + dept + ", salary=" + salary + "]";
 	}
 
-	public Employee(long id, String name, String dept, Integer salary) {
+	public Employee(Integer id, String name, String dept, Integer salary) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -28,11 +28,11 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
-	public long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
