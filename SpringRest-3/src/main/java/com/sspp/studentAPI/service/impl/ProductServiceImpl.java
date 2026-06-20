@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.sspp.studentAPI.entity.Product;
+import com.sspp.studentAPI.exception.ProductNotFoundException;
 import com.sspp.studentAPI.service.ProductService;
 
 public class ProductServiceImpl implements ProductService {
@@ -27,11 +28,19 @@ public class ProductServiceImpl implements ProductService {
 	
 	
 	@Override
-	public List<Product> getProductById(Integer id) {
+	public Product getProductById(Integer id) {
 		// TODO Auto-generated method stub
 		List<Product> allProducts = getAllProducts();
 		
-		return allProducts;
+		for(Product product : allProducts)
+		{
+			if(product.getId() == id)
+			{
+				return product;
+			}	
+			
+		}
+		throw new ProductNotFoundException("Product not found by id : "+id);
 	}
 
 }
