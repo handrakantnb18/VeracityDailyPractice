@@ -21,4 +21,4 @@ public class ProductPrice {
 
 		System.out.println(map);	
 	}
-}
+} 
