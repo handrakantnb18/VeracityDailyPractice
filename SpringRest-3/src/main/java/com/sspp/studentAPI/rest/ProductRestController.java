@@ -33,8 +33,7 @@ public class ProductRestController {
 	{
 		Product product = productService.getProductById(id);
 		
-		product = null;
-		
+				
 		if(product == null)
 		{
 			return new ResponseEntity<Product>(product, HttpStatus.INTERNAL_SERVER_ERROR);
