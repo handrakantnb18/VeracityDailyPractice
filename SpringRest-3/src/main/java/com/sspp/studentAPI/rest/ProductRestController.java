@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sspp.studentAPI.entity.Product;
 import com.sspp.studentAPI.service.ProductService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/api/v1")
 public class ProductRestController {
@@ -46,7 +48,7 @@ public class ProductRestController {
 	}
 
 	@PostMapping("/save")
-	public ResponseEntity<String> save(@RequestBody Product product)
+	public ResponseEntity<String> save(@Valid @RequestBody Product product)
 	{
 		String msg = productService.saveProduct(product);
 		System.out.println(product);
