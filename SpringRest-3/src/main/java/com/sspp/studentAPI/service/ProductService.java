@@ -13,4 +13,6 @@ public interface ProductService {
 	
 	String saveProduct(ProductDto product);
 	
+	Product getProductByName(String name);
+	
 }
