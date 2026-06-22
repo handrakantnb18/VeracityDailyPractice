@@ -11,10 +11,12 @@ import com.sspp.studentAPI.service.ProductService;
 @RestController
 public class ProductRestController {
 
+	// from browser we can send only GET method
+	
 	@Autowired
 	ProductService productService;
 	
-	@GetMapping
+	@GetMapping("/product/{id}")
 	public Product getProductById(@PathVariable Integer id)
 	{
 		Product product = productService.getProductById(id);
