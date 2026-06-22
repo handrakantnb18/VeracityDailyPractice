@@ -12,7 +12,7 @@ import com.sspp.studentAPI.service.ProductService;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-	public List<Product> getAllProducts()
+	public List<Product> getProducts()
 	{
 		Product product1 = new Product(1,"Laptop",45000.00,1,"Elecronics");
 
@@ -33,7 +33,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public Product getProductById(Integer id) {
 		// TODO Auto-generated method stub
-		List<Product> allProducts = getAllProducts();
+		List<Product> allProducts = getProducts();
 		
 		for(Product product : allProducts)
 		{
@@ -44,6 +44,13 @@ public class ProductServiceImpl implements ProductService {
 			
 		}
 		throw new ProductNotFoundException("Product not found by id : "+id);
+	}
+
+
+	@Override
+	public List<Product> getAllproducts() {
+		// TODO Auto-generated method stub
+		return getProducts();
 	}
 
 }
