@@ -3,16 +3,21 @@ package com.sspp.studentAPI.service.impl;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sspp.studentAPI.dto.ProductDto;
 import com.sspp.studentAPI.entity.Product;
 import com.sspp.studentAPI.exception.ProductNotFoundException;
+import com.sspp.studentAPI.repo.ProductRepository;
 import com.sspp.studentAPI.service.ProductService;
 
 @Service
 public class ProductServiceImpl implements ProductService {
 
+	@Autowired
+	ProductRepository productRepository;
+	
 	public List<Product> getProducts()
 	{
 		Product product1 = new Product(1,"Laptop",45000.00,1,"Elecronics");
@@ -59,12 +64,12 @@ public class ProductServiceImpl implements ProductService {
 	public String saveProduct(ProductDto productDto) {
  
 		Product entity = new Product();
-		entity.setId(productDto.getId());
 		entity.setName(productDto.getName());
 		entity.setPrice(productDto.getPrice());
 		entity.setQty(productDto.getQty());
 		entity.setCatagory(productDto.getCatagory());
 		
+		productRepository.save(entity);
 		
 		return "Product saved successfully.";
 		
