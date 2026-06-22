@@ -53,4 +53,12 @@ public class ProductServiceImpl implements ProductService {
 		return getProducts();
 	}
 
+
+	@Override
+	public String saveProduct(Product product) {
+
+		return "Product saved successfully.";
+		
+	}
+
 }
