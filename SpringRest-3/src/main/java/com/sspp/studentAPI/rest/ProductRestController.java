@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sspp.studentAPI.dto.ProductDto;
 import com.sspp.studentAPI.entity.Product;
 import com.sspp.studentAPI.service.ProductService;
 
@@ -48,10 +49,10 @@ public class ProductRestController {
 	}
 
 	@PostMapping("/save")
-	public ResponseEntity<String> save(@Valid @RequestBody Product product)
+	public ResponseEntity<String> save(@Valid @RequestBody ProductDto productDto)
 	{
-		String msg = productService.saveProduct(product);
-		System.out.println(product);
+		String msg = productService.saveProduct(productDto);
+		System.out.println(productDto);
 		
 		return new ResponseEntity<String>(msg, HttpStatus.CREATED);
 		
