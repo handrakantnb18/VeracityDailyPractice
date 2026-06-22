@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.sspp.studentAPI.dto.ProductDto;
 import com.sspp.studentAPI.entity.Product;
 import com.sspp.studentAPI.exception.ProductNotFoundException;
 import com.sspp.studentAPI.service.ProductService;
@@ -55,8 +56,16 @@ public class ProductServiceImpl implements ProductService {
 
 
 	@Override
-	public String saveProduct(Product product) {
-
+	public String saveProduct(ProductDto productDto) {
+ 
+		Product entity = new Product();
+		entity.setId(productDto.getId());
+		entity.setName(productDto.getName());
+		entity.setPrice(productDto.getPrice());
+		entity.setQty(productDto.getQty());
+		entity.setCatagory(productDto.getCatagory());
+		
+		
 		return "Product saved successfully.";
 		
 	}
