@@ -30,6 +30,7 @@ public class ProductRestController {
 	ProductService productService;
 	
 	// http://localhost:8080/api/v1/product/1
+	
 	@GetMapping("/product/{id}")
 	public ResponseEntity<Product> getProductById(@PathVariable Integer id)
 	{
@@ -50,6 +51,7 @@ public class ProductRestController {
 	}
 
 	// http://localhost:8080/api/v1/save
+	
 	@PostMapping("/save")
 	public ResponseEntity<String> save(@Valid @RequestBody ProductDto productDto)
 	{
@@ -77,8 +79,10 @@ public class ProductRestController {
 //	}
 	
 	// http://localhost:8080/api/v1/products
+	
 	@GetMapping("/products")
 	public ResponseEntity<List<Product>> getAllProducts()
+	
 	{
 		List<Product> allproducts =  productService.getAllproducts();
 		
@@ -87,6 +91,7 @@ public class ProductRestController {
 	}
 
 	// http://localhost:8080/api/v1/byname?name=iphone
+	
 	@GetMapping("/byname")
 	public ResponseEntity<Product> getProductByName(@RequestParam String name)
 	{
