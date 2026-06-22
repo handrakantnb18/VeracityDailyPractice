@@ -2,6 +2,7 @@ package com.sspp.studentAPI.service;
 
 import java.util.List;
 
+import com.sspp.studentAPI.dto.ProductDto;
 import com.sspp.studentAPI.entity.Product;
 
 public interface ProductService {
@@ -10,6 +11,6 @@ public interface ProductService {
 
 	List<Product> getAllproducts();
 	
-	String saveProduct(Product product);
+	String saveProduct(ProductDto product);
 	
 }
