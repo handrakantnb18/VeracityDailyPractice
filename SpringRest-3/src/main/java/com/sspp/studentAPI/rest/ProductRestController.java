@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sspp.studentAPI.dto.ProductDto;
@@ -28,6 +29,7 @@ public class ProductRestController {
 	@Autowired
 	ProductService productService;
 	
+	// http://localhost:8080/api/v1/product/1
 	@GetMapping("/product/{id}")
 	public ResponseEntity<Product> getProductById(@PathVariable Integer id)
 	{
@@ -47,6 +49,7 @@ public class ProductRestController {
 
 	}
 
+	// http://localhost:8080/api/v1/save
 	@PostMapping("/save")
 	public ResponseEntity<String> save(@Valid @RequestBody ProductDto productDto)
 	{
@@ -73,6 +76,7 @@ public class ProductRestController {
 //		return allproducts;
 //	}
 	
+	// http://localhost:8080/api/v1/products
 	@GetMapping("/products")
 	public ResponseEntity<List<Product>> getAllProducts()
 	{
@@ -80,7 +84,17 @@ public class ProductRestController {
 		
 		return new ResponseEntity<List<Product>>(allproducts, HttpStatus.OK);
 		
-		
 	}
 
+	// http://localhost:8080/api/v1/byname?name=iphone
+	@GetMapping("/byname")
+	public ResponseEntity<Product> getProductByName(@RequestParam String name)
+	{
+		Product product = productService.getProductByName(name);
+		
+		return new ResponseEntity<Product>(product, HttpStatus.OK);
+		
+	}
+	
+	
 }
