@@ -10,5 +10,6 @@ public interface ProductService {
 
 	List<Product> getAllproducts();
 	
+	String saveProduct(Product product);
 	
 }
