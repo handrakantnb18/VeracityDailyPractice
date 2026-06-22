@@ -3,10 +3,13 @@ package com.sspp.studentAPI.service.impl;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.sspp.studentAPI.entity.Product;
 import com.sspp.studentAPI.exception.ProductNotFoundException;
 import com.sspp.studentAPI.service.ProductService;
 
+@Service
 public class ProductServiceImpl implements ProductService {
 
 	public List<Product> getAllProducts()
