@@ -68,7 +68,13 @@ public class ProductServiceImpl implements ProductService {
 		
 		Product product = productRepository.findByName(name);
 		
-		return product;
+		if(product != null)
+		{
+			return product;
+		}
+		
+		throw new ProductNotFoundException("Product not found by Name : "+name);
+
 	}
 
 }
