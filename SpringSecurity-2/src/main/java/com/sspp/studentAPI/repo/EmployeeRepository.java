@@ -6,5 +6,5 @@ import com.sspp.studentAPI.entity.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
-	
+	 
 }
