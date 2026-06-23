@@ -55,7 +55,9 @@ public class SecurityConfig {
 		
 		http.authorizeHttpRequests(auth -> {
 			
-			auth.anyRequest().authenticated();
+			auth.requestMatchers("/welcome").hasRole("USER")
+			.requestMatchers("/admin").hasRole("ADMIN")
+			.anyRequest().authenticated();
 		}).formLogin(form -> form.permitAll()); // access for everyone
 				
 		
