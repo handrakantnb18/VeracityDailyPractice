@@ -10,4 +10,10 @@ public class RestController {
 	{
 		return "welcome we are learning Spring Security";
 	}
+	
+	@GetMapping("/admin")
+	public String admin()
+	{
+		return "ADMIN Login welcome we are learning Spring Security";
+	}
 }
