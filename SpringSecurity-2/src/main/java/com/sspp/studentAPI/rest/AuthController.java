@@ -33,6 +33,11 @@ public class AuthController {
 	@PostMapping("/create-user")
 	public ResponseEntity<User> createUsers(@RequestBody User user)
 	{
+		
+		// Student
+		// Book
+		// Product
+		
 		// password should save in encoding format
 		
 		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
