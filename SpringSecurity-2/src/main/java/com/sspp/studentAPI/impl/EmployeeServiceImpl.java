@@ -14,7 +14,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 //	@Autowired
 //	private EmployeeRepository employeeRepository;
 
-		
+	private final EmployeeRepository employeeRepository;
+
+	// constructor created
+	public EmployeeServiceImpl(EmployeeRepository employeeRepository)
+	{
+		this.employeeRepository=employeeRepository;
+	}
+	
 	@Override
 	public EmployeeDto saveEmployee(EmployeeDto employeeDto) {
 		
