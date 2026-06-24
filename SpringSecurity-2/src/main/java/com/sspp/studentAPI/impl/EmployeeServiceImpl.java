@@ -64,7 +64,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		 employeeDto.setMobileNo(savedEmployee.getMobileNo());
 		 employeeDto.setJoiningDate(savedEmployee.getJoiningDate());
 		 employeeDto.setIsMarried(savedEmployee.getIsMarried());
-					 
+					  
 		 
 		 return employeeDto;
 	}
