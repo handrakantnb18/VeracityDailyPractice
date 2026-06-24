@@ -44,9 +44,29 @@ public class EmployeeServiceImpl implements EmployeeService {
 		employee.setJoiningDate(employeeDto.getJoiningDate());
 		employee.setIsMarried(employeeDto.getIsMarried());
 		
-		 employeeRepository.save(employee);
+		 Employee savedEmployee = employeeRepository.save(employee);
 		 
+		 employeeDto.setAge(savedEmployee.getAge());
+		 employeeDto.setId(savedEmployee.getId());
+		 employeeDto.setAddress(savedEmployee.getAddress());
+		 employeeDto.setDep(savedEmployee.getDep());
+		 employeeDto.setDestination(savedEmployee.getDestination());
+		 employeeDto.setDob(savedEmployee.getDob());
+		 employeeDto.setEducationQualification(savedEmployee.getEducationQualification());
+		 employeeDto.setEmail(savedEmployee.getEmail());
+		 employeeDto.setExperience(savedEmployee.getExperience());
+		 employeeDto.setAge(savedEmployee.getAge());
+		 employeeDto.setFirstName(savedEmployee.getFirstName());
+		 employeeDto.setGender(savedEmployee.getGender());
+		 employeeDto.setStatus(savedEmployee.getStatus());
+		 employeeDto.setLastName(savedEmployee.getLastName());
+		 employeeDto.setSalary(savedEmployee.getSalary());
+		 employeeDto.setMobileNo(savedEmployee.getMobileNo());
+		 employeeDto.setJoiningDate(savedEmployee.getJoiningDate());
+		 employeeDto.setIsMarried(savedEmployee.getIsMarried());
+					 
 		 
+		 return employeeDto;
 	}
 
 	
