@@ -15,12 +15,27 @@ public class CustomerUserDetailsServices implements UserDetailsService {
 	@Autowired
 	UserRepository userRepository;
 	
+	// Spring IOC will call internally
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
 		Optional<User> byUsername = userRepository.findByUsername(username);
 		
-		return null;
+		if(byUsername.isPresent())
+		{
+			User dbUser = byUsername.get();
+			
+			
+			// give the user to the Spring security context/IOC for authentication  
+			return org.springframework.security.core.userdetails.User
+					.withUsername(dbUser.getUsername())
+					.password(dbUser.getPassword())
+					.roles(dbUser.getRole())
+					.build();
+		}
+		
+		
+		throw new UsernameNotFoundException("User not found with username : "+username);
 	}
 
 }
