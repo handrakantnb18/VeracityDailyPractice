@@ -11,4 +11,6 @@ public interface EmployeeService {
 	
 	List<Employee> getAllEmployees();
 	
+	Employee getEmployeeById(Integer id);
+	
 }
