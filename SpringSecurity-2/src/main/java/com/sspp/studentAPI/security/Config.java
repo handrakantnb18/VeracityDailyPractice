@@ -1,17 +1,36 @@
 package com.sspp.studentAPI.security;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
+import com.sspp.studentAPI.service.CustomerUserDetailsServices;
+
 @Configuration
 @EnableWebSecurity
 public class Config {
 
+	
+	@Autowired
+	CustomerUserDetailsServices customerUserDetailsServices;
+	
+	@Bean
+	public DaoAuthenticationProvider authenticateUser()
+	{
+		DaoAuthenticationProvider provider = new DaoAuthenticationProvider(customerUserDetailsServices);
+		
+		provider.setPasswordEncoder(encoder());
+		
+		return provider;
+	}
+	
+	
 	@Bean
 	public BCryptPasswordEncoder encoder()
 	{
