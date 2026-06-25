@@ -1,12 +1,14 @@
 package com.sspp.studentAPI.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sspp.studentAPI.dto.EmployeeDto;
 import com.sspp.studentAPI.entity.Employee;
+import com.sspp.studentAPI.exception.EmployeeNotFoundException;
 import com.sspp.studentAPI.repo.EmployeeRepository;
 import com.sspp.studentAPI.service.EmployeeService;
 
@@ -75,6 +77,22 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public List<Employee> getAllEmployees() {
 		
 		return employeeRepository.findAll();
+		
+	}
+
+	@Override
+	public Employee getEmployeeById(Integer id) {
+		
+		Optional<Employee> byId = employeeRepository.findById(id);
+		
+		if(byId.isPresent())
+		{
+			Employee employee = byId.get();
+			
+			return employee;
+		}
+		
+		throw new EmployeeNotFoundException("Employee not found with id : "+id);
 		
 	}
 
