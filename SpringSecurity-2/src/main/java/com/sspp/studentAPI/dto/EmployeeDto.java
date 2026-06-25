@@ -3,6 +3,7 @@ package com.sspp.studentAPI.dto;
 import java.time.LocalDate;
 
 import jakarta.persistence.Column;
+import jakarta.validation.constraints.Email;
 import lombok.Data;
 
 @Data
@@ -17,6 +18,7 @@ public class EmployeeDto {
 	private String gender;
 
 	@Column(unique = true)
+	@Email(message= "")
 	private String email;
 
 	private String mobileNo;
