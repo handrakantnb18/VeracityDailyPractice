@@ -43,7 +43,7 @@ public class Config {
 		// POST, PUT = we have to desable CSRF
 		// but company can not be desable use to postman
 		
-		http.csrf(csrf -> csrf.disable()); // dessable to access the postman
+		http.csrf(csrf -> csrf.disable()); // desable to access the postman
 		
 		http.httpBasic(Customizer.withDefaults()); // to send basic auth from postman
 		
@@ -51,11 +51,13 @@ public class Config {
 			
 			auth.requestMatchers("/api/v1/employee/save").hasRole("ADMIN");
 			
-			auth.requestMatchers("/api/v1/employee/all").hasRole("USER");
+			auth.requestMatchers("/api/v1/employee/all").hasAnyRole("USER","ADMIN");
+			
+			auth.requestMatchers("/api/v1/employee/byid/**").hasRole("USER");
 			
 			auth.requestMatchers("/auth/create-user").permitAll();
 		});
 		return http.build();
-		
+		 
 	}
 }
