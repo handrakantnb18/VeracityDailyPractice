@@ -49,6 +49,8 @@ public class Config {
 		
 		http.authorizeHttpRequests(auth ->{
 			
+			auth.requestMatchers("/api/v1/employee/save").hasRole("ADMIN");
+			
 			auth.requestMatchers("/auth/create-user").permitAll();
 		});
 		return http.build();
