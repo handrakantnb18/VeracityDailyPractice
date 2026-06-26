@@ -1,6 +1,8 @@
 package com.sspp.studentAPI.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,8 +23,18 @@ public class UserRestController {
 	UserRepository userRepository;
 	
 	@PostMapping("/create")
-	public void createUser(@RequestBody User user)
+	public ResponseEntity<User> createUser(@RequestBody User user)
 	{
+		
+		
+		user.setPassword(encoder.encode(user.getPassword()));
+		
+		user.setRole("USER");
+		
+		User save = userRepository.save(user);
+		
+		return new ResponseEntity<User>(save,HttpStatus.CREATED);
+		
 		
 	}
 }
