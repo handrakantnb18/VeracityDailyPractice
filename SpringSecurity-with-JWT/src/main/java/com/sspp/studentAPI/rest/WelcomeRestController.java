@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/welcome")
 public class WelcomeRestController {
 
-	@GetMapping("/")
+	@GetMapping
 	public String welcomeMsg()
 	{
 		String msg = "welcome we are Learning Spring JWT SECURITY";
