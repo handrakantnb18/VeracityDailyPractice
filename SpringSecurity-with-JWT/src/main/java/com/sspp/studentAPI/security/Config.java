@@ -13,11 +13,15 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
 import com.sspp.studentAPI.service.CustomUserDetailsService;
+import com.sspp.studentAPI.service.JWTFilter;
 
 @Configuration
 @EnableWebSecurity
 public class Config {
 
+	@Autowired
+	JWTFilter jwtFilter;
+	
 	@Autowired
 	CustomUserDetailsService customUserDetailsService;
 	
