@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Service;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -44,18 +45,25 @@ public class JWTFilter extends OncePerRequestFilter {
 					return;
 				}
 				
+				// exact username add
 				String username = jwtService.extractUsername(token);
 				
-				if(username != null && SecurityContextHolder.getContext().getAuthentication()) == 
+				// set authentication only if not already set
+				if(username != null && SecurityContextHolder.getContext().getAuthentication() ==  null ) {
+									
+					UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+			
+					UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(username, userDetails);
+					userDetails.getAuthorities();
+					
+					authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+					
+					SecurityContextHolder.getContext().setAuthentication(authToken);			
+			
+				}
 						
-						UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-				
-						UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(username, userDetails);
-						userDetails.getAuthorities());
-				
+				// Continue filter chain
+				filterChain.doFilter(request, response);
 	}
-	
-	
-
 	
 }
