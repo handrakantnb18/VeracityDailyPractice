@@ -2,6 +2,9 @@ package com.sspp.studentAPI.service;
 
 import java.io.IOException;
 
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import jakarta.servlet.FilterChain;
@@ -26,11 +29,28 @@ public class JWTFilter extends OncePerRequestFilter {
 		
 		final String authHeater = request.getHeader("Authorization");
 				
-				if (authHeater == null || !authHeader.startWith("Bearer"))
+				if (authHeater == null || !authHeater.startsWith("Bearer"))
 				{
 					filterChain.doFilter(request, response);
 					return;
 				}
+				
+				String token = authHeater.substring(1);
+				if(!jwtService.validateToken(token))
+				{
+					response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+					return;
+				}
+				
+				String username = jwtService.extractUsername(token);
+				
+				if(username != null && SecurityContextHolder.getContext().getAuthentication()) == 
+						
+						UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+				
+						UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(username, userDetails);
+						userDetails.getAuthorities());
+				
 	}
 	
 	
