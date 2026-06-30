@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -33,12 +34,14 @@ public class BasePO implements Serializable {
 //    protected Date createdDatetime;
 
     @TableField(value = "created_datetime", exist = true)
-    @JsonSerialize(using = com.veracity.bookStringMCV_2.converter.LocalDateTimeConverter.class)
+    // @JsonSerialize(using = com.veracity.bookStringMCV_2.converter.LocalDateTimeConverter.class)
+    @JsonSerialize(using = com.veracity.bookStringMCV_2.conveter.LocalDateTimeConverter.class)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     protected LocalDateTime createdDatetime;
 
     @TableField(value = "updated_datetime", exist = true)
-    @JsonSerialize(using = com.veracity.bookStringMCV_2.converter.LocalDateTimeConverter.class)
+    // @JsonSerialize(using = com.veracity.bookStringMCV_2.converter.LocalDateTimeConverter.class)
+    @JsonSerialize(using = com.veracity.bookStringMCV_2.conveter.LocalDateTimeConverter.class)
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     protected LocalDateTime updatedDatetime;
 
