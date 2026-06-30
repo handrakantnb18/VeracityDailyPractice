@@ -16,7 +16,7 @@ public class CountString {
 				.filter( name -> name.startsWith("S"))
 				.count();
 		
-		System.out.println(count);
+		System.out.println("Number of S : "+count);
 		
 	}
 }
