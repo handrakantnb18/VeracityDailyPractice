@@ -1,4 +1,4 @@
-package com.veracity.bookStringMCV_2.converter;
+package com.veracity.bookStringMCV_2.conveter;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
